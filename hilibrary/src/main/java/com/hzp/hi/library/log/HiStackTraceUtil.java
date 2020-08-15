@@ -4,16 +4,24 @@ package com.hzp.hi.library.log;
  * 堆栈信息工具类
  */
 public class HiStackTraceUtil {
+    /**
+     * Get the real stack trace and then crop it with a max depth.
+     *
+     * @param stackTrace the full stack trace
+     * @param maxDepth   the max depth of real stack trace that will be cropped, 0 means no limitation
+     * @return the cropped real stack trace
+     */
     public static StackTraceElement[] getCroppedRealStackTrace(StackTraceElement[] stackTrace, String ignorePackage, int maxDepth) {
          return cropStackTrace(getRealStackTrace(stackTrace, ignorePackage),maxDepth);
     }
 
     /**
      * 获取除忽略包名之外的堆栈信息
+     * Get the real stack trace, all elements that come from XLog library would be dropped.
      *
-     * @param stackTrace    堆栈信息
+     * @param stackTrace    堆栈信息 the full stack trace
      * @param ignorePackage 忽略包名
-     * @return 指定的堆栈信息
+     * @return 指定的堆栈信息 the real stack trace, all elements come from system and library user
      */
     private static StackTraceElement[] getRealStackTrace(StackTraceElement[] stackTrace, String ignorePackage) {
         int ignoreDepth = 0;
@@ -35,10 +43,12 @@ public class HiStackTraceUtil {
 
     /**
      * 裁剪堆栈信息
+     * Crop the stack trace with a max depth.
      *
-     * @param callStack 堆栈信息
-     * @param maxDepth  最大深度
-     * @return 最大深度的堆栈信息
+     * @param callStack 堆栈信息 the original stack trace
+     * @param maxDepth  最大深度 the max depth of real stack trace that will be cropped,
+     *                          0 means no limitation
+     * @return 最大深度的堆栈信息  the cropped stack trace
      */
     private static StackTraceElement[] cropStackTrace(StackTraceElement[] callStack, int maxDepth) {
         int realDepth = callStack.length;

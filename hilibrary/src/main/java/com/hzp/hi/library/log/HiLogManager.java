@@ -43,7 +43,7 @@ public class HiLogManager {
 
     //添加打印器
     public void addPrinter(HiLogPrinter printer) {
-        printers.add(printer);
+        this.printers.add(printer);
     }
 
     //移除打印器
