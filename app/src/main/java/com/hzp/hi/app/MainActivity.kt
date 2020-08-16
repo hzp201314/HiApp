@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.hzp.hi.app.demo.log.HiLogDemoActivity
+import com.hzp.hi.app.demo.refresh.HiRefreshDemoActivity
 import com.hzp.hi.app.demo.tab.HiTabBottomDemoActivity
 import com.hzp.hi.app.demo.tab.HiTabTopDemoActivity
 import com.hzp.hi.common.ui.component.HiBaseActivity
@@ -28,6 +29,10 @@ class MainActivity : HiBaseActivity(), View.OnClickListener {
             R.id.tv_tab_top ->{
                 startActivity(Intent(this,
                     HiTabTopDemoActivity::class.java))
+            }
+            R.id.tv_hi_refresh ->{
+                startActivity(Intent(this,
+                    HiRefreshDemoActivity::class.java))
             }
         }
     }
