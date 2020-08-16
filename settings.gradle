@@ -1,3 +1,4 @@
+include ':common'
 include ':hiui'
 include ':hilibrary'
 include ':app'

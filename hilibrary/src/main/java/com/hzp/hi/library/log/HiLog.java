@@ -1,7 +1,5 @@
 package com.hzp.hi.library.log;
 
-import android.util.Log;
-
 import androidx.annotation.NonNull;
 
 import java.util.Arrays;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hi_color_bottom_line">#20ffffff</color>
+    <color name="hi_tabtop_normal_color">@android:color/black</color>
+    <color name="hi_tabtop_selected_color">@android:color/holo_red_dark</color>
+    <color name="hi_tabtop_line_normal_color">#00ffffff</color>
+    <color name="hi_tabtop_dividing_line">#e9e9e9</color>
+
+    <!-- Hi slider -->
+    <color name="left_menu_background">#f1f1f1</color>
+</resources>

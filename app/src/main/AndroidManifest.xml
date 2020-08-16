@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hzp.hi.library.app">
+    package="com.hzp.hi.app">
 
     <application
         android:name=".MApplication"
@@ -10,7 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.HiLogDemoActivity"></activity>
+        <activity android:name=".demo.tab.HiTabTopDemoActivity"></activity>
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo.tab.HiTabBottomDemoActivity" />
+        <activity android:name=".demo.log.HiLogDemoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
