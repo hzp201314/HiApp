@@ -1,0 +1,202 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'30 Activity之手势分发 ViewRootImpl手势分发
+ViewRootImpl.java --> ViewRootImpl.java: (View view)
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+//手势接收
+WindowInputEventReceiver mInputEventReceiver;
+mInputEventReceiver = new WindowInputEventReceiver(mInputChannel,Looper.myLooper());
+final class WindowInputEventReceiver extends InputEventReceiver {
+    public WindowInputEventReceiver(InputChannel inputChannel, Looper looper) {
+        super(inputChannel, looper);
+    }
+
+    @Override
+    public void onInputEvent(InputEvent event) {
+        ...
+        //
+        enqueueInputEvent(event, this, 0, true);
+
+    }
+    ...
+}
+
+
+void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, boolean processImmediately) {
+    //参数封装QueuedInputEvent
+    QueuedInputEvent q = obtainQueuedInputEvent(event, receiver, flags);
+
+    QueuedInputEvent last = mPendingInputEventTail;
+    if (last == null) {
+        mPendingInputEventHead = q;
+        mPendingInputEventTail = q;
+    } else {
+        //添加到队列尾部
+        last.mNext = q;
+        mPendingInputEventTail = q;
+    }
+    mPendingInputEventCount += 1;
+    //processImmediately=true
+    if (processImmediately) {
+        //
+        doProcessInputEvents();
+    } else {
+        scheduleProcessInputEvents();
+    }
+}
+
+void doProcessInputEvents() {
+    // Deliver all pending input events in the queue.
+    //把队列消息派发出去
+    while (mPendingInputEventHead != null) {
+        QueuedInputEvent q = mPendingInputEventHead;
+        //传递输入事件流
+        deliverInputEvent(q);
+    }
+}
+
+private void deliverInputEvent(QueuedInputEvent q) {
+    Trace.asyncTraceBegin(Trace.TRACE_TAG_VIEW, "deliverInputEvent",
+            q.mEvent.getSequenceNumber());
+    if (mInputEventConsistencyVerifier != null) {
+        mInputEventConsistencyVerifier.onInputEvent(q.mEvent, 0);
+    }
+    //输入事件的预处理阶段
+    //  mSyntheticInputStage = new SyntheticInputStage();
+    //屏幕点击事件
+    //  InputStage viewPostImeStage = new ViewPostImeInputStage(mSyntheticInputStage);
+    //  InputStage nativePostImeStage = new NativePostImeInputStage(viewPostImeStage,"aq:native-post-ime:" + counterSuffix);
+    //  InputStage earlyPostImeStage = new EarlyPostImeInputStage(nativePostImeStage);
+    //键盘点击事件
+    //  InputStage imeStage = new ImeInputStage(earlyPostImeStage,"aq:ime:" + counterSuffix);
+    //  InputStage viewPreImeStage = new ViewPreImeInputStage(imeStage);
+    //  InputStage nativePreImeStage = new NativePreImeInputStage(viewPreImeStage,"aq:native-pre-ime:" + counterSuffix);
+    //从下到上处理 NativePreImeInputStage->ViewPreImeInputStage->ImeInputStage
+    // ->EarlyPostImeInputStage->NativePostImeInputStage->ViewPostImeInputStage->SyntheticInputStage
+    //  mFirstInputStage = nativePreImeStage;
+    InputStage stage;
+    if (q.shouldSendToSynthesizer()) {
+        stage = mSyntheticInputStage;
+    } else {
+        stage = q.shouldSkipIme() ? mFirstPostImeInputStage : mFirstInputStage;
+    }
+
+    if (q.mEvent instanceof KeyEvent) {
+        mUnhandledKeyManager.preDispatch((KeyEvent) q.mEvent);
+    }
+
+    if (stage != null) {
+        handleWindowFocusChanged();
+        stage.deliver(q);
+    } else {
+        finishInputEvent(q);
+    }
+}
+
+
+final class ViewPostImeInputStage extends InputStage {
+    public ViewPostImeInputStage(InputStage next) {
+        super(next);
+    }
+
+    @Override
+    protected int onProcess(QueuedInputEvent q) {
+        if (q.mEvent instanceof KeyEvent) {
+            return processKeyEvent(q);
+        } else {
+            final int source = q.mEvent.getSource();
+            //SOURCE_CLASS_POINTER:屏幕点击事件
+            if ((source & InputDevice.SOURCE_CLASS_POINTER) != 0) {
+                //进入手指点击事件
+                return processPointerEvent(q);
+            } else if ((source & InputDevice.SOURCE_CLASS_TRACKBALL) != 0) {
+                return processTrackballEvent(q);
+            } else {
+                return processGenericMotionEvent(q);
+            }
+        }
+    }
+
+    @Override
+    protected void onDeliverToNext(QueuedInputEvent q) {
+        if (mUnbufferedInputDispatch
+                && q.mEvent instanceof MotionEvent
+                && ((MotionEvent)q.mEvent).isTouchEvent()
+                && isTerminalInputEvent(q.mEvent)) {
+            mUnbufferedInputDispatch = false;
+            scheduleConsumeBatchedInput();
+        }
+        super.onDeliverToNext(q);
+    }
+}
+
+private int processPointerEvent(QueuedInputEvent q) {
+    final MotionEvent event = (MotionEvent)q.mEvent;
+    //DecorView.dispatchPointerEvent()
+    boolean handled = mView.dispatchPointerEvent(event);
+    maybeUpdatePointerIcon(event);
+    maybeUpdateTooltip(event);
+    mAttachInfo.mHandlingPointerEvent = false;
+    if (mAttachInfo.mUnbufferedDispatchRequested && !mUnbufferedInputDispatch) {
+        mUnbufferedInputDispatch = true;
+        if (mConsumeBatchedInputScheduled) {
+            scheduleConsumeBatchedInputImmediately();
+        }
+    }
+    return handled ? FINISH_HANDLED : FORWARD;
+}
+
+View.java
+public final boolean dispatchPointerEvent(MotionEvent event) {
+    if (event.isTouchEvent()) {
+        return dispatchTouchEvent(event);
+    } else {
+        return dispatchGenericMotionEvent(event);
+    }
+}
+
+DecorView复写dispatchPointerEvent()
+@Override
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    //window cb.dispatchTouchEvent(ev) 具体实现是在Activity中
+    final Window.Callback cb = mWindow.getCallback();
+    return cb != null && !mWindow.isDestroyed() && mFeatureId < 0
+            ? cb.dispatchTouchEvent(ev) : super.dispatchTouchEvent(ev);
+}
+
+Activity.java
+//手势被派发到Activity中
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+        onUserInteraction();
+    }
+    //转发到Window.superDispatchTouchEvent(ev),实现类PhoneWindow
+    if (getWindow().superDispatchTouchEvent(ev)) {
+        return true;
+    }
+    return onTouchEvent(ev);
+}
+
+PhoneWindow.java
+@Override
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //转发给DecorView
+    return mDecor.superDispatchTouchEvent(event);
+}
+
+DecorView.java
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup
+    return super.dispatchTouchEvent(event);
+}
+
+ViewGroup.java
+
+
+end note
+@enduml

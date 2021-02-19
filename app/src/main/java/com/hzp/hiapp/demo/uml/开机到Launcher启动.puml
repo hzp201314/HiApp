@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Loader -> Kernel:
+note left
+关机，长按电源键开机，
+主板通电引导芯片执行烧录在存储器(Boot Room)里面的代码，
+加载引导程序到内存中。内存检查，硬件参数初始化功能。
+end note
+note right
+开机引导程序执行结束后，加载Linux Kernel核心代码，
+进入Kernel层，在这一层主要加载硬件驱动，
+比如相机驱动(Camera Driver),显示屏驱动(Display Driver),
+媒体驱动(Media Driver),输入输出驱动(Input Driver).
+上层应用想要访问这一层需要通过硬件抽象层(Hardware Abstract Layer)
+(主要为了解决各家驱动厂商提供的驱动标准不统一问题，
+这些问题由硬件抽象层进行适配，为上层应用提供统一API)
+end note
+Kernel -> CppFramework:
+note right
+硬件驱动加载完成后，会加载第一个用户进程init进程(进程pid=1)，
+会孵化adbd，logd进程（为什么可以断点调试和输出日志的原因，因为有这两个守护进程存在），
+还会孵化第一个java进程Zygote进程。
+Zygote进程承上启下连接java和native层的存在，
+Zygote进程创建成功会调用ZygoteInit.java类。
+ZygoteInit.java会创建SystemServer系统服务(SystemServer.java)进程.
+后续所有进程都是由Zygote进程孵化而来。
+App进程创建完成后会由Zygote进程 反射调用APP进程入口类ActivityThread.java类，
+从而使得APP得以启动。
+end note
+
+CppFramework -> AndroidFramework:
+note right
+SystemServer系统服务进程完成后，会执行入口类SystemServer.java，
+在SystemServer.java入口类中会创建许多我们熟知的系统服务,
+如(ActivityManagerService、WindowManagerService、
+PowerManagerService、InputManagerService...)
+end note
+AndroidFramework -> Apps:
+note right
+所有系统服务创建成功以后会开始执行Launcher进程启动流程。
+end note
+@enduml

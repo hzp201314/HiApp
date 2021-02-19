@@ -1,0 +1,81 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'27 ViewRootImpl动画更新
+MainActivity.java --> View.java: navView.postInvalidateOnAnimation()
+activate View.java
+note right
+View.java
+//18067
+postInvalidateOnAnimation(){
+    final AttachInfo attachInfo = mAttachInfo;
+    if (attachInfo != null) {//attachInfo不为空说明view与ViewRootImpl已经关联起来
+        //把当前view传递进去
+        attachInfo.mViewRootImpl.dispatchInvalidateOnAnimation(this);
+    }
+}
+
+end note
+
+'28
+View.java --> ViewRootImpl.java: dispatchInvalidateOnAnimation(View view)
+activate ViewRootImpl.java
+note right
+ViewRootImpl.java
+//
+public void dispatchInvalidateOnAnimation(View view) {
+    mInvalidateOnAnimationRunnable.addView(view);
+}
+end note
+
+'29
+ViewRootImpl.java --> ViewRootImpl.java: mInvalidateOnAnimationRunnable.addView(View view)
+activate ViewRootImpl.java
+note right
+ViewRootImpl$InvalidateOnAnimationRunnable.java
+// 7679
+public void addView(View view) {
+    synchronized (this) {
+        //同一帧画面都是一样的，存储在ArrayList中
+        mViews.add(view);
+        postIfNeededLocked();
+    }
+}
+
+private void postIfNeededLocked() {
+    if (!mPosted) {
+        //向Choreographer注册CALLBACK_ANIMATION类型事件，InvalidateOnAnimationRunnable.run()方法会调用
+        mChoreographer.postCallback(Choreographer.CALLBACK_ANIMATION, this, null);
+        mPosted = true;
+    }
+}
+
+
+@Override
+public void run() {
+    final int viewCount;
+    final int viewRectCount;
+    synchronized (this) {
+        mPosted = false;
+
+        viewCount = mViews.size();
+        if (viewCount != 0) {
+            //集合转数组并清空mViews
+            mTempViews = mViews.toArray(mTempViews != null
+                    ? mTempViews : new View[viewCount]);
+            mViews.clear();
+        }
+
+    }
+
+    for (int i = 0; i < viewRectCount; i++) {
+        final View.AttachInfo.InvalidateInfo info = mTempViewRects[i];
+        //触发重绘，也就是触发动画更新
+        info.target.invalidate(info.left, info.top, info.right, info.bottom);
+        info.recycle();
+    }
+}
+end note
+@enduml

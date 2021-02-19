@@ -1,0 +1,495 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'Activity之View树绘制流程分析
+'1
+Activity.java -> Activity.java: attach()
+activate Activity.java
+note left
+Activity.java
+//7701
+attach(...){
+    //创建PhoneWindow
+    mWindow = new PhoneWindow(this, window, activityConfigCallback);
+}
+end note
+deactivate Activity.java
+
+'2
+Activity.java -> Activity.java: onCreate()
+activate Activity.java
+note left
+Activity.java
+//1448
+onCreate(Bundle savedInstanceState){
+
+}
+end note
+deactivate Activity.java
+
+'3
+MainActivity.java -> MainActivity.java: onCreate()
+activate MainActivity.java
+note left
+MainActivity.java
+//1448
+onCreate(Bundle savedInstanceState){
+    setContentView(R.layout.activity_main)
+}
+end note
+
+'4
+MainActivity.java -> AppCompatActivity.java: setContentView(layoutResID)
+activate AppCompatActivity.java
+note left
+AppCompatActivity.java
+//
+setContentView(int layoutResID){
+     getDelegate().setContentView(view, params);
+}
+end note
+
+'5
+AppCompatActivity.java -> AppCompatDelegateImpl.java: getDelegate().setContentView(layoutResID)
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegate.java
+//抽象方法
+abstract setContentView()
+AppCompatDelegateImpl.java
+//实现方法 551
+setContentView(int resId){
+    //创建 mSubDecor
+    ensureSubDecor();
+    // contentParent 是 mSubDecor 的子View
+    ViewGroup contentParent = mSubDecor.findViewById(android.R.id.content);
+    contentParent.removeAllViews();
+    //Activity资源文件布局解析以后的View添加到contentParent中，
+    //contentParent 是 mSubDecor 的子View,即Activity资源文件View添加到mSubDecor中
+    LayoutInflater.from(mContext).inflate(resId, contentParent);
+    mAppCompatWindowCallback.getWrapped().onContentChanged();
+}
+end note
+
+'6
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: ensureSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+ensureSubDecor(){
+    mSubDecor = createSubDecor();
+}
+end note
+
+'7
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: createSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+createSubDecor(){
+    //解析当前Activity的主题
+    //根据当前主题设置是否有Title，ActionBar等等
+    TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);
+
+    ...
+    final LayoutInflater inflater = LayoutInflater.from(mContext);
+    //是否有标题,
+    //<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    //当前设置有Title,mWindowNoTitle=false
+    if (!mWindowNoTitle) {
+        //是否是Dialog类型的Activity，显然不是
+        if (mIsFloating) {
+            // If we're floating, inflate the dialog title decor
+            subDecor = (ViewGroup) inflater.inflate(R.layout.abc_dialog_title_material, null);
+            ...
+        }
+        //是否有ActionBar,当前设置有ActionBar
+        else if (mHasActionBar) {
+            //生成DecorView默认填充布局文件
+            subDecor = (ViewGroup) LayoutInflater.from(themedContext).inflate(R.layout.abc_screen_toolbar, null);
+        }
+        ...
+    }
+    ...
+    //855 mWindow:PhoneWindow 把DecorView添加到PhoneWindow
+    mWindow.setContentView(subDecor);
+}
+end note
+
+'8
+AppCompatDelegateImpl.java -> PhoneWindow.java: mWindow.setContentView(subDecor);
+activate PhoneWindow.java
+note right
+Window.java
+//抽象类
+abstract setContentView(View view);
+PhoneWindow.java
+//实现类 423
+setContentView(View view){
+    if (mContentParent == null) {
+        //创建DecorView和ContentParent
+        installDecor();
+    } else if (!hasFeature(FEATURE_CONTENT_TRANSITIONS)) {
+        mContentParent.removeAllViews();
+    }
+
+    //438 把资源文件填充到mContentParent
+    mLayoutInflater.inflate(layoutResID, mContentParent);
+
+    //标记当前Activity是否已经调用setContentView()
+    //作用：调用requestFeature必须在调用setContentView之前
+    // public boolean requestFeature(int featureId) {
+    //      if (mContentParentExplicitlySet) {
+    //          throw new AndroidRuntimeException("requestFeature() must be called before adding content");
+    //      }
+    // }
+    mContentParentExplicitlySet = true;
+}
+end note
+
+'9
+PhoneWindow.java -> PhoneWindow.java: installDecor();
+activate PhoneWindow.java
+note right
+PhoneWindow.java
+installDecor(){
+    if (mDecor == null) {
+        //如果DecorView为空，创建DecorView
+        mDecor = generateDecor(-1);
+    } else {
+        mDecor.setWindow(this);
+    }
+    if (mContentParent == null) {
+        //创建ContentParent
+        mContentParent = generateLayout(mDecor);
+    }
+
+
+}
+end note
+
+'10
+PhoneWindow.java -> PhoneWindow.java: generateDecor();
+note right
+PhoneWindow.java
+//创建DecorView
+DecorView generateDecor(){
+    return new DecorView(context, featureId, this, getAttributes());
+}
+end note
+
+'11
+PhoneWindow.java -> PhoneWindow.java: generateLayout(mDecor);
+note right
+PhoneWindow.java
+//创建ContentParent
+generateLayout(DecorView decor){
+    //获取主题文件，解析设置Title，ActionBar等等
+    TypedArray a = getWindowStyle();
+    ...
+    //2629
+    ViewGroup contentParent = (ViewGroup)findViewById(ID_ANDROID_CONTENT);
+
+    return contentParent;
+}
+end note
+
+'12
+PhoneWindow.java --> AppCompatDelegateImpl.java
+deactivate PhoneWindow.java
+deactivate PhoneWindow.java
+deactivate AppCompatDelegateImpl.java
+deactivate AppCompatDelegateImpl.java
+
+'13
+AppCompatDelegateImpl.java --> AppCompatActivity.java
+deactivate AppCompatDelegateImpl.java
+
+
+'14
+AppCompatActivity.java --> MainActivity.java
+deactivate AppCompatActivity.java
+deactivate MainActivity.java
+
+
+'15
+ActivityThread.java -> ActivityThread.java: handleResumeActivity();
+activate ActivityThread.java
+note left
+ActivityThread.java
+handleResumeActivity(){
+
+    //调用Activity.onResume()
+    final ActivityClientRecord r = performResumeActivity(token, finalStateRequest, reason);
+
+    ...
+
+if (r.window == null && !a.mFinished && willBeVisible) {
+        //PhoneWindow
+        r.window = r.activity.getWindow();
+        //DecorView
+        View decor = r.window.getDecorView();
+        //设置DecorView显隐藏为不可见，防止View测绘过程中软键盘弹起导致闪动
+        decor.setVisibility(View.INVISIBLE);
+        //WindowManager
+        ViewManager wm = a.getWindowManager();
+        WindowManager.LayoutParams l = r.window.getAttributes();
+        a.mDecor = decor;
+        ...
+        if (a.mVisibleFromClient) {
+            if (!a.mWindowAdded) {
+                a.mWindowAdded = true;
+                //把DecorView添加到WindowManager中,开启View的布局测量和绘制流程
+                wm.addView(decor, l);
+            } else {
+              ...
+            }
+        }
+       ...
+
+       //显示 DecorView  mDecor.setVisibility(View.VISIBLE))
+       r.activity.makeVisible();
+
+    }
+}
+end note
+
+'16
+ActivityThread.java -> WindowManagerImpl.java: wm.addView(decor, l);
+activate WindowManagerImpl.java
+note right
+ViewManager.java //抽象类 对View的增删改
+    addView(View view, ViewGroup.LayoutParams params);//抽象方法
+    updateViewLayout(View view, ViewGroup.LayoutParams params);
+    removeView(View view);
+WindowManager.java继承ViewManager.java //接口类，并未实现addView()方法
+WindowManagerImpl.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    mGlobal.addView(view, params, mContext.getDisplay(), mParentWindow);
+}
+
+updateViewLayout(...){
+    mGlobal.updateViewLayout()
+}
+removeView(...){
+    mGlobal.removeView()
+}
+end note
+
+
+'17
+WindowManagerImpl.java -> WindowManagerGlobal.java: mGlobal.addView();
+activate WindowManagerGlobal.java
+note right
+WindowManagerGlobal.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    ViewRootImpl root;
+    //377 实例化ViewRootImpl
+    // IBinder接口，将window注册到WindowManagerService中
+    // mWindowSession = WindowManagerGlobal.getWindowSession();
+    // 当前view的window信息
+    // mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    // 监听垂直同步信号VSYNC
+    // mChoreographer = Choreographer.getInstance();
+    root = new ViewRootImpl(view.getContext(), display);
+
+    //方便WindowManager更新或者删除View的时候，还能清理和销毁工作
+    mViews.add(view);
+    mRoots.add(root);
+    mParams.add(wparams);
+
+    //view与ViewRoot关联，开启View的布局测量和绘制流程
+    //如果这个view是从setContentView()方法触发，view=DecorView
+    //windowManager.addView(view, ...) 普通的view
+    root.setView(view, wparams, panelParentView);
+}
+end note
+
+'18
+WindowManagerGlobal.java -> ViewRootImpl.java: setView();
+activate ViewRootImpl.java
+note right
+ViewRootImpl.java //实现类 开启View三大流程开始点，也是接收手机屏幕手势到达点，应用中手势分发发源地。
+//构造方法
+new ViewRootImpl(Context context, Display display) {
+    //当前页面窗口注册到WMS中
+    mWindowSession = WindowManagerGlobal.getWindowSession();
+    //当前View关联的Window信息，是否关联到窗口上，每一个添加到窗口的view都有一个attachInfo
+    mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    //接收系统发送的垂直同步信号，60Hz 16.7ms
+    mChoreographer = Choreographer.getInstance();
+}
+//93
+setView(...){
+    //853 窗口注册到WMS之前开启一次布局和测绘工作
+    requestLayout();
+
+    //输入事件接收通道，向运行在Server进程InputManagerService注册监听，当屏幕输入事件到达时回调给应用
+    mInputChannel = new InputChannel();
+
+    //864 向WMS注册本页面窗口
+    res = mWindowSession.addToDisplay(mWindow, mSeq, mWindowAttributes,
+                                getHostVisibility(), mDisplay.getDisplayId(), mTmpFrame,
+                                mAttachInfo.mContentInsets, mAttachInfo.mStableInsets,
+                                mAttachInfo.mOutsets, mAttachInfo.mDisplayCutout, mInputChannel,
+                                mTempInsets);
+}
+end note
+
+
+'19
+ViewRootImpl.java -> ViewRootImpl.java: requestLayout();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+requestLayout(){
+    //检查当前线程
+    //不能在子线程更新UI，
+    //对View的更新涉及到view.requestLayout();view.postInvalidate();会调用到ViewRootImpl中
+    //部分子线程更新UI是可以成功的，不会报错。子线程创建View，绑定数据等到页面进入直接展示视图
+    //throw new CalledFromWrongThreadException("Only the original thread that created a view hierarchy can touch its views.");
+    checkThread();
+    mLayoutRequested = true;
+    //安排任务执行
+    scheduleTraversals();
+}
+end note
+
+
+'20
+ViewRootImpl.java -> ViewRootImpl.java: scheduleTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+scheduleTraversals(){
+    if (!mTraversalScheduled) {
+        //过滤同一帧内多次重复请求，防止多次测绘布局绘制
+        mTraversalScheduled = true;
+        //屏障消息：为了让异步消息优先执行，使得ViewRootImpl中UI测量，布局，绘制尽早执行。
+        mTraversalBarrier = mHandler.getLooper().getQueue().postSyncBarrier();
+        //异步消息：每次垂直信号到达执行mTraversalRunnable.run()方法
+        mChoreographer.postCallback(Choreographer.CALLBACK_TRAVERSAL, mTraversalRunnable, null);
+    }
+}
+end note
+
+'21
+ViewRootImpl.java -> Choreographer.java: mChoreographer.postCallback();
+activate Choreographer.java
+note right
+Choreographer.java
+
+//416
+postCallback(){
+     postCallbackDelayed(callbackType, action, token, 0);
+}
+
+//435
+postCallbackDelayed(){
+    postCallbackDelayedInternal(callbackType, action, token, delayMillis);
+}
+
+//447
+postCallbackDelayedInternal(){
+    if (dueTime <= now) {
+        scheduleFrameLocked(now);
+    } else {
+        Message msg = mHandler.obtainMessage(MSG_DO_SCHEDULE_CALLBACK, action);
+        msg.arg1 = callbackType;
+        //异步消息
+        msg.setAsynchronous(true);
+        //发送异步消息
+        mHandler.sendMessageAtTime(msg, dueTime);
+    }
+}
+end note
+
+'22
+Choreographer.java --> ViewRootImpl.java
+deactivate Choreographer.java
+
+'23
+ViewRootImpl.java -> ViewRootImpl.java: mTraversalRunnable.run();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+final TraversalRunnable mTraversalRunnable = new TraversalRunnable();
+final class TraversalRunnable implements Runnable {
+    @Override
+    public void run() {
+        doTraversal();
+    }
+}
+
+doTraversal(){
+    if (mTraversalScheduled) {
+        mTraversalScheduled = false;
+        //移除屏障消息
+        mHandler.getLooper().getQueue().removeSyncBarrier(mTraversalBarrier);
+        //根据当前页面的View树判断有没有发生变化，需不需要重新测绘布局绘制
+        performTraversals();
+
+    }
+}
+end note
+
+'24
+ViewRootImpl.java -> ViewRootImpl.java: performTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+performTraversals(){
+    //2541 测量
+    performMeasure(childWidthMeasureSpec, childHeightMeasureSpec);
+
+    //2590 布局
+    performLayout(lp, mWidth, mHeight);
+
+    //2755 绘制
+    performDraw();
+
+}
+
+private void performMeasure(int childWidthMeasureSpec, int childHeightMeasureSpec) {
+    //DecorView
+    mView.measure(childWidthMeasureSpec, childHeightMeasureSpec);
+}
+private void performLayout() {
+    //DecorView
+    final View host = mView;
+    host.layout(0, 0, host.getMeasuredWidth(), host.getMeasuredHeight());
+}
+private void performDraw() {
+    boolean canUseAsync = draw(fullRedrawNeeded);
+}
+
+private boolean draw(boolean fullRedrawNeeded) {
+    //3638
+    drawSoftware(...)
+}
+
+drawSoftware(...){
+    //3730
+    mView.draw(canvas);
+}
+end note
+
+'25
+ViewRootImpl.java --> ActivityThread.java:
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate WindowManagerGlobal.java
+deactivate WindowManagerImpl.java
+deactivate ActivityThread.java
+
+@enduml

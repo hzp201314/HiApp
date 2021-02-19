@@ -1,0 +1,423 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: main()
+note left
+ZygoteInit.java 819
+public static void main(String argv[]) {
+    //1.系统资源预加载 877 preload(bootTimingsTraceLog);
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+    //2.启动system_server进程。SystemServer进程是Android Framework的核心进程。
+    if(argv[1].equals("start-system-server")){
+        startSystemServer();
+    }
+    //3.创建Socket服务,用来接受来自ActivityManagerService申请进程创建请求
+    registerZygoteSocket();
+    //4.Socket创建完成后会进入阻塞状态，等待AMS申请进程创建请求。
+    runSelectLoopMode();
+}
+end note
+
+ZygoteInit.java -> SystemServer.java: startSystemServer()
+activate SystemServer.java
+
+SystemServer.java -> SystemServer.java:  main()->new SystemServer().run()
+activate SystemServer.java
+note left
+SystemServer.java main():348->run():370
+private void main() {
+    //1.启动引导服务17 510
+    startBootstrapServices();
+    //2.启动核心服务9 511
+    startCoreServices();
+    //3.启动其他一般服务90+ 512
+    startOtherServices();
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startOtherServices()
+activate SystemServer.java
+note left
+SystemServer.java
+//启动其他一般服务(90+) 877
+startOtherServices(){
+    ...
+    //启动Launcher应用入口方法 2035
+    mActivityManagerService.systemReady(...)
+    ...
+}
+end note
+
+SystemServer.java -> ActivityManagerService.java:  mActivityManagerService.systemReady()//启动Launcher应用入口方法
+activate ActivityManagerService.java
+note right
+ActivityManagerService.java
+//启动Launcher应用入口方法 8960
+systemReady() {
+    //启动桌面应用 9076
+    mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");
+}
+end note
+
+ActivityManagerService.java -> ActivityTaskManagerInternal.java:  mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");//启动桌面应用
+activate ActivityTaskManagerInternal.java
+note right
+ ActivityTaskManagerInternal.java:
+ //在所有屏幕启动桌面应用
+ abstract startHomeOnAllDisplays();//抽象方法 442
+ ActivityTaskManagerService$LocalService.java:
+ startHomeOnAllDisplays();//实现类 6692
+end note
+
+ActivityTaskManagerInternal.java -> ActivityTaskManagerService.java:  LocalService:startHomeOnAllDisplays();//实现类
+activate ActivityTaskManagerService.java
+note right
+ActivityTaskManagerService$LocalService.java
+//在所有屏幕启动应用 6692
+startHomeOnAllDisplays(){
+    //委托给mRootActivityContainer.startHomeOnAllDisplays()方法
+    mRootActivityContainer.startHomeOnAllDisplays();
+}
+end note
+
+ActivityTaskManagerService.java -> RootActivityContainer.java:  mRootActivityContainer.startHomeOnAllDisplays();
+activate RootActivityContainer.java
+note right
+RootActivityContainer.java
+//在所有屏幕启动应用 332
+startHomeOnAllDisplays(){
+    //遍历所有屏幕取出屏幕id，依次启动桌面应用
+    for (int i = mActivityDisplays.size() - 1; i >= 0; i--) {
+        final int displayId = mActivityDisplays.get(i).mDisplayId;
+        homeStarted |= startHomeOnDisplay(userId, reason, displayId);
+    }
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//什么也没做 350
+startHomeOnDisplay(...)
+    return startHomeOnDisplay(...);
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+// 366
+startHomeOnDisplay(){
+    // 375
+    if (displayId == DEFAULT_DISPLAY) {
+        // intent.addCategory(Intent.CATEGORY_HOME);=>作为Launcher应用标识
+        Intent homeIntent = mService.getHomeIntent();//创建Launcher应用意图
+        ActivityInfo aInfo = resolveHomeActivity(userId, homeIntent);//获取Activity中Minifest配置
+    }
+
+    //402
+    mService.getActivityStartController().startHomeActivity(homeIntent, aInfo, myReason,displayId);
+}
+end note
+
+RootActivityContainer.java -> ActivityStartController.java:  startHomeActivity();
+activate ActivityStartController.java
+note left
+ActivityStartController.java
+ActivityStartController这个类的作用是配置Activity启动前的一些信息，
+并且把信息传递给ActivityStarter去做启动
+//171
+startHomeActivity(){
+    //181
+    //把Activity信息传递给ActivityStarter去做启动,触发ActivityStarter.execute()方法
+    mLastHomeActivityStartResult = obtainStarter(intent, "startHomeActivity: " + reason)
+                .setOutActivity(tmpOutRecord)
+                .setCallingUid(0)
+                .setActivityInfo(aInfo)
+                .setActivityOptions(options.toBundle())
+                .execute();
+}
+end note
+
+ActivityStartController.java -> ActivityStarter.java:  obtainStarter(...)...execute();
+activate ActivityStarter.java
+note right
+ActivityStarter.java
+//509
+int execute() {
+    //在ActivityStartController中没有对mRequest.mayWait做配置，
+    //所以mRequest.mayWait=null。走else分支。
+    if (mRequest.mayWait) {
+        return startActivityMayWait(...);
+    } else {
+        return startActivity(...);
+    }
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+这个方法什么也没做,继续调用startActivity(...) 566
+startActivity(...){
+    mLastStartActivityResult = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//检查Activity是否在清单文件注册，Activity对应的java类是否存在... 611
+startActivity(...){
+    // 本次启动Activity返回值 621
+    int err = ActivityManager.START_SUCCESS;
+    //IApplicationThread caller 此时Launcher未创建成功 caller=null 进不去 627
+    if (caller != null) {
+        ...
+        err = ActivityManager.START_PERMISSION_DENIED;
+    }
+    //intent.getComponent()=null:Activity没有在清单文件注册的时候 695
+    if (err == ActivityManager.START_SUCCESS && intent.getComponent() == null) {
+        err = ActivityManager.START_INTENT_NOT_RESOLVED;
+    }
+
+    //aInfo=null:Activity注册在清单文件，但对应的清单文件不存在，启动之前的安全校验 701
+    if (err == ActivityManager.START_SUCCESS && aInfo == null) {
+        err = ActivityManager.START_CLASS_NOT_FOUND;
+    }
+    //禁止后台启动Activity校验(Android9.0开始),shouldAbortBackgroundActivityStart(...) 773
+    //权限校验,<activity android:permission="..."></activity>
+    //是否可见校验,<activity android:exported="false"></activity>
+    //...
+
+    //方法出口 933
+    final int res = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//这个方法什么也没做 1386
+startActivity(...){
+    // 1394
+    result = startActivityUnchecked(...);
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivityUnchecked();
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//计算Activity启动方式和入栈方式，1464
+//要不要启动新的任务栈,要不要复用栈中已存在的Activity，
+//是否需要回调onNewIntent()...
+startActivityUnchecked(){
+
+    //根据launch mode 和 intent.flag计算Activity入栈方式
+    computeLaunchingTaskFlags();
+    //计算从哪个任务栈启动Activity
+    computeSourceStack();
+    //从当前任务栈中取出可复用的任务栈
+    ActivityRecord reusedActivity = getReusableIntentActivity();
+    //1497
+    if (reusedActivity != null) {
+        //如果当前任务栈中存在可以复用的ActivityRecord，就执行Activity.onNewIntent()
+        // onNewIntent 入栈还未创建，不会显示 1565
+        deliverNewIntent(top);
+    } else {
+
+    }
+    //方法出口，启动栈顶Activity [1728]
+    mRootActivityContainer.resumeFocusedStacksTopActivities(mTargetStack, mStartActivity, mOptions);
+}
+end note
+
+ActivityStarter.java -> RootActivityContainer.java:  mRootActivityContainer.resumeFocusedStacksTopActivities();
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//启动栈顶Activity 1148
+resumeFocusedStacksTopActivities(){
+    //Activity还未创建成功，不会显示resumedOnDisplay=false 1185
+    if (!resumedOnDisplay) {
+        final ActivityStack focusedStack = display.getFocusedStack();
+        if (focusedStack != null) {
+            focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+        }
+    }
+}
+end note
+
+RootActivityContainer.java -> ActivityStack.java:  focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+activate ActivityStack.java
+note right
+ActivityStack.java
+//这个方法什么也没做 2565
+resumeTopActivityUncheckedLocked(){
+    result = resumeTopActivityInnerLocked(prev, options);
+}
+end note
+
+ActivityStack.java -> ActivityStack.java:  resumeTopActivityInnerLocked();
+activate ActivityStack.java
+note left
+ActivityStack.java
+//在启动新的Activity之前，把当前处于可见Activity给暂停掉Activity.onPause() 2614
+resumeTopActivityInnerLocked(){
+    //得到栈顶ActivityRecord 2623
+    ActivityRecord next = topRunningActivityLocked(true /* focusableOnly */);
+    //待启动的Activity进程是否存在，Launcher应用进程未创建->else [2873]
+    if (next.attachedToProcess()) {
+        ...
+    }else{
+        //3037
+        mStackSupervisor.startSpecificActivityLocked(next, true, true);
+    }
+}
+end note
+
+ActivityStack.java -> ActivityStackSupervisor.java:  mStackSupervisor.startSpecificActivityLocked(next, true, true);
+activate ActivityStackSupervisor.java
+note right
+ActivityStackSupervisor.java
+//956
+startSpecificActivityLocked(){
+    //再次校验Activity应用进程是否创建，双重校验
+    //进程控制器
+    // Is this activity's application already running?
+    final WindowProcessController wpc =mService.getProcessController(r.processName, r.info.applicationInfo.uid);
+    //Launcher应用未启动分支进不去
+    if (wpc != null && wpc.hasThread()) {
+        //真正启动Activity流程分支
+        realStartActivityLocked(r, wpc, andResume, checkConfig);
+    }
+
+    //::解决java8不能把方法作为另一个方法的入参问题 990
+    //ActivityManagerInternal::startProcess->ActivityManagerService$LocalService.startProcess()
+    final Message msg = PooledLambda.obtainMessage(
+            ActivityManagerInternal::startProcess, mService.mAmInternal, r.processName,
+            r.info.applicationInfo, knownToBeDead, "activity", r.intent.getComponent());
+    mService.mH.sendMessage(msg);
+}
+end note
+
+ActivityStackSupervisor.java -> ActivityManagerService.java:   LocalService:ActivityManagerInternal::startProcess
+deactivate ActivityStackSupervisor.java
+activate ActivityManagerService.java
+note left
+ActivityManagerService$LocalService.java
+//这个方法什么也没做 [18400]
+startProcess(){
+    startProcessLocked(...)
+}
+end note
+
+ActivityManagerService.java -> ActivityManagerService.java:   startProcessLocked()
+activate ActivityManagerService.java
+note left
+ActivityManagerService.java
+这个方法什么也没做 3022
+startProcessLocked(...){
+    // 把进程创建工作委派给processList，
+    // 老版本中进程创建是在AMS中，由于AMS过于臃肿，将其改造。
+    // ProcessList专门负责进程创建
+    return mProcessList.startProcessLocked(...);
+}
+end note
+
+ActivityManagerService.java -> ProcessList.java:   mProcessList.startProcessLocked()
+activate ProcessList.java
+note right
+ProcessList.java
+//有一个非常重要参数entryPoint [1619]
+//创建进程时强制指定entryPoint="android.app.ActivityThread",
+//进程创建完成以后新进程入口，所有Android应用的入口是ActivityThread，并不是Application
+final String entryPoint = "android.app.ActivityThread";
+
+//进程创建之前配置必要参数，如：API类型，版本号。 1849
+startProcessLocked(){
+    //1953->1842
+    final boolean success = startProcessLocked(app, hostingRecord, abiOverride);
+}
+//1842
+startProcessLocked(){
+    //1844->1428
+    return startProcessLocked(...);
+}
+//1428
+startProcessLocked(...){
+    //1621->1640
+    return startProcessLocked(...);
+}
+//1640
+startProcessLocked(...){
+    //1689->1798
+    final Process.ProcessStartResult startResult = startProcess(...);
+}
+
+//创建进程完毕以后进入ZygoteProcess，此时还处于SystemServer进程
+//ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//openZygoteSocketIfNeeded(abi)创建本地Socket对象并且连接Zygote进程Socket服务。然后通过字符输入流把创建进程必备参数发送过去
+//进程创建完毕后根据新进程传递的入口类由ZygoteInit反射执行。下面进入安卓应用进程入口类ActivityThread
+ZygoteProcess.java
+zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+end note
+
+ProcessList.java -> ProcessList.java:   final Process.ProcessStartResult startResult = startProcess(...);
+activate ProcessList.java
+note left
+ProcessList.java
+//1798
+startProcess(){
+    //[1816]
+    startResult = appZygote.getProcess().start(...)
+}
+end note
+
+ProcessList.java -> ZygoteProcess.java:   final Process.ProcessStartResult startResult = appZygote.getProcess().start()
+activate ZygoteProcess.java
+note right
+ZygoteProcess.java
+ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//314
+start(...){
+    //333->541
+    return startViaZygote(...);
+}
+end note
+
+ZygoteProcess.java -> ZygoteProcess.java:   startViaZygote()
+activate ZygoteProcess.java
+note left
+ZygoteProcess.java
+//541
+startViaZygote(){
+    synchronized(mLock) {
+        // openZygoteSocketIfNeeded(abi)
+        //创建本地Socket对象连接Zygote进程Socket服务，
+        //然后通过字符输入流把创建进程必备参数发送过去,
+        //进程创建后会根据新进程的入口类由ZygoteInit反射执行，
+        //下面就到了Android应用入口类ActvityThread。至此Launcher进程启动流程分析完毕。
+        //635
+        return zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+    }
+}
+end note
+
+@enduml

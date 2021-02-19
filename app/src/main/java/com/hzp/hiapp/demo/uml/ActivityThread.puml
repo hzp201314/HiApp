@@ -1,0 +1,447 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'1
+ActivityThread.java -> ActivityThread.java: main()
+activate ActivityThread.java
+note left
+ActivityThread.java
+public static void main(String[] args) {
+    // 消息循环驱动器
+    Looper.prepareMainLooper();
+
+    thread.attach(false, startSeq);
+
+    // 开启Looper的循环工作
+    Looper.loop();
+}
+end note
+
+'2
+ActivityThread.java -> ActivityThread.java: attach()
+activate ActivityThread.java
+note left
+ActivityThread.java
+final ApplicationThread mAppThread = new ApplicationThread();
+
+private void attach(boolean system, long startSeq) { {
+    //是否是系统进程，显然不是，system=false
+    if (!system) {
+        //AIDL接口，运行中对应AMS对象
+        final IActivityManager mgr = ActivityManager.getService();
+        try {
+            //向AMS注册本应用进程，以方便AMS调度本进程四大组件以及生命周期
+            mgr.attachApplication(mAppThread, startSeq);
+        } catch (RemoteException ex) {
+            throw ex.rethrowFromSystemServer();
+        }
+
+        BinderInternal.addGcWatcher(new Runnable() {
+            @Override public void run() {
+                ...
+                long dalvikMax = runtime.maxMemory();
+                long dalvikUsed = runtime.totalMemory() - runtime.freeMemory();
+                if (dalvikUsed > ((3*dalvikMax)/4)) {
+                    ...
+                    try {
+                        //OOM监控，当内存占用达到最大内存的3/4时，
+                        // 就会调用ATMS.releaseSomeActivities()释放一些页面
+                        ActivityTaskManager.getService().releaseSomeActivities(mAppThread);
+                    } catch (RemoteException e) {
+                        throw e.rethrowFromSystemServer();
+                    }
+                }
+            }
+        });
+    } else {
+    }
+}
+end note
+
+'3
+ActivityThread.java -> ActivityManagerService.java: mgr.attachApplication()
+activate ActivityManagerService.java
+note right
+ActivityManagerService.java
+//5175
+attachApplication(IApplicationThread thread, long startSeq){
+    attachApplicationLocked(thread, callingPid, callingUid, startSeq);
+}
+end note
+
+'4
+ActivityManagerService.java -> ActivityManagerService.java: attachApplicationLocked()
+activate ActivityManagerService.java
+note left
+ActivityManagerService.java
+//1.调度ActivityThread创建Appliction
+//2.继续启动进程创建之前已经加入任务栈的Activity，
+//也就是应用的第一个Activity，也就是Launcher应用的第一个Activity
+attachApplicationLocked(IApplicationThread thread,...){
+    //1.调度ActivityThread创建Appliction 5058
+    thread.bindApplication(...);
+
+    //2.继续启动进程创建之前已经加入任务栈的Activity 5103
+    didSomething = mAtmInternal.attachApplication(app.getWindowProcessController());
+}
+end note
+
+'5
+ActivityManagerService.java -> ActivityThread.java: thread.bindApplication()
+deactivate ActivityManagerService.java
+activate ActivityThread.java
+note left
+ActivityThread.java
+//1.调度ActivityThread创建Appliction 996
+bindApplication(...){
+    //对入参进行包装成AppBindData
+    AppBindData data = new AppBindData();
+
+    //主线程Handler发送BIND_APPLICATION消息，并且把AppBindData对象传入 1053
+    sendMessage(H.BIND_APPLICATION, data);
+}
+end note
+
+'6
+ActivityThread.java -> ActivityThread.java: BIND_APPLICATION
+activate ActivityThread.java
+note left
+ActivityThread.java
+//1750
+class H extends Handler {
+    public static final int BIND_APPLICATION        = 110;
+
+    //1853
+    public void handleMessage(Message msg) {
+        switch (msg.what) {
+            case BIND_APPLICATION:
+                AppBindData data = (AppBindData)msg.obj;
+                //
+                handleBindApplication(data);
+            break;
+            ...
+        }
+    }
+}
+end note
+
+'7
+ActivityThread.java -> ActivityThread.java: handleBindApplication()
+activate ActivityThread.java
+note left
+ActivityThread.java
+//
+handleBindApplication() {
+     Application app;
+     //对Application对象创建 6431
+     app = data.info.makeApplication(data.restrictedBackupMode, null);
+
+     //6439 ActivityThread持有Application对象
+     mInitialApplication = app;
+
+     //6460 callApplicationOnCreate()方法中调用了Application的onCreate()方法
+     mInstrumentation.callApplicationOnCreate(app);
+
+}
+
+Instrumentation.java
+callApplicationOnCreate(Application app){
+    app.onCreate();
+}
+end note
+
+'8
+ActivityThread.java -> LoadedApk.java: makeApplication()
+activate LoadedApk.java
+note right
+LoadedApk.java //App运行时的抽象映射
+//
+makeApplication() {
+    //1204 mApplicationInfo：App Manifest定义的属性
+    //className:App Manifest定义的Application className，
+    //如果没有指定就使用默认"android.app.Application"
+    String appClass = mApplicationInfo.className;
+    if (forceDefaultAppClass || (appClass == null)) {
+        appClass = "android.app.Application";
+    }
+
+    //1218 mInstrumentation:创建Application，创建Activity，以及对Activity生命周期调度的工具类
+    //实例化出一个Application对象
+    app = mActivityThread.mInstrumentation.newApplication(cl, appClass, appContext);
+}
+end note
+
+'9
+LoadedApk.java -> Instrumentation.java: newApplication()
+activate Instrumentation.java
+note right
+Instrumentation.java //
+// 实例化出一个Application对象
+newApplication() {
+   //创建Application对象
+   Application app = getFactory(context.getPackageName()).instantiateApplication(cl, className);
+   //调用Application的attach()方法
+   app.attach(context);
+   return app;
+}
+end note
+
+'10
+Instrumentation.java -> Instrumentation.java: getFactory()
+activate Instrumentation.java
+note left
+Instrumentation.java //
+//返回一个AppComponentFactory对象，用来实例化manifest定义的节点
+AppComponentFactory getFactory() {
+    ...
+}
+//AppComponentFactory.java
+//AppComponentFactory:用来实例化manifest定义的节点
+//可以在App Manifest定义自定义的appComponentFactory，
+//那么App运行时四大组件的创建就由指定的appComponentFactory创建
+class AppComponentFactory {
+    //实例化ClassLoader
+    instantiateClassLoader();
+    //实例化Application
+    instantiateApplication();
+    //实例化Activity
+    instantiateActivity();
+    //实例化BroadCastReceiver
+    instantiateReceiver();
+    //实例化Service
+    instantiateService();
+    //实例化ContentProvider
+    instantiateProvider();
+}
+end note
+
+'11
+Instrumentation.java -> Application.java: attach()
+activate Application.java
+note right
+Application.java
+// 350
+attach() {
+    //Application被创建之后第一个被调用的方法是attachBaseContext()方法，并不是onCreate()方法
+    attachBaseContext(context);
+}
+end note
+
+'12
+Application.java --> ActivityThread.java
+deactivate Application.java
+deactivate Instrumentation.java
+deactivate Instrumentation.java
+deactivate LoadedApk.java
+deactivate ActivityThread.java
+deactivate ActivityThread.java
+
+'13
+ActivityThread.java --> ActivityManagerService.java
+deactivate ActivityThread.java
+activate ActivityManagerService.java
+
+'14
+ActivityManagerService.java -> ActivityTaskManagerService.java: mAtmInternal.attachApplication()
+activate ActivityTaskManagerService.java
+note right
+ActivityTaskManagerService.java
+//继续启动进程创建之前已经加入任务栈的Activity
+attachApplication(...){
+    //把启动暂停Activity任务委派给RootActivityContainer
+    return mRootActivityContainer.attachApplication(wpc);
+}
+end note
+
+'15
+ActivityTaskManagerService.java -> RootActivityContainer.java: mRootActivityContainer.attachApplication()
+activate RootActivityContainer.java
+note right
+RootActivityContainer.java//继续启动进程创建之前已经加入任务栈的Activity
+attachApplication(...){
+    final ActivityDisplay display = mActivityDisplays.get(displayNdx);
+    //FocusedStack 找到可见的活跃的任务栈
+    final ActivityStack stack = display.getFocusedStack();
+    if (stack != null) {
+        //取出所有活跃的任务栈存储到mTmpActivityList中
+        stack.getAllRunningVisibleActivitiesLocked(mTmpActivityList);
+        //取出任务栈中栈顶的ActivityRecord对象
+        final ActivityRecord top = stack.topRunningActivityLocked();
+        final int size = mTmpActivityList.size();
+        //遍历活跃的任务栈
+        for (int i = 0; i < size; i++) {
+            final ActivityRecord activity = mTmpActivityList.get(i);
+            //判断集合里面的Activity.WindowProcessController是否为空
+            //如果为空，说明Activity已经入栈但没有关联到进程上，也就是Activity没有在进程中运行起来，
+            //就会调用realStartActivityLocked()真正的去启动Activity
+            // top：栈顶的Activity  activity：本次需要启动的Activity
+            // 本场景下，Launcher进程刚启动，进程启动之前已经加入任务栈的Activity还没有启动，并且任务栈中只有一个Activity
+            // 所以栈顶Activity top 与本次需要启动的Activity是同一个对象，所以andResume=true
+            if (activity.app == null && app.mUid == activity.info.applicationInfo.uid
+                    && processName.equals(activity.processName)) {
+                try {
+                    if (mStackSupervisor.realStartActivityLocked(activity, app,
+                            top == activity /* andResume */, true /* checkConfig */)) {
+                        didSomething = true;
+                    }
+                } catch (RemoteException e) {
+
+                }
+            }
+        }
+    }
+}
+end note
+
+'16
+RootActivityContainer.java -> ActivityStackSupervisor.java: mStackSupervisor.realStartActivityLocked()
+activate ActivityStackSupervisor.java
+note right
+ActivityStackSupervisor.java
+//真正启动Activity方法
+realStartActivityLocked(){
+    //创建启动Activity的事务对象clientTransaction 828
+    final ClientTransaction clientTransaction = ClientTransaction.obtain(proc.getThread(), r.appToken);
+    //往事务对象clientTransaction里面添加一个任务LaunchActivityItem
+    clientTransaction.addCallback(LaunchActivityItem.obtain(...));
+    final ActivityLifecycleItem lifecycleItem;
+    //andResume=true
+    if (andResume) {
+        //执行Activity的显示工作,调用Activity.onResume()方法。
+        lifecycleItem = ResumeActivityItem.obtain(dc.isNextTransitionForward());
+    } else {
+        //执行Activity的暂停工作,调用Activity.onPause()方法。
+        lifecycleItem = PauseActivityItem.obtain();
+    }
+    //往事务对象clientTransaction里面添加一个任务 ActivityLifecycleItem
+    clientTransaction.setLifecycleStateRequest(lifecycleItem);
+
+    //此时已经在事务里面添加了LaunchActivityItem和ResumeActivityItem两个任务，然后开始事务的执行。
+    //Android10.0对Framework的改动，把Activity各个生命周期拆分成 ActivityLifecycleItem，
+    //根据执行状态，让具体的 ActivityLifecycleItem 去执行 (设计模式：状态机)
+    mService.getLifecycleManager().scheduleTransaction(clientTransaction);
+}
+end note
+
+'17
+ActivityStackSupervisor.java -> LaunchActivityItem.java: LaunchActivityItem.execute()
+activate LaunchActivityItem.java
+note right
+LaunchActivityItem.java
+//ClientTransactionHandler:ActivityThread的父类，定义了Activity的生命周期方法，实现在ActivityThread中
+execute(ClientTransactionHandler client,...){
+    client.handleLaunchActivity(r, pendingActions, null /* customIntent */);
+}
+end note
+
+'18
+LaunchActivityItem.java -> ActivityThread.java: client.handleLaunchActivity()
+deactivate LaunchActivityItem.java
+activate ActivityThread.java
+note left
+ActivityThread.java
+//3381
+handleLaunchActivity(...){
+    //3409
+    final Activity a = performLaunchActivity(r, customIntent);
+}
+end note
+
+'19
+ActivityThread.java -> ActivityThread.java: performLaunchActivity()
+activate ActivityThread.java
+note left
+ActivityThread.java
+performLaunchActivity(...){
+    ActivityInfo aInfo = r.activityInfo;
+    ComponentName component = r.intent.getComponent();
+
+    //Activity实例创建也是通过Instrumentation.newActivity()方法得到 3182
+    activity = mInstrumentation.newActivity(cl, component.getClassName(), r.intent);
+
+    //3224 Activity.attach()方法
+    activity.attach(...)
+
+    //3245
+    mInstrumentation.callActivityOnCreate(activity, r.state);
+}
+end note
+
+
+'20
+ActivityThread.java -> Instrumentation.java: mInstrumentation.newActivity()
+activate Instrumentation.java
+note right
+Instrumentation.java
+newActivity(...){
+    //getFactory()方法返回一个 AppComponentFactory 对象，
+    //通过AppComponentFactory对象的instantiateActivity()方法实例化Activity对象
+    return getFactory(pkg).instantiateActivity(cl, className, intent);
+}
+end note
+
+'21
+Instrumentation.java --> ActivityThread.java
+deactivate Instrumentation.java
+
+'22
+ActivityThread.java -> Instrumentation.java: mInstrumentation.callActivityOnCreate()
+activate Instrumentation.java
+note right
+Instrumentation.java
+//调度Activity.onCreate()方法
+callActivityOnCreate(...){
+    prePerformCreate(activity);
+    activity.performCreate(icicle);
+    postPerformCreate(activity);
+}
+end note
+
+'23
+Instrumentation.java --> ActivityThread.java
+deactivate Instrumentation.java
+deactivate ActivityThread.java
+
+'24
+ActivityThread.java --> ActivityStackSupervisor.java
+deactivate ActivityThread.java
+
+'25
+ActivityStackSupervisor.java -> ResumeActivityItem.java: ResumeActivityItem.execute()
+activate ResumeActivityItem.java
+note right
+ResumeActivityItem.java
+//ClientTransactionHandler:ActivityThread的父类，定义了Activity的生命周期方法，实现在ActivityThread中
+execute(ClientTransactionHandler client,...){
+    client.handleResumeActivity(token, true /* finalStateRequest */, mIsForward,"RESUME_ACTIVITY");
+}
+end note
+
+'26
+ResumeActivityItem.java -> ActivityThread.java: client.handleResumeActivity()
+deactivate ResumeActivityItem.java
+activate ActivityThread.java
+note left
+ActivityThread.java
+//4229
+handleResumeActivity(...){
+    //4237
+    final ActivityClientRecord r = performResumeActivity(token, finalStateRequest, reason);
+}
+end note
+
+'27
+ActivityThread.java -> ActivityThread.java: performResumeActivity()
+activate ActivityThread.java
+note left
+ActivityThread.java
+//调用Activity.onResume()
+performResumeActivity(...){
+    //4195  调用Activity.onResume()
+    r.activity.performResume(r.startsNotResumed, reason);
+}
+end note
+
+@enduml

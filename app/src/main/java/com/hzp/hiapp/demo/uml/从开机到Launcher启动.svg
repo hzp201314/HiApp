@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="231.2px" preserveAspectRatio="none" style="width:480px;height:231px;" version="1.1" viewBox="0 0 480 231" width="480px" zoomAndPan="magnify"><defs><filter height="300%" id="fjg9r1fa2l3d" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6" dy="1.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="157.2" x2="157.2" y1="17.248" y2="212.785"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="185.6" x2="185.6" y1="17.248" y2="212.785"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="224.4" x2="224.4" y1="17.248" y2="212.785"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="278.4" x2="278.4" y1="17.248" y2="212.785"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="320" x2="320" y1="17.248" y2="212.785"/><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="23.6" x="144.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="18" x="147.6" y="11.2176">Loader</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="23.6" x="144.8" y="212.385"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="18" x="147.6" y="221.6025">Loader</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="22" x="174" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="16.4" x="176.8" y="11.2176">Kernel</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="22" x="174" y="212.385"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="16.4" x="176.8" y="221.6025">Kernel</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="44" x="201.6" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="38.4" x="204.4" y="11.2176">CppFramework</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="44" x="201.6" y="212.385"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="38.4" x="204.4" y="221.6025">CppFramework</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.2" x="251.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="47.6" x="254" y="11.2176">AndroidFramework</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.2" x="251.2" y="212.385"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="47.6" x="254" y="221.6025">AndroidFramework</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="18.4" x="310" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="12.8" x="312.8" y="11.2176">Apps</text><rect fill="#FEFECE" filter="url(#fjg9r1fa2l3d)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="18.4" x="310" y="212.385"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="12.8" x="312.8" y="221.6025">Apps</text><polygon fill="#A80036" points="181,75.7604,185,77.3604,181,78.9604,182.6,77.3604" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="157.4" x2="183.4" y1="77.3604" y2="77.3604"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="160.2" y="75.4178">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="166.2" y="75.4178"/><path d="M2,37.4516 L2,62.6516 L154,62.6516 L154,41.4516 L150,37.4516 L2,37.4516 " fill="#FBFB77" filter="url(#fjg9r1fa2l3d)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M150,37.4516 L150,41.4516 L154,41.4516 L150,37.4516 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="4.4" y="45.4107">关机，长按电源键开机，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.6" x="4.4" y="52.5125">主板通电引导芯片执行烧录在存储器(Boot Room)里面的代码，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="135.2" x="4.4" y="59.6143">加载引导程序到内存中。内存检查，硬件参数初始化功能。</text><path d="M187.6,23.248 L187.6,76.848 L360.4,76.848 L360.4,27.248 L356.4,23.248 L187.6,23.248 " fill="#FBFB77" filter="url(#fjg9r1fa2l3d)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M356.4,23.248 L356.4,27.248 L360.4,27.248 L356.4,23.248 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="127.6" x="190" y="31.2072">开机引导程序执行结束后，加载Linux Kernel核心代码，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.2" x="190" y="38.309">进入Kernel层，在这一层主要加载硬件驱动，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130.8" x="190" y="45.4107">比如相机驱动(Camera Driver),显示屏驱动(Display Driver),</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.6" x="190" y="52.5125">媒体驱动(Media Driver),输入输出驱动(Input Driver).</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164.4" x="190" y="59.6143">上层应用想要访问这一层需要通过硬件抽象层(Hardware Abstract Layer)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="131.6" x="190" y="66.716">(主要为了解决各家驱动厂商提供的驱动标准不统一问题，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.8" x="190" y="73.8178">这些问题由硬件抽象层进行适配，为上层应用提供统一API)</text><polygon fill="#A80036" points="219.6,118.8691,223.6,120.4691,219.6,122.0691,221.2,120.4691" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="185.8" x2="222" y1="120.4691" y2="120.4691"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="188.6" y="118.5266">2</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="194.6" y="118.5266"/><path d="M226.4,82.5604 L226.4,150.1604 L458.4,150.1604 L458.4,86.5604 L454.4,82.5604 L226.4,82.5604 " fill="#FBFB77" filter="url(#fjg9r1fa2l3d)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M454.4,82.5604 L454.4,86.5604 L458.4,86.5604 L454.4,82.5604 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152.8" x="228.8" y="90.5195">硬件驱动加载完成后，会加载第一个用户进程init进程(进程pid=1)，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="223.6" x="228.8" y="97.6213">会孵化adbd，logd进程（为什么可以断点调试和输出日志的原因，因为有这两个守护进程存在），</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.8" x="228.8" y="104.723">还会孵化第一个java进程Zygote进程。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110.4" x="228.8" y="111.8248">Zygote进程承上启下连接java和native层的存在，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="105.6" x="228.8" y="118.9266">Zygote进程创建成功会调用ZygoteInit.java类。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="159.6" x="228.8" y="126.0283">ZygoteInit.java会创建SystemServer系统服务(SystemServer.java)进程.</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98.8" x="228.8" y="133.1301">后续所有进程都是由Zygote进程孵化而来。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="194.4" x="228.8" y="140.2318">App进程创建完成后会由Zygote进程 反射调用APP进程入口类ActivityThread.java类，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.6" x="228.8" y="147.3336">从而使得APP得以启动。</text><polygon fill="#A80036" points="273.8,174.6306,277.8,176.2306,273.8,177.8306,275.4,176.2306" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="224.4" x2="276.2" y1="176.2306" y2="176.2306"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="227.2" y="174.288">3</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="233.2" y="174.288"/><path d="M280.4,156.0762 L280.4,188.4762 L452.4,188.4762 L452.4,160.0762 L448.4,156.0762 L280.4,156.0762 " fill="#FBFB77" filter="url(#fjg9r1fa2l3d)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M448.4,156.0762 L448.4,160.0762 L452.4,160.0762 L448.4,156.0762 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.6" x="282.8" y="164.0354">SystemServer系统服务进程完成后，会执行入口类SystemServer.java，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.2" x="282.8" y="171.1371">在SystemServer.java入口类中会创建许多我们熟知的系统服务,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126" x="282.8" y="178.2389">如(ActivityManagerService、WindowManagerService、</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110.8" x="282.8" y="185.3406">PowerManagerService、InputManagerService...)</text><polygon fill="#A80036" points="315.2,201.985,319.2,203.585,315.2,205.185,316.8,203.585" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="278.6" x2="317.6" y1="203.585" y2="203.585"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="281.4" y="201.6424">4</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="287.4" y="201.6424"/><path d="M322,194.0832 L322,204.8832 L476.4,204.8832 L476.4,198.0832 L472.4,194.0832 L322,194.0832 " fill="#FBFB77" filter="url(#fjg9r1fa2l3d)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M472.4,194.0832 L472.4,198.0832 L476.4,198.0832 L472.4,194.0832 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146" x="324.4" y="202.0424">所有系统服务创建成功以后会开始执行Launcher进程启动流程。</text><!--MD5=[861b1bd09e5acba9d29f5182ed1e38ee]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Loader -> Kernel:
+note left
+关机，长按电源键开机，
+主板通电引导芯片执行烧录在存储器(Boot Room)里面的代码，
+加载引导程序到内存中。内存检查，硬件参数初始化功能。
+end note
+note right
+开机引导程序执行结束后，加载Linux Kernel核心代码，
+进入Kernel层，在这一层主要加载硬件驱动，
+比如相机驱动(Camera Driver),显示屏驱动(Display Driver),
+媒体驱动(Media Driver),输入输出驱动(Input Driver).
+上层应用想要访问这一层需要通过硬件抽象层(Hardware Abstract Layer)
+(主要为了解决各家驱动厂商提供的驱动标准不统一问题，
+这些问题由硬件抽象层进行适配，为上层应用提供统一API)
+end note
+Kernel -> CppFramework:
+note right
+硬件驱动加载完成后，会加载第一个用户进程init进程(进程pid=1)，
+会孵化adbd，logd进程（为什么可以断点调试和输出日志的原因，因为有这两个守护进程存在），
+还会孵化第一个java进程Zygote进程。
+Zygote进程承上启下连接java和native层的存在，
+Zygote进程创建成功会调用ZygoteInit.java类。
+ZygoteInit.java会创建SystemServer系统服务(SystemServer.java)进程.
+后续所有进程都是由Zygote进程孵化而来。
+App进程创建完成后会由Zygote进程 反射调用APP进程入口类ActivityThread.java类，
+从而使得APP得以启动。
+end note
+
+CppFramework -> AndroidFramework:
+note right
+SystemServer系统服务进程完成后，会执行入口类SystemServer.java，
+在SystemServer.java入口类中会创建许多我们熟知的系统服务,
+如(ActivityManagerService、WindowManagerService、
+PowerManagerService、InputManagerService...)
+end note
+AndroidFramework -> Apps:
+note right
+所有系统服务创建成功以后会开始执行Launcher进程启动流程。
+end note
+@enduml
+
+@startuml
+
+autonumber
+
+Loader -> Kernel:
+note left
+关机，长按电源键开机，
+主板通电引导芯片执行烧录在存储器(Boot Room)里面的代码，
+加载引导程序到内存中。内存检查，硬件参数初始化功能。
+end note
+note right
+开机引导程序执行结束后，加载Linux Kernel核心代码，
+进入Kernel层，在这一层主要加载硬件驱动，
+比如相机驱动(Camera Driver),显示屏驱动(Display Driver),
+媒体驱动(Media Driver),输入输出驱动(Input Driver).
+上层应用想要访问这一层需要通过硬件抽象层(Hardware Abstract Layer)
+(主要为了解决各家驱动厂商提供的驱动标准不统一问题，
+这些问题由硬件抽象层进行适配，为上层应用提供统一API)
+end note
+Kernel -> CppFramework:
+note right
+硬件驱动加载完成后，会加载第一个用户进程init进程(进程pid=1)，
+会孵化adbd，logd进程（为什么可以断点调试和输出日志的原因，因为有这两个守护进程存在），
+还会孵化第一个java进程Zygote进程。
+Zygote进程承上启下连接java和native层的存在，
+Zygote进程创建成功会调用ZygoteInit.java类。
+ZygoteInit.java会创建SystemServer系统服务(SystemServer.java)进程.
+后续所有进程都是由Zygote进程孵化而来。
+App进程创建完成后会由Zygote进程 反射调用APP进程入口类ActivityThread.java类，
+从而使得APP得以启动。
+end note
+
+CppFramework -> AndroidFramework:
+note right
+SystemServer系统服务进程完成后，会执行入口类SystemServer.java，
+在SystemServer.java入口类中会创建许多我们熟知的系统服务,
+如(ActivityManagerService、WindowManagerService、
+PowerManagerService、InputManagerService...)
+end note
+AndroidFramework -> Apps:
+note right
+所有系统服务创建成功以后会开始执行Launcher进程启动流程。
+end note
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

@@ -1,0 +1,116 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: main()
+note left
+ZygoteInit.java 819
+public static void main(String argv[]) {
+    //1.系统资源预加载 877 preload(bootTimingsTraceLog);
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+    //2.启动system_server进程。SystemServer进程是Android Framework的核心进程。
+    if(argv[1].equals("start-system-server")){
+        startSystemServer();
+    }
+    //3.创建Socket服务,用来接受来自ActivityManagerService申请进程创建请求
+    registerZygoteSocket();
+    //4.Socket创建完成后会进入阻塞状态，等待AMS申请进程创建请求。
+    runSelectLoopMode();
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preload(bootTimingsTraceLog)
+note left
+ZygoteInit.java
+preload(){
+    //1.系统资源预加载
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preloadClasses()
+ZygoteInit.java -> ZygoteInit.java: preloadResources()
+ZygoteInit.java -> ZygoteInit.java: preloadSharedLibraries()
+deactivate ZygoteInit.java
+
+ZygoteInit.java -> SystemServer.java: startSystemServer()
+activate SystemServer.java
+
+SystemServer.java -> SystemServer.java:  main()->new SystemServer().run()
+activate SystemServer.java
+note left
+SystemServer.java main():348->run():370
+private void main() {
+    Looper.prepareMainLooper();
+    // 创建系统服务的管理者 497
+    SystemServiceManager mSystemServiceManager =
+    new SystemServiceManager(mSystemContext);
+    //1.启动引导服务17 510
+    startBootstrapServices();
+    //2.启动核心服务9 511
+    startCoreServices();
+    //3.启动其他一般服务90+ 512
+    startOtherServices();
+    Looper.loop();
+}
+end note
+
+
+SystemServer.java -> SystemServer.java:  startBootstrapServices()
+note left
+SystemServer.java
+//启动引导服务(17个)
+startBootstrapServices(){
+    ActivityManagerService：为四大组件提供调度服务，其中Activity调度交由ATMS(ActivityTaskManagerService)(Android10)
+    ActivityTaskManagerService：Activity调度服务
+    PackageManager：提供安装，卸载，扫描管理服务
+    PowerManagerService：提供电源管理服务
+    UriGrantsManagerService：权限申请授权服务
+    OtaDexoptService：Dex字节码优化服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startCoreServices()
+note left
+SystemServer.java
+//系统核心服务(9个)
+startCoreServices(){
+    BatteryService：提供电池状态管理服务
+    WebViewUpdateService：WebView升级服务
+    GPUService：GPU驱动加载服务
+    UsageStatsService：应用对系统资源使用记录服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startOtherServices()
+activate SystemServer.java
+note left
+SystemServer.java
+//启动其他一般服务(90+) 877
+startOtherServices(){
+    AlarmManagerService：提供时钟服务
+    NetWorkStatsService：网络状态服务
+    WindowManagerService：窗口管理服务
+    TelephonyRegister:电话服务
+    InputMethodManagerService：输入服务
+    BluetoothService：蓝牙服务
+    NotificationManagerService：通知服务
+    AudioService：音频服务
+    ...
+    //启动Launcher应用入口方法 2035
+    mActivityManagerService.systemReady(...)
+    ...
+}
+end note
+
+@enduml
