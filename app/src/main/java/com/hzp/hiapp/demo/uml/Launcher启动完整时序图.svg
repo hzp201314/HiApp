@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2672.4px" preserveAspectRatio="none" style="width:1852px;height:2672px;" version="1.1" viewBox="0 0 1852 2672" width="1852.8px" zoomAndPan="magnify"><defs><filter height="300%" id="f1qvgzsbxg8aii" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6" dy="1.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2629.4748" style="stroke:#A80036;stroke-width:0.4;" width="4" x="213" y="21.248"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2567.6607" style="stroke:#A80036;stroke-width:0.4;" width="4" x="215" y="83.0621"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="73.6105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="217" y="170.7814"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2390.8291" style="stroke:#A80036;stroke-width:0.4;" width="4" x="298.2" y="259.8938"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2329.3659" style="stroke:#A80036;stroke-width:0.4;" width="4" x="300.2" y="321.3569"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2052.0044" style="stroke:#A80036;stroke-width:0.4;" width="4" x="302.2" y="598.7185"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1964.8851" style="stroke:#A80036;stroke-width:0.4;" width="4" x="481.8" y="685.8378"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="543.6213" style="stroke:#A80036;stroke-width:0.4;" width="4" x="483.8" y="2107.1016"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="487.2599" style="stroke:#A80036;stroke-width:0.4;" width="4" x="485.8" y="2163.463"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1916.2254" style="stroke:#A80036;stroke-width:0.4;" width="4" x="699" y="734.4975"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1867.5657" style="stroke:#A80036;stroke-width:0.4;" width="4" x="829" y="783.1571"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1804.7025" style="stroke:#A80036;stroke-width:0.4;" width="4" x="965" y="846.0203"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1744.7902" style="stroke:#A80036;stroke-width:0.4;" width="4" x="967" y="905.9326"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1671.2744" style="stroke:#A80036;stroke-width:0.4;" width="4" x="969" y="979.4484"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="908.7021" style="stroke:#A80036;stroke-width:0.4;" width="4" x="971" y="1742.0207"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1566.4007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1042.6" y="1084.3222"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1468.0287" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1133" y="1182.6941"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1401.0146" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1135" y="1249.7082"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1277.7865" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1137" y="1372.9363"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1151.0075" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1139" y="1499.7153"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1038.432" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1141" y="1612.2908"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="842.2881" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1213.8" y="1808.4348"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="768.1723" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1215.8" y="1882.5506"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="98.372" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1379.4" y="2008.7296"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="332.6738" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1446.6" y="2318.049"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="183.9896" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1448.6" y="2466.7333"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="128.8281" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1647.8" y="2521.8947"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="47.6105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1649.8" y="2603.1123"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="214.8" x2="214.8" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="300.2" x2="300.2" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="483.6" x2="483.6" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="701" x2="701" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="831" x2="831" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="967" x2="967" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1044.6" x2="1044.6" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1134.8" x2="1134.8" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1215.6" x2="1215.6" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1381.2" x2="1381.2" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1448.4" x2="1448.4" y1="17.248" y2="2654.3229"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="1649.8" x2="1649.8" y1="17.248" y2="2654.3229"/><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="42" x="193.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="36.4" x="196" y="11.2176">ZygoteInit.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="42" x="193.2" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="36.4" x="196" y="2663.1404">ZygoteInit.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52.8" x="273" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="47.2" x="275.8" y="11.2176">SystemServer.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52.8" x="273" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="47.2" x="275.8" y="2663.1404">SystemServer.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76.4" x="444.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.8" x="447.6" y="11.2176">ActivityManagerService.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76.4" x="444.8" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.8" x="447.6" y="2663.1404">ActivityManagerService.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="88.8" x="655.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="83.2" x="658.6" y="11.2176">ActivityTaskManagerInternal.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="88.8" x="655.8" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="83.2" x="658.6" y="2663.1404">ActivityTaskManagerInternal.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="88.8" x="785.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="83.2" x="788.6" y="11.2176">ActivityTaskManagerService.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="88.8" x="785.8" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="83.2" x="788.6" y="2663.1404">ActivityTaskManagerService.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="72" x="930.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="66.4" x="933" y="11.2176">RootActivityContainer.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="72" x="930.2" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="66.4" x="933" y="2663.1404">RootActivityContainer.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="72" x="1007.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="66.4" x="1010.6" y="11.2176">ActivityStartController.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="72" x="1007.8" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="66.4" x="1010.6" y="2663.1404">ActivityStartController.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52.4" x="1108" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="46.8" x="1110.8" y="11.2176">ActivityStarter.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52.4" x="1108" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="46.8" x="1110.8" y="2663.1404">ActivityStarter.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="49.2" x="1190.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="43.6" x="1193.2" y="11.2176">ActivityStack.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="49.2" x="1190.4" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="43.6" x="1193.2" y="2663.1404">ActivityStack.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76.4" x="1342.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.8" x="1345.2" y="11.2176">ActivityStackSupervisor.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76.4" x="1342.4" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.8" x="1345.2" y="2663.1404">ActivityStackSupervisor.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="46.8" x="1424.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="41.2" x="1427.2" y="11.2176">ProcessList.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="46.8" x="1424.4" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="41.2" x="1427.2" y="2663.1404">ProcessList.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="55.2" x="1621.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="49.6" x="1624.2" y="11.2176">ZygoteProcess.java</text><rect fill="#FEFECE" filter="url(#f1qvgzsbxg8aii)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="55.2" x="1621.4" y="2653.9229"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="49.6" x="1624.2" y="2663.1404">ZygoteProcess.java</text><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2629.4748" style="stroke:#A80036;stroke-width:0.4;" width="4" x="213" y="21.248"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2567.6607" style="stroke:#A80036;stroke-width:0.4;" width="4" x="215" y="83.0621"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="73.6105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="217" y="170.7814"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2390.8291" style="stroke:#A80036;stroke-width:0.4;" width="4" x="298.2" y="259.8938"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2329.3659" style="stroke:#A80036;stroke-width:0.4;" width="4" x="300.2" y="321.3569"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="2052.0044" style="stroke:#A80036;stroke-width:0.4;" width="4" x="302.2" y="598.7185"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1964.8851" style="stroke:#A80036;stroke-width:0.4;" width="4" x="481.8" y="685.8378"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="543.6213" style="stroke:#A80036;stroke-width:0.4;" width="4" x="483.8" y="2107.1016"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="487.2599" style="stroke:#A80036;stroke-width:0.4;" width="4" x="485.8" y="2163.463"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1916.2254" style="stroke:#A80036;stroke-width:0.4;" width="4" x="699" y="734.4975"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1867.5657" style="stroke:#A80036;stroke-width:0.4;" width="4" x="829" y="783.1571"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1804.7025" style="stroke:#A80036;stroke-width:0.4;" width="4" x="965" y="846.0203"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1744.7902" style="stroke:#A80036;stroke-width:0.4;" width="4" x="967" y="905.9326"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1671.2744" style="stroke:#A80036;stroke-width:0.4;" width="4" x="969" y="979.4484"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="908.7021" style="stroke:#A80036;stroke-width:0.4;" width="4" x="971" y="1742.0207"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1566.4007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1042.6" y="1084.3222"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1468.0287" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1133" y="1182.6941"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1401.0146" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1135" y="1249.7082"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1277.7865" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1137" y="1372.9363"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1151.0075" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1139" y="1499.7153"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="1038.432" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1141" y="1612.2908"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="842.2881" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1213.8" y="1808.4348"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="768.1723" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1215.8" y="1882.5506"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="98.372" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1379.4" y="2008.7296"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="332.6738" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1446.6" y="2318.049"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="183.9896" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1448.6" y="2466.7333"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="128.8281" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1647.8" y="2521.8947"/><rect fill="#FFFFFF" filter="url(#f1qvgzsbxg8aii)" height="47.6105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="1649.8" y="2603.1123"/><line style="stroke:#A80036;stroke-width:0.4;" x1="217" x2="235.8" y1="77.8621" y2="77.8621"/><line style="stroke:#A80036;stroke-width:0.4;" x1="235.8" x2="235.8" y1="77.8621" y2="83.0621"/><line style="stroke:#A80036;stroke-width:0.4;" x1="219.4" x2="235.8" y1="83.0621" y2="83.0621"/><polygon fill="#A80036" points="223.4,81.4621,219.4,83.0621,223.4,84.6621,221.8,83.0621" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="221.8" y="75.9195">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="226.2" y="75.9195">main()</text><path d="M3.2,23.248 L3.2,133.648 L209.2,133.648 L209.2,27.248 L205.2,23.248 L3.2,23.248 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M205.2,23.248 L205.2,27.248 L209.2,27.248 L205.2,23.248 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="5.6" y="31.2072">ZygoteInit.java 819</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.2" x="5.6" y="38.309">public static void main(String argv[]) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126.4" x="12" y="45.4107">//1.系统资源预加载 877 preload(bootTimingsTraceLog);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88" x="12" y="52.5125">preloadClasses();//加载系统Class文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.2" x="12" y="59.6143">preloadResources();//加载系统资源文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="97.2" x="12" y="66.716">preloadSharedLibraries();//加载系统动态库</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="191.2" x="12" y="73.8178">//2.启动system_server进程。SystemServer进程是Android Framework的核心进程。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.8" x="12" y="80.9195">if(argv[1].equals("start-system-server")){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.6" x="18.4" y="88.0213">startSystemServer();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="12" y="95.123">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="172.8" x="12" y="102.2248">//3.创建Socket服务,用来接受来自ActivityManagerService申请进程创建请求</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="12" y="109.3266">registerZygoteSocket();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.4" x="12" y="116.4283">//4.Socket创建完成后会进入阻塞状态，等待AMS申请进程创建请求。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="50.8" x="12" y="123.5301">runSelectLoopMode();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="5.6" y="130.6318">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="219" x2="237.8" y1="165.5814" y2="165.5814"/><line style="stroke:#A80036;stroke-width:0.4;" x1="237.8" x2="237.8" y1="165.5814" y2="170.7814"/><line style="stroke:#A80036;stroke-width:0.4;" x1="221.4" x2="237.8" y1="170.7814" y2="170.7814"/><polygon fill="#A80036" points="225.4,169.1814,221.4,170.7814,225.4,172.3814,223.8,170.7814" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="223.8" y="163.6389">2</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="228.2" y="163.6389">preload(bootTimingsTraceLog)</text><path d="M97.2,139.3744 L97.2,192.9744 L209.2,192.9744 L209.2,143.3744 L205.2,139.3744 L97.2,139.3744 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M205.2,139.3744 L205.2,143.3744 L209.2,143.3744 L205.2,139.3744 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32.8" x="99.6" y="147.3336">ZygoteInit.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="21.6" x="99.6" y="154.4354">preload(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="106" y="161.5371">//1.系统资源预加载</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88" x="106" y="168.6389">preloadClasses();//加载系统Class文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.2" x="106" y="175.7406">preloadResources();//加载系统资源文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="97.2" x="106" y="182.8424">preloadSharedLibraries();//加载系统动态库</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="99.6" y="189.9441">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="221" x2="237.8" y1="206.1885" y2="206.1885"/><line style="stroke:#A80036;stroke-width:0.4;" x1="237.8" x2="237.8" y1="206.1885" y2="211.3885"/><line style="stroke:#A80036;stroke-width:0.4;" x1="221.4" x2="237.8" y1="211.3885" y2="211.3885"/><polygon fill="#A80036" points="225.4,209.7885,221.4,211.3885,225.4,212.9885,223.8,211.3885" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="223.8" y="204.2459">3</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.8" x="228.2" y="204.2459">preloadClasses()</text><line style="stroke:#A80036;stroke-width:0.4;" x1="221" x2="237.8" y1="224.0902" y2="224.0902"/><line style="stroke:#A80036;stroke-width:0.4;" x1="237.8" x2="237.8" y1="224.0902" y2="229.2902"/><line style="stroke:#A80036;stroke-width:0.4;" x1="221.4" x2="237.8" y1="229.2902" y2="229.2902"/><polygon fill="#A80036" points="225.4,227.6902,221.4,229.2902,225.4,230.8902,223.8,229.2902" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="223.8" y="222.1477">4</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="228.2" y="222.1477">preloadResources()</text><line style="stroke:#A80036;stroke-width:0.4;" x1="221" x2="237.8" y1="243.992" y2="243.992"/><line style="stroke:#A80036;stroke-width:0.4;" x1="237.8" x2="237.8" y1="243.992" y2="249.192"/><line style="stroke:#A80036;stroke-width:0.4;" x1="219" x2="237.8" y1="249.192" y2="249.192"/><polygon fill="#A80036" points="223,247.592,219,249.192,223,250.792,221.4,249.192" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="223.8" y="242.0494">5</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="228.2" y="242.0494">preloadSharedLibraries()</text><polygon fill="#A80036" points="293.4,258.2938,297.4,259.8938,293.4,261.4938,295,259.8938" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="219" x2="295.8" y1="259.8938" y2="259.8938"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="221.8" y="257.9512">6</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46" x="226.2" y="257.9512">startSystemServer()</text><line style="stroke:#A80036;stroke-width:0.4;" x1="302.2" x2="321" y1="316.1569" y2="316.1569"/><line style="stroke:#A80036;stroke-width:0.4;" x1="321" x2="321" y1="316.1569" y2="321.3569"/><line style="stroke:#A80036;stroke-width:0.4;" x1="304.6" x2="321" y1="321.3569" y2="321.3569"/><polygon fill="#A80036" points="308.6,319.7569,304.6,321.3569,308.6,322.9569,307,321.3569" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="307" y="314.2144">7</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="311.4" y="314.2144">main()-&gt;new SystemServer().run()</text><path d="M159.2,265.0938 L159.2,368.2938 L294.4,368.2938 L294.4,269.0938 L290.4,265.0938 L159.2,265.0938 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M290.4,265.0938 L290.4,269.0938 L294.4,269.0938 L290.4,265.0938 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="94" x="161.6" y="273.0529">SystemServer.java main():348-&gt;run():370</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.4" x="161.6" y="280.1547">private void main() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66" x="168" y="287.2564">Looper.prepareMainLooper();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.8" x="168" y="294.3582">// 创建系统服务的管理者 497</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="120.4" x="168" y="301.46">SystemServiceManager mSystemServiceManager =</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110.8" x="168" y="308.5617">new SystemServiceManager(mSystemContext);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.4" x="168" y="315.6635">//1.启动引导服务17 510</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="168" y="322.7652">startBootstrapServices();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="168" y="329.867">//2.启动核心服务9 511</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="168" y="336.9688">startCoreServices();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="168" y="344.0705">//3.启动其他一般服务90+ 512</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.6" x="168" y="351.1723">startOtherServices();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="31.6" x="168" y="358.274">Looper.loop();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="161.6" y="365.3758">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="304.2" x2="321" y1="416.5289" y2="416.5289"/><line style="stroke:#A80036;stroke-width:0.4;" x1="321" x2="321" y1="416.5289" y2="421.7289"/><line style="stroke:#A80036;stroke-width:0.4;" x1="304.6" x2="321" y1="421.7289" y2="421.7289"/><polygon fill="#A80036" points="308.6,420.1289,304.6,421.7289,308.6,423.3289,307,421.7289" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="307" y="414.5863">8</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.6" x="311.4" y="414.5863">startBootstrapServices()</text><path d="M2,374.1184 L2,456.1184 L294.8,456.1184 L294.8,378.1184 L290.8,374.1184 L2,374.1184 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M290.8,374.1184 L290.8,378.1184 L294.8,378.1184 L290.8,374.1184 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="4.4" y="382.0775">SystemServer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="4.4" y="389.1793">//启动引导服务(17个)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="4.4" y="396.2811">startBootstrapServices(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="278" x="10.8" y="403.3828">ActivityManagerService：为四大组件提供调度服务，其中Activity调度交由ATMS(ActivityTaskManagerService)(Android10)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.6" x="10.8" y="410.4846">ActivityTaskManagerService：Activity调度服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="118.4" x="10.8" y="417.5863">PackageManager：提供安装，卸载，扫描管理服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98" x="10.8" y="424.6881">PowerManagerService：提供电源管理服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="105.6" x="10.8" y="431.7898">UriGrantsManagerService：权限申请授权服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92.4" x="10.8" y="438.8916">OtaDexoptService：Dex字节码优化服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="10.8" y="445.9934">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="4.4" y="453.0951">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="304.2" x2="321" y1="497.1465" y2="497.1465"/><line style="stroke:#A80036;stroke-width:0.4;" x1="321" x2="321" y1="497.1465" y2="502.3465"/><line style="stroke:#A80036;stroke-width:0.4;" x1="304.6" x2="321" y1="502.3465" y2="502.3465"/><polygon fill="#A80036" points="308.6,500.7465,304.6,502.3465,308.6,503.9465,307,502.3465" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="307" y="495.2039">9</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="311.4" y="495.2039">startCoreServices()</text><path d="M162.8,461.8377 L162.8,529.4377 L294.4,529.4377 L294.4,465.8377 L290.4,461.8377 L162.8,461.8377 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M290.4,461.8377 L290.4,465.8377 L294.4,465.8377 L290.4,461.8377 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="165.2" y="469.7969">SystemServer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="165.2" y="476.8986">//系统核心服务(9个)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="165.2" y="484.0004">startCoreServices(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.8" x="171.6" y="491.1021">BatteryService：提供电池状态管理服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.2" x="171.6" y="498.2039">WebViewUpdateService：WebView升级服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.6" x="171.6" y="505.3057">GPUService：GPU驱动加载服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116.8" x="171.6" y="512.4074">UsageStatsService：应用对系统资源使用记录服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="171.6" y="519.5092">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="165.2" y="526.6109">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="304.2" x2="323" y1="593.5185" y2="593.5185"/><line style="stroke:#A80036;stroke-width:0.4;" x1="323" x2="323" y1="593.5185" y2="598.7185"/><line style="stroke:#A80036;stroke-width:0.4;" x1="306.6" x2="323" y1="598.7185" y2="598.7185"/><polygon fill="#A80036" points="310.6,597.1185,306.6,598.7185,310.6,600.3185,309,598.7185" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="309" y="591.5759">10</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46" x="316.2" y="591.5759">startOtherServices()</text><path d="M180,535.3535 L180,652.9535 L294.4,652.9535 L294.4,539.3535 L290.4,535.3535 L180,535.3535 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M290.4,535.3535 L290.4,539.3535 L294.4,539.3535 L290.4,535.3535 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="182.4" y="543.3127">SystemServer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.8" x="182.4" y="550.4145">//启动其他一般服务(90+) 877</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.6" x="182.4" y="557.5162">startOtherServices(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.8" x="188.8" y="564.618">AlarmManagerService：提供时钟服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86" x="188.8" y="571.7197">NetWorkStatsService：网络状态服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.6" x="188.8" y="578.8215">WindowManagerService：窗口管理服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.2" x="188.8" y="585.9232">TelephonyRegister:电话服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.2" x="188.8" y="593.025">InputMethodManagerService：输入服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.8" x="188.8" y="600.1268">BluetoothService：蓝牙服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="188.8" y="607.2285">NotificationManagerService：通知服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="188.8" y="614.3303">AudioService：音频服务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="188.8" y="621.432">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78.8" x="188.8" y="628.5338">//启动Launcher应用入口方法 2035</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="99.6" x="188.8" y="635.6355">mActivityManagerService.systemReady(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="188.8" y="642.7373">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="182.4" y="649.8391">}</text><polygon fill="#A80036" points="477,684.2378,481,685.8378,477,687.4378,478.6,685.8378" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="306.2" x2="479.4" y1="685.8378" y2="685.8378"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="309" y="683.8952">11</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.8" x="316.2" y="683.8952">mActivityManagerService.systemReady()//启动Launcher应用入口方法</text><path d="M487.6,658.5816 L487.6,704.9816 L666.4,704.9816 L666.4,662.5816 L662.4,658.5816 L487.6,658.5816 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M662.4,658.5816 L662.4,662.5816 L666.4,662.5816 L662.4,658.5816 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64" x="490" y="666.5408">ActivityManagerService.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78.8" x="490" y="673.6426">//启动Launcher应用入口方法 8960</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="490" y="680.7443">systemReady() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.2" x="496.4" y="687.8461">//启动桌面应用 9076</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164" x="496.4" y="694.9479">mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="490" y="702.0496">}</text><polygon fill="#A80036" points="694.2,732.8975,698.2,734.4975,694.2,736.0975,695.8,734.4975" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="485.8" x2="696.6" y1="734.4975" y2="734.4975"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="488.6" y="732.5549">12</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="198.4" x="495.8" y="732.5549">mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");//启动桌面应用</text><path d="M704.8,710.7922 L704.8,749.9922 L829.2,749.9922 L829.2,714.7922 L825.2,710.7922 L704.8,710.7922 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M825.2,710.7922 L825.2,714.7922 L829.2,714.7922 L825.2,710.7922 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="76.8" x="707.2" y="718.7514">ActivityTaskManagerInternal.java:</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.4" x="707.2" y="725.8531">//在所有屏幕启动桌面应用</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116" x="707.2" y="732.9549">abstract startHomeOnAllDisplays();//抽象方法 442</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.8" x="707.2" y="740.0566">ActivityTaskManagerService$LocalService.java:</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.2" x="707.2" y="747.1584">startHomeOnAllDisplays();//实现类 6692</text><polygon fill="#A80036" points="824.2,781.5571,828.2,783.1571,824.2,784.7571,825.8,783.1571" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="703" x2="826.6" y1="783.1571" y2="783.1571"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="705.8" y="781.2146">13</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="111.2" x="713" y="781.2146">LocalService:startHomeOnAllDisplays();//实现类</text><path d="M834.8,755.901 L834.8,802.301 L994.4,802.301 L994.4,759.901 L990.4,755.901 L834.8,755.901 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M990.4,755.901 L990.4,759.901 L994.4,759.901 L990.4,755.901 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.2" x="837.2" y="763.8602">ActivityTaskManagerService$LocalService.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62.8" x="837.2" y="770.9619">//在所有屏幕启动应用 6692</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="61.6" x="837.2" y="778.0637">startHomeOnAllDisplays(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144.8" x="843.6" y="785.1654">//委托给mRootActivityContainer.startHomeOnAllDisplays()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.2" x="843.6" y="792.2672">mRootActivityContainer.startHomeOnAllDisplays();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="837.2" y="799.3689">}</text><polygon fill="#A80036" points="960.2,844.4203,964.2,846.0203,960.2,847.6203,961.8,846.0203" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="833" x2="962.6" y1="846.0203" y2="846.0203"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="835.8" y="844.0777">14</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.2" x="843" y="844.0777">mRootActivityContainer.startHomeOnAllDisplays();</text><path d="M970.8,808.1115 L970.8,875.7115 L1138.4,875.7115 L1138.4,812.1115 L1134.4,808.1115 L970.8,808.1115 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1134.4,808.1115 L1134.4,812.1115 L1138.4,812.1115 L1134.4,808.1115 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="973.2" y="816.0707">RootActivityContainer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="973.2" y="823.1725">//在所有屏幕启动应用 332</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="61.6" x="973.2" y="830.2742">startHomeOnAllDisplays(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106" x="979.6" y="837.376">//遍历所有屏幕取出屏幕id，依次启动桌面应用</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116" x="979.6" y="844.4777">for (int i = mActivityDisplays.size() - 1; i &gt;= 0; i--) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="128" x="986" y="851.5795">final int displayId = mActivityDisplays.get(i).mDisplayId;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146.4" x="986" y="858.6813">homeStarted |= startHomeOnDisplay(userId, reason, displayId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="979.6" y="865.783">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="973.2" y="872.8848">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="969" x2="987.8" y1="900.7326" y2="900.7326"/><line style="stroke:#A80036;stroke-width:0.4;" x1="987.8" x2="987.8" y1="900.7326" y2="905.9326"/><line style="stroke:#A80036;stroke-width:0.4;" x1="971.4" x2="987.8" y1="905.9326" y2="905.9326"/><polygon fill="#A80036" points="975.4,904.3326,971.4,905.9326,975.4,907.5326,973.8,905.9326" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="973.8" y="898.79">15</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.8" x="981" y="898.79">startHomeOnDisplay();</text><path d="M874,881.6273 L874,920.8273 L961.2,920.8273 L961.2,885.6273 L957.2,881.6273 L874,881.6273 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M957.2,881.6273 L957.2,885.6273 L961.2,885.6273 L957.2,881.6273 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="876.4" y="889.5865">RootActivityContainer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.2" x="876.4" y="896.6883">//什么也没做 350</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="876.4" y="903.79">startHomeOnDisplay(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.4" x="882.8" y="910.8918">return startHomeOnDisplay(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="876.4" y="917.9936">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="971" x2="989.8" y1="974.2484" y2="974.2484"/><line style="stroke:#A80036;stroke-width:0.4;" x1="989.8" x2="989.8" y1="974.2484" y2="979.4484"/><line style="stroke:#A80036;stroke-width:0.4;" x1="973.4" x2="989.8" y1="979.4484" y2="979.4484"/><polygon fill="#A80036" points="977.4,977.8484,973.4,979.4484,977.4,981.0484,975.8,979.4484" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="975.8" y="972.3059">16</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.8" x="983" y="972.3059">startHomeOnDisplay();</text><path d="M726.4,926.7361 L726.4,1022.7361 L961.2,1022.7361 L961.2,930.7361 L957.2,926.7361 L726.4,926.7361 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M957.2,926.7361 L957.2,930.7361 L961.2,930.7361 L957.2,926.7361 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="728.8" y="934.6953">RootActivityContainer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="13.2" x="728.8" y="941.7971">// 366</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.8" x="728.8" y="948.8988">startHomeOnDisplay(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="13.2" x="735.2" y="956.0006">// 375</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="735.2" y="963.1023">if (displayId == DEFAULT_DISPLAY) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="173.6" x="741.6" y="970.2041">// intent.addCategory(Intent.CATEGORY_HOME);=&gt;作为Launcher应用标识</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.2" x="741.6" y="977.3059">Intent homeIntent = mService.getHomeIntent();//创建Launcher应用意图</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="201.6" x="741.6" y="984.4076">ActivityInfo aInfo = resolveHomeActivity(userId, homeIntent);//获取Activity中Minifest配置</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="735.2" y="991.5094">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="730.4" y="998.6111"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="735.2" y="1005.7129">//402</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="220" x="735.2" y="1012.8146">mService.getActivityStartController().startHomeActivity(homeIntent, aInfo, myReason,displayId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="728.8" y="1019.9164">}</text><polygon fill="#A80036" points="1037.8,1082.7222,1041.8,1084.3222,1037.8,1085.9222,1039.4,1084.3222" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="973" x2="1040.2" y1="1084.3222" y2="1084.3222"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="975.8" y="1082.3796">17</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="983" y="1082.3796">startHomeActivity();</text><path d="M750.4,1028.659 L750.4,1131.859 L961.2,1131.859 L961.2,1032.659 L957.2,1028.659 L750.4,1028.659 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M957.2,1028.659 L957.2,1032.659 L961.2,1032.659 L957.2,1028.659 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.4" x="752.8" y="1036.6182">ActivityStartController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.4" x="752.8" y="1043.7199">ActivityStartController这个类的作用是配置Activity启动前的一些信息，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="94.8" x="752.8" y="1050.8217">并且把信息传递给ActivityStarter去做启动</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="752.8" y="1057.9234">//171</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="752.8" y="1065.0252">startHomeActivity(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="759.2" y="1072.127">//181</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182.4" x="759.2" y="1079.2287">//把Activity信息传递给ActivityStarter去做启动,触发ActivityStarter.execute()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="196" x="759.2" y="1086.3305">mLastHomeActivityStartResult = obtainStarter(intent, "startHomeActivity: " + reason)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="778.4" y="1093.4322">.setOutActivity(tmpOutRecord)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38" x="778.4" y="1100.534">.setCallingUid(0)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.6" x="778.4" y="1107.6357">.setActivityInfo(aInfo)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.8" x="778.4" y="1114.7375">.setActivityOptions(options.toBundle())</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24.8" x="778.4" y="1121.8393">.execute();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="752.8" y="1128.941">}</text><polygon fill="#A80036" points="1128.2,1181.0941,1132.2,1182.6941,1128.2,1184.2941,1129.8,1182.6941" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1046.6" x2="1130.6" y1="1182.6941" y2="1182.6941"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1049.4" y="1180.7516">18</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.6" x="1056.6" y="1180.7516">obtainStarter(...)...execute();</text><path d="M1138.8,1137.6836 L1138.8,1219.6836 L1299.6,1219.6836 L1299.6,1141.6836 L1295.6,1137.6836 L1138.8,1137.6836 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1295.6,1137.6836 L1295.6,1141.6836 L1299.6,1141.6836 L1295.6,1137.6836 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="1141.2" y="1145.6428">ActivityStarter.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="1141.2" y="1152.7445">//509</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32" x="1141.2" y="1159.8463">int execute() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146" x="1147.6" y="1166.948">//在ActivityStartController中没有对mRequest.mayWait做配置，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.4" x="1147.6" y="1174.0498">//所以mRequest.mayWait=null。走else分支。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.4" x="1147.6" y="1181.1516">if (mRequest.mayWait) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.4" x="1154" y="1188.2533">return startActivityMayWait(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="1147.6" y="1195.3551">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="1154" y="1202.4568">return startActivity(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1147.6" y="1209.5586">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1141.2" y="1216.6604">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1137" x2="1155.8" y1="1244.5082" y2="1244.5082"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1155.8" x2="1155.8" y1="1244.5082" y2="1249.7082"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1139.4" x2="1155.8" y1="1249.7082" y2="1249.7082"/><polygon fill="#A80036" points="1143.4,1248.1082,1139.4,1249.7082,1143.4,1251.3082,1141.8,1249.7082" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1141.8" y="1242.5656">19</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1149" y="1242.5656">startActivity(...);</text><path d="M1006.4,1225.4029 L1006.4,1264.6029 L1129.2,1264.6029 L1129.2,1229.4029 L1125.2,1225.4029 L1006.4,1225.4029 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1125.2,1225.4029 L1125.2,1229.4029 L1129.2,1229.4029 L1125.2,1225.4029 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="1008.8" y="1233.3621">ActivityStarter.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114.4" x="1008.8" y="1240.4639">这个方法什么也没做,继续调用startActivity(...) 566</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1008.8" y="1247.5656">startActivity(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98.8" x="1015.2" y="1254.6674">mLastStartActivityResult = startActivity(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1008.8" y="1261.7691">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1139" x2="1157.8" y1="1367.7363" y2="1367.7363"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1157.8" x2="1157.8" y1="1367.7363" y2="1372.9363"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1141.4" x2="1157.8" y1="1372.9363" y2="1372.9363"/><polygon fill="#A80036" points="1145.4,1371.3363,1141.4,1372.9363,1145.4,1374.5363,1143.8,1372.9363" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1143.8" y="1365.7938">20</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1151" y="1365.7938">startActivity(...);</text><path d="M910,1270.5117 L910,1466.1117 L1129.2,1466.1117 L1129.2,1274.5117 L1125.2,1270.5117 L910,1270.5117 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1125.2,1270.5117 L1125.2,1274.5117 L1129.2,1274.5117 L1125.2,1270.5117 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="912.4" y="1278.4709">ActivityStarter.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164.4" x="912.4" y="1285.5727">//检查Activity是否在清单文件注册，Activity对应的java类是否存在... 611</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="912.4" y="1292.6744">startActivity(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="918.8" y="1299.7762">// 本次启动Activity返回值 621</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104" x="918.8" y="1306.8779">int err = ActivityManager.START_SUCCESS;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="171.2" x="918.8" y="1313.9797">//IApplicationThread caller 此时Launcher未创建成功 caller=null 进不去 627</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="918.8" y="1321.0814">if (caller != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="925.2" y="1328.1832">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126" x="925.2" y="1335.285">err = ActivityManager.START_PERMISSION_DENIED;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="918.8" y="1342.3867">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="156.4" x="918.8" y="1349.4885">//intent.getComponent()=null:Activity没有在清单文件注册的时候 695</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="188" x="918.8" y="1356.5902">if (err == ActivityManager.START_SUCCESS &amp;&amp; intent.getComponent() == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="133.6" x="925.2" y="1363.692">err = ActivityManager.START_INTENT_NOT_RESOLVED;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="918.8" y="1370.7938">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="914" y="1377.8955"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="204.4" x="918.8" y="1384.9973">//aInfo=null:Activity注册在清单文件，但对应的清单文件不存在，启动之前的安全校验 701</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="147.6" x="918.8" y="1392.099">if (err == ActivityManager.START_SUCCESS &amp;&amp; aInfo == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.8" x="925.2" y="1399.2008">err = ActivityManager.START_CLASS_NOT_FOUND;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="918.8" y="1406.3025">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202.8" x="918.8" y="1413.4043">//禁止后台启动Activity校验(Android9.0开始),shouldAbortBackgroundActivityStart(...) 773</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="918.8" y="1420.5061">//权限校验,&lt;activity android:permission="..."&gt;&lt;/activity&gt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="140.4" x="918.8" y="1427.6078">//是否可见校验,&lt;activity android:exported="false"&gt;&lt;/activity&gt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8" x="918.8" y="1434.7096">//...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="914" y="1441.8113"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="918.8" y="1448.9131">//方法出口 933</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.8" x="918.8" y="1456.0148">final int res = startActivity(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="912.4" y="1463.1166">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1141" x2="1159.8" y1="1494.5153" y2="1494.5153"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1159.8" x2="1159.8" y1="1494.5153" y2="1499.7153"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1143.4" x2="1159.8" y1="1499.7153" y2="1499.7153"/><polygon fill="#A80036" points="1147.4,1498.1153,1143.4,1499.7153,1147.4,1501.3153,1145.8,1499.7153" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1145.8" y="1492.5728">21</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1153" y="1492.5728">startActivity(...);</text><path d="M1032.4,1471.8592 L1032.4,1518.2592 L1129.2,1518.2592 L1129.2,1475.8592 L1125.2,1471.8592 L1032.4,1471.8592 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1125.2,1471.8592 L1125.2,1475.8592 L1129.2,1475.8592 L1125.2,1471.8592 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="1034.8" y="1479.8184">ActivityStarter.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62.8" x="1034.8" y="1486.9201">//这个方法什么也没做 1386</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1034.8" y="1494.0219">startActivity(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="1041.2" y="1501.1236">// 1394</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82" x="1041.2" y="1508.2254">result = startActivityUnchecked(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1034.8" y="1515.3271">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1143" x2="1161.8" y1="1607.0908" y2="1607.0908"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1161.8" x2="1161.8" y1="1607.0908" y2="1612.2908"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1145.4" x2="1161.8" y1="1612.2908" y2="1612.2908"/><polygon fill="#A80036" points="1149.4,1610.6908,1145.4,1612.2908,1149.4,1613.8908,1147.8,1612.2908" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1147.8" y="1605.1482">22</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="1155" y="1605.1482">startActivityUnchecked();</text><path d="M877.6,1524.0697 L877.6,1691.2697 L1129.2,1691.2697 L1129.2,1528.0697 L1125.2,1524.0697 L877.6,1524.0697 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1125.2,1524.0697 L1125.2,1528.0697 L1129.2,1528.0697 L1125.2,1524.0697 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="880" y="1532.0289">ActivityStarter.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.6" x="880" y="1539.1307">//计算Activity启动方式和入栈方式，1464</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="136" x="880" y="1546.2324">//要不要启动新的任务栈,要不要复用栈中已存在的Activity，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="880" y="1553.3342">//是否需要回调onNewIntent()...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="880" y="1560.4359">startActivityUnchecked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="881.6" y="1567.5377"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122" x="886.4" y="1574.6395">//根据launch mode 和 intent.flag计算Activity入栈方式</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.4" x="886.4" y="1581.7412">computeLaunchingTaskFlags();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72" x="886.4" y="1588.843">//计算从哪个任务栈启动Activity</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.8" x="886.4" y="1595.9447">computeSourceStack();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.4" x="886.4" y="1603.0465">//从当前任务栈中取出可复用的任务栈</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="136.8" x="886.4" y="1610.1482">ActivityRecord reusedActivity = getReusableIntentActivity();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="886.4" y="1617.25">//1497</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.4" x="886.4" y="1624.3518">if (reusedActivity != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="185.2" x="892.8" y="1631.4535">//如果当前任务栈中存在可以复用的ActivityRecord，就执行Activity.onNewIntent()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.8" x="892.8" y="1638.5553">// onNewIntent 入栈还未创建，不会显示 1565</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="49.2" x="892.8" y="1645.657">deliverNewIntent(top);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="886.4" y="1652.7588">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="881.6" y="1659.8605"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="886.4" y="1666.9623">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.8" x="886.4" y="1674.0641">//方法出口，启动栈顶Activity [1728]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="236.8" x="886.4" y="1681.1658">mRootActivityContainer.resumeFocusedStacksTopActivities(mTargetStack, mStartActivity, mOptions);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="880" y="1688.2676">}</text><polygon fill="#A80036" points="979.4,1740.4207,975.4,1742.0207,979.4,1743.6207,977.8,1742.0207" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="977" x2="1140.6" y1="1742.0207" y2="1742.0207"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="981.8" y="1740.0781">23</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.2" x="989" y="1740.0781">mRootActivityContainer.resumeFocusedStacksTopActivities();</text><path d="M762.8,1697.0102 L762.8,1779.0102 L961.2,1779.0102 L961.2,1701.0102 L957.2,1697.0102 L762.8,1697.0102 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M957.2,1697.0102 L957.2,1701.0102 L961.2,1701.0102 L957.2,1697.0102 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="765.2" y="1704.9693">RootActivityContainer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.6" x="765.2" y="1712.0711">//启动栈顶Activity 1148</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="765.2" y="1719.1729">resumeFocusedStacksTopActivities(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="148" x="771.6" y="1726.2746">//Activity还未创建成功，不会显示resumedOnDisplay=false 1185</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.6" x="771.6" y="1733.3764">if (!resumedOnDisplay) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144.4" x="778" y="1740.4781">final ActivityStack focusedStack = display.getFocusedStack();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.6" x="778" y="1747.5799">if (focusedStack != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170.8" x="784.4" y="1754.6816">focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="778" y="1761.7834">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="771.6" y="1768.8852">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="765.2" y="1775.9869">}</text><polygon fill="#A80036" points="1209,1806.8348,1213,1808.4348,1209,1810.0348,1210.6,1808.4348" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="975" x2="1211.4" y1="1808.4348" y2="1808.4348"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="977.8" y="1806.4922">24</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170.8" x="985" y="1806.4922">focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);</text><path d="M1219.6,1784.7295 L1219.6,1823.9295 L1358,1823.9295 L1358,1788.7295 L1354,1784.7295 L1219.6,1784.7295 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1354,1784.7295 L1354,1788.7295 L1358,1788.7295 L1354,1784.7295 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="1222" y="1792.6887">ActivityStack.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62.8" x="1222" y="1799.7904">//这个方法什么也没做 2565</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90" x="1222" y="1806.8922">resumeTopActivityUncheckedLocked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.6" x="1228.4" y="1813.9939">result = resumeTopActivityInnerLocked(prev, options);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1222" y="1821.0957">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1217.8" x2="1236.6" y1="1877.3506" y2="1877.3506"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1236.6" x2="1236.6" y1="1877.3506" y2="1882.5506"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1220.2" x2="1236.6" y1="1882.5506" y2="1882.5506"/><polygon fill="#A80036" points="1224.2,1880.9506,1220.2,1882.5506,1224.2,1884.1506,1222.6,1882.5506" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1222.6" y="1875.408">25</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="1229.8" y="1875.408">resumeTopActivityInnerLocked();</text><path d="M1011.2,1829.8383 L1011.2,1925.8383 L1210,1925.8383 L1210,1833.8383 L1206,1829.8383 L1011.2,1829.8383 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1206,1829.8383 L1206,1833.8383 L1210,1833.8383 L1206,1829.8383 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="1013.6" y="1837.7975">ActivityStack.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="190.4" x="1013.6" y="1844.8992">//在启动新的Activity之前，把当前处于可见Activity给暂停掉Activity.onPause() 2614</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="1013.6" y="1852.001">resumeTopActivityInnerLocked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70" x="1020" y="1859.1027">//得到栈顶ActivityRecord 2623</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="169.2" x="1020" y="1866.2045">ActivityRecord next = topRunningActivityLocked(true /* focusableOnly */);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="165.2" x="1020" y="1873.3063">//待启动的Activity进程是否存在，Launcher应用进程未创建-&gt;else [2873]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70" x="1020" y="1880.408">if (next.attachedToProcess()) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="1026.4" y="1887.5098">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="12.8" x="1020" y="1894.6115">}else{</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="1026.4" y="1901.7133">//3037</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144.8" x="1026.4" y="1908.815">mStackSupervisor.startSpecificActivityLocked(next, true, true);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1020" y="1915.9168">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1013.6" y="1923.0186">}</text><polygon fill="#A80036" points="1374.6,2007.1296,1378.6,2008.7296,1374.6,2010.3296,1376.2,2008.7296" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1219.8" x2="1377" y1="2008.7296" y2="2008.7296"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1222.6" y="2006.787">26</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144.8" x="1229.8" y="2006.787">mStackSupervisor.startSpecificActivityLocked(next, true, true);</text><path d="M1385.2,1931.7611 L1385.2,2077.7611 L1654.4,2077.7611 L1654.4,1935.7611 L1650.4,1931.7611 L1385.2,1931.7611 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1650.4,1931.7611 L1650.4,1935.7611 L1654.4,1935.7611 L1650.4,1931.7611 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.8" x="1387.6" y="1939.7203">ActivityStackSupervisor.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="1387.6" y="1946.8221">//956</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.2" x="1387.6" y="1953.9238">startSpecificActivityLocked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.4" x="1394" y="1961.0256">//再次校验Activity应用进程是否创建，双重校验</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.2" x="1394" y="1968.1273">//进程控制器</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106" x="1394" y="1975.2291">// Is this activity's application already running?</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="254.4" x="1394" y="1982.3309">final WindowProcessController wpc =mService.getProcessController(r.processName, r.info.applicationInfo.uid);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="76.4" x="1394" y="1989.4326">//Launcher应用未启动分支进不去</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.6" x="1394" y="1996.5344">if (wpc != null &amp;&amp; wpc.hasThread()) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="61.6" x="1400.4" y="2003.6361">//真正启动Activity流程分支</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.4" x="1400.4" y="2010.7379">realStartActivityLocked(r, wpc, andResume, checkConfig);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1394" y="2017.8396">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="1389.2" y="2024.9414"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126.8" x="1394" y="2032.0432">//::解决java8不能把方法作为另一个方法的入参问题 990</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="214.4" x="1394" y="2039.1449">//ActivityManagerInternal::startProcess-&gt;ActivityManagerService$LocalService.startProcess()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.8" x="1394" y="2046.2467">final Message msg = PooledLambda.obtainMessage(</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.6" x="1406.8" y="2053.3484">ActivityManagerInternal::startProcess, mService.mAmInternal, r.processName,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="171.6" x="1406.8" y="2060.4502">r.info.applicationInfo, knownToBeDead, "activity", r.intent.getComponent());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="79.6" x="1394" y="2067.552">mService.mH.sendMessage(msg);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1387.6" y="2074.6537">}</text><polygon fill="#A80036" points="492.2,2105.5016,488.2,2107.1016,492.2,2108.7016,490.6,2107.1016" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="489.8" x2="1381" y1="2107.1016" y2="2107.1016"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="494.6" y="2105.159">27</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.2" x="501.8" y="2105.159">LocalService:ActivityManagerInternal::startProcess</text><path d="M373.6,2083.3963 L373.6,2122.5963 L478,2122.5963 L478,2087.3963 L474,2083.3963 L373.6,2083.3963 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M474,2083.3963 L474,2087.3963 L478,2087.3963 L474,2083.3963 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="96" x="376" y="2091.3555">ActivityManagerService$LocalService.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.8" x="376" y="2098.4572">//这个方法什么也没做 [18400]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="376" y="2105.559">startProcess(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.4" x="382.4" y="2112.6607">startProcessLocked(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="376" y="2119.7625">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="487.8" x2="506.6" y1="2158.263" y2="2158.263"/><line style="stroke:#A80036;stroke-width:0.4;" x1="506.6" x2="506.6" y1="2158.263" y2="2163.463"/><line style="stroke:#A80036;stroke-width:0.4;" x1="490.2" x2="506.6" y1="2163.463" y2="2163.463"/><polygon fill="#A80036" points="494.2,2161.863,490.2,2163.463,494.2,2165.063,492.6,2163.463" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="492.6" y="2156.3204">28</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="49.6" x="499.8" y="2156.3204">startProcessLocked()</text><path d="M310.4,2128.5051 L310.4,2189.3051 L478,2189.3051 L478,2132.5051 L474,2128.5051 L310.4,2128.5051 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M474,2128.5051 L474,2132.5051 L478,2132.5051 L474,2128.5051 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64" x="312.8" y="2136.4643">ActivityManagerService.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="59.6" x="312.8" y="2143.566">这个方法什么也没做 3022</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="312.8" y="2150.6678">startProcessLocked(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.8" x="319.2" y="2157.7695">// 把进程创建工作委派给processList，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152.8" x="319.2" y="2164.8713">// 老版本中进程创建是在AMS中，由于AMS过于臃肿，将其改造。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74" x="319.2" y="2171.973">// ProcessList专门负责进程创建</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.4" x="319.2" y="2179.0748">return mProcessList.startProcessLocked(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="312.8" y="2186.1766">}</text><polygon fill="#A80036" points="1441.8,2316.449,1445.8,2318.049,1441.8,2319.649,1443.4,2318.049" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="489.8" x2="1444.2" y1="2318.049" y2="2318.049"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="492.6" y="2316.1064">29</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.2" x="499.8" y="2316.1064">mProcessList.startProcessLocked()</text><path d="M1452.4,2194.9191 L1452.4,2432.9191 L1778,2432.9191 L1778,2198.9191 L1774,2194.9191 L1452.4,2194.9191 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1774,2194.9191 L1774,2198.9191 L1778,2198.9191 L1774,2194.9191 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38" x="1454.8" y="2202.8783">ProcessList.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="1454.8" y="2209.9801">//有一个非常重要参数entryPoint [1619]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.2" x="1454.8" y="2217.0818">//创建进程时强制指定entryPoint="android.app.ActivityThread",</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="214" x="1454.8" y="2224.1836">//进程创建完成以后新进程入口，所有Android应用的入口是ActivityThread，并不是Application</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.4" x="1454.8" y="2231.2854">final String entryPoint = "android.app.ActivityThread";</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="1456.4" y="2238.3871"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="138.8" x="1454.8" y="2245.4889">//进程创建之前配置必要参数，如：API类型，版本号。 1849</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.2" x="1454.8" y="2252.5906">startProcessLocked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.4" x="1461.2" y="2259.6924">//1953-&gt;1842</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.2" x="1461.2" y="2266.7941">final boolean success = startProcessLocked(app, hostingRecord, abiOverride);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1454.8" y="2273.8959">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="1454.8" y="2280.9977">//1842</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.2" x="1454.8" y="2288.0994">startProcessLocked(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.4" x="1461.2" y="2295.2012">//1844-&gt;1428</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="1461.2" y="2302.3029">return startProcessLocked(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1454.8" y="2309.4047">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="1454.8" y="2316.5064">//1428</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="1454.8" y="2323.6082">startProcessLocked(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.4" x="1461.2" y="2330.71">//1621-&gt;1640</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="1461.2" y="2337.8117">return startProcessLocked(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1454.8" y="2344.9135">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="1454.8" y="2352.0152">//1640</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="1454.8" y="2359.117">startProcessLocked(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.4" x="1461.2" y="2366.2188">//1689-&gt;1798</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="1461.2" y="2373.3205">final Process.ProcessStartResult startResult = startProcess(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1454.8" y="2380.4223">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="1456.4" y="2387.524"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164" x="1454.8" y="2394.6258">//创建进程完毕以后进入ZygoteProcess，此时还处于SystemServer进程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="190.4" x="1454.8" y="2401.7275">//ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="317.2" x="1454.8" y="2408.8293">//openZygoteSocketIfNeeded(abi)创建本地Socket对象并且连接Zygote进程Socket服务。然后通过字符输入流把创建进程必备参数发送过去</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="250.4" x="1454.8" y="2415.9311">//进程创建完毕后根据新进程传递的入口类由ZygoteInit反射执行。下面进入安卓应用进程入口类ActivityThread</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="1454.8" y="2423.0328">ZygoteProcess.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="216" x="1454.8" y="2430.1346">zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1450.6" x2="1469.4" y1="2461.5333" y2="2461.5333"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1469.4" x2="1469.4" y1="2461.5333" y2="2466.7333"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1453" x2="1469.4" y1="2466.7333" y2="2466.7333"/><polygon fill="#A80036" points="1457,2465.1333,1453,2466.7333,1457,2468.3333,1455.4,2466.7333" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1455.4" y="2459.5907">30</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="1462.6" y="2459.5907">final Process.ProcessStartResult startResult = startProcess(...);</text><path d="M1321.2,2438.8771 L1321.2,2485.2771 L1442.8,2485.2771 L1442.8,2442.8771 L1438.8,2438.8771 L1321.2,2438.8771 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1438.8,2438.8771 L1438.8,2442.8771 L1442.8,2442.8771 L1438.8,2438.8771 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38" x="1323.6" y="2446.8363">ProcessList.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="1323.6" y="2453.9381">//1798</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="1323.6" y="2461.0398">startProcess(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="17.6" x="1330" y="2468.1416">//[1816]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.8" x="1330" y="2475.2434">startResult = appZygote.getProcess().start(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1323.6" y="2482.3451">}</text><polygon fill="#A80036" points="1643,2520.2947,1647,2521.8947,1643,2523.4947,1644.6,2521.8947" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1452.6" x2="1645.4" y1="2521.8947" y2="2521.8947"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1455.4" y="2519.9521">31</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="1462.6" y="2519.9521">final Process.ProcessStartResult startResult = appZygote.getProcess().start()</text><path d="M1653.6,2491.0877 L1653.6,2544.6877 L1849.2,2544.6877 L1849.2,2495.0877 L1845.2,2491.0877 L1653.6,2491.0877 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1845.2,2491.0877 L1845.2,2495.0877 L1849.2,2495.0877 L1845.2,2491.0877 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="1656" y="2499.0469">ZygoteProcess.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="1656" y="2506.1486">ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="1656" y="2513.2504">//314</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="20" x="1656" y="2520.3521">start(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24.8" x="1662.4" y="2527.4539">//333-&gt;541</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="1662.4" y="2534.5557">return startViaZygote(...);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1656" y="2541.6574">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="1651.8" x2="1670.6" y1="2597.9123" y2="2597.9123"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1670.6" x2="1670.6" y1="2597.9123" y2="2603.1123"/><line style="stroke:#A80036;stroke-width:0.4;" x1="1654.2" x2="1670.6" y1="2603.1123" y2="2603.1123"/><polygon fill="#A80036" points="1658.2,2601.5123,1654.2,2603.1123,1658.2,2604.7123,1656.6,2603.1123" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1656.6" y="2595.9697">32</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="1663.8" y="2595.9697">startViaZygote()</text><path d="M1392,2550.4 L1392,2646.4 L1644,2646.4 L1644,2554.4 L1640,2550.4 L1392,2550.4 " fill="#FBFB77" filter="url(#f1qvgzsbxg8aii)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1640,2550.4 L1640,2554.4 L1644,2554.4 L1640,2550.4 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="1394.4" y="2558.3592">ZygoteProcess.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="1394.4" y="2565.4609">//541</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="1394.4" y="2572.5627">startViaZygote(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.8" x="1400.8" y="2579.6645">synchronized(mLock) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78" x="1407.2" y="2586.7662">// openZygoteSocketIfNeeded(abi)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="119.2" x="1407.2" y="2593.868">//创建本地Socket对象连接Zygote进程Socket服务，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="119.2" x="1407.2" y="2600.9697">//然后通过字符输入流把创建进程必备参数发送过去,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.8" x="1407.2" y="2608.0715">//进程创建后会根据新进程的入口类由ZygoteInit反射执行，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="198" x="1407.2" y="2615.1732">//下面就到了Android应用入口类ActvityThread。至此Launcher进程启动流程分析完毕。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="1407.2" y="2622.275">//635</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="230.8" x="1407.2" y="2629.3768">return zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1400.8" y="2636.4785">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="1394.4" y="2643.5803">}</text><!--MD5=[cc081277cd91d44b84b7ee1e4d25f890]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: main()
+note left
+ZygoteInit.java 819
+public static void main(String argv[]) {
+    //1.系统资源预加载 877 preload(bootTimingsTraceLog);
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+    //2.启动system_server进程。SystemServer进程是Android Framework的核心进程。
+    if(argv[1].equals("start-system-server")){
+        startSystemServer();
+    }
+    //3.创建Socket服务,用来接受来自ActivityManagerService申请进程创建请求
+    registerZygoteSocket();
+    //4.Socket创建完成后会进入阻塞状态，等待AMS申请进程创建请求。
+    runSelectLoopMode();
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preload(bootTimingsTraceLog)
+note left
+ZygoteInit.java
+preload(){
+    //1.系统资源预加载
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preloadClasses()
+ZygoteInit.java -> ZygoteInit.java: preloadResources()
+ZygoteInit.java -> ZygoteInit.java: preloadSharedLibraries()
+deactivate ZygoteInit.java
+
+ZygoteInit.java -> SystemServer.java: startSystemServer()
+activate SystemServer.java
+
+SystemServer.java -> SystemServer.java:  main()->new SystemServer().run()
+activate SystemServer.java
+note left
+SystemServer.java main():348->run():370
+private void main() {
+    Looper.prepareMainLooper();
+    // 创建系统服务的管理者 497
+    SystemServiceManager mSystemServiceManager =
+    new SystemServiceManager(mSystemContext);
+    //1.启动引导服务17 510
+    startBootstrapServices();
+    //2.启动核心服务9 511
+    startCoreServices();
+    //3.启动其他一般服务90+ 512
+    startOtherServices();
+    Looper.loop();
+}
+end note
+
+
+SystemServer.java -> SystemServer.java:  startBootstrapServices()
+note left
+SystemServer.java
+//启动引导服务(17个)
+startBootstrapServices(){
+    ActivityManagerService：为四大组件提供调度服务，其中Activity调度交由ATMS(ActivityTaskManagerService)(Android10)
+    ActivityTaskManagerService：Activity调度服务
+    PackageManager：提供安装，卸载，扫描管理服务
+    PowerManagerService：提供电源管理服务
+    UriGrantsManagerService：权限申请授权服务
+    OtaDexoptService：Dex字节码优化服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startCoreServices()
+note left
+SystemServer.java
+//系统核心服务(9个)
+startCoreServices(){
+    BatteryService：提供电池状态管理服务
+    WebViewUpdateService：WebView升级服务
+    GPUService：GPU驱动加载服务
+    UsageStatsService：应用对系统资源使用记录服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startOtherServices()
+activate SystemServer.java
+note left
+SystemServer.java
+//启动其他一般服务(90+) 877
+startOtherServices(){
+    AlarmManagerService：提供时钟服务
+    NetWorkStatsService：网络状态服务
+    WindowManagerService：窗口管理服务
+    TelephonyRegister:电话服务
+    InputMethodManagerService：输入服务
+    BluetoothService：蓝牙服务
+    NotificationManagerService：通知服务
+    AudioService：音频服务
+    ...
+    //启动Launcher应用入口方法 2035
+    mActivityManagerService.systemReady(...)
+    ...
+}
+end note
+
+SystemServer.java -> ActivityManagerService.java:  mActivityManagerService.systemReady()//启动Launcher应用入口方法
+activate ActivityManagerService.java
+note right
+ActivityManagerService.java
+//启动Launcher应用入口方法 8960
+systemReady() {
+    //启动桌面应用 9076
+    mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");
+}
+end note
+
+ActivityManagerService.java -> ActivityTaskManagerInternal.java:  mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");//启动桌面应用
+activate ActivityTaskManagerInternal.java
+note right
+ ActivityTaskManagerInternal.java:
+ //在所有屏幕启动桌面应用
+ abstract startHomeOnAllDisplays();//抽象方法 442
+ ActivityTaskManagerService$LocalService.java:
+ startHomeOnAllDisplays();//实现类 6692
+end note
+
+ActivityTaskManagerInternal.java -> ActivityTaskManagerService.java:  LocalService:startHomeOnAllDisplays();//实现类
+activate ActivityTaskManagerService.java
+note right
+ActivityTaskManagerService$LocalService.java
+//在所有屏幕启动应用 6692
+startHomeOnAllDisplays(){
+    //委托给mRootActivityContainer.startHomeOnAllDisplays()方法
+    mRootActivityContainer.startHomeOnAllDisplays();
+}
+end note
+
+ActivityTaskManagerService.java -> RootActivityContainer.java:  mRootActivityContainer.startHomeOnAllDisplays();
+activate RootActivityContainer.java
+note right
+RootActivityContainer.java
+//在所有屏幕启动应用 332
+startHomeOnAllDisplays(){
+    //遍历所有屏幕取出屏幕id，依次启动桌面应用
+    for (int i = mActivityDisplays.size() - 1; i >= 0; i- -) {
+        final int displayId = mActivityDisplays.get(i).mDisplayId;
+        homeStarted |= startHomeOnDisplay(userId, reason, displayId);
+    }
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//什么也没做 350
+startHomeOnDisplay(...)
+    return startHomeOnDisplay(...);
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+// 366
+startHomeOnDisplay(){
+    // 375
+    if (displayId == DEFAULT_DISPLAY) {
+        // intent.addCategory(Intent.CATEGORY_HOME);=>作为Launcher应用标识
+        Intent homeIntent = mService.getHomeIntent();//创建Launcher应用意图
+        ActivityInfo aInfo = resolveHomeActivity(userId, homeIntent);//获取Activity中Minifest配置
+    }
+
+    //402
+    mService.getActivityStartController().startHomeActivity(homeIntent, aInfo, myReason,displayId);
+}
+end note
+
+RootActivityContainer.java -> ActivityStartController.java:  startHomeActivity();
+activate ActivityStartController.java
+note left
+ActivityStartController.java
+ActivityStartController这个类的作用是配置Activity启动前的一些信息，
+并且把信息传递给ActivityStarter去做启动
+//171
+startHomeActivity(){
+    //181
+    //把Activity信息传递给ActivityStarter去做启动,触发ActivityStarter.execute()方法
+    mLastHomeActivityStartResult = obtainStarter(intent, "startHomeActivity: " + reason)
+                .setOutActivity(tmpOutRecord)
+                .setCallingUid(0)
+                .setActivityInfo(aInfo)
+                .setActivityOptions(options.toBundle())
+                .execute();
+}
+end note
+
+ActivityStartController.java -> ActivityStarter.java:  obtainStarter(...)...execute();
+activate ActivityStarter.java
+note right
+ActivityStarter.java
+//509
+int execute() {
+    //在ActivityStartController中没有对mRequest.mayWait做配置，
+    //所以mRequest.mayWait=null。走else分支。
+    if (mRequest.mayWait) {
+        return startActivityMayWait(...);
+    } else {
+        return startActivity(...);
+    }
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+这个方法什么也没做,继续调用startActivity(...) 566
+startActivity(...){
+    mLastStartActivityResult = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//检查Activity是否在清单文件注册，Activity对应的java类是否存在... 611
+startActivity(...){
+    // 本次启动Activity返回值 621
+    int err = ActivityManager.START_SUCCESS;
+    //IApplicationThread caller 此时Launcher未创建成功 caller=null 进不去 627
+    if (caller != null) {
+        ...
+        err = ActivityManager.START_PERMISSION_DENIED;
+    }
+    //intent.getComponent()=null:Activity没有在清单文件注册的时候 695
+    if (err == ActivityManager.START_SUCCESS && intent.getComponent() == null) {
+        err = ActivityManager.START_INTENT_NOT_RESOLVED;
+    }
+
+    //aInfo=null:Activity注册在清单文件，但对应的清单文件不存在，启动之前的安全校验 701
+    if (err == ActivityManager.START_SUCCESS && aInfo == null) {
+        err = ActivityManager.START_CLASS_NOT_FOUND;
+    }
+    //禁止后台启动Activity校验(Android9.0开始),shouldAbortBackgroundActivityStart(...) 773
+    //权限校验,<activity android:permission="..."></activity>
+    //是否可见校验,<activity android:exported="false"></activity>
+    //...
+
+    //方法出口 933
+    final int res = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//这个方法什么也没做 1386
+startActivity(...){
+    // 1394
+    result = startActivityUnchecked(...);
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivityUnchecked();
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//计算Activity启动方式和入栈方式，1464
+//要不要启动新的任务栈,要不要复用栈中已存在的Activity，
+//是否需要回调onNewIntent()...
+startActivityUnchecked(){
+
+    //根据launch mode 和 intent.flag计算Activity入栈方式
+    computeLaunchingTaskFlags();
+    //计算从哪个任务栈启动Activity
+    computeSourceStack();
+    //从当前任务栈中取出可复用的任务栈
+    ActivityRecord reusedActivity = getReusableIntentActivity();
+    //1497
+    if (reusedActivity != null) {
+        //如果当前任务栈中存在可以复用的ActivityRecord，就执行Activity.onNewIntent()
+        // onNewIntent 入栈还未创建，不会显示 1565
+        deliverNewIntent(top);
+    } else {
+
+    }
+    //方法出口，启动栈顶Activity [1728]
+    mRootActivityContainer.resumeFocusedStacksTopActivities(mTargetStack, mStartActivity, mOptions);
+}
+end note
+
+ActivityStarter.java -> RootActivityContainer.java:  mRootActivityContainer.resumeFocusedStacksTopActivities();
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+'deactivate ActivityStarter.java
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//启动栈顶Activity 1148
+resumeFocusedStacksTopActivities(){
+    //Activity还未创建成功，不会显示resumedOnDisplay=false 1185
+    if (!resumedOnDisplay) {
+        final ActivityStack focusedStack = display.getFocusedStack();
+        if (focusedStack != null) {
+            focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+        }
+    }
+}
+end note
+
+RootActivityContainer.java -> ActivityStack.java:  focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+activate ActivityStack.java
+note right
+ActivityStack.java
+//这个方法什么也没做 2565
+resumeTopActivityUncheckedLocked(){
+    result = resumeTopActivityInnerLocked(prev, options);
+}
+end note
+
+ActivityStack.java -> ActivityStack.java:  resumeTopActivityInnerLocked();
+activate ActivityStack.java
+note left
+ActivityStack.java
+//在启动新的Activity之前，把当前处于可见Activity给暂停掉Activity.onPause() 2614
+resumeTopActivityInnerLocked(){
+    //得到栈顶ActivityRecord 2623
+    ActivityRecord next = topRunningActivityLocked(true /* focusableOnly */);
+    //待启动的Activity进程是否存在，Launcher应用进程未创建->else [2873]
+    if (next.attachedToProcess()) {
+        ...
+    }else{
+        //3037
+        mStackSupervisor.startSpecificActivityLocked(next, true, true);
+    }
+}
+end note
+
+ActivityStack.java -> ActivityStackSupervisor.java:  mStackSupervisor.startSpecificActivityLocked(next, true, true);
+activate ActivityStackSupervisor.java
+note right
+ActivityStackSupervisor.java
+//956
+startSpecificActivityLocked(){
+    //再次校验Activity应用进程是否创建，双重校验
+    //进程控制器
+    // Is this activity's application already running?
+    final WindowProcessController wpc =mService.getProcessController(r.processName, r.info.applicationInfo.uid);
+    //Launcher应用未启动分支进不去
+    if (wpc != null && wpc.hasThread()) {
+        //真正启动Activity流程分支
+        realStartActivityLocked(r, wpc, andResume, checkConfig);
+    }
+
+    //::解决java8不能把方法作为另一个方法的入参问题 990
+    //ActivityManagerInternal::startProcess->ActivityManagerService$LocalService.startProcess()
+    final Message msg = PooledLambda.obtainMessage(
+            ActivityManagerInternal::startProcess, mService.mAmInternal, r.processName,
+            r.info.applicationInfo, knownToBeDead, "activity", r.intent.getComponent());
+    mService.mH.sendMessage(msg);
+}
+end note
+
+ActivityStackSupervisor.java -> ActivityManagerService.java:   LocalService:ActivityManagerInternal::startProcess
+deactivate ActivityStackSupervisor.java
+activate ActivityManagerService.java
+note left
+ActivityManagerService$LocalService.java
+//这个方法什么也没做 [18400]
+startProcess(){
+    startProcessLocked(...)
+}
+end note
+
+ActivityManagerService.java -> ActivityManagerService.java:   startProcessLocked()
+activate ActivityManagerService.java
+note left
+ActivityManagerService.java
+这个方法什么也没做 3022
+startProcessLocked(...){
+    // 把进程创建工作委派给processList，
+    // 老版本中进程创建是在AMS中，由于AMS过于臃肿，将其改造。
+    // ProcessList专门负责进程创建
+    return mProcessList.startProcessLocked(...);
+}
+end note
+
+ActivityManagerService.java -> ProcessList.java:   mProcessList.startProcessLocked()
+activate ProcessList.java
+note right
+ProcessList.java
+//有一个非常重要参数entryPoint [1619]
+//创建进程时强制指定entryPoint="android.app.ActivityThread",
+//进程创建完成以后新进程入口，所有Android应用的入口是ActivityThread，并不是Application
+final String entryPoint = "android.app.ActivityThread";
+
+//进程创建之前配置必要参数，如：API类型，版本号。 1849
+startProcessLocked(){
+    //1953->1842
+    final boolean success = startProcessLocked(app, hostingRecord, abiOverride);
+}
+//1842
+startProcessLocked(){
+    //1844->1428
+    return startProcessLocked(...);
+}
+//1428
+startProcessLocked(...){
+    //1621->1640
+    return startProcessLocked(...);
+}
+//1640
+startProcessLocked(...){
+    //1689->1798
+    final Process.ProcessStartResult startResult = startProcess(...);
+}
+
+//创建进程完毕以后进入ZygoteProcess，此时还处于SystemServer进程
+//ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//openZygoteSocketIfNeeded(abi)创建本地Socket对象并且连接Zygote进程Socket服务。然后通过字符输入流把创建进程必备参数发送过去
+//进程创建完毕后根据新进程传递的入口类由ZygoteInit反射执行。下面进入安卓应用进程入口类ActivityThread
+ZygoteProcess.java
+zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+end note
+
+ProcessList.java -> ProcessList.java:   final Process.ProcessStartResult startResult = startProcess(...);
+activate ProcessList.java
+note left
+ProcessList.java
+//1798
+startProcess(){
+    //[1816]
+    startResult = appZygote.getProcess().start(...)
+}
+end note
+
+ProcessList.java -> ZygoteProcess.java:   final Process.ProcessStartResult startResult = appZygote.getProcess().start()
+activate ZygoteProcess.java
+note right
+ZygoteProcess.java
+ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//314
+start(...){
+    //333->541
+    return startViaZygote(...);
+}
+end note
+
+ZygoteProcess.java -> ZygoteProcess.java:   startViaZygote()
+activate ZygoteProcess.java
+note left
+ZygoteProcess.java
+//541
+startViaZygote(){
+    synchronized(mLock) {
+        // openZygoteSocketIfNeeded(abi)
+        //创建本地Socket对象连接Zygote进程Socket服务，
+        //然后通过字符输入流把创建进程必备参数发送过去,
+        //进程创建后会根据新进程的入口类由ZygoteInit反射执行，
+        //下面就到了Android应用入口类ActvityThread。至此Launcher进程启动流程分析完毕。
+        //635
+        return zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+    }
+}
+end note
+
+@enduml
+
+@startuml
+
+autonumber
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: main()
+note left
+ZygoteInit.java 819
+public static void main(String argv[]) {
+    //1.系统资源预加载 877 preload(bootTimingsTraceLog);
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+    //2.启动system_server进程。SystemServer进程是Android Framework的核心进程。
+    if(argv[1].equals("start-system-server")){
+        startSystemServer();
+    }
+    //3.创建Socket服务,用来接受来自ActivityManagerService申请进程创建请求
+    registerZygoteSocket();
+    //4.Socket创建完成后会进入阻塞状态，等待AMS申请进程创建请求。
+    runSelectLoopMode();
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preload(bootTimingsTraceLog)
+note left
+ZygoteInit.java
+preload(){
+    //1.系统资源预加载
+    preloadClasses();//加载系统Class文件
+    preloadResources();//加载系统资源文件
+    preloadSharedLibraries();//加载系统动态库
+}
+end note
+
+activate ZygoteInit.java
+ZygoteInit.java -> ZygoteInit.java: preloadClasses()
+ZygoteInit.java -> ZygoteInit.java: preloadResources()
+ZygoteInit.java -> ZygoteInit.java: preloadSharedLibraries()
+deactivate ZygoteInit.java
+
+ZygoteInit.java -> SystemServer.java: startSystemServer()
+activate SystemServer.java
+
+SystemServer.java -> SystemServer.java:  main()->new SystemServer().run()
+activate SystemServer.java
+note left
+SystemServer.java main():348->run():370
+private void main() {
+    Looper.prepareMainLooper();
+    // 创建系统服务的管理者 497
+    SystemServiceManager mSystemServiceManager =
+    new SystemServiceManager(mSystemContext);
+    //1.启动引导服务17 510
+    startBootstrapServices();
+    //2.启动核心服务9 511
+    startCoreServices();
+    //3.启动其他一般服务90+ 512
+    startOtherServices();
+    Looper.loop();
+}
+end note
+
+
+SystemServer.java -> SystemServer.java:  startBootstrapServices()
+note left
+SystemServer.java
+//启动引导服务(17个)
+startBootstrapServices(){
+    ActivityManagerService：为四大组件提供调度服务，其中Activity调度交由ATMS(ActivityTaskManagerService)(Android10)
+    ActivityTaskManagerService：Activity调度服务
+    PackageManager：提供安装，卸载，扫描管理服务
+    PowerManagerService：提供电源管理服务
+    UriGrantsManagerService：权限申请授权服务
+    OtaDexoptService：Dex字节码优化服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startCoreServices()
+note left
+SystemServer.java
+//系统核心服务(9个)
+startCoreServices(){
+    BatteryService：提供电池状态管理服务
+    WebViewUpdateService：WebView升级服务
+    GPUService：GPU驱动加载服务
+    UsageStatsService：应用对系统资源使用记录服务
+    ...
+}
+end note
+
+SystemServer.java -> SystemServer.java:  startOtherServices()
+activate SystemServer.java
+note left
+SystemServer.java
+//启动其他一般服务(90+) 877
+startOtherServices(){
+    AlarmManagerService：提供时钟服务
+    NetWorkStatsService：网络状态服务
+    WindowManagerService：窗口管理服务
+    TelephonyRegister:电话服务
+    InputMethodManagerService：输入服务
+    BluetoothService：蓝牙服务
+    NotificationManagerService：通知服务
+    AudioService：音频服务
+    ...
+    //启动Launcher应用入口方法 2035
+    mActivityManagerService.systemReady(...)
+    ...
+}
+end note
+
+SystemServer.java -> ActivityManagerService.java:  mActivityManagerService.systemReady()//启动Launcher应用入口方法
+activate ActivityManagerService.java
+note right
+ActivityManagerService.java
+//启动Launcher应用入口方法 8960
+systemReady() {
+    //启动桌面应用 9076
+    mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");
+}
+end note
+
+ActivityManagerService.java -> ActivityTaskManagerInternal.java:  mAtmInternal.startHomeOnAllDisplays(currentUserId, "systemReady");//启动桌面应用
+activate ActivityTaskManagerInternal.java
+note right
+ ActivityTaskManagerInternal.java:
+ //在所有屏幕启动桌面应用
+ abstract startHomeOnAllDisplays();//抽象方法 442
+ ActivityTaskManagerService$LocalService.java:
+ startHomeOnAllDisplays();//实现类 6692
+end note
+
+ActivityTaskManagerInternal.java -> ActivityTaskManagerService.java:  LocalService:startHomeOnAllDisplays();//实现类
+activate ActivityTaskManagerService.java
+note right
+ActivityTaskManagerService$LocalService.java
+//在所有屏幕启动应用 6692
+startHomeOnAllDisplays(){
+    //委托给mRootActivityContainer.startHomeOnAllDisplays()方法
+    mRootActivityContainer.startHomeOnAllDisplays();
+}
+end note
+
+ActivityTaskManagerService.java -> RootActivityContainer.java:  mRootActivityContainer.startHomeOnAllDisplays();
+activate RootActivityContainer.java
+note right
+RootActivityContainer.java
+//在所有屏幕启动应用 332
+startHomeOnAllDisplays(){
+    //遍历所有屏幕取出屏幕id，依次启动桌面应用
+    for (int i = mActivityDisplays.size() - 1; i >= 0; i- -) {
+        final int displayId = mActivityDisplays.get(i).mDisplayId;
+        homeStarted |= startHomeOnDisplay(userId, reason, displayId);
+    }
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//什么也没做 350
+startHomeOnDisplay(...)
+    return startHomeOnDisplay(...);
+}
+end note
+
+RootActivityContainer.java -> RootActivityContainer.java:  startHomeOnDisplay();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+// 366
+startHomeOnDisplay(){
+    // 375
+    if (displayId == DEFAULT_DISPLAY) {
+        // intent.addCategory(Intent.CATEGORY_HOME);=>作为Launcher应用标识
+        Intent homeIntent = mService.getHomeIntent();//创建Launcher应用意图
+        ActivityInfo aInfo = resolveHomeActivity(userId, homeIntent);//获取Activity中Minifest配置
+    }
+
+    //402
+    mService.getActivityStartController().startHomeActivity(homeIntent, aInfo, myReason,displayId);
+}
+end note
+
+RootActivityContainer.java -> ActivityStartController.java:  startHomeActivity();
+activate ActivityStartController.java
+note left
+ActivityStartController.java
+ActivityStartController这个类的作用是配置Activity启动前的一些信息，
+并且把信息传递给ActivityStarter去做启动
+//171
+startHomeActivity(){
+    //181
+    //把Activity信息传递给ActivityStarter去做启动,触发ActivityStarter.execute()方法
+    mLastHomeActivityStartResult = obtainStarter(intent, "startHomeActivity: " + reason)
+                .setOutActivity(tmpOutRecord)
+                .setCallingUid(0)
+                .setActivityInfo(aInfo)
+                .setActivityOptions(options.toBundle())
+                .execute();
+}
+end note
+
+ActivityStartController.java -> ActivityStarter.java:  obtainStarter(...)...execute();
+activate ActivityStarter.java
+note right
+ActivityStarter.java
+//509
+int execute() {
+    //在ActivityStartController中没有对mRequest.mayWait做配置，
+    //所以mRequest.mayWait=null。走else分支。
+    if (mRequest.mayWait) {
+        return startActivityMayWait(...);
+    } else {
+        return startActivity(...);
+    }
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+这个方法什么也没做,继续调用startActivity(...) 566
+startActivity(...){
+    mLastStartActivityResult = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//检查Activity是否在清单文件注册，Activity对应的java类是否存在... 611
+startActivity(...){
+    // 本次启动Activity返回值 621
+    int err = ActivityManager.START_SUCCESS;
+    //IApplicationThread caller 此时Launcher未创建成功 caller=null 进不去 627
+    if (caller != null) {
+        ...
+        err = ActivityManager.START_PERMISSION_DENIED;
+    }
+    //intent.getComponent()=null:Activity没有在清单文件注册的时候 695
+    if (err == ActivityManager.START_SUCCESS && intent.getComponent() == null) {
+        err = ActivityManager.START_INTENT_NOT_RESOLVED;
+    }
+
+    //aInfo=null:Activity注册在清单文件，但对应的清单文件不存在，启动之前的安全校验 701
+    if (err == ActivityManager.START_SUCCESS && aInfo == null) {
+        err = ActivityManager.START_CLASS_NOT_FOUND;
+    }
+    //禁止后台启动Activity校验(Android9.0开始),shouldAbortBackgroundActivityStart(...) 773
+    //权限校验,<activity android:permission="..."></activity>
+    //是否可见校验,<activity android:exported="false"></activity>
+    //...
+
+    //方法出口 933
+    final int res = startActivity(...)
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivity(...);
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//这个方法什么也没做 1386
+startActivity(...){
+    // 1394
+    result = startActivityUnchecked(...);
+}
+end note
+
+ActivityStarter.java -> ActivityStarter.java:  startActivityUnchecked();
+activate ActivityStarter.java
+note left
+ActivityStarter.java
+//计算Activity启动方式和入栈方式，1464
+//要不要启动新的任务栈,要不要复用栈中已存在的Activity，
+//是否需要回调onNewIntent()...
+startActivityUnchecked(){
+
+    //根据launch mode 和 intent.flag计算Activity入栈方式
+    computeLaunchingTaskFlags();
+    //计算从哪个任务栈启动Activity
+    computeSourceStack();
+    //从当前任务栈中取出可复用的任务栈
+    ActivityRecord reusedActivity = getReusableIntentActivity();
+    //1497
+    if (reusedActivity != null) {
+        //如果当前任务栈中存在可以复用的ActivityRecord，就执行Activity.onNewIntent()
+        // onNewIntent 入栈还未创建，不会显示 1565
+        deliverNewIntent(top);
+    } else {
+
+    }
+    //方法出口，启动栈顶Activity [1728]
+    mRootActivityContainer.resumeFocusedStacksTopActivities(mTargetStack, mStartActivity, mOptions);
+}
+end note
+
+ActivityStarter.java -> RootActivityContainer.java:  mRootActivityContainer.resumeFocusedStacksTopActivities();
+activate RootActivityContainer.java
+note left
+RootActivityContainer.java
+//启动栈顶Activity 1148
+resumeFocusedStacksTopActivities(){
+    //Activity还未创建成功，不会显示resumedOnDisplay=false 1185
+    if (!resumedOnDisplay) {
+        final ActivityStack focusedStack = display.getFocusedStack();
+        if (focusedStack != null) {
+            focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+        }
+    }
+}
+end note
+
+RootActivityContainer.java -> ActivityStack.java:  focusedStack.resumeTopActivityUncheckedLocked(target, targetOptions);
+activate ActivityStack.java
+note right
+ActivityStack.java
+//这个方法什么也没做 2565
+resumeTopActivityUncheckedLocked(){
+    result = resumeTopActivityInnerLocked(prev, options);
+}
+end note
+
+ActivityStack.java -> ActivityStack.java:  resumeTopActivityInnerLocked();
+activate ActivityStack.java
+note left
+ActivityStack.java
+//在启动新的Activity之前，把当前处于可见Activity给暂停掉Activity.onPause() 2614
+resumeTopActivityInnerLocked(){
+    //得到栈顶ActivityRecord 2623
+    ActivityRecord next = topRunningActivityLocked(true /* focusableOnly */);
+    //待启动的Activity进程是否存在，Launcher应用进程未创建->else [2873]
+    if (next.attachedToProcess()) {
+        ...
+    }else{
+        //3037
+        mStackSupervisor.startSpecificActivityLocked(next, true, true);
+    }
+}
+end note
+
+ActivityStack.java -> ActivityStackSupervisor.java:  mStackSupervisor.startSpecificActivityLocked(next, true, true);
+activate ActivityStackSupervisor.java
+note right
+ActivityStackSupervisor.java
+//956
+startSpecificActivityLocked(){
+    //再次校验Activity应用进程是否创建，双重校验
+    //进程控制器
+    // Is this activity's application already running?
+    final WindowProcessController wpc =mService.getProcessController(r.processName, r.info.applicationInfo.uid);
+    //Launcher应用未启动分支进不去
+    if (wpc != null && wpc.hasThread()) {
+        //真正启动Activity流程分支
+        realStartActivityLocked(r, wpc, andResume, checkConfig);
+    }
+
+    //::解决java8不能把方法作为另一个方法的入参问题 990
+    //ActivityManagerInternal::startProcess->ActivityManagerService$LocalService.startProcess()
+    final Message msg = PooledLambda.obtainMessage(
+            ActivityManagerInternal::startProcess, mService.mAmInternal, r.processName,
+            r.info.applicationInfo, knownToBeDead, "activity", r.intent.getComponent());
+    mService.mH.sendMessage(msg);
+}
+end note
+
+ActivityStackSupervisor.java -> ActivityManagerService.java:   LocalService:ActivityManagerInternal::startProcess
+deactivate ActivityStackSupervisor.java
+activate ActivityManagerService.java
+note left
+ActivityManagerService$LocalService.java
+//这个方法什么也没做 [18400]
+startProcess(){
+    startProcessLocked(...)
+}
+end note
+
+ActivityManagerService.java -> ActivityManagerService.java:   startProcessLocked()
+activate ActivityManagerService.java
+note left
+ActivityManagerService.java
+这个方法什么也没做 3022
+startProcessLocked(...){
+    // 把进程创建工作委派给processList，
+    // 老版本中进程创建是在AMS中，由于AMS过于臃肿，将其改造。
+    // ProcessList专门负责进程创建
+    return mProcessList.startProcessLocked(...);
+}
+end note
+
+ActivityManagerService.java -> ProcessList.java:   mProcessList.startProcessLocked()
+activate ProcessList.java
+note right
+ProcessList.java
+//有一个非常重要参数entryPoint [1619]
+//创建进程时强制指定entryPoint="android.app.ActivityThread",
+//进程创建完成以后新进程入口，所有Android应用的入口是ActivityThread，并不是Application
+final String entryPoint = "android.app.ActivityThread";
+
+//进程创建之前配置必要参数，如：API类型，版本号。 1849
+startProcessLocked(){
+    //1953->1842
+    final boolean success = startProcessLocked(app, hostingRecord, abiOverride);
+}
+//1842
+startProcessLocked(){
+    //1844->1428
+    return startProcessLocked(...);
+}
+//1428
+startProcessLocked(...){
+    //1621->1640
+    return startProcessLocked(...);
+}
+//1640
+startProcessLocked(...){
+    //1689->1798
+    final Process.ProcessStartResult startResult = startProcess(...);
+}
+
+//创建进程完毕以后进入ZygoteProcess，此时还处于SystemServer进程
+//ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//openZygoteSocketIfNeeded(abi)创建本地Socket对象并且连接Zygote进程Socket服务。然后通过字符输入流把创建进程必备参数发送过去
+//进程创建完毕后根据新进程传递的入口类由ZygoteInit反射执行。下面进入安卓应用进程入口类ActivityThread
+ZygoteProcess.java
+zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+end note
+
+ProcessList.java -> ProcessList.java:   final Process.ProcessStartResult startResult = startProcess(...);
+activate ProcessList.java
+note left
+ProcessList.java
+//1798
+startProcess(){
+    //[1816]
+    startResult = appZygote.getProcess().start(...)
+}
+end note
+
+ProcessList.java -> ZygoteProcess.java:   final Process.ProcessStartResult startResult = appZygote.getProcess().start()
+activate ZygoteProcess.java
+note right
+ZygoteProcess.java
+ZygoteProcess作用是创建本地Socket连接对象并且连接Zygote进程Socket服务。
+//314
+start(...){
+    //333->541
+    return startViaZygote(...);
+}
+end note
+
+ZygoteProcess.java -> ZygoteProcess.java:   startViaZygote()
+activate ZygoteProcess.java
+note left
+ZygoteProcess.java
+//541
+startViaZygote(){
+    synchronized(mLock) {
+        // openZygoteSocketIfNeeded(abi)
+        //创建本地Socket对象连接Zygote进程Socket服务，
+        //然后通过字符输入流把创建进程必备参数发送过去,
+        //进程创建后会根据新进程的入口类由ZygoteInit反射执行，
+        //下面就到了Android应用入口类ActvityThread。至此Launcher进程启动流程分析完毕。
+        //635
+        return zygoteSendArgsAndGetResult(openZygoteSocketIfNeeded(abi),useUsapPool,argsForZygote);
+    }
+}
+end note
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
