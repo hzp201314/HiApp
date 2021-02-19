@@ -43,7 +43,7 @@ end note
 '4
 MainActivity.java -> AppCompatActivity.java: setContentView(layoutResID)
 activate AppCompatActivity.java
-note left
+note right
 AppCompatActivity.java
 //
 setContentView(int layoutResID){
@@ -295,6 +295,12 @@ addView(View view, ViewGroup.LayoutParams params){
     // mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
     // 监听垂直同步信号VSYNC
     // mChoreographer = Choreographer.getInstance();
+    // ViewRootImpl功能：
+    // 1.setView()方法中利用WindowSession将Window添加到WindowManagerService
+    // 2.页面View树的顶层节点(DecorView的parent)，关联Window和View
+    // 3.利用Choreographer接收Vsync同步信号触发View的三大流程
+    // 4.利用WindowInputEventReceiver接收屏幕输入事件，分发手势
+    // 5.利用Choreographer接收Vsync同步信号，触发View的动画重绘
     root = new ViewRootImpl(view.getContext(), display);
 
     //方便WindowManager更新或者删除View的时候，还能清理和销毁工作
@@ -351,7 +357,11 @@ requestLayout(){
     //检查当前线程
     //不能在子线程更新UI，
     //对View的更新涉及到view.requestLayout();view.postInvalidate();会调用到ViewRootImpl中
+    //ViewRootImpl在onCreate的时候还没有创建，就不会有线程检查，此时在子线程更新UI并不会报错。
     //部分子线程更新UI是可以成功的，不会报错。子线程创建View，绑定数据等到页面进入直接展示视图
+    //拓展：当应用进入WelcomeActivity的时候从本地缓存中读取数据开启子线程创建View并且绑定数据，
+    //      然后缓存到ViewPool中，当我们跳转到首页时，首页的View已经全部创建好了，直接从ViewPool中获取，
+    //      大大提高页面展示速度.
     //throw new CalledFromWrongThreadException("Only the original thread that created a view hierarchy can touch its views.");
     checkThread();
     mLayoutRequested = true;
@@ -458,11 +468,11 @@ performTraversals(){
 }
 
 private void performMeasure(int childWidthMeasureSpec, int childHeightMeasureSpec) {
-    //DecorView
+    //DecorView 测量
     mView.measure(childWidthMeasureSpec, childHeightMeasureSpec);
 }
 private void performLayout() {
-    //DecorView
+    //DecorView 布局
     final View host = mView;
     host.layout(0, 0, host.getMeasuredWidth(), host.getMeasuredHeight());
 }
@@ -476,7 +486,7 @@ private boolean draw(boolean fullRedrawNeeded) {
 }
 
 drawSoftware(...){
-    //3730
+    //3730 绘制
     mView.draw(canvas);
 }
 end note

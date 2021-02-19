@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2752px" preserveAspectRatio="none" style="width:1158px;height:2752px;" version="1.1" viewBox="0 0 1158 2752" width="1158.4px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fgj1znin2yu5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6" dy="1.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="11.2" style="stroke:#A80036;stroke-width:0.4;" width="4" x="178.4" y="51.1042"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="11.2" style="stroke:#A80036;stroke-width:0.4;" width="4" x="178.4" y="111.7639"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="911.7021" style="stroke:#A80036;stroke-width:0.4;" width="4" x="225.2" y="168.8727"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="867.1934" style="stroke:#A80036;stroke-width:0.4;" width="4" x="308.8" y="213.3814"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="770.3231" style="stroke:#A80036;stroke-width:0.4;" width="4" x="424.8" y="297.5499"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="676.4038" style="stroke:#A80036;stroke-width:0.4;" width="4" x="426.8" y="378.7675"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="549.6248" style="stroke:#A80036;stroke-width:0.4;" width="4" x="428.8" y="505.5465"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="348.8773" style="stroke:#A80036;stroke-width:0.4;" width="4" x="532.4" y="706.2939"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="196.6422" style="stroke:#A80036;stroke-width:0.4;" width="4" x="534.4" y="858.5291"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1506.2007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="609.6" y="1220.1573"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1309.0041" style="stroke:#A80036;stroke-width:0.4;" width="4" x="679.6" y="1417.3539"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1136.0637" style="stroke:#A80036;stroke-width:0.4;" width="4" x="758" y="1590.2943"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="934.7162" style="stroke:#A80036;stroke-width:0.4;" width="4" x="827.2" y="1791.6418"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="775.3793" style="stroke:#A80036;stroke-width:0.4;" width="4" x="829.2" y="1950.9787"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="662.8038" style="stroke:#A80036;stroke-width:0.4;" width="4" x="831.2" y="2063.5542"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="343.2809" style="stroke:#A80036;stroke-width:0.4;" width="4" x="833.2" y="2383.0771"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="138.3825" style="stroke:#A80036;stroke-width:0.4;" width="4" x="835.2" y="2587.9755"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="99.9229" style="stroke:#A80036;stroke-width:0.4;" width="4" x="924.4" y="2203.9367"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="180.4" x2="180.4" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="227.2" x2="227.2" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="310.8" x2="310.8" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="426.8" x2="426.8" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="534.4" x2="534.4" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="611.6" x2="611.6" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="681.6" x2="681.6" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="760" x2="760" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="829.2" x2="829.2" y1="17.248" y2="2733.558"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="926.2" x2="926.2" y1="17.248" y2="2733.558"/><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="35.2" x="162" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="29.6" x="164.8" y="11.2176">Activity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="35.2" x="162" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="29.6" x="164.8" y="2742.3756">Activity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="47.2" x="202.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="41.6" x="205.6" y="11.2176">MainActivity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="47.2" x="202.8" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="41.6" x="205.6" y="2742.3756">MainActivity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="64.8" x="277.6" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="59.2" x="280.4" y="11.2176">AppCompatActivity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="64.8" x="277.6" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="59.2" x="280.4" y="2742.3756">AppCompatActivity.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="80" x="386" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="74.4" x="388.8" y="11.2176">AppCompatDelegateImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="80" x="386" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="74.4" x="388.8" y="2742.3756">AppCompatDelegateImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.6" x="506.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="48" x="509.6" y="11.2176">PhoneWindow.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.6" x="506.8" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="48" x="509.6" y="2742.3756">PhoneWindow.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.6" x="584" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="48" x="586.8" y="11.2176">ActivityThread.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="53.6" x="584" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="48" x="586.8" y="2742.3756">ActivityThread.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="69.6" x="646" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="64" x="648.8" y="11.2176">WindowManagerImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="69.6" x="646" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="64" x="648.8" y="2742.3756">WindowManagerImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76" x="721.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.4" x="724" y="11.2176">WindowManagerGlobal.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="76" x="721.2" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="70.4" x="724" y="2742.3756">WindowManagerGlobal.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="51.2" x="802.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="45.6" x="805.6" y="11.2176">ViewRootImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="51.2" x="802.8" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="45.6" x="805.6" y="2742.3756">ViewRootImpl.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="56.4" x="897.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="50.8" x="900.2" y="11.2176">Choreographer.java</text><rect fill="#FEFECE" filter="url(#f1fgj1znin2yu5)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="56.4" x="897.4" y="2733.158"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="50.8" x="900.2" y="2742.3756">Choreographer.java</text><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="11.2" style="stroke:#A80036;stroke-width:0.4;" width="4" x="178.4" y="51.1042"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="11.2" style="stroke:#A80036;stroke-width:0.4;" width="4" x="178.4" y="111.7639"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="911.7021" style="stroke:#A80036;stroke-width:0.4;" width="4" x="225.2" y="168.8727"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="867.1934" style="stroke:#A80036;stroke-width:0.4;" width="4" x="308.8" y="213.3814"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="770.3231" style="stroke:#A80036;stroke-width:0.4;" width="4" x="424.8" y="297.5499"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="676.4038" style="stroke:#A80036;stroke-width:0.4;" width="4" x="426.8" y="378.7675"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="549.6248" style="stroke:#A80036;stroke-width:0.4;" width="4" x="428.8" y="505.5465"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="348.8773" style="stroke:#A80036;stroke-width:0.4;" width="4" x="532.4" y="706.2939"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="196.6422" style="stroke:#A80036;stroke-width:0.4;" width="4" x="534.4" y="858.5291"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1506.2007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="609.6" y="1220.1573"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1309.0041" style="stroke:#A80036;stroke-width:0.4;" width="4" x="679.6" y="1417.3539"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="1136.0637" style="stroke:#A80036;stroke-width:0.4;" width="4" x="758" y="1590.2943"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="934.7162" style="stroke:#A80036;stroke-width:0.4;" width="4" x="827.2" y="1791.6418"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="775.3793" style="stroke:#A80036;stroke-width:0.4;" width="4" x="829.2" y="1950.9787"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="662.8038" style="stroke:#A80036;stroke-width:0.4;" width="4" x="831.2" y="2063.5542"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="343.2809" style="stroke:#A80036;stroke-width:0.4;" width="4" x="833.2" y="2383.0771"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="138.3825" style="stroke:#A80036;stroke-width:0.4;" width="4" x="835.2" y="2587.9755"/><rect fill="#FFFFFF" filter="url(#f1fgj1znin2yu5)" height="99.9229" style="stroke:#A80036;stroke-width:0.4;" width="4" x="924.4" y="2203.9367"/><line style="stroke:#A80036;stroke-width:0.4;" x1="182.4" x2="199.2" y1="47.9042" y2="47.9042"/><line style="stroke:#A80036;stroke-width:0.4;" x1="199.2" x2="199.2" y1="47.9042" y2="53.1042"/><line style="stroke:#A80036;stroke-width:0.4;" x1="182.8" x2="199.2" y1="53.1042" y2="53.1042"/><polygon fill="#A80036" points="186.8,51.5042,182.8,53.1042,186.8,54.7042,185.2,53.1042" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="185.2" y="45.9616">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="17.6" x="189.6" y="45.9616">attach()</text><path d="M2,23.248 L2,69.648 L176.8,69.648 L176.8,27.248 L172.8,23.248 L2,23.248 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M172.8,23.248 L172.8,27.248 L176.8,27.248 L172.8,23.248 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="27.2" x="4.4" y="31.2072">Activity.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="4.4" y="38.309">//7701</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="4.4" y="45.4107">attach(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.8" x="10.8" y="52.5125">//创建PhoneWindow</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160" x="10.8" y="59.6143">mWindow = new PhoneWindow(this, window, activityConfigCallback);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="4.4" y="66.716">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="182.4" x2="199.2" y1="108.5639" y2="108.5639"/><line style="stroke:#A80036;stroke-width:0.4;" x1="199.2" x2="199.2" y1="108.5639" y2="113.7639"/><line style="stroke:#A80036;stroke-width:0.4;" x1="182.8" x2="199.2" y1="113.7639" y2="113.7639"/><polygon fill="#A80036" points="186.8,112.1639,182.8,113.7639,186.8,115.3639,185.2,113.7639" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="185.2" y="106.6213">2</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="189.6" y="106.6213">onCreate()</text><path d="M80,87.4586 L80,126.6586 L176.8,126.6586 L176.8,91.4586 L172.8,87.4586 L80,87.4586 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M172.8,87.4586 L172.8,91.4586 L176.8,91.4586 L172.8,87.4586 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="27.2" x="82.4" y="95.4178">Activity.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="82.4" y="102.5195">//1448</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="82.4" y="109.6213">onCreate(Bundle savedInstanceState){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="84" y="116.723"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="82.4" y="123.8248">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="227.2" x2="246" y1="163.6727" y2="163.6727"/><line style="stroke:#A80036;stroke-width:0.4;" x1="246" x2="246" y1="163.6727" y2="168.8727"/><line style="stroke:#A80036;stroke-width:0.4;" x1="229.6" x2="246" y1="168.8727" y2="168.8727"/><polygon fill="#A80036" points="233.6,167.2727,229.6,168.8727,233.6,170.4727,232,168.8727" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="232" y="161.7301">3</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="236.4" y="161.7301">onCreate()</text><path d="M116.4,144.5674 L116.4,183.7674 L221.6,183.7674 L221.6,148.5674 L217.6,144.5674 L116.4,144.5674 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M217.6,144.5674 L217.6,148.5674 L221.6,148.5674 L217.6,144.5674 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="118.8" y="152.5266">MainActivity.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="118.8" y="159.6283">//1448</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="118.8" y="166.7301">onCreate(Bundle savedInstanceState){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.4" x="125.2" y="173.8318">setContentView(R.layout.activity_main)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="118.8" y="180.9336">}</text><polygon fill="#A80036" points="304,211.7814,308,213.3814,304,214.9814,305.6,213.3814" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="229.2" x2="306.4" y1="213.3814" y2="213.3814"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="232" y="211.4389">4</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.6" x="236.4" y="211.4389">setContentView(layoutResID)</text><path d="M314.8,189.6762 L314.8,228.8762 L434.8,228.8762 L434.8,193.6762 L430.8,189.6762 L314.8,189.6762 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M430.8,189.6762 L430.8,193.6762 L434.8,193.6762 L430.8,189.6762 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.4" x="317.2" y="197.6354">AppCompatActivity.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="3.2" x="317.2" y="204.7371">//</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="76.4" x="317.2" y="211.8389">setContentView(int layoutResID){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.6" x="325.2" y="218.9406">getDelegate().setContentView(view, params);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="317.2" y="226.0424">}</text><polygon fill="#A80036" points="420,295.9499,424,297.5499,420,299.1499,421.6,297.5499" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="312.8" x2="422.4" y1="297.5499" y2="297.5499"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="315.6" y="295.6073">5</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100" x="320" y="295.6073">getDelegate().setContentView(layoutResID)</text><path d="M430.8,234.785 L430.8,352.385 L643.6,352.385 L643.6,238.785 L639.6,234.785 L430.8,234.785 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M639.6,234.785 L639.6,238.785 L643.6,238.785 L639.6,234.785 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="433.2" y="242.7441">AppCompatDelegate.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="433.2" y="249.8459">//抽象方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="433.2" y="256.9477">abstract setContentView()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.6" x="433.2" y="264.0494">AppCompatDelegateImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="433.2" y="271.1512">//实现方法 551</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="59.6" x="433.2" y="278.2529">setContentView(int resId){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.4" x="439.6" y="285.3547">//创建 mSubDecor</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.2" x="439.6" y="292.4564">ensureSubDecor();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="96" x="439.6" y="299.5582">// contentParent 是 mSubDecor 的子View</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="175.2" x="439.6" y="306.66">ViewGroup contentParent = mSubDecor.findViewById(android.R.id.content);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="439.6" y="313.7617">contentParent.removeAllViews();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146.8" x="439.6" y="320.8635">//Activity资源文件布局解析以后的View添加到contentParent中，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="198" x="439.6" y="327.9652">//contentParent 是 mSubDecor 的子View,即Activity资源文件View添加到mSubDecor中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.8" x="439.6" y="335.067">LayoutInflater.from(mContext).inflate(resId, contentParent);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.2" x="439.6" y="342.1688">mAppCompatWindowCallback.getWrapped().onContentChanged();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="433.2" y="349.2705">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="428.8" x2="447.6" y1="373.5675" y2="373.5675"/><line style="stroke:#A80036;stroke-width:0.4;" x1="447.6" x2="447.6" y1="373.5675" y2="378.7675"/><line style="stroke:#A80036;stroke-width:0.4;" x1="431.2" x2="447.6" y1="378.7675" y2="378.7675"/><polygon fill="#A80036" points="435.2,377.1675,431.2,378.7675,435.2,380.3675,433.6,378.7675" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="433.6" y="371.6249">6</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="41.6" x="438" y="371.6249">ensureSubDecor()</text><path d="M484.4,358.0131 L484.4,390.4131 L574.8,390.4131 L574.8,362.0131 L570.8,358.0131 L484.4,358.0131 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M570.8,358.0131 L570.8,362.0131 L574.8,362.0131 L570.8,358.0131 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.6" x="486.8" y="365.9723">AppCompatDelegateImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.2" x="486.8" y="373.074">ensureSubDecor(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.6" x="493.2" y="380.1758">mSubDecor = createSubDecor();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="486.8" y="387.2775">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="430.8" x2="449.6" y1="500.3465" y2="500.3465"/><line style="stroke:#A80036;stroke-width:0.4;" x1="449.6" x2="449.6" y1="500.3465" y2="505.5465"/><line style="stroke:#A80036;stroke-width:0.4;" x1="433.2" x2="449.6" y1="505.5465" y2="505.5465"/><polygon fill="#A80036" points="437.2,503.9465,433.2,505.5465,437.2,507.1465,435.6,505.5465" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="435.6" y="498.4039">7</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.4" x="440" y="498.4039">createSubDecor()</text><path d="M485.2,396.0201 L485.2,605.6201 L749.2,605.6201 L749.2,400.0201 L745.2,396.0201 L485.2,396.0201 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M745.2,396.0201 L745.2,400.0201 L749.2,400.0201 L745.2,396.0201 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.6" x="487.6" y="403.9793">AppCompatDelegateImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42" x="487.6" y="411.0811">createSubDecor(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.4" x="494" y="418.1828">//解析当前Activity的主题</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.4" x="494" y="425.2846">//根据当前主题设置是否有Title，ActionBar等等</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.6" x="494" y="432.3863">TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="489.2" y="439.4881"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="494" y="446.5898">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.4" x="494" y="453.6916">final LayoutInflater inflater = LayoutInflater.from(mContext);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.8" x="494" y="460.7934">//是否有标题,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182.8" x="494" y="467.8951">//&lt;style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"&gt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.2" x="494" y="474.9969">//当前设置有Title,mWindowNoTitle=false</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="50.4" x="494" y="482.0986">if (!mWindowNoTitle) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.6" x="500.4" y="489.2004">//是否是Dialog类型的Activity，显然不是</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.2" x="500.4" y="496.3021">if (mIsFloating) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.6" x="506.8" y="503.4039">// If we're floating, inflate the dialog title decor</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182.8" x="506.8" y="510.5057">subDecor = (ViewGroup) inflater.inflate(R.layout.abc_dialog_title_material, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="506.8" y="517.6074">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="500.4" y="524.7092">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92" x="500.4" y="531.8109">//是否有ActionBar,当前设置有ActionBar</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="500.4" y="538.9127">else if (mHasActionBar) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="80" x="506.8" y="546.0145">//生成DecorView默认填充布局文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="236.4" x="506.8" y="553.1162">subDecor = (ViewGroup) LayoutInflater.from(themedContext).inflate(R.layout.abc_screen_toolbar, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="500.4" y="560.218">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="500.4" y="567.3197">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="494" y="574.4215">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="494" y="581.5232">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="151.2" x="494" y="588.625">//855 mWindow:PhoneWindow 把DecorView添加到PhoneWindow</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="494" y="595.7268">mWindow.setContentView(subDecor);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="487.6" y="602.8285">}</text><polygon fill="#A80036" points="527.6,704.6939,531.6,706.2939,527.6,707.8939,529.2,706.2939" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="432.8" x2="530" y1="706.2939" y2="706.2939"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="435.6" y="704.3514">8</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="440" y="704.3514">mWindow.setContentView(subDecor);</text><path d="M538.4,611.5711 L538.4,792.7711 L790.8,792.7711 L790.8,615.5711 L786.8,611.5711 L538.4,611.5711 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M786.8,611.5711 L786.8,615.5711 L790.8,615.5711 L786.8,611.5711 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="28.8" x="540.8" y="619.5303">Window.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="18.8" x="540.8" y="626.632">//抽象类</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="84" x="540.8" y="633.7338">abstract setContentView(View view);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="540.8" y="640.8355">PhoneWindow.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="28.8" x="540.8" y="647.9373">//实现类 423</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="63.6" x="540.8" y="655.0391">setContentView(View view){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.6" x="547.2" y="662.1408">if (mContentParent == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="76.8" x="553.6" y="669.2426">//创建DecorView和ContentParent</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32" x="553.6" y="676.3443">installDecor();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.4" x="547.2" y="683.4461">} else if (!hasFeature(FEATURE_CONTENT_TRANSITIONS)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="80.4" x="553.6" y="690.5479">mContentParent.removeAllViews();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="547.2" y="697.6496">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="542.4" y="704.7514"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92.4" x="547.2" y="711.8531">//438 把资源文件填充到mContentParent</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="124" x="547.2" y="718.9549">mLayoutInflater.inflate(layoutResID, mContentParent);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="542.4" y="726.0566"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="111.6" x="547.2" y="733.1584">//标记当前Activity是否已经调用setContentView()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="136.8" x="547.2" y="740.2602">//作用：调用requestFeature必须在调用setContentView之前</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.6" x="547.2" y="747.3619">// public boolean requestFeature(int featureId) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90" x="547.2" y="754.4637">//      if (mContentParentExplicitlySet) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="237.6" x="547.2" y="761.5654">//          throw new AndroidRuntimeException("requestFeature() must be called before adding content");</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="547.2" y="768.6672">//      }</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="6.4" x="547.2" y="775.7689">// }</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.6" x="547.2" y="782.8707">mContentParentExplicitlySet = true;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="540.8" y="789.9725">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="536.4" x2="555.2" y1="853.3291" y2="853.3291"/><line style="stroke:#A80036;stroke-width:0.4;" x1="555.2" x2="555.2" y1="853.3291" y2="858.5291"/><line style="stroke:#A80036;stroke-width:0.4;" x1="538.8" x2="555.2" y1="858.5291" y2="858.5291"/><polygon fill="#A80036" points="542.8,856.9291,538.8,858.5291,542.8,860.1291,541.2,858.5291" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="541.2" y="851.3865">9</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32" x="545.6" y="851.3865">installDecor();</text><path d="M582.4,798.715 L582.4,909.115 L706,909.115 L706,802.715 L702,798.715 L582.4,798.715 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M702,798.715 L702,802.715 L706,802.715 L702,798.715 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="584.8" y="806.6742">PhoneWindow.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32" x="584.8" y="813.776">installDecor(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46" x="591.2" y="820.8777">if (mDecor == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.2" x="597.6" y="827.9795">//如果DecorView为空，创建DecorView</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.2" x="597.6" y="835.0813">mDecor = generateDecor(-1);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="591.2" y="842.183">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.4" x="597.6" y="849.2848">mDecor.setWindow(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="591.2" y="856.3865">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.6" x="591.2" y="863.4883">if (mContentParent == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.8" x="597.6" y="870.59">//创建ContentParent</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102.4" x="597.6" y="877.6918">mContentParent = generateLayout(mDecor);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="591.2" y="884.7936">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="586.4" y="891.8953"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="586.4" y="898.9971"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="584.8" y="906.0988">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="538.4" x2="555.2" y1="935.9467" y2="935.9467"/><line style="stroke:#A80036;stroke-width:0.4;" x1="555.2" x2="555.2" y1="935.9467" y2="941.1467"/><line style="stroke:#A80036;stroke-width:0.4;" x1="538.8" x2="555.2" y1="941.1467" y2="941.1467"/><polygon fill="#A80036" points="542.8,939.5467,538.8,941.1467,542.8,942.7467,541.2,941.1467" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="541.2" y="934.0041">10</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="548.4" y="934.0041">generateDecor();</text><path d="M591.6,914.8414 L591.6,954.0414 L749.2,954.0414 L749.2,918.8414 L745.2,914.8414 L591.6,914.8414 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M745.2,914.8414 L745.2,918.8414 L749.2,918.8414 L745.2,914.8414 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="594" y="922.8006">PhoneWindow.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.4" x="594" y="929.9023">//创建DecorView</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.8" x="594" y="937.0041">DecorView generateDecor(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.8" x="600.4" y="944.1059">return new DecorView(context, featureId, this, getAttributes());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="594" y="951.2076">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="538.4" x2="555.2" y1="1002.3607" y2="1002.3607"/><line style="stroke:#A80036;stroke-width:0.4;" x1="555.2" x2="555.2" y1="1002.3607" y2="1007.5607"/><line style="stroke:#A80036;stroke-width:0.4;" x1="538.8" x2="555.2" y1="1007.5607" y2="1007.5607"/><polygon fill="#A80036" points="542.8,1005.9607,538.8,1007.5607,542.8,1009.1607,541.2,1007.5607" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="541.2" y="1000.4182">11</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.4" x="548.4" y="1000.4182">generateLayout(mDecor);</text><path d="M611.6,959.9502 L611.6,1041.9502 L812.4,1041.9502 L812.4,963.9502 L808.4,959.9502 L611.6,959.9502 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M808.4,959.9502 L808.4,963.9502 L812.4,963.9502 L808.4,959.9502 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="614" y="967.9094">PhoneWindow.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.8" x="614" y="975.0111">//创建ContentParent</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="79.6" x="614" y="982.1129">generateLayout(DecorView decor){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.4" x="620.4" y="989.2146">//获取主题文件，解析设置Title，ActionBar等等</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="79.6" x="620.4" y="996.3164">TypedArray a = getWindowStyle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="620.4" y="1003.4182">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="620.4" y="1010.5199">//2629</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="186" x="620.4" y="1017.6217">ViewGroup contentParent = (ViewGroup)findViewById(ID_ANDROID_CONTENT);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="615.6" y="1024.7234"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="620.4" y="1031.8252">return contentParent;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="614" y="1038.927">}</text><polygon fill="#A80036" points="433.2,1053.5713,429.2,1055.1713,433.2,1056.7713,431.6,1055.1713" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="430.8" x2="534" y1="1055.1713" y2="1055.1713"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="435.6" y="1053.2287">12</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="444.4" y="1053.2287"/><polygon fill="#A80036" points="317.2,1066.273,313.2,1067.873,317.2,1069.473,315.6,1067.873" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="314.8" x2="426.4" y1="1067.873" y2="1067.873"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="319.6" y="1065.9305">13</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="328.4" y="1065.9305"/><polygon fill="#A80036" points="231.6,1078.9748,227.6,1080.5748,231.6,1082.1748,230,1080.5748" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="229.2" x2="310.4" y1="1080.5748" y2="1080.5748"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="234" y="1078.6322">14</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="242.8" y="1078.6322"/><line style="stroke:#A80036;stroke-width:0.4;" x1="611.6" x2="630.4" y1="1214.9573" y2="1214.9573"/><line style="stroke:#A80036;stroke-width:0.4;" x1="630.4" x2="630.4" y1="1214.9573" y2="1220.1573"/><line style="stroke:#A80036;stroke-width:0.4;" x1="614" x2="630.4" y1="1220.1573" y2="1220.1573"/><polygon fill="#A80036" points="618,1218.5573,614,1220.1573,618,1221.7573,616.4,1220.1573" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="616.4" y="1213.0147">15</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="623.6" y="1213.0147">handleResumeActivity();</text><path d="M390.8,1085.7748 L390.8,1345.3748 L606,1345.3748 L606,1089.7748 L602,1085.7748 L390.8,1085.7748 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M602,1085.7748 L602,1089.7748 L606,1089.7748 L602,1085.7748 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="393.2" y="1093.734">ActivityThread.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56" x="393.2" y="1100.8357">handleResumeActivity(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="394.8" y="1107.9375"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="399.6" y="1115.0393">//调用Activity.onResume()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="200.4" x="399.6" y="1122.141">final ActivityClientRecord r = performResumeActivity(token, finalStateRequest, reason);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="394.8" y="1129.2428"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="399.6" y="1136.3445">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="394.8" y="1143.4463"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="127.6" x="393.2" y="1150.548">if (r.window == null &amp;&amp; !a.mFinished &amp;&amp; willBeVisible) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.4" x="406" y="1157.6498">//PhoneWindow</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="406" y="1164.7516">r.window = r.activity.getWindow();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="28" x="406" y="1171.8533">//DecorView</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.4" x="406" y="1178.9551">View decor = r.window.getDecorView();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="174.4" x="406" y="1186.0568">//设置DecorView显隐藏为不可见，防止View测绘过程中软键盘弹起导致闪动</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.2" x="406" y="1193.1586">decor.setVisibility(View.INVISIBLE);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="41.6" x="406" y="1200.2604">//WindowManager</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102" x="406" y="1207.3621">ViewManager wm = a.getWindowManager();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="138.8" x="406" y="1214.4639">WindowManager.LayoutParams l = r.window.getAttributes();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.2" x="406" y="1221.5656">a.mDecor = decor;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="406" y="1228.6674">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="406" y="1235.7691">if (a.mVisibleFromClient) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.6" x="412.4" y="1242.8709">if (!a.mWindowAdded) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.8" x="418.8" y="1249.9727">a.mWindowAdded = true;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="167.6" x="418.8" y="1257.0744">//把DecorView添加到WindowManager中,开启View的布局测量和绘制流程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.2" x="418.8" y="1264.1762">wm.addView(decor, l);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="412.4" y="1271.2779">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="415.6" y="1278.3797">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="412.4" y="1285.4814">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="406" y="1292.5832">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="404.4" y="1299.685">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="394.8" y="1306.7867"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126.8" x="404.4" y="1313.8885">//显示 DecorView  mDecor.setVisibility(View.VISIBLE))</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="404.4" y="1320.9902">r.activity.makeVisible();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="394.8" y="1328.092"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="399.6" y="1335.1938">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="393.2" y="1342.2955">}</text><polygon fill="#A80036" points="674.8,1415.7539,678.8,1417.3539,674.8,1418.9539,676.4,1417.3539" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="613.6" x2="677.2" y1="1417.3539" y2="1417.3539"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="616.4" y="1415.4113">16</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.2" x="623.6" y="1415.4113">wm.addView(decor, l);</text><path d="M685.6,1351.0381 L685.6,1475.4381 L874.4,1475.4381 L874.4,1355.0381 L870.4,1351.0381 L685.6,1351.0381 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M870.4,1351.0381 L870.4,1355.0381 L874.4,1355.0381 L870.4,1351.0381 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100.8" x="688" y="1358.9973">ViewManager.java //抽象类 对View的增删改</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.2" x="694.4" y="1366.099">addView(View view, ViewGroup.LayoutParams params);//抽象方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152" x="694.4" y="1373.2008">updateViewLayout(View view, ViewGroup.LayoutParams params);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.8" x="694.4" y="1380.3025">removeView(View view);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="688" y="1387.4043">WindowManager.java继承ViewManager.java //接口类，并未实现addView()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78.8" x="688" y="1394.5061">WindowManagerImpl.java //实现类</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8.8" x="688" y="1401.6078">//93</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="688" y="1408.7096">addView(View view, ViewGroup.LayoutParams params){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="171.2" x="694.4" y="1415.8113">mGlobal.addView(view, params, mContext.getDisplay(), mParentWindow);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="688" y="1422.9131">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="689.6" y="1430.0148"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52" x="688" y="1437.1166">updateViewLayout(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.4" x="694.4" y="1444.2184">mGlobal.updateViewLayout()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="688" y="1451.3201">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.2" x="688" y="1458.4219">removeView(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="694.4" y="1465.5236">mGlobal.removeView()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="688" y="1472.6254">}</text><polygon fill="#A80036" points="753.2,1588.6943,757.2,1590.2943,753.2,1591.8943,754.8,1590.2943" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="683.6" x2="755.6" y1="1590.2943" y2="1590.2943"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="686.4" y="1588.3518">17</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="693.6" y="1588.3518">mGlobal.addView();</text><path d="M764,1481.368 L764,1690.968 L1023.6,1690.968 L1023.6,1485.368 L1019.6,1481.368 L764,1481.368 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1019.6,1481.368 L1019.6,1485.368 L1023.6,1485.368 L1019.6,1481.368 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="84" x="766.4" y="1489.3271">WindowManagerGlobal.java //实现类</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8.8" x="766.4" y="1496.4289">//93</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="766.4" y="1503.5307">addView(View view, ViewGroup.LayoutParams params){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="772.8" y="1510.6324">ViewRootImpl root;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.4" x="772.8" y="1517.7342">//377 实例化ViewRootImpl</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.4" x="772.8" y="1524.8359">// IBinder接口，将window注册到WindowManagerService中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="156.8" x="772.8" y="1531.9377">// mWindowSession = WindowManagerGlobal.getWindowSession();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="772.8" y="1539.0395">// 当前view的window信息</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="244.8" x="772.8" y="1546.1412">// mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.4" x="772.8" y="1553.243">// 监听垂直同步信号VSYNC</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116" x="772.8" y="1560.3447">// mChoreographer = Choreographer.getInstance();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52" x="772.8" y="1567.4465">// ViewRootImpl功能：</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="188.4" x="772.8" y="1574.5482">// 1.setView()方法中利用WindowSession将Window添加到WindowManagerService</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160" x="772.8" y="1581.65">// 2.页面View树的顶层节点(DecorView的parent)，关联Window和View</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146.8" x="772.8" y="1588.7518">// 3.利用Choreographer接收Vsync同步信号触发View的三大流程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="772.8" y="1595.8535">// 4.利用WindowInputEventReceiver接收屏幕输入事件，分发手势</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152" x="772.8" y="1602.9553">// 5.利用Choreographer接收Vsync同步信号，触发View的动画重绘</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="121.6" x="772.8" y="1610.057">root = new ViewRootImpl(view.getContext(), display);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="768" y="1617.1588"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="162" x="772.8" y="1624.2605">//方便WindowManager更新或者删除View的时候，还能清理和销毁工作</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="772.8" y="1631.3623">mViews.add(view);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="41.6" x="772.8" y="1638.4641">mRoots.add(root);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="772.8" y="1645.5658">mParams.add(wparams);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="768" y="1652.6676"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="772.8" y="1659.7693">//view与ViewRoot关联，开启View的布局测量和绘制流程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="147.2" x="772.8" y="1666.8711">//如果这个view是从setContentView()方法触发，view=DecorView</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.8" x="772.8" y="1673.9729">//windowManager.addView(view, ...) 普通的view</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="109.2" x="772.8" y="1681.0746">root.setView(view, wparams, panelParentView);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="766.4" y="1688.1764">}</text><polygon fill="#A80036" points="822.4,1790.0418,826.4,1791.6418,822.4,1793.2418,824,1791.6418" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="762" x2="824.8" y1="1791.6418" y2="1791.6418"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="764.8" y="1789.6992">18</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="23.2" x="772" y="1789.6992">setView();</text><path d="M833.2,1696.9189 L833.2,1878.1189 L1098.8,1878.1189 L1098.8,1700.9189 L1094.8,1696.9189 L833.2,1696.9189 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1094.8,1696.9189 L1094.8,1700.9189 L1098.8,1700.9189 L1094.8,1696.9189 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="257.2" x="835.6" y="1704.8781">ViewRootImpl.java //实现类 开启View三大流程开始点，也是接收手机屏幕手势到达点，应用中手势分发发源地。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="835.6" y="1711.9799">//构造方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="124" x="835.6" y="1719.0816">new ViewRootImpl(Context context, Display display) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.4" x="842" y="1726.1834">//当前页面窗口注册到WMS中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152" x="842" y="1733.2852">mWindowSession = WindowManagerGlobal.getWindowSession();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="220.8" x="842" y="1740.3869">//当前View关联的Window信息，是否关联到窗口上，每一个添加到窗口的view都有一个attachInfo</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="240" x="842" y="1747.4887">mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.8" x="842" y="1754.5904">//接收系统发送的垂直同步信号，60Hz 16.7ms</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="111.2" x="842" y="1761.6922">mChoreographer = Choreographer.getInstance();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="835.6" y="1768.7939">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="8.8" x="835.6" y="1775.8957">//93</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="28" x="835.6" y="1782.9975">setView(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="120" x="842" y="1790.0992">//853 窗口注册到WMS之前开启一次布局和测绘工作</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.6" x="842" y="1797.201">requestLayout();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="837.2" y="1804.3027"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="247.6" x="842" y="1811.4045">//输入事件接收通道，向运行在Server进程InputManagerService注册监听，当屏幕输入事件到达时回调给应用</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.4" x="842" y="1818.5063">mInputChannel = new InputChannel();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="837.2" y="1825.608"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="842" y="1832.7098">//864 向WMS注册本页面窗口</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="179.2" x="842" y="1839.8115">res = mWindowSession.addToDisplay(mWindow, mSeq, mWindowAttributes,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.8" x="886.8" y="1846.9133">getHostVisibility(), mDisplay.getDisplayId(), mTmpFrame,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.8" x="886.8" y="1854.015">mAttachInfo.mContentInsets, mAttachInfo.mStableInsets,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.4" x="886.8" y="1861.1168">mAttachInfo.mOutsets, mAttachInfo.mDisplayCutout, mInputChannel,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="886.8" y="1868.2186">mTempInsets);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="835.6" y="1875.3203">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="831.2" x2="850" y1="1945.7787" y2="1945.7787"/><line style="stroke:#A80036;stroke-width:0.4;" x1="850" x2="850" y1="1945.7787" y2="1950.9787"/><line style="stroke:#A80036;stroke-width:0.4;" x1="833.6" x2="850" y1="1950.9787" y2="1950.9787"/><polygon fill="#A80036" points="837.6,1949.3787,833.6,1950.9787,837.6,1952.5787,836,1950.9787" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="836" y="1943.8361">19</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.6" x="843.2" y="1943.8361">requestLayout();</text><path d="M523.2,1884.0629 L523.2,2008.4629 L823.6,2008.4629 L823.6,1888.0629 L819.6,1884.0629 L523.2,1884.0629 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M819.6,1884.0629 L819.6,1888.0629 L823.6,1888.0629 L819.6,1884.0629 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42" x="525.6" y="1892.0221">ViewRootImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="527.2" y="1899.1238"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.6" x="525.6" y="1906.2256">requestLayout(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="532" y="1913.3273">//检查当前线程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.8" x="532" y="1920.4291">//不能在子线程更新UI，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="204.4" x="532" y="1927.5309">//对View的更新涉及到view.requestLayout();view.postInvalidate();会调用到ViewRootImpl中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="232" x="532" y="1934.6326">//ViewRootImpl在onCreate的时候还没有创建，就不会有线程检查，此时在子线程更新UI并不会报错。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="232.4" x="532" y="1941.7344">//部分子线程更新UI是可以成功的，不会报错。子线程创建View，绑定数据等到页面进入直接展示视图</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="235.2" x="532" y="1948.8361">//拓展：当应用进入WelcomeActivity的时候从本地缓存中读取数据开启子线程创建View并且绑定数据，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="254.4" x="532" y="1955.9379">//      然后缓存到ViewPool中，当我们跳转到首页时，首页的View已经全部创建好了，直接从ViewPool中获取，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.4" x="532" y="1963.0396">//      大大提高页面展示速度.</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="285.6" x="532" y="1970.1414">//throw new CalledFromWrongThreadException("Only the original thread that created a view hierarchy can touch its views.");</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="532" y="1977.2432">checkThread();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="61.6" x="532" y="1984.3449">mLayoutRequested = true;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="532" y="1991.4467">//安排任务执行</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="532" y="1998.5484">scheduleTraversals();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="525.6" y="2005.6502">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="833.2" x2="852" y1="2058.3542" y2="2058.3542"/><line style="stroke:#A80036;stroke-width:0.4;" x1="852" x2="852" y1="2058.3542" y2="2063.5542"/><line style="stroke:#A80036;stroke-width:0.4;" x1="835.6" x2="852" y1="2063.5542" y2="2063.5542"/><polygon fill="#A80036" points="839.6,2061.9542,835.6,2063.5542,839.6,2065.1542,838,2063.5542" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="838" y="2056.4116">20</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="845.2" y="2056.4116">scheduleTraversals();</text><path d="M571.2,2014.3928 L571.2,2103.5928 L823.6,2103.5928 L823.6,2018.3928 L819.6,2014.3928 L571.2,2014.3928 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M819.6,2014.3928 L819.6,2018.3928 L823.6,2018.3928 L819.6,2014.3928 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42" x="573.6" y="2022.352">ViewRootImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="575.2" y="2029.4537"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="573.6" y="2036.5555">scheduleTraversals(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.8" x="580" y="2043.6572">if (!mTraversalScheduled) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.8" x="586.4" y="2050.759">//过滤同一帧内多次重复请求，防止多次测绘布局绘制</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66" x="586.4" y="2057.8607">mTraversalScheduled = true;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="211.2" x="586.4" y="2064.9625">//屏障消息：为了让异步消息优先执行，使得ViewRootImpl中UI测量，布局，绘制尽早执行。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="166.8" x="586.4" y="2072.0643">mTraversalBarrier = mHandler.getLooper().getQueue().postSyncBarrier();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="150" x="586.4" y="2079.166">//异步消息：每次垂直信号到达执行mTraversalRunnable.run()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="231.2" x="586.4" y="2086.2678">mChoreographer.postCallback(Choreographer.CALLBACK_TRAVERSAL, mTraversalRunnable, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="580" y="2093.3695">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="573.6" y="2100.4713">}</text><polygon fill="#A80036" points="919.6,2202.3367,923.6,2203.9367,919.6,2205.5367,921.2,2203.9367" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="835.2" x2="922" y1="2203.9367" y2="2203.9367"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="838" y="2201.9941">21</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.4" x="845.2" y="2201.9941">mChoreographer.postCallback();</text><path d="M930.4,2109.2139 L930.4,2290.4139 L1154.8,2290.4139 L1154.8,2113.2139 L1150.8,2109.2139 L930.4,2109.2139 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1150.8,2109.2139 L1150.8,2113.2139 L1154.8,2113.2139 L1150.8,2109.2139 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="932.8" y="2117.173">Choreographer.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="934.4" y="2124.2748"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="932.8" y="2131.3766">//416</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.8" x="932.8" y="2138.4783">postCallback(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.2" x="940.8" y="2145.5801">postCallbackDelayed(callbackType, action, token, 0);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="932.8" y="2152.6818">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="934.4" y="2159.7836"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="932.8" y="2166.8854">//435</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.6" x="932.8" y="2173.9871">postCallbackDelayed(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="161.6" x="939.2" y="2181.0889">postCallbackDelayedInternal(callbackType, action, token, delayMillis);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="932.8" y="2188.1906">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="934.4" y="2195.2924"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="932.8" y="2202.3941">//447</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.4" x="932.8" y="2209.4959">postCallbackDelayedInternal(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="939.2" y="2216.5977">if (dueTime &lt;= now) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.4" x="945.6" y="2223.6994">scheduleFrameLocked(now);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="939.2" y="2230.8012">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="203.2" x="945.6" y="2237.9029">Message msg = mHandler.obtainMessage(MSG_DO_SCHEDULE_CALLBACK, action);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="945.6" y="2245.0047">msg.arg1 = callbackType;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="945.6" y="2252.1064">//异步消息</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.6" x="945.6" y="2259.2082">msg.setAsynchronous(true);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="945.6" y="2266.31">//发送异步消息</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110" x="945.6" y="2273.4117">mHandler.sendMessageAtTime(msg, dueTime);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="939.2" y="2280.5135">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="932.8" y="2287.6152">}</text><polygon fill="#A80036" points="839.6,2302.2596,835.6,2303.8596,839.6,2305.4596,838,2303.8596" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="837.2" x2="926" y1="2303.8596" y2="2303.8596"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="842" y="2301.917">22</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="850.8" y="2301.917"/><line style="stroke:#A80036;stroke-width:0.4;" x1="835.2" x2="854" y1="2377.8771" y2="2377.8771"/><line style="stroke:#A80036;stroke-width:0.4;" x1="854" x2="854" y1="2377.8771" y2="2383.0771"/><line style="stroke:#A80036;stroke-width:0.4;" x1="837.6" x2="854" y1="2383.0771" y2="2383.0771"/><polygon fill="#A80036" points="841.6,2381.4771,837.6,2383.0771,841.6,2384.6771,840,2383.0771" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="840" y="2375.9346">23</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="847.2" y="2375.9346">mTraversalRunnable.run();</text><path d="M632,2309.0596 L632,2447.8596 L823.6,2447.8596 L823.6,2313.0596 L819.6,2309.0596 L632,2309.0596 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M819.6,2309.0596 L819.6,2313.0596 L823.6,2313.0596 L819.6,2309.0596 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42" x="634.4" y="2317.0188">ViewRootImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164.8" x="634.4" y="2324.1205">final TraversalRunnable mTraversalRunnable = new TraversalRunnable();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="121.6" x="634.4" y="2331.2223">final class TraversalRunnable implements Runnable {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="640.8" y="2338.324">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.2" x="640.8" y="2345.4258">public void run() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.8" x="647.2" y="2352.5275">doTraversal();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="640.8" y="2359.6293">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="634.4" y="2366.7311">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="636" y="2373.8328"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.8" x="634.4" y="2380.9346">doTraversal(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="59.6" x="640.8" y="2388.0363">if (mTraversalScheduled) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="647.2" y="2395.1381">mTraversalScheduled = false;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="647.2" y="2402.2398">//移除屏障消息</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="166.8" x="647.2" y="2409.3416">mHandler.getLooper().getQueue().removeSyncBarrier(mTraversalBarrier);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170.4" x="647.2" y="2416.4434">//根据当前页面的View树判断有没有发生变化，需不需要重新测绘布局绘制</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="647.2" y="2423.5451">performTraversals();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="636" y="2430.6469"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="640.8" y="2437.7486">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="634.4" y="2444.8504">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="837.2" x2="856" y1="2582.7755" y2="2582.7755"/><line style="stroke:#A80036;stroke-width:0.4;" x1="856" x2="856" y1="2582.7755" y2="2587.9755"/><line style="stroke:#A80036;stroke-width:0.4;" x1="839.6" x2="856" y1="2587.9755" y2="2587.9755"/><polygon fill="#A80036" points="843.6,2586.3755,839.6,2587.9755,843.6,2589.5755,842,2587.9755" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="842" y="2580.8329">24</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="849.2" y="2580.8329">performTraversals();</text><path d="M613.2,2453.593 L613.2,2713.193 L823.6,2713.193 L823.6,2457.593 L819.6,2453.593 L613.2,2453.593 " fill="#FBFB77" filter="url(#f1fgj1znin2yu5)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M819.6,2453.593 L819.6,2457.593 L823.6,2457.593 L819.6,2453.593 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42" x="615.6" y="2461.5521">ViewRootImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2468.6539"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="615.6" y="2475.7557">performTraversals(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="622" y="2482.8574">//2541 测量</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="159.2" x="622" y="2489.9592">performMeasure(childWidthMeasureSpec, childHeightMeasureSpec);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2497.0609"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="622" y="2504.1627">//2590 布局</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.2" x="622" y="2511.2645">performLayout(lp, mWidth, mHeight);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2518.3662"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="622" y="2525.468">//2755 绘制</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="33.6" x="622" y="2532.5697">performDraw();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2539.6715"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2546.7732">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2553.875"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202" x="615.6" y="2560.9768">private void performMeasure(int childWidthMeasureSpec, int childHeightMeasureSpec) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40" x="622" y="2568.0785">//DecorView 测量</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="159.2" x="622" y="2575.1803">mView.measure(childWidthMeasureSpec, childHeightMeasureSpec);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2582.282">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66" x="615.6" y="2589.3838">private void performLayout() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40" x="622" y="2596.4855">//DecorView 布局</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="622" y="2603.5873">final View host = mView;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.6" x="622" y="2610.6891">host.layout(0, 0, host.getMeasuredWidth(), host.getMeasuredHeight());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2617.7908">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62" x="615.6" y="2624.8926">private void performDraw() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.2" x="622" y="2631.9943">boolean canUseAsync = draw(fullRedrawNeeded);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2639.0961">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2646.1979"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114" x="615.6" y="2653.2996">private boolean draw(boolean fullRedrawNeeded) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="622" y="2660.4014">//3638</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.8" x="622" y="2667.5031">drawSoftware(...)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2674.6049">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="617.2" y="2681.7066"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.4" x="615.6" y="2688.8084">drawSoftware(...){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="622" y="2695.9102">//3730 绘制</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="622" y="2703.0119">mView.draw(canvas);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="615.6" y="2710.1137">}</text><polygon fill="#A80036" points="616,2724.758,612,2726.358,616,2727.958,614.4,2726.358" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="613.6" x2="828.8" y1="2726.358" y2="2726.358"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="618.4" y="2724.4154">25</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="627.2" y="2724.4154"/><!--MD5=[096f2a3811f55dc24569bb83374f5ab6]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'Activity之View树绘制流程分析
+'1
+Activity.java -> Activity.java: attach()
+activate Activity.java
+note left
+Activity.java
+//7701
+attach(...){
+    //创建PhoneWindow
+    mWindow = new PhoneWindow(this, window, activityConfigCallback);
+}
+end note
+deactivate Activity.java
+
+'2
+Activity.java -> Activity.java: onCreate()
+activate Activity.java
+note left
+Activity.java
+//1448
+onCreate(Bundle savedInstanceState){
+
+}
+end note
+deactivate Activity.java
+
+'3
+MainActivity.java -> MainActivity.java: onCreate()
+activate MainActivity.java
+note left
+MainActivity.java
+//1448
+onCreate(Bundle savedInstanceState){
+    setContentView(R.layout.activity_main)
+}
+end note
+
+'4
+MainActivity.java -> AppCompatActivity.java: setContentView(layoutResID)
+activate AppCompatActivity.java
+note right
+AppCompatActivity.java
+//
+setContentView(int layoutResID){
+     getDelegate().setContentView(view, params);
+}
+end note
+
+'5
+AppCompatActivity.java -> AppCompatDelegateImpl.java: getDelegate().setContentView(layoutResID)
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegate.java
+//抽象方法
+abstract setContentView()
+AppCompatDelegateImpl.java
+//实现方法 551
+setContentView(int resId){
+    //创建 mSubDecor
+    ensureSubDecor();
+    // contentParent 是 mSubDecor 的子View
+    ViewGroup contentParent = mSubDecor.findViewById(android.R.id.content);
+    contentParent.removeAllViews();
+    //Activity资源文件布局解析以后的View添加到contentParent中，
+    //contentParent 是 mSubDecor 的子View,即Activity资源文件View添加到mSubDecor中
+    LayoutInflater.from(mContext).inflate(resId, contentParent);
+    mAppCompatWindowCallback.getWrapped().onContentChanged();
+}
+end note
+
+'6
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: ensureSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+ensureSubDecor(){
+    mSubDecor = createSubDecor();
+}
+end note
+
+'7
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: createSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+createSubDecor(){
+    //解析当前Activity的主题
+    //根据当前主题设置是否有Title，ActionBar等等
+    TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);
+
+    ...
+    final LayoutInflater inflater = LayoutInflater.from(mContext);
+    //是否有标题,
+    //<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    //当前设置有Title,mWindowNoTitle=false
+    if (!mWindowNoTitle) {
+        //是否是Dialog类型的Activity，显然不是
+        if (mIsFloating) {
+            // If we're floating, inflate the dialog title decor
+            subDecor = (ViewGroup) inflater.inflate(R.layout.abc_dialog_title_material, null);
+            ...
+        }
+        //是否有ActionBar,当前设置有ActionBar
+        else if (mHasActionBar) {
+            //生成DecorView默认填充布局文件
+            subDecor = (ViewGroup) LayoutInflater.from(themedContext).inflate(R.layout.abc_screen_toolbar, null);
+        }
+        ...
+    }
+    ...
+    //855 mWindow:PhoneWindow 把DecorView添加到PhoneWindow
+    mWindow.setContentView(subDecor);
+}
+end note
+
+'8
+AppCompatDelegateImpl.java -> PhoneWindow.java: mWindow.setContentView(subDecor);
+activate PhoneWindow.java
+note right
+Window.java
+//抽象类
+abstract setContentView(View view);
+PhoneWindow.java
+//实现类 423
+setContentView(View view){
+    if (mContentParent == null) {
+        //创建DecorView和ContentParent
+        installDecor();
+    } else if (!hasFeature(FEATURE_CONTENT_TRANSITIONS)) {
+        mContentParent.removeAllViews();
+    }
+
+    //438 把资源文件填充到mContentParent
+    mLayoutInflater.inflate(layoutResID, mContentParent);
+
+    //标记当前Activity是否已经调用setContentView()
+    //作用：调用requestFeature必须在调用setContentView之前
+    // public boolean requestFeature(int featureId) {
+    //      if (mContentParentExplicitlySet) {
+    //          throw new AndroidRuntimeException("requestFeature() must be called before adding content");
+    //      }
+    // }
+    mContentParentExplicitlySet = true;
+}
+end note
+
+'9
+PhoneWindow.java -> PhoneWindow.java: installDecor();
+activate PhoneWindow.java
+note right
+PhoneWindow.java
+installDecor(){
+    if (mDecor == null) {
+        //如果DecorView为空，创建DecorView
+        mDecor = generateDecor(-1);
+    } else {
+        mDecor.setWindow(this);
+    }
+    if (mContentParent == null) {
+        //创建ContentParent
+        mContentParent = generateLayout(mDecor);
+    }
+
+
+}
+end note
+
+'10
+PhoneWindow.java -> PhoneWindow.java: generateDecor();
+note right
+PhoneWindow.java
+//创建DecorView
+DecorView generateDecor(){
+    return new DecorView(context, featureId, this, getAttributes());
+}
+end note
+
+'11
+PhoneWindow.java -> PhoneWindow.java: generateLayout(mDecor);
+note right
+PhoneWindow.java
+//创建ContentParent
+generateLayout(DecorView decor){
+    //获取主题文件，解析设置Title，ActionBar等等
+    TypedArray a = getWindowStyle();
+    ...
+    //2629
+    ViewGroup contentParent = (ViewGroup)findViewById(ID_ANDROID_CONTENT);
+
+    return contentParent;
+}
+end note
+
+'12
+PhoneWindow.java - -> AppCompatDelegateImpl.java
+deactivate PhoneWindow.java
+deactivate PhoneWindow.java
+deactivate AppCompatDelegateImpl.java
+deactivate AppCompatDelegateImpl.java
+
+'13
+AppCompatDelegateImpl.java - -> AppCompatActivity.java
+deactivate AppCompatDelegateImpl.java
+
+
+'14
+AppCompatActivity.java - -> MainActivity.java
+deactivate AppCompatActivity.java
+deactivate MainActivity.java
+
+
+'15
+ActivityThread.java -> ActivityThread.java: handleResumeActivity();
+activate ActivityThread.java
+note left
+ActivityThread.java
+handleResumeActivity(){
+
+    //调用Activity.onResume()
+    final ActivityClientRecord r = performResumeActivity(token, finalStateRequest, reason);
+
+    ...
+
+if (r.window == null && !a.mFinished && willBeVisible) {
+        //PhoneWindow
+        r.window = r.activity.getWindow();
+        //DecorView
+        View decor = r.window.getDecorView();
+        //设置DecorView显隐藏为不可见，防止View测绘过程中软键盘弹起导致闪动
+        decor.setVisibility(View.INVISIBLE);
+        //WindowManager
+        ViewManager wm = a.getWindowManager();
+        WindowManager.LayoutParams l = r.window.getAttributes();
+        a.mDecor = decor;
+        ...
+        if (a.mVisibleFromClient) {
+            if (!a.mWindowAdded) {
+                a.mWindowAdded = true;
+                //把DecorView添加到WindowManager中,开启View的布局测量和绘制流程
+                wm.addView(decor, l);
+            } else {
+              ...
+            }
+        }
+       ...
+
+       //显示 DecorView  mDecor.setVisibility(View.VISIBLE))
+       r.activity.makeVisible();
+
+    }
+}
+end note
+
+'16
+ActivityThread.java -> WindowManagerImpl.java: wm.addView(decor, l);
+activate WindowManagerImpl.java
+note right
+ViewManager.java //抽象类 对View的增删改
+    addView(View view, ViewGroup.LayoutParams params);//抽象方法
+    updateViewLayout(View view, ViewGroup.LayoutParams params);
+    removeView(View view);
+WindowManager.java继承ViewManager.java //接口类，并未实现addView()方法
+WindowManagerImpl.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    mGlobal.addView(view, params, mContext.getDisplay(), mParentWindow);
+}
+
+updateViewLayout(...){
+    mGlobal.updateViewLayout()
+}
+removeView(...){
+    mGlobal.removeView()
+}
+end note
+
+
+'17
+WindowManagerImpl.java -> WindowManagerGlobal.java: mGlobal.addView();
+activate WindowManagerGlobal.java
+note right
+WindowManagerGlobal.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    ViewRootImpl root;
+    //377 实例化ViewRootImpl
+    // IBinder接口，将window注册到WindowManagerService中
+    // mWindowSession = WindowManagerGlobal.getWindowSession();
+    // 当前view的window信息
+    // mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    // 监听垂直同步信号VSYNC
+    // mChoreographer = Choreographer.getInstance();
+    // ViewRootImpl功能：
+    // 1.setView()方法中利用WindowSession将Window添加到WindowManagerService
+    // 2.页面View树的顶层节点(DecorView的parent)，关联Window和View
+    // 3.利用Choreographer接收Vsync同步信号触发View的三大流程
+    // 4.利用WindowInputEventReceiver接收屏幕输入事件，分发手势
+    // 5.利用Choreographer接收Vsync同步信号，触发View的动画重绘
+    root = new ViewRootImpl(view.getContext(), display);
+
+    //方便WindowManager更新或者删除View的时候，还能清理和销毁工作
+    mViews.add(view);
+    mRoots.add(root);
+    mParams.add(wparams);
+
+    //view与ViewRoot关联，开启View的布局测量和绘制流程
+    //如果这个view是从setContentView()方法触发，view=DecorView
+    //windowManager.addView(view, ...) 普通的view
+    root.setView(view, wparams, panelParentView);
+}
+end note
+
+'18
+WindowManagerGlobal.java -> ViewRootImpl.java: setView();
+activate ViewRootImpl.java
+note right
+ViewRootImpl.java //实现类 开启View三大流程开始点，也是接收手机屏幕手势到达点，应用中手势分发发源地。
+//构造方法
+new ViewRootImpl(Context context, Display display) {
+    //当前页面窗口注册到WMS中
+    mWindowSession = WindowManagerGlobal.getWindowSession();
+    //当前View关联的Window信息，是否关联到窗口上，每一个添加到窗口的view都有一个attachInfo
+    mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    //接收系统发送的垂直同步信号，60Hz 16.7ms
+    mChoreographer = Choreographer.getInstance();
+}
+//93
+setView(...){
+    //853 窗口注册到WMS之前开启一次布局和测绘工作
+    requestLayout();
+
+    //输入事件接收通道，向运行在Server进程InputManagerService注册监听，当屏幕输入事件到达时回调给应用
+    mInputChannel = new InputChannel();
+
+    //864 向WMS注册本页面窗口
+    res = mWindowSession.addToDisplay(mWindow, mSeq, mWindowAttributes,
+                                getHostVisibility(), mDisplay.getDisplayId(), mTmpFrame,
+                                mAttachInfo.mContentInsets, mAttachInfo.mStableInsets,
+                                mAttachInfo.mOutsets, mAttachInfo.mDisplayCutout, mInputChannel,
+                                mTempInsets);
+}
+end note
+
+
+'19
+ViewRootImpl.java -> ViewRootImpl.java: requestLayout();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+requestLayout(){
+    //检查当前线程
+    //不能在子线程更新UI，
+    //对View的更新涉及到view.requestLayout();view.postInvalidate();会调用到ViewRootImpl中
+    //ViewRootImpl在onCreate的时候还没有创建，就不会有线程检查，此时在子线程更新UI并不会报错。
+    //部分子线程更新UI是可以成功的，不会报错。子线程创建View，绑定数据等到页面进入直接展示视图
+    //拓展：当应用进入WelcomeActivity的时候从本地缓存中读取数据开启子线程创建View并且绑定数据，
+    //      然后缓存到ViewPool中，当我们跳转到首页时，首页的View已经全部创建好了，直接从ViewPool中获取，
+    //      大大提高页面展示速度.
+    //throw new CalledFromWrongThreadException("Only the original thread that created a view hierarchy can touch its views.");
+    checkThread();
+    mLayoutRequested = true;
+    //安排任务执行
+    scheduleTraversals();
+}
+end note
+
+
+'20
+ViewRootImpl.java -> ViewRootImpl.java: scheduleTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+scheduleTraversals(){
+    if (!mTraversalScheduled) {
+        //过滤同一帧内多次重复请求，防止多次测绘布局绘制
+        mTraversalScheduled = true;
+        //屏障消息：为了让异步消息优先执行，使得ViewRootImpl中UI测量，布局，绘制尽早执行。
+        mTraversalBarrier = mHandler.getLooper().getQueue().postSyncBarrier();
+        //异步消息：每次垂直信号到达执行mTraversalRunnable.run()方法
+        mChoreographer.postCallback(Choreographer.CALLBACK_TRAVERSAL, mTraversalRunnable, null);
+    }
+}
+end note
+
+'21
+ViewRootImpl.java -> Choreographer.java: mChoreographer.postCallback();
+activate Choreographer.java
+note right
+Choreographer.java
+
+//416
+postCallback(){
+     postCallbackDelayed(callbackType, action, token, 0);
+}
+
+//435
+postCallbackDelayed(){
+    postCallbackDelayedInternal(callbackType, action, token, delayMillis);
+}
+
+//447
+postCallbackDelayedInternal(){
+    if (dueTime <= now) {
+        scheduleFrameLocked(now);
+    } else {
+        Message msg = mHandler.obtainMessage(MSG_DO_SCHEDULE_CALLBACK, action);
+        msg.arg1 = callbackType;
+        //异步消息
+        msg.setAsynchronous(true);
+        //发送异步消息
+        mHandler.sendMessageAtTime(msg, dueTime);
+    }
+}
+end note
+
+'22
+Choreographer.java - -> ViewRootImpl.java
+deactivate Choreographer.java
+
+'23
+ViewRootImpl.java -> ViewRootImpl.java: mTraversalRunnable.run();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+final TraversalRunnable mTraversalRunnable = new TraversalRunnable();
+final class TraversalRunnable implements Runnable {
+    @Override
+    public void run() {
+        doTraversal();
+    }
+}
+
+doTraversal(){
+    if (mTraversalScheduled) {
+        mTraversalScheduled = false;
+        //移除屏障消息
+        mHandler.getLooper().getQueue().removeSyncBarrier(mTraversalBarrier);
+        //根据当前页面的View树判断有没有发生变化，需不需要重新测绘布局绘制
+        performTraversals();
+
+    }
+}
+end note
+
+'24
+ViewRootImpl.java -> ViewRootImpl.java: performTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+performTraversals(){
+    //2541 测量
+    performMeasure(childWidthMeasureSpec, childHeightMeasureSpec);
+
+    //2590 布局
+    performLayout(lp, mWidth, mHeight);
+
+    //2755 绘制
+    performDraw();
+
+}
+
+private void performMeasure(int childWidthMeasureSpec, int childHeightMeasureSpec) {
+    //DecorView 测量
+    mView.measure(childWidthMeasureSpec, childHeightMeasureSpec);
+}
+private void performLayout() {
+    //DecorView 布局
+    final View host = mView;
+    host.layout(0, 0, host.getMeasuredWidth(), host.getMeasuredHeight());
+}
+private void performDraw() {
+    boolean canUseAsync = draw(fullRedrawNeeded);
+}
+
+private boolean draw(boolean fullRedrawNeeded) {
+    //3638
+    drawSoftware(...)
+}
+
+drawSoftware(...){
+    //3730 绘制
+    mView.draw(canvas);
+}
+end note
+
+'25
+ViewRootImpl.java - -> ActivityThread.java:
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate WindowManagerGlobal.java
+deactivate WindowManagerImpl.java
+deactivate ActivityThread.java
+
+@enduml
+
+@startuml
+
+autonumber
+
+Activity.java -> Activity.java: attach()
+activate Activity.java
+note left
+Activity.java
+//7701
+attach(...){
+    //创建PhoneWindow
+    mWindow = new PhoneWindow(this, window, activityConfigCallback);
+}
+end note
+deactivate Activity.java
+
+Activity.java -> Activity.java: onCreate()
+activate Activity.java
+note left
+Activity.java
+//1448
+onCreate(Bundle savedInstanceState){
+
+}
+end note
+deactivate Activity.java
+
+MainActivity.java -> MainActivity.java: onCreate()
+activate MainActivity.java
+note left
+MainActivity.java
+//1448
+onCreate(Bundle savedInstanceState){
+    setContentView(R.layout.activity_main)
+}
+end note
+
+MainActivity.java -> AppCompatActivity.java: setContentView(layoutResID)
+activate AppCompatActivity.java
+note right
+AppCompatActivity.java
+//
+setContentView(int layoutResID){
+     getDelegate().setContentView(view, params);
+}
+end note
+
+AppCompatActivity.java -> AppCompatDelegateImpl.java: getDelegate().setContentView(layoutResID)
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegate.java
+//抽象方法
+abstract setContentView()
+AppCompatDelegateImpl.java
+//实现方法 551
+setContentView(int resId){
+    //创建 mSubDecor
+    ensureSubDecor();
+    // contentParent 是 mSubDecor 的子View
+    ViewGroup contentParent = mSubDecor.findViewById(android.R.id.content);
+    contentParent.removeAllViews();
+    //Activity资源文件布局解析以后的View添加到contentParent中，
+    //contentParent 是 mSubDecor 的子View,即Activity资源文件View添加到mSubDecor中
+    LayoutInflater.from(mContext).inflate(resId, contentParent);
+    mAppCompatWindowCallback.getWrapped().onContentChanged();
+}
+end note
+
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: ensureSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+ensureSubDecor(){
+    mSubDecor = createSubDecor();
+}
+end note
+
+AppCompatDelegateImpl.java -> AppCompatDelegateImpl.java: createSubDecor()
+activate AppCompatDelegateImpl.java
+note right
+AppCompatDelegateImpl.java
+createSubDecor(){
+    //解析当前Activity的主题
+    //根据当前主题设置是否有Title，ActionBar等等
+    TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);
+
+    ...
+    final LayoutInflater inflater = LayoutInflater.from(mContext);
+    //是否有标题,
+    //<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    //当前设置有Title,mWindowNoTitle=false
+    if (!mWindowNoTitle) {
+        //是否是Dialog类型的Activity，显然不是
+        if (mIsFloating) {
+            // If we're floating, inflate the dialog title decor
+            subDecor = (ViewGroup) inflater.inflate(R.layout.abc_dialog_title_material, null);
+            ...
+        }
+        //是否有ActionBar,当前设置有ActionBar
+        else if (mHasActionBar) {
+            //生成DecorView默认填充布局文件
+            subDecor = (ViewGroup) LayoutInflater.from(themedContext).inflate(R.layout.abc_screen_toolbar, null);
+        }
+        ...
+    }
+    ...
+    //855 mWindow:PhoneWindow 把DecorView添加到PhoneWindow
+    mWindow.setContentView(subDecor);
+}
+end note
+
+AppCompatDelegateImpl.java -> PhoneWindow.java: mWindow.setContentView(subDecor);
+activate PhoneWindow.java
+note right
+Window.java
+//抽象类
+abstract setContentView(View view);
+PhoneWindow.java
+//实现类 423
+setContentView(View view){
+    if (mContentParent == null) {
+        //创建DecorView和ContentParent
+        installDecor();
+    } else if (!hasFeature(FEATURE_CONTENT_TRANSITIONS)) {
+        mContentParent.removeAllViews();
+    }
+
+    //438 把资源文件填充到mContentParent
+    mLayoutInflater.inflate(layoutResID, mContentParent);
+
+    //标记当前Activity是否已经调用setContentView()
+    //作用：调用requestFeature必须在调用setContentView之前
+    // public boolean requestFeature(int featureId) {
+    //      if (mContentParentExplicitlySet) {
+    //          throw new AndroidRuntimeException("requestFeature() must be called before adding content");
+    //      }
+    // }
+    mContentParentExplicitlySet = true;
+}
+end note
+
+PhoneWindow.java -> PhoneWindow.java: installDecor();
+activate PhoneWindow.java
+note right
+PhoneWindow.java
+installDecor(){
+    if (mDecor == null) {
+        //如果DecorView为空，创建DecorView
+        mDecor = generateDecor(-1);
+    } else {
+        mDecor.setWindow(this);
+    }
+    if (mContentParent == null) {
+        //创建ContentParent
+        mContentParent = generateLayout(mDecor);
+    }
+
+
+}
+end note
+
+PhoneWindow.java -> PhoneWindow.java: generateDecor();
+note right
+PhoneWindow.java
+//创建DecorView
+DecorView generateDecor(){
+    return new DecorView(context, featureId, this, getAttributes());
+}
+end note
+
+PhoneWindow.java -> PhoneWindow.java: generateLayout(mDecor);
+note right
+PhoneWindow.java
+//创建ContentParent
+generateLayout(DecorView decor){
+    //获取主题文件，解析设置Title，ActionBar等等
+    TypedArray a = getWindowStyle();
+    ...
+    //2629
+    ViewGroup contentParent = (ViewGroup)findViewById(ID_ANDROID_CONTENT);
+
+    return contentParent;
+}
+end note
+
+PhoneWindow.java - -> AppCompatDelegateImpl.java
+deactivate PhoneWindow.java
+deactivate PhoneWindow.java
+deactivate AppCompatDelegateImpl.java
+deactivate AppCompatDelegateImpl.java
+
+AppCompatDelegateImpl.java - -> AppCompatActivity.java
+deactivate AppCompatDelegateImpl.java
+
+
+AppCompatActivity.java - -> MainActivity.java
+deactivate AppCompatActivity.java
+deactivate MainActivity.java
+
+
+ActivityThread.java -> ActivityThread.java: handleResumeActivity();
+activate ActivityThread.java
+note left
+ActivityThread.java
+handleResumeActivity(){
+
+    //调用Activity.onResume()
+    final ActivityClientRecord r = performResumeActivity(token, finalStateRequest, reason);
+
+    ...
+
+if (r.window == null && !a.mFinished && willBeVisible) {
+        //PhoneWindow
+        r.window = r.activity.getWindow();
+        //DecorView
+        View decor = r.window.getDecorView();
+        //设置DecorView显隐藏为不可见，防止View测绘过程中软键盘弹起导致闪动
+        decor.setVisibility(View.INVISIBLE);
+        //WindowManager
+        ViewManager wm = a.getWindowManager();
+        WindowManager.LayoutParams l = r.window.getAttributes();
+        a.mDecor = decor;
+        ...
+        if (a.mVisibleFromClient) {
+            if (!a.mWindowAdded) {
+                a.mWindowAdded = true;
+                //把DecorView添加到WindowManager中,开启View的布局测量和绘制流程
+                wm.addView(decor, l);
+            } else {
+              ...
+            }
+        }
+       ...
+
+       //显示 DecorView  mDecor.setVisibility(View.VISIBLE))
+       r.activity.makeVisible();
+
+    }
+}
+end note
+
+ActivityThread.java -> WindowManagerImpl.java: wm.addView(decor, l);
+activate WindowManagerImpl.java
+note right
+ViewManager.java //抽象类 对View的增删改
+    addView(View view, ViewGroup.LayoutParams params);//抽象方法
+    updateViewLayout(View view, ViewGroup.LayoutParams params);
+    removeView(View view);
+WindowManager.java继承ViewManager.java //接口类，并未实现addView()方法
+WindowManagerImpl.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    mGlobal.addView(view, params, mContext.getDisplay(), mParentWindow);
+}
+
+updateViewLayout(...){
+    mGlobal.updateViewLayout()
+}
+removeView(...){
+    mGlobal.removeView()
+}
+end note
+
+
+WindowManagerImpl.java -> WindowManagerGlobal.java: mGlobal.addView();
+activate WindowManagerGlobal.java
+note right
+WindowManagerGlobal.java //实现类
+//93
+addView(View view, ViewGroup.LayoutParams params){
+    ViewRootImpl root;
+    //377 实例化ViewRootImpl
+    // IBinder接口，将window注册到WindowManagerService中
+    // mWindowSession = WindowManagerGlobal.getWindowSession();
+    // 当前view的window信息
+    // mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    // 监听垂直同步信号VSYNC
+    // mChoreographer = Choreographer.getInstance();
+    // ViewRootImpl功能：
+    // 1.setView()方法中利用WindowSession将Window添加到WindowManagerService
+    // 2.页面View树的顶层节点(DecorView的parent)，关联Window和View
+    // 3.利用Choreographer接收Vsync同步信号触发View的三大流程
+    // 4.利用WindowInputEventReceiver接收屏幕输入事件，分发手势
+    // 5.利用Choreographer接收Vsync同步信号，触发View的动画重绘
+    root = new ViewRootImpl(view.getContext(), display);
+
+    //方便WindowManager更新或者删除View的时候，还能清理和销毁工作
+    mViews.add(view);
+    mRoots.add(root);
+    mParams.add(wparams);
+
+    //view与ViewRoot关联，开启View的布局测量和绘制流程
+    //如果这个view是从setContentView()方法触发，view=DecorView
+    //windowManager.addView(view, ...) 普通的view
+    root.setView(view, wparams, panelParentView);
+}
+end note
+
+WindowManagerGlobal.java -> ViewRootImpl.java: setView();
+activate ViewRootImpl.java
+note right
+ViewRootImpl.java //实现类 开启View三大流程开始点，也是接收手机屏幕手势到达点，应用中手势分发发源地。
+//构造方法
+new ViewRootImpl(Context context, Display display) {
+    //当前页面窗口注册到WMS中
+    mWindowSession = WindowManagerGlobal.getWindowSession();
+    //当前View关联的Window信息，是否关联到窗口上，每一个添加到窗口的view都有一个attachInfo
+    mAttachInfo = new View.AttachInfo(mWindowSession, mWindow, display, this, mHandler, this,context);
+    //接收系统发送的垂直同步信号，60Hz 16.7ms
+    mChoreographer = Choreographer.getInstance();
+}
+//93
+setView(...){
+    //853 窗口注册到WMS之前开启一次布局和测绘工作
+    requestLayout();
+
+    //输入事件接收通道，向运行在Server进程InputManagerService注册监听，当屏幕输入事件到达时回调给应用
+    mInputChannel = new InputChannel();
+
+    //864 向WMS注册本页面窗口
+    res = mWindowSession.addToDisplay(mWindow, mSeq, mWindowAttributes,
+                                getHostVisibility(), mDisplay.getDisplayId(), mTmpFrame,
+                                mAttachInfo.mContentInsets, mAttachInfo.mStableInsets,
+                                mAttachInfo.mOutsets, mAttachInfo.mDisplayCutout, mInputChannel,
+                                mTempInsets);
+}
+end note
+
+
+ViewRootImpl.java -> ViewRootImpl.java: requestLayout();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+requestLayout(){
+    //检查当前线程
+    //不能在子线程更新UI，
+    //对View的更新涉及到view.requestLayout();view.postInvalidate();会调用到ViewRootImpl中
+    //ViewRootImpl在onCreate的时候还没有创建，就不会有线程检查，此时在子线程更新UI并不会报错。
+    //部分子线程更新UI是可以成功的，不会报错。子线程创建View，绑定数据等到页面进入直接展示视图
+    //拓展：当应用进入WelcomeActivity的时候从本地缓存中读取数据开启子线程创建View并且绑定数据，
+    //      然后缓存到ViewPool中，当我们跳转到首页时，首页的View已经全部创建好了，直接从ViewPool中获取，
+    //      大大提高页面展示速度.
+    //throw new CalledFromWrongThreadException("Only the original thread that created a view hierarchy can touch its views.");
+    checkThread();
+    mLayoutRequested = true;
+    //安排任务执行
+    scheduleTraversals();
+}
+end note
+
+
+ViewRootImpl.java -> ViewRootImpl.java: scheduleTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+scheduleTraversals(){
+    if (!mTraversalScheduled) {
+        //过滤同一帧内多次重复请求，防止多次测绘布局绘制
+        mTraversalScheduled = true;
+        //屏障消息：为了让异步消息优先执行，使得ViewRootImpl中UI测量，布局，绘制尽早执行。
+        mTraversalBarrier = mHandler.getLooper().getQueue().postSyncBarrier();
+        //异步消息：每次垂直信号到达执行mTraversalRunnable.run()方法
+        mChoreographer.postCallback(Choreographer.CALLBACK_TRAVERSAL, mTraversalRunnable, null);
+    }
+}
+end note
+
+ViewRootImpl.java -> Choreographer.java: mChoreographer.postCallback();
+activate Choreographer.java
+note right
+Choreographer.java
+
+//416
+postCallback(){
+     postCallbackDelayed(callbackType, action, token, 0);
+}
+
+//435
+postCallbackDelayed(){
+    postCallbackDelayedInternal(callbackType, action, token, delayMillis);
+}
+
+//447
+postCallbackDelayedInternal(){
+    if (dueTime <= now) {
+        scheduleFrameLocked(now);
+    } else {
+        Message msg = mHandler.obtainMessage(MSG_DO_SCHEDULE_CALLBACK, action);
+        msg.arg1 = callbackType;
+        //异步消息
+        msg.setAsynchronous(true);
+        //发送异步消息
+        mHandler.sendMessageAtTime(msg, dueTime);
+    }
+}
+end note
+
+Choreographer.java - -> ViewRootImpl.java
+deactivate Choreographer.java
+
+ViewRootImpl.java -> ViewRootImpl.java: mTraversalRunnable.run();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+final TraversalRunnable mTraversalRunnable = new TraversalRunnable();
+final class TraversalRunnable implements Runnable {
+    @Override
+    public void run() {
+        doTraversal();
+    }
+}
+
+doTraversal(){
+    if (mTraversalScheduled) {
+        mTraversalScheduled = false;
+        //移除屏障消息
+        mHandler.getLooper().getQueue().removeSyncBarrier(mTraversalBarrier);
+        //根据当前页面的View树判断有没有发生变化，需不需要重新测绘布局绘制
+        performTraversals();
+
+    }
+}
+end note
+
+ViewRootImpl.java -> ViewRootImpl.java: performTraversals();
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+
+performTraversals(){
+    //2541 测量
+    performMeasure(childWidthMeasureSpec, childHeightMeasureSpec);
+
+    //2590 布局
+    performLayout(lp, mWidth, mHeight);
+
+    //2755 绘制
+    performDraw();
+
+}
+
+private void performMeasure(int childWidthMeasureSpec, int childHeightMeasureSpec) {
+    //DecorView 测量
+    mView.measure(childWidthMeasureSpec, childHeightMeasureSpec);
+}
+private void performLayout() {
+    //DecorView 布局
+    final View host = mView;
+    host.layout(0, 0, host.getMeasuredWidth(), host.getMeasuredHeight());
+}
+private void performDraw() {
+    boolean canUseAsync = draw(fullRedrawNeeded);
+}
+
+private boolean draw(boolean fullRedrawNeeded) {
+    //3638
+    drawSoftware(...)
+}
+
+drawSoftware(...){
+    //3730 绘制
+    mView.draw(canvas);
+}
+end note
+
+ViewRootImpl.java - -> ActivityThread.java:
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate ViewRootImpl.java
+deactivate WindowManagerGlobal.java
+deactivate WindowManagerImpl.java
+deactivate ActivityThread.java
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
