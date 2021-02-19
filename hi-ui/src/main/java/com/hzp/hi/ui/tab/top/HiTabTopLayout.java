@@ -127,43 +127,54 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
     private void autoScroll(HiTabTopInfo nextInfo) {
         HiTabTop tabTop = findTab(nextInfo);
         if (tabTop == null) return;
+        //索引位置
         int index = infoList.indexOf(nextInfo);
+        //控件在屏幕坐标
         int[] loc = new int[2];
         //获取点击的控件在屏幕的位置
         tabTop.getLocationInWindow(loc);
         int scrollWidth;
         if (tabWith == 0) {
+            //控件宽度
             tabWith = tabTop.getWidth();
         }
         //判断点击了屏幕左侧还是右侧
         if ((loc[0] + tabWith / 2) > HiDisplayUtil.getDisplayWidthInPx(getContext()) / 2) {
+            //右侧 判断tab右侧2个tab是否完全展示，并返回需要滚动的距离
             scrollWidth = rangeScrollWidth(index, 2);
         } else {
+            //左侧 判断tab左侧2个tab是否完全展示，并返回需要滚动的距离
             scrollWidth = rangeScrollWidth(index, -2);
         }
+        //x轴滚动
         scrollTo(getScrollX() + scrollWidth, 0);
     }
 
     /**
      * 获取可滚动的范围
-     *
-     * @param index 从第几个开始
-     * @param range 向前向后的范围
-     * @return 可滚动的范围
+     * 判断tab左侧/右侧range个tab是否完全展示，并返回需要滚动的距离
+     * @param index 从第几个tab开始
+     * @param range 向前向后几个tab的范围
+     * @return 可滚动的范围，需要滚动的距离
      */
     private int rangeScrollWidth(int index, int range) {
         int scrollWidth = 0;
         for (int i = 0; i <= Math.abs(range); i++) {
+            //下一个位置
             int next;
             if (range < 0) {
+                //向左滑动下一个位置索引
                 next = range + i + index;
             } else {
+                //向右滑动下一个位置索引
                 next = range - i + index;
             }
             if (next >= 0 && next < infoList.size()) {
                 if (range < 0) {
+                    //计算向左滑动可滚动的距离
                     scrollWidth -= scrollWidth(next, false);
                 } else {
+                    //计算向右滑动可滚动的距离
                     scrollWidth += scrollWidth(next, true);
                 }
             }
