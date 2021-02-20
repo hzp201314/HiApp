@@ -4,13 +4,15 @@
 autonumber
 
 '30 Activity之手势分发 ViewRootImpl手势分发
-ViewRootImpl.java --> ViewRootImpl.java: (View view)
+ViewRootImpl.java -> ViewRootImpl.java: setView()
 activate ViewRootImpl.java
 note left
 ViewRootImpl.java
 //手势接收
 WindowInputEventReceiver mInputEventReceiver;
+//ViewRootImpl.setView() 955
 mInputEventReceiver = new WindowInputEventReceiver(mInputChannel,Looper.myLooper());
+//键盘点击事件，屏幕点击事件
 final class WindowInputEventReceiver extends InputEventReceiver {
     public WindowInputEventReceiver(InputChannel inputChannel, Looper looper) {
         super(inputChannel, looper);
@@ -52,7 +54,7 @@ void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, 
 
 void doProcessInputEvents() {
     // Deliver all pending input events in the queue.
-    //把队列消息派发出去
+    //从队列头部把队列消息派发出去
     while (mPendingInputEventHead != null) {
         QueuedInputEvent q = mPendingInputEventHead;
         //传递输入事件流
@@ -66,7 +68,7 @@ private void deliverInputEvent(QueuedInputEvent q) {
     if (mInputEventConsistencyVerifier != null) {
         mInputEventConsistencyVerifier.onInputEvent(q.mEvent, 0);
     }
-    //输入事件的预处理阶段
+    //输入事件的预处理阶段 setView() 973
     //  mSyntheticInputStage = new SyntheticInputStage();
     //屏幕点击事件
     //  InputStage viewPostImeStage = new ViewPostImeInputStage(mSyntheticInputStage);
@@ -99,6 +101,7 @@ private void deliverInputEvent(QueuedInputEvent q) {
 }
 
 
+//屏幕点击事件处理
 final class ViewPostImeInputStage extends InputStage {
     public ViewPostImeInputStage(InputStage next) {
         super(next);
@@ -112,7 +115,7 @@ final class ViewPostImeInputStage extends InputStage {
             final int source = q.mEvent.getSource();
             //SOURCE_CLASS_POINTER:屏幕点击事件
             if ((source & InputDevice.SOURCE_CLASS_POINTER) != 0) {
-                //进入手指点击事件
+                //进入处理手指点击事件
                 return processPointerEvent(q);
             } else if ((source & InputDevice.SOURCE_CLASS_TRACKBALL) != 0) {
                 return processTrackballEvent(q);
@@ -135,9 +138,10 @@ final class ViewPostImeInputStage extends InputStage {
     }
 }
 
+//处理手指点击事件
 private int processPointerEvent(QueuedInputEvent q) {
     final MotionEvent event = (MotionEvent)q.mEvent;
-    //DecorView.dispatchPointerEvent()
+    //实际上调用DecorView.dispatchPointerEvent()具体实现在View.dispatchPointerEvent()中
     boolean handled = mView.dispatchPointerEvent(event);
     maybeUpdatePointerIcon(event);
     maybeUpdateTooltip(event);
@@ -150,7 +154,11 @@ private int processPointerEvent(QueuedInputEvent q) {
     }
     return handled ? FINISH_HANDLED : FORWARD;
 }
+end note
 
+ViewRootImpl.java -> View.java: dispatchPointerEvent(event)
+activate View.java
+note right
 View.java
 public final boolean dispatchPointerEvent(MotionEvent event) {
     if (event.isTouchEvent()) {
@@ -159,44 +167,68 @@ public final boolean dispatchPointerEvent(MotionEvent event) {
         return dispatchGenericMotionEvent(event);
     }
 }
+end note
 
-DecorView复写dispatchPointerEvent()
+View.java -> DecorView.java: dispatchTouchEvent(event)
+activate DecorView.java
+note right
+DecorView.java
+//DecorView复写dispatchTouchEvent()
 @Override
 public boolean dispatchTouchEvent(MotionEvent ev) {
-    //window cb.dispatchTouchEvent(ev) 具体实现是在Activity中
+    //Window->cb.dispatchTouchEvent(ev) 具体实现是在Activity.dispatchTouchEvent()中
     final Window.Callback cb = mWindow.getCallback();
     return cb != null && !mWindow.isDestroyed() && mFeatureId < 0
             ? cb.dispatchTouchEvent(ev) : super.dispatchTouchEvent(ev);
 }
+end note
 
+DecorView.java -> Activity.java: dispatchTouchEvent(event)
+activate Activity.java
+note right
 Activity.java
 //手势被派发到Activity中
 public boolean dispatchTouchEvent(MotionEvent ev) {
     if (ev.getAction() == MotionEvent.ACTION_DOWN) {
         onUserInteraction();
     }
-    //转发到Window.superDispatchTouchEvent(ev),实现类PhoneWindow
+    //Activity中对手势做了一次转发，
+    //转发到Window.superDispatchTouchEvent(ev),具体实现是在PhoneWindow.superDispatchTouchEvent()中
     if (getWindow().superDispatchTouchEvent(ev)) {
         return true;
     }
     return onTouchEvent(ev);
 }
+end note
 
+Activity.java -> PhoneWindow.java: superDispatchTouchEvent(event)
+activate PhoneWindow.java
+note right
 PhoneWindow.java
 @Override
 public boolean superDispatchTouchEvent(MotionEvent event) {
-    //转发给DecorView
+    //在PhoneWindow中又转发给DecorView.superDispatchTouchEvent()
     return mDecor.superDispatchTouchEvent(event);
 }
+end note
 
+PhoneWindow.java -> DecorView.java: superDispatchTouchEvent(event)
+activate DecorView.java
+note left
 DecorView.java
 public boolean superDispatchTouchEvent(MotionEvent event) {
-    //调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup
+    //在DecorView中调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup
     return super.dispatchTouchEvent(event);
 }
+end note
 
+DecorView.java -> ViewGroup.java: dispatchTouchEvent(event)
+activate ViewGroup.java
+note right
 ViewGroup.java
-
-
+//ViewGroup中继续分发手势
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    ...
+}
 end note
 @enduml

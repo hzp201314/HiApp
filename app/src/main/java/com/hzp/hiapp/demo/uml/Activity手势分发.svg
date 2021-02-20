@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="2962.4px" preserveAspectRatio="none" style="width:1657px;height:2962px;" version="1.1" viewBox="0 0 1657 2962" width="1657.6px" zoomAndPan="magnify"><defs><filter height="300%" id="f1209jgjwfulxw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.6"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="3.2" dy="3.2" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="1815.4184" style="stroke:#A80036;stroke-width:0.8;" width="8" x="614.4" y="1103.5563"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="696.6459" style="stroke:#A80036;stroke-width:0.8;" width="8" x="774.4" y="2222.3287"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="556.716" style="stroke:#A80036;stroke-width:0.8;" width="8" x="929.6" y="2362.2586"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="129.8246" style="stroke:#A80036;stroke-width:0.8;" width="8" x="933.6" y="2789.15"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="381.2773" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1084.8" y="2537.6973"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="227.1439" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1267.2" y="2691.8307"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="39.607" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1377.2" y="2879.3676"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="618.4" x2="618.4" y1="34.4961" y2="2926.1746"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="778" x2="778" y1="34.4961" y2="2926.1746"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="933.2" x2="933.2" y1="34.4961" y2="2926.1746"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="1088.8" x2="1088.8" y1="34.4961" y2="2926.1746"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="1271.2" x2="1271.2" y1="34.4961" y2="2926.1746"/><line style="stroke:#A80036;stroke-width:0.8;stroke-dasharray:5.0,5.0;" x1="1380.8" x2="1380.8" y1="34.4961" y2="2926.1746"/><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="102.4" x="565.6" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="91.2" x="571.2" y="22.4352">ViewRootImpl.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="102.4" x="565.6" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="91.2" x="571.2" y="2943.8098">ViewRootImpl.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="58.4" x="747.6" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="47.2" x="753.2" y="22.4352">View.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="58.4" x="747.6" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="47.2" x="753.2" y="2943.8098">View.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="88.8" x="887.6" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="77.6" x="893.2" y="22.4352">DecorView.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="88.8" x="887.6" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="77.6" x="893.2" y="2943.8098">DecorView.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="70.4" x="1052" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="59.2" x="1057.6" y="22.4352">Activity.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="70.4" x="1052" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="59.2" x="1057.6" y="2943.8098">Activity.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="107.2" x="1216" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="96" x="1221.6" y="22.4352">PhoneWindow.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="107.2" x="1216" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="96" x="1221.6" y="2943.8098">PhoneWindow.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="90.4" x="1334.4" y="4"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="79.2" x="1340" y="22.4352">ViewGroup.java</text><rect fill="#FEFECE" filter="url(#f1209jgjwfulxw)" height="26.4961" style="stroke:#A80036;stroke-width:1.2000000000000002;" width="90.4" x="1334.4" y="2925.3746"/><text fill="#000000" font-family="sans-serif" font-size="11.2" lengthAdjust="spacing" textLength="79.2" x="1340" y="2943.8098">ViewGroup.java</text><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="1815.4184" style="stroke:#A80036;stroke-width:0.8;" width="8" x="614.4" y="1103.5563"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="696.6459" style="stroke:#A80036;stroke-width:0.8;" width="8" x="774.4" y="2222.3287"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="556.716" style="stroke:#A80036;stroke-width:0.8;" width="8" x="929.6" y="2362.2586"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="129.8246" style="stroke:#A80036;stroke-width:0.8;" width="8" x="933.6" y="2789.15"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="381.2773" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1084.8" y="2537.6973"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="227.1439" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1267.2" y="2691.8307"/><rect fill="#FFFFFF" filter="url(#f1209jgjwfulxw)" height="39.607" style="stroke:#A80036;stroke-width:0.8;" width="8" x="1377.2" y="2879.3676"/><line style="stroke:#A80036;stroke-width:0.8;" x1="618.4" x2="656" y1="1093.1563" y2="1093.1563"/><line style="stroke:#A80036;stroke-width:0.8;" x1="656" x2="656" y1="1093.1563" y2="1103.5563"/><line style="stroke:#A80036;stroke-width:0.8;" x1="623.2" x2="656" y1="1103.5563" y2="1103.5563"/><polygon fill="#A80036" points="631.2,1100.3563,623.2,1103.5563,631.2,1106.7563,628,1103.5563" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="628" y="1089.2711">1</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="43.2" x="636.8" y="1089.2711">setView()</text><path d="M4,46.4961 L4,2141.6961 L607.2,2141.6961 L607.2,54.4961 L599.2,46.4961 L4,46.4961 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M599.2,46.4961 L599.2,54.4961 L607.2,54.4961 L599.2,46.4961 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="84" x="8.8" y="62.4145">ViewRootImpl.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="8.8" y="76.618">//手势接收</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="226.4" x="8.8" y="90.8215">WindowInputEventReceiver mInputEventReceiver;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="136" x="8.8" y="105.025">//ViewRootImpl.setView() 955</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="422.4" x="8.8" y="119.2285">mInputEventReceiver = new WindowInputEventReceiver(mInputChannel,Looper.myLooper());</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="141.6" x="8.8" y="133.432">//键盘点击事件，屏幕点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="310.4" x="8.8" y="147.6355">final class WindowInputEventReceiver extends InputEventReceiver {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="359.2" x="21.6" y="161.8391">public WindowInputEventReceiver(InputChannel inputChannel, Looper looper) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="129.6" x="34.4" y="176.0426">super(inputChannel, looper);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="190.2461">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="204.4496"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="21.6" y="218.6531">@Override</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="198.4" x="21.6" y="232.8566">public void onInputEvent(InputEvent event) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="9.6" x="34.4" y="247.0602">...</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="6.4" x="34.4" y="261.2637">//</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="180" x="34.4" y="275.4672">enqueueInputEvent(event, this, 0, true);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="289.6707"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="303.8742">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="9.6" x="21.6" y="318.0777">...</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="332.2813">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="346.4848"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="360.6883"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="505.6" x="8.8" y="374.8918">void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, boolean processImmediately) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="132" x="21.6" y="389.0953">//参数封装QueuedInputEvent</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="320.8" x="21.6" y="403.2988">QueuedInputEvent q = obtainQueuedInputEvent(event, receiver, flags);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="417.5023"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="230.4" x="21.6" y="431.7059">QueuedInputEvent last = mPendingInputEventTail;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="72.8" x="21.6" y="445.9094">if (last == null) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="140" x="34.4" y="460.1129">mPendingInputEventHead = q;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="132" x="34.4" y="474.3164">mPendingInputEventTail = q;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="21.6" y="488.5199">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="79.2" x="34.4" y="502.7234">//添加到队列尾部</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="72" x="34.4" y="516.927">last.mNext = q;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="132" x="34.4" y="531.1305">mPendingInputEventTail = q;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="545.334">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="149.6" x="21.6" y="559.5375">mPendingInputEventCount += 1;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="123.2" x="21.6" y="573.741">//processImmediately=true</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="113.6" x="21.6" y="587.9445">if (processImmediately) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="6.4" x="34.4" y="602.148">//</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="112.8" x="34.4" y="616.3516">doProcessInputEvents();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="21.6" y="630.5551">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="143.2" x="34.4" y="644.7586">scheduleProcessInputEvents();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="658.9621">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="673.1656">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="687.3691"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="136.8" x="8.8" y="701.5727">void doProcessInputEvents() {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="214.4" x="21.6" y="715.7762">// Deliver all pending input events in the queue.</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="152" x="21.6" y="729.9797">//从队列头部把队列消息派发出去</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="188.8" x="21.6" y="744.1832">while (mPendingInputEventHead != null) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="227.2" x="34.4" y="758.3867">QueuedInputEvent q = mPendingInputEventHead;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="79.2" x="34.4" y="772.5902">//传递输入事件流</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="92" x="34.4" y="786.7938">deliverInputEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="800.9973">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="815.2008">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="829.4043"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="236" x="8.8" y="843.6078">private void deliverInputEvent(QueuedInputEvent q) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="328.8" x="21.6" y="857.8113">Trace.asyncTraceBegin(Trace.TRACE_TAG_VIEW, "deliverInputEvent",</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="156" x="47.2" y="872.0148">q.mEvent.getSequenceNumber());</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="198.4" x="21.6" y="886.2184">if (mInputEventConsistencyVerifier != null) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="273.6" x="34.4" y="900.4219">mInputEventConsistencyVerifier.onInputEvent(q.mEvent, 0);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="914.6254">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="176.8" x="21.6" y="928.8289">//输入事件的预处理阶段 setView() 973</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="252.8" x="21.6" y="943.0324">//  mSyntheticInputStage = new SyntheticInputStage();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="68.8" x="21.6" y="957.2359">//屏幕点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="407.2" x="21.6" y="971.4395">//  InputStage viewPostImeStage = new ViewPostImeInputStage(mSyntheticInputStage);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="573.6" x="21.6" y="985.643">//  InputStage nativePostImeStage = new NativePostImeInputStage(viewPostImeStage,"aq:native-post-ime:" + counterSuffix);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="401.6" x="21.6" y="999.8465">//  InputStage earlyPostImeStage = new EarlyPostImeInputStage(nativePostImeStage);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="68.8" x="21.6" y="1014.05">//键盘点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="426.4" x="21.6" y="1028.2535">//  InputStage imeStage = new ImeInputStage(earlyPostImeStage,"aq:ime:" + counterSuffix);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="337.6" x="21.6" y="1042.457">//  InputStage viewPreImeStage = new ViewPreImeInputStage(imeStage);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="551.2" x="21.6" y="1056.6605">//  InputStage nativePreImeStage = new NativePreImeInputStage(viewPreImeStage,"aq:native-pre-ime:" + counterSuffix);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="372.8" x="21.6" y="1070.8641">//从下到上处理 NativePreImeInputStage-&gt;ViewPreImeInputStage-&gt;ImeInputStage</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="480" x="21.6" y="1085.0676">// -&gt;EarlyPostImeInputStage-&gt;NativePostImeInputStage-&gt;ViewPostImeInputStage-&gt;SyntheticInputStage</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="194.4" x="21.6" y="1099.2711">//  mFirstInputStage = nativePreImeStage;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="81.6" x="21.6" y="1113.4746">InputStage stage;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="156.8" x="21.6" y="1127.6781">if (q.shouldSendToSynthesizer()) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="144" x="34.4" y="1141.8816">stage = mSyntheticInputStage;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="21.6" y="1156.0852">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="343.2" x="34.4" y="1170.2887">stage = q.shouldSkipIme() ? mFirstPostImeInputStage : mFirstInputStage;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1184.4922">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1198.6957"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="161.6" x="21.6" y="1212.8992">if (q.mEvent instanceof KeyEvent) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="280.8" x="34.4" y="1227.1027">mUnhandledKeyManager.preDispatch((KeyEvent) q.mEvent);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1241.3063">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1255.5098"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="77.6" x="21.6" y="1269.7133">if (stage != null) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="146.4" x="34.4" y="1283.9168">handleWindowFocusChanged();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="72.8" x="34.4" y="1298.1203">stage.deliver(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="21.6" y="1312.3238">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="87.2" x="34.4" y="1326.5273">finishInputEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1340.7309">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="1354.9344">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1369.1379"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1383.3414"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="89.6" x="8.8" y="1397.5449">//屏幕点击事件处理</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="259.2" x="8.8" y="1411.7484">final class ViewPostImeInputStage extends InputStage {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="226.4" x="21.6" y="1425.952">public ViewPostImeInputStage(InputStage next) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="55.2" x="34.4" y="1440.1555">super(next);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1454.359">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1468.5625"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="21.6" y="1482.766">@Override</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="216" x="21.6" y="1496.9695">protected int onProcess(QueuedInputEvent q) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="161.6" x="34.4" y="1511.173">if (q.mEvent instanceof KeyEvent) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="125.6" x="47.2" y="1525.3766">return processKeyEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="34.4" y="1539.5801">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="183.2" x="47.2" y="1553.7836">final int source = q.mEvent.getSource();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="206.4" x="47.2" y="1567.9871">//SOURCE_CLASS_POINTER:屏幕点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="283.2" x="47.2" y="1582.1906">if ((source &amp; InputDevice.SOURCE_CLASS_POINTER) != 0) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="110.4" x="60" y="1596.3941">//进入处理手指点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="140" x="60" y="1610.5977">return processPointerEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="327.2" x="47.2" y="1624.8012">} else if ((source &amp; InputDevice.SOURCE_CLASS_TRACKBALL) != 0) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="148.8" x="60" y="1639.0047">return processTrackballEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="47.2" y="1653.2082">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="174.4" x="60" y="1667.4117">return processGenericMotionEvent(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="47.2" y="1681.6152">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="34.4" y="1695.8188">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1710.0223">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1724.2258"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="21.6" y="1738.4293">@Override</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="247.2" x="21.6" y="1752.6328">protected void onDeliverToNext(QueuedInputEvent q) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="132" x="34.4" y="1766.8363">if (mUnbufferedInputDispatch</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="171.2" x="60" y="1781.0398">&amp;&amp; q.mEvent instanceof MotionEvent</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="201.6" x="60" y="1795.2434">&amp;&amp; ((MotionEvent)q.mEvent).isTouchEvent()</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="172" x="60" y="1809.4469">&amp;&amp; isTerminalInputEvent(q.mEvent)) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="158.4" x="47.2" y="1823.6504">mUnbufferedInputDispatch = false;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="156" x="47.2" y="1837.8539">scheduleConsumeBatchedInput();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="34.4" y="1852.0574">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="118.4" x="34.4" y="1866.2609">super.onDeliverToNext(q);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="1880.4645">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="1894.668">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="0" x="12" y="1908.8715"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="89.6" x="8.8" y="1923.075">//处理手指点击事件</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="248" x="8.8" y="1937.2785">private int processPointerEvent(QueuedInputEvent q) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="228" x="21.6" y="1951.482">final MotionEvent event = (MotionEvent)q.mEvent;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="407.2" x="21.6" y="1965.6855">//实际上调用DecorView.dispatchPointerEvent()具体实现在View.dispatchPointerEvent()中</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="253.6" x="21.6" y="1979.8891">boolean handled = mView.dispatchPointerEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="149.6" x="21.6" y="1994.0926">maybeUpdatePointerIcon(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="128" x="21.6" y="2008.2961">maybeUpdateTooltip(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="203.2" x="21.6" y="2022.4996">mAttachInfo.mHandlingPointerEvent = false;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="371.2" x="21.6" y="2036.7031">if (mAttachInfo.mUnbufferedDispatchRequested &amp;&amp; !mUnbufferedInputDispatch) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="154.4" x="34.4" y="2050.9066">mUnbufferedInputDispatch = true;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="183.2" x="34.4" y="2065.1102">if (mConsumeBatchedInputScheduled) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="212" x="47.2" y="2079.3137">scheduleConsumeBatchedInputImmediately();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="34.4" y="2093.5172">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="21.6" y="2107.7207">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="231.2" x="21.6" y="2121.9242">return handled ? FINISH_HANDLED : FORWARD;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="8.8" y="2136.1277">}</text><polygon fill="#A80036" points="764.8,2219.1287,772.8,2222.3287,764.8,2225.5287,768,2222.3287" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="622.4" x2="769.6" y1="2222.3287" y2="2222.3287"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="628" y="2218.4436">2</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="128" x="636.8" y="2218.4436">dispatchPointerEvent(event)</text><path d="M786.4,2153.6129 L786.4,2275.2129 L1088.8,2275.2129 L1088.8,2161.6129 L1080.8,2153.6129 L786.4,2153.6129 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M1080.8,2153.6129 L1080.8,2161.6129 L1088.8,2161.6129 L1080.8,2153.6129 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="43.2" x="791.2" y="2169.5313">View.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="285.6" x="791.2" y="2183.7348">public final boolean dispatchPointerEvent(MotionEvent event) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="116" x="804" y="2197.9383">if (event.isTouchEvent()) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="156" x="816.8" y="2212.1418">return dispatchTouchEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="32" x="804" y="2226.3453">} else {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="195.2" x="816.8" y="2240.5488">return dispatchGenericMotionEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="804" y="2254.7523">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="791.2" y="2268.9559">}</text><polygon fill="#A80036" points="920,2359.0586,928,2362.2586,920,2365.4586,923.2,2362.2586" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="782.4" x2="924.8" y1="2362.2586" y2="2362.2586"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="788" y="2358.3734">3</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="123.2" x="796.8" y="2358.3734">dispatchTouchEvent(event)</text><path d="M941.6,2286.441 L941.6,2421.641 L1359.2,2421.641 L1359.2,2294.441 L1351.2,2286.441 L941.6,2286.441 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M1351.2,2286.441 L1351.2,2294.441 L1359.2,2294.441 L1351.2,2286.441 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="70.4" x="946.4" y="2302.3594">DecorView.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="176" x="946.4" y="2316.5629">//DecorView复写dispatchTouchEvent()</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="946.4" y="2330.7664">@Override</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="244.8" x="946.4" y="2344.9699">public boolean dispatchTouchEvent(MotionEvent ev) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="388" x="959.2" y="2359.1734">//Window-&gt;cb.dispatchTouchEvent(ev) 具体实现是在Activity.dispatchTouchEvent()中</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="241.6" x="959.2" y="2373.377">final Window.Callback cb = mWindow.getCallback();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="296.8" x="959.2" y="2387.5805">return cb != null &amp;&amp; !mWindow.isDestroyed() &amp;&amp; mFeatureId &lt; 0</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="282.4" x="984.8" y="2401.784">? cb.dispatchTouchEvent(ev) : super.dispatchTouchEvent(ev);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="946.4" y="2415.9875">}</text><polygon fill="#A80036" points="1075.2,2534.4973,1083.2,2537.6973,1075.2,2540.8973,1078.4,2537.6973" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="937.6" x2="1080" y1="2537.6973" y2="2537.6973"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="943.2" y="2533.8121">4</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="123.2" x="952" y="2533.8121">dispatchTouchEvent(event)</text><path d="M1096.8,2433.4727 L1096.8,2625.4727 L1612,2625.4727 L1612,2441.4727 L1604,2433.4727 L1096.8,2433.4727 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M1604,2433.4727 L1604,2441.4727 L1612,2441.4727 L1604,2433.4727 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="54.4" x="1101.6" y="2449.391">Activity.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="112.8" x="1101.6" y="2463.5945">//手势被派发到Activity中</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="244.8" x="1101.6" y="2477.798">public boolean dispatchTouchEvent(MotionEvent ev) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="239.2" x="1114.4" y="2492.0016">if (ev.getAction() == MotionEvent.ACTION_DOWN) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="90.4" x="1127.2" y="2506.2051">onUserInteraction();</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="1114.4" y="2520.4086">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="154.4" x="1114.4" y="2534.6121">//Activity中对手势做了一次转发，</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="485.6" x="1114.4" y="2548.8156">//转发到Window.superDispatchTouchEvent(ev),具体实现是在PhoneWindow.superDispatchTouchEvent()中</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="217.6" x="1114.4" y="2563.0191">if (getWindow().superDispatchTouchEvent(ev)) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="50.4" x="1127.2" y="2577.2227">return true;</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="1114.4" y="2591.4262">}</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="113.6" x="1114.4" y="2605.6297">return onTouchEvent(ev);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="1101.6" y="2619.8332">}</text><polygon fill="#A80036" points="1257.6,2688.6307,1265.6,2691.8307,1257.6,2695.0307,1260.8,2691.8307" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="1092.8" x2="1262.4" y1="2691.8307" y2="2691.8307"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="1098.4" y="2687.9455">5</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="150.4" x="1107.2" y="2687.9455">superDispatchTouchEvent(event)</text><path d="M1279.2,2637.3184 L1279.2,2730.1184 L1623.2,2730.1184 L1623.2,2645.3184 L1615.2,2637.3184 L1279.2,2637.3184 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M1615.2,2637.3184 L1615.2,2645.3184 L1623.2,2645.3184 L1615.2,2637.3184 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="87.2" x="1284" y="2653.2367">PhoneWindow.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="48" x="1284" y="2667.4402">@Override</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="286.4" x="1284" y="2681.6438">public boolean superDispatchTouchEvent(MotionEvent event) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="314.4" x="1296.8" y="2695.8473">//在PhoneWindow中又转发给DecorView.superDispatchTouchEvent()</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="222.4" x="1296.8" y="2710.0508">return mDecor.superDispatchTouchEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="1284" y="2724.2543">}</text><polygon fill="#A80036" points="950.4,2785.95,942.4,2789.15,950.4,2792.35,947.2,2789.15" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="945.6" x2="1266.4" y1="2789.15" y2="2789.15"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="955.2" y="2785.2648">6</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="150.4" x="964" y="2785.2648">superDispatchTouchEvent(event)</text><path d="M470.4,2741.7395 L470.4,2820.1395 L922.4,2820.1395 L922.4,2749.7395 L914.4,2741.7395 L470.4,2741.7395 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M914.4,2741.7395 L914.4,2749.7395 L922.4,2749.7395 L914.4,2741.7395 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="70.4" x="475.2" y="2757.6578">DecorView.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="286.4" x="475.2" y="2771.8613">public boolean superDispatchTouchEvent(MotionEvent event) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="422.4" x="488" y="2786.0648">//在DecorView中调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="184.8" x="488" y="2800.2684">return super.dispatchTouchEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="475.2" y="2814.4719">}</text><polygon fill="#A80036" points="1367.6,2876.1676,1375.6,2879.3676,1367.6,2882.5676,1370.8,2879.3676" style="stroke:#A80036;stroke-width:0.8;"/><line style="stroke:#A80036;stroke-width:0.8;" x1="941.6" x2="1372.4" y1="2879.3676" y2="2879.3676"/><text fill="#000000" font-family="sans-serif" font-size="10.4" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="947.2" y="2875.4824">7</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="123.2" x="956" y="2875.4824">dispatchTouchEvent(event)</text><path d="M1388.8,2831.957 L1388.8,2910.357 L1650.4,2910.357 L1650.4,2839.957 L1642.4,2831.957 L1388.8,2831.957 " fill="#FBFB77" filter="url(#f1209jgjwfulxw)" style="stroke:#A80036;stroke-width:0.8;"/><path d="M1642.4,2831.957 L1642.4,2839.957 L1650.4,2839.957 L1642.4,2831.957 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.8;"/><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="71.2" x="1393.6" y="2847.8754">ViewGroup.java</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="129.6" x="1393.6" y="2862.0789">//ViewGroup中继续分发手势</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="244.8" x="1393.6" y="2876.2824">public boolean dispatchTouchEvent(MotionEvent ev) {</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="9.6" x="1406.4" y="2890.4859">...</text><text fill="#000000" font-family="sans-serif" font-size="10.4" lengthAdjust="spacing" textLength="3.2" x="1393.6" y="2904.6895">}</text><!--MD5=[63db2f42d170742e0a07d7a957ee851c]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'30 Activity之手势分发 ViewRootImpl手势分发
+ViewRootImpl.java -> ViewRootImpl.java: setView()
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+//手势接收
+WindowInputEventReceiver mInputEventReceiver;
+//ViewRootImpl.setView() 955
+mInputEventReceiver = new WindowInputEventReceiver(mInputChannel,Looper.myLooper());
+//键盘点击事件，屏幕点击事件
+final class WindowInputEventReceiver extends InputEventReceiver {
+    public WindowInputEventReceiver(InputChannel inputChannel, Looper looper) {
+        super(inputChannel, looper);
+    }
+
+    @Override
+    public void onInputEvent(InputEvent event) {
+        ...
+        //
+        enqueueInputEvent(event, this, 0, true);
+
+    }
+    ...
+}
+
+
+void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, boolean processImmediately) {
+    //参数封装QueuedInputEvent
+    QueuedInputEvent q = obtainQueuedInputEvent(event, receiver, flags);
+
+    QueuedInputEvent last = mPendingInputEventTail;
+    if (last == null) {
+        mPendingInputEventHead = q;
+        mPendingInputEventTail = q;
+    } else {
+        //添加到队列尾部
+        last.mNext = q;
+        mPendingInputEventTail = q;
+    }
+    mPendingInputEventCount += 1;
+    //processImmediately=true
+    if (processImmediately) {
+        //
+        doProcessInputEvents();
+    } else {
+        scheduleProcessInputEvents();
+    }
+}
+
+void doProcessInputEvents() {
+    // Deliver all pending input events in the queue.
+    //从队列头部把队列消息派发出去
+    while (mPendingInputEventHead != null) {
+        QueuedInputEvent q = mPendingInputEventHead;
+        //传递输入事件流
+        deliverInputEvent(q);
+    }
+}
+
+private void deliverInputEvent(QueuedInputEvent q) {
+    Trace.asyncTraceBegin(Trace.TRACE_TAG_VIEW, "deliverInputEvent",
+            q.mEvent.getSequenceNumber());
+    if (mInputEventConsistencyVerifier != null) {
+        mInputEventConsistencyVerifier.onInputEvent(q.mEvent, 0);
+    }
+    //输入事件的预处理阶段 setView() 973
+    //  mSyntheticInputStage = new SyntheticInputStage();
+    //屏幕点击事件
+    //  InputStage viewPostImeStage = new ViewPostImeInputStage(mSyntheticInputStage);
+    //  InputStage nativePostImeStage = new NativePostImeInputStage(viewPostImeStage,"aq:native-post-ime:" + counterSuffix);
+    //  InputStage earlyPostImeStage = new EarlyPostImeInputStage(nativePostImeStage);
+    //键盘点击事件
+    //  InputStage imeStage = new ImeInputStage(earlyPostImeStage,"aq:ime:" + counterSuffix);
+    //  InputStage viewPreImeStage = new ViewPreImeInputStage(imeStage);
+    //  InputStage nativePreImeStage = new NativePreImeInputStage(viewPreImeStage,"aq:native-pre-ime:" + counterSuffix);
+    //从下到上处理 NativePreImeInputStage->ViewPreImeInputStage->ImeInputStage
+    // ->EarlyPostImeInputStage->NativePostImeInputStage->ViewPostImeInputStage->SyntheticInputStage
+    //  mFirstInputStage = nativePreImeStage;
+    InputStage stage;
+    if (q.shouldSendToSynthesizer()) {
+        stage = mSyntheticInputStage;
+    } else {
+        stage = q.shouldSkipIme() ? mFirstPostImeInputStage : mFirstInputStage;
+    }
+
+    if (q.mEvent instanceof KeyEvent) {
+        mUnhandledKeyManager.preDispatch((KeyEvent) q.mEvent);
+    }
+
+    if (stage != null) {
+        handleWindowFocusChanged();
+        stage.deliver(q);
+    } else {
+        finishInputEvent(q);
+    }
+}
+
+
+//屏幕点击事件处理
+final class ViewPostImeInputStage extends InputStage {
+    public ViewPostImeInputStage(InputStage next) {
+        super(next);
+    }
+
+    @Override
+    protected int onProcess(QueuedInputEvent q) {
+        if (q.mEvent instanceof KeyEvent) {
+            return processKeyEvent(q);
+        } else {
+            final int source = q.mEvent.getSource();
+            //SOURCE_CLASS_POINTER:屏幕点击事件
+            if ((source & InputDevice.SOURCE_CLASS_POINTER) != 0) {
+                //进入处理手指点击事件
+                return processPointerEvent(q);
+            } else if ((source & InputDevice.SOURCE_CLASS_TRACKBALL) != 0) {
+                return processTrackballEvent(q);
+            } else {
+                return processGenericMotionEvent(q);
+            }
+        }
+    }
+
+    @Override
+    protected void onDeliverToNext(QueuedInputEvent q) {
+        if (mUnbufferedInputDispatch
+                && q.mEvent instanceof MotionEvent
+                && ((MotionEvent)q.mEvent).isTouchEvent()
+                && isTerminalInputEvent(q.mEvent)) {
+            mUnbufferedInputDispatch = false;
+            scheduleConsumeBatchedInput();
+        }
+        super.onDeliverToNext(q);
+    }
+}
+
+//处理手指点击事件
+private int processPointerEvent(QueuedInputEvent q) {
+    final MotionEvent event = (MotionEvent)q.mEvent;
+    //实际上调用DecorView.dispatchPointerEvent()具体实现在View.dispatchPointerEvent()中
+    boolean handled = mView.dispatchPointerEvent(event);
+    maybeUpdatePointerIcon(event);
+    maybeUpdateTooltip(event);
+    mAttachInfo.mHandlingPointerEvent = false;
+    if (mAttachInfo.mUnbufferedDispatchRequested && !mUnbufferedInputDispatch) {
+        mUnbufferedInputDispatch = true;
+        if (mConsumeBatchedInputScheduled) {
+            scheduleConsumeBatchedInputImmediately();
+        }
+    }
+    return handled ? FINISH_HANDLED : FORWARD;
+}
+end note
+
+ViewRootImpl.java -> View.java: dispatchPointerEvent(event)
+activate View.java
+note right
+View.java
+public final boolean dispatchPointerEvent(MotionEvent event) {
+    if (event.isTouchEvent()) {
+        return dispatchTouchEvent(event);
+    } else {
+        return dispatchGenericMotionEvent(event);
+    }
+}
+end note
+
+View.java -> DecorView.java: dispatchTouchEvent(event)
+activate DecorView.java
+note right
+DecorView.java
+//DecorView复写dispatchTouchEvent()
+@Override
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    //Window->cb.dispatchTouchEvent(ev) 具体实现是在Activity.dispatchTouchEvent()中
+    final Window.Callback cb = mWindow.getCallback();
+    return cb != null && !mWindow.isDestroyed() && mFeatureId < 0
+            ? cb.dispatchTouchEvent(ev) : super.dispatchTouchEvent(ev);
+}
+end note
+
+DecorView.java -> Activity.java: dispatchTouchEvent(event)
+activate Activity.java
+note right
+Activity.java
+//手势被派发到Activity中
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+        onUserInteraction();
+    }
+    //Activity中对手势做了一次转发，
+    //转发到Window.superDispatchTouchEvent(ev),具体实现是在PhoneWindow.superDispatchTouchEvent()中
+    if (getWindow().superDispatchTouchEvent(ev)) {
+        return true;
+    }
+    return onTouchEvent(ev);
+}
+end note
+
+Activity.java -> PhoneWindow.java: superDispatchTouchEvent(event)
+activate PhoneWindow.java
+note right
+PhoneWindow.java
+@Override
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //在PhoneWindow中又转发给DecorView.superDispatchTouchEvent()
+    return mDecor.superDispatchTouchEvent(event);
+}
+end note
+
+PhoneWindow.java -> DecorView.java: superDispatchTouchEvent(event)
+activate DecorView.java
+note left
+DecorView.java
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //在DecorView中调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup
+    return super.dispatchTouchEvent(event);
+}
+end note
+
+DecorView.java -> ViewGroup.java: dispatchTouchEvent(event)
+activate ViewGroup.java
+note right
+ViewGroup.java
+//ViewGroup中继续分发手势
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    ...
+}
+end note
+@enduml
+
+@startuml
+
+autonumber
+
+ViewRootImpl.java -> ViewRootImpl.java: setView()
+activate ViewRootImpl.java
+note left
+ViewRootImpl.java
+//手势接收
+WindowInputEventReceiver mInputEventReceiver;
+//ViewRootImpl.setView() 955
+mInputEventReceiver = new WindowInputEventReceiver(mInputChannel,Looper.myLooper());
+//键盘点击事件，屏幕点击事件
+final class WindowInputEventReceiver extends InputEventReceiver {
+    public WindowInputEventReceiver(InputChannel inputChannel, Looper looper) {
+        super(inputChannel, looper);
+    }
+
+    @Override
+    public void onInputEvent(InputEvent event) {
+        ...
+        //
+        enqueueInputEvent(event, this, 0, true);
+
+    }
+    ...
+}
+
+
+void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, boolean processImmediately) {
+    //参数封装QueuedInputEvent
+    QueuedInputEvent q = obtainQueuedInputEvent(event, receiver, flags);
+
+    QueuedInputEvent last = mPendingInputEventTail;
+    if (last == null) {
+        mPendingInputEventHead = q;
+        mPendingInputEventTail = q;
+    } else {
+        //添加到队列尾部
+        last.mNext = q;
+        mPendingInputEventTail = q;
+    }
+    mPendingInputEventCount += 1;
+    //processImmediately=true
+    if (processImmediately) {
+        //
+        doProcessInputEvents();
+    } else {
+        scheduleProcessInputEvents();
+    }
+}
+
+void doProcessInputEvents() {
+    // Deliver all pending input events in the queue.
+    //从队列头部把队列消息派发出去
+    while (mPendingInputEventHead != null) {
+        QueuedInputEvent q = mPendingInputEventHead;
+        //传递输入事件流
+        deliverInputEvent(q);
+    }
+}
+
+private void deliverInputEvent(QueuedInputEvent q) {
+    Trace.asyncTraceBegin(Trace.TRACE_TAG_VIEW, "deliverInputEvent",
+            q.mEvent.getSequenceNumber());
+    if (mInputEventConsistencyVerifier != null) {
+        mInputEventConsistencyVerifier.onInputEvent(q.mEvent, 0);
+    }
+    //输入事件的预处理阶段 setView() 973
+    //  mSyntheticInputStage = new SyntheticInputStage();
+    //屏幕点击事件
+    //  InputStage viewPostImeStage = new ViewPostImeInputStage(mSyntheticInputStage);
+    //  InputStage nativePostImeStage = new NativePostImeInputStage(viewPostImeStage,"aq:native-post-ime:" + counterSuffix);
+    //  InputStage earlyPostImeStage = new EarlyPostImeInputStage(nativePostImeStage);
+    //键盘点击事件
+    //  InputStage imeStage = new ImeInputStage(earlyPostImeStage,"aq:ime:" + counterSuffix);
+    //  InputStage viewPreImeStage = new ViewPreImeInputStage(imeStage);
+    //  InputStage nativePreImeStage = new NativePreImeInputStage(viewPreImeStage,"aq:native-pre-ime:" + counterSuffix);
+    //从下到上处理 NativePreImeInputStage->ViewPreImeInputStage->ImeInputStage
+    // ->EarlyPostImeInputStage->NativePostImeInputStage->ViewPostImeInputStage->SyntheticInputStage
+    //  mFirstInputStage = nativePreImeStage;
+    InputStage stage;
+    if (q.shouldSendToSynthesizer()) {
+        stage = mSyntheticInputStage;
+    } else {
+        stage = q.shouldSkipIme() ? mFirstPostImeInputStage : mFirstInputStage;
+    }
+
+    if (q.mEvent instanceof KeyEvent) {
+        mUnhandledKeyManager.preDispatch((KeyEvent) q.mEvent);
+    }
+
+    if (stage != null) {
+        handleWindowFocusChanged();
+        stage.deliver(q);
+    } else {
+        finishInputEvent(q);
+    }
+}
+
+
+//屏幕点击事件处理
+final class ViewPostImeInputStage extends InputStage {
+    public ViewPostImeInputStage(InputStage next) {
+        super(next);
+    }
+
+    @Override
+    protected int onProcess(QueuedInputEvent q) {
+        if (q.mEvent instanceof KeyEvent) {
+            return processKeyEvent(q);
+        } else {
+            final int source = q.mEvent.getSource();
+            //SOURCE_CLASS_POINTER:屏幕点击事件
+            if ((source & InputDevice.SOURCE_CLASS_POINTER) != 0) {
+                //进入处理手指点击事件
+                return processPointerEvent(q);
+            } else if ((source & InputDevice.SOURCE_CLASS_TRACKBALL) != 0) {
+                return processTrackballEvent(q);
+            } else {
+                return processGenericMotionEvent(q);
+            }
+        }
+    }
+
+    @Override
+    protected void onDeliverToNext(QueuedInputEvent q) {
+        if (mUnbufferedInputDispatch
+                && q.mEvent instanceof MotionEvent
+                && ((MotionEvent)q.mEvent).isTouchEvent()
+                && isTerminalInputEvent(q.mEvent)) {
+            mUnbufferedInputDispatch = false;
+            scheduleConsumeBatchedInput();
+        }
+        super.onDeliverToNext(q);
+    }
+}
+
+//处理手指点击事件
+private int processPointerEvent(QueuedInputEvent q) {
+    final MotionEvent event = (MotionEvent)q.mEvent;
+    //实际上调用DecorView.dispatchPointerEvent()具体实现在View.dispatchPointerEvent()中
+    boolean handled = mView.dispatchPointerEvent(event);
+    maybeUpdatePointerIcon(event);
+    maybeUpdateTooltip(event);
+    mAttachInfo.mHandlingPointerEvent = false;
+    if (mAttachInfo.mUnbufferedDispatchRequested && !mUnbufferedInputDispatch) {
+        mUnbufferedInputDispatch = true;
+        if (mConsumeBatchedInputScheduled) {
+            scheduleConsumeBatchedInputImmediately();
+        }
+    }
+    return handled ? FINISH_HANDLED : FORWARD;
+}
+end note
+
+ViewRootImpl.java -> View.java: dispatchPointerEvent(event)
+activate View.java
+note right
+View.java
+public final boolean dispatchPointerEvent(MotionEvent event) {
+    if (event.isTouchEvent()) {
+        return dispatchTouchEvent(event);
+    } else {
+        return dispatchGenericMotionEvent(event);
+    }
+}
+end note
+
+View.java -> DecorView.java: dispatchTouchEvent(event)
+activate DecorView.java
+note right
+DecorView.java
+//DecorView复写dispatchTouchEvent()
+@Override
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    //Window->cb.dispatchTouchEvent(ev) 具体实现是在Activity.dispatchTouchEvent()中
+    final Window.Callback cb = mWindow.getCallback();
+    return cb != null && !mWindow.isDestroyed() && mFeatureId < 0
+            ? cb.dispatchTouchEvent(ev) : super.dispatchTouchEvent(ev);
+}
+end note
+
+DecorView.java -> Activity.java: dispatchTouchEvent(event)
+activate Activity.java
+note right
+Activity.java
+//手势被派发到Activity中
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+        onUserInteraction();
+    }
+    //Activity中对手势做了一次转发，
+    //转发到Window.superDispatchTouchEvent(ev),具体实现是在PhoneWindow.superDispatchTouchEvent()中
+    if (getWindow().superDispatchTouchEvent(ev)) {
+        return true;
+    }
+    return onTouchEvent(ev);
+}
+end note
+
+Activity.java -> PhoneWindow.java: superDispatchTouchEvent(event)
+activate PhoneWindow.java
+note right
+PhoneWindow.java
+@Override
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //在PhoneWindow中又转发给DecorView.superDispatchTouchEvent()
+    return mDecor.superDispatchTouchEvent(event);
+}
+end note
+
+PhoneWindow.java -> DecorView.java: superDispatchTouchEvent(event)
+activate DecorView.java
+note left
+DecorView.java
+public boolean superDispatchTouchEvent(MotionEvent event) {
+    //在DecorView中调用ViewGroup的dispatchTouchEvent()方法，此时真正的分发给ViewGroup
+    return super.dispatchTouchEvent(event);
+}
+end note
+
+DecorView.java -> ViewGroup.java: dispatchTouchEvent(event)
+activate ViewGroup.java
+note right
+ViewGroup.java
+//ViewGroup中继续分发手势
+public boolean dispatchTouchEvent(MotionEvent ev) {
+    ...
+}
+end note
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
