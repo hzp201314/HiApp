@@ -18,6 +18,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_hi_tab_bottom"
         android:layout_width="wrap_content"
@@ -30,6 +31,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_hi_log" />
+
     <TextView
         android:id="@+id/tv_hi_tab_top"
         android:layout_width="wrap_content"
@@ -81,4 +83,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_hi_banner" />
+
+    <TextView
+        android:id="@+id/tv_hi_data_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onClick"
+        android:text="HiDataItem"
+        android:textColor="#0077cc"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity_manager" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

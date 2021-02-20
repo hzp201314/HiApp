@@ -13,6 +13,7 @@ public class HiMainActivity extends AppCompatActivity implements MainActivityLog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hi_main);
+        /*MainActivity辅助类，解决MainActivity代码过多问题*/
         activityLogic = new MainActivityLogic(this, savedInstanceState);
 
     }

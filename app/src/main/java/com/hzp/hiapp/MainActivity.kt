@@ -8,12 +8,12 @@ import android.widget.Toast
 import com.hzp.hi.library.log.HiLog
 import com.hzp.hi.library.util.ActivityManager
 import com.hzp.hiapp.demo.banner.HiBannerDemoActivity
+import com.hzp.hiapp.demo.item.HiItemDataDemoActivity
 import com.hzp.hiapp.demo.log.HiLogDemoActivity
 import com.hzp.hiapp.demo.refresh.HiRefreshDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabBottomDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabTopDemoActivity
 import com.hzp.hiapp.demo.test.TestActivityManagerActivity
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 HiLog.d("当前处于:$front")
             }
         })
+
+
     }
 
     override fun onClick(v: View?) {
@@ -74,6 +76,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     Intent(
                         this,
                         TestActivityManagerActivity::class.java
+                    )
+                )
+            }
+            R.id.tv_hi_data_item -> {
+                startActivity(
+                    Intent(
+                        this,
+                        HiItemDataDemoActivity::class.java
                     )
                 )
             }
