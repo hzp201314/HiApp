@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3261.6px" preserveAspectRatio="none" style="width:1240px;height:3261px;" version="1.1" viewBox="0 0 1240 3261" width="1240.4px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ffoypkgvvbdm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6" dy="1.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="3170.9031" style="stroke:#A80036;stroke-width:0.4;" width="4" x="263" y="68.8586"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="3019.268" style="stroke:#A80036;stroke-width:0.4;" width="4" x="265" y="220.4938"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="41.3579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="267" y="576.522"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="36.007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="357.3254"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="71.5158" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="464.8482"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="2572.4222" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="667.3396"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1084.2987" style="stroke:#A80036;stroke-width:0.4;" width="4" x="356.2" y="2155.463"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1007.232" style="stroke:#A80036;stroke-width:0.4;" width="4" x="358.2" y="2232.5297"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="901.7583" style="stroke:#A80036;stroke-width:0.4;" width="4" x="360.2" y="2338.0034"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1292.7795" style="stroke:#A80036;stroke-width:0.4;" width="4" x="462.6" y="815.4238"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="321.9194" style="stroke:#A80036;stroke-width:0.4;" width="4" x="464.6" y="1049.3292"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="177.986" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="1193.2626"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="119.5755" style="stroke:#A80036;stroke-width:0.4;" width="4" x="568.6" y="1238.9714"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="150.6316" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="1442.7645"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="110.5755" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="2690.386"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="50.2105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1308.3363"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="39.5579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1541.1364"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="39.5579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1985.4313"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="228.751" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="1622.3014"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="132.8772" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="1904.8138"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="743.6214" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="2496.1403"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="99.9229" style="stroke:#A80036;stroke-width:0.4;" width="4" x="806.2" y="1738.4277"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="28.9053" style="stroke:#A80036;stroke-width:0.4;" width="4" x="806.2" y="2066.5963"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="128.3299" style="stroke:#A80036;stroke-width:0.4;" width="4" x="866.4" y="2929.2914"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="89.2702" style="stroke:#A80036;stroke-width:0.4;" width="4" x="946" y="3146.8915"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="264.8" x2="264.8" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="356.2" x2="356.2" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="464.4" x2="464.4" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="568.6" x2="568.6" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="656.4" x2="656.4" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="744.6" x2="744.6" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="808.2" x2="808.2" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="868.2" x2="868.2" y1="17.248" y2="3243.3617"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="947.8" x2="947.8" y1="17.248" y2="3243.3617"/><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="62.8" x="232.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="57.2" x="235.6" y="11.2176">NavHostFragment.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="62.8" x="232.8" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="57.2" x="235.6" y="3252.1793">NavHostFragment.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52" x="329.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="46.4" x="332.2" y="11.2176">NavController.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="52" x="329.4" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="46.4" x="332.2" y="3252.1793">NavController.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="44.4" x="441.6" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="38.8" x="444.4" y="11.2176">NavInflater.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="44.4" x="441.6" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="38.8" x="444.4" y="3252.1793">NavInflater.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="59.2" x="538.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="53.6" x="541" y="11.2176">ActivityNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="59.2" x="538.2" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="53.6" x="541" y="3252.1793">ActivityNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="55.6" x="628" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="50" x="630.8" y="11.2176">NavDestination.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="55.6" x="628" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="50" x="630.8" y="3252.1793">NavDestination.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="67.2" x="710.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="61.6" x="713" y="11.2176">NavGraphNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="67.2" x="710.2" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="61.6" x="713" y="3252.1793">NavGraphNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="43.2" x="785.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="37.6" x="788.6" y="11.2176">NavGraph.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="43.2" x="785.8" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="37.6" x="788.6" y="3252.1793">NavGraph.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="66" x="834.6" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="60.4" x="837.4" y="11.2176">FragmentNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="66" x="834.6" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="60.4" x="837.4" y="3252.1793">FragmentNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="82" x="906.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="76.4" x="909" y="11.2176">DialogFragmentNavigator.java</text><rect fill="#FEFECE" filter="url(#f1ffoypkgvvbdm)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="82" x="906.2" y="3242.9617"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="76.4" x="909" y="3252.1793">DialogFragmentNavigator.java</text><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="3170.9031" style="stroke:#A80036;stroke-width:0.4;" width="4" x="263" y="68.8586"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="3019.268" style="stroke:#A80036;stroke-width:0.4;" width="4" x="265" y="220.4938"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="41.3579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="267" y="576.522"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="36.007" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="357.3254"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="71.5158" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="464.8482"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="2572.4222" style="stroke:#A80036;stroke-width:0.4;" width="4" x="354.2" y="667.3396"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1084.2987" style="stroke:#A80036;stroke-width:0.4;" width="4" x="356.2" y="2155.463"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1007.232" style="stroke:#A80036;stroke-width:0.4;" width="4" x="358.2" y="2232.5297"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="901.7583" style="stroke:#A80036;stroke-width:0.4;" width="4" x="360.2" y="2338.0034"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="1292.7795" style="stroke:#A80036;stroke-width:0.4;" width="4" x="462.6" y="815.4238"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="321.9194" style="stroke:#A80036;stroke-width:0.4;" width="4" x="464.6" y="1049.3292"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="177.986" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="1193.2626"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="119.5755" style="stroke:#A80036;stroke-width:0.4;" width="4" x="568.6" y="1238.9714"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="150.6316" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="1442.7645"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="110.5755" style="stroke:#A80036;stroke-width:0.4;" width="4" x="566.6" y="2690.386"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="50.2105" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1308.3363"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="39.5579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1541.1364"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="39.5579" style="stroke:#A80036;stroke-width:0.4;" width="4" x="654.6" y="1985.4313"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="228.751" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="1622.3014"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="132.8772" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="1904.8138"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="743.6214" style="stroke:#A80036;stroke-width:0.4;" width="4" x="742.6" y="2496.1403"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="99.9229" style="stroke:#A80036;stroke-width:0.4;" width="4" x="806.2" y="1738.4277"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="28.9053" style="stroke:#A80036;stroke-width:0.4;" width="4" x="806.2" y="2066.5963"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="128.3299" style="stroke:#A80036;stroke-width:0.4;" width="4" x="866.4" y="2929.2914"/><rect fill="#FFFFFF" filter="url(#f1ffoypkgvvbdm)" height="89.2702" style="stroke:#A80036;stroke-width:0.4;" width="4" x="946" y="3146.8915"/><line style="stroke:#A80036;stroke-width:0.4;" x1="265" x2="283.8" y1="63.6586" y2="63.6586"/><line style="stroke:#A80036;stroke-width:0.4;" x1="283.8" x2="283.8" y1="63.6586" y2="68.8586"/><line style="stroke:#A80036;stroke-width:0.4;" x1="267.4" x2="283.8" y1="68.8586" y2="68.8586"/><polygon fill="#A80036" points="271.4,67.2586,267.4,68.8586,271.4,70.4586,269.8,68.8586" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="269.8" y="61.716">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="27.2" x="274.2" y="61.716">onInflate(...)</text><path d="M2,23.248 L2,105.248 L259.6,105.248 L259.6,27.248 L255.6,23.248 L2,23.248 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M255.6,23.248 L255.6,27.248 L259.6,27.248 L255.6,23.248 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="4.4" y="31.2072">NavHostFragment.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="4.4" y="38.309">//348 解析navGraph</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.2" x="4.4" y="45.4107">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92.8" x="23.6" y="52.5125">@Nullable Bundle savedInstanceState) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="242.8" x="10.8" y="59.6143">final TypedArray navHost = context.obtainStyledAttributes(attrs,androidx.navigation.R.styleable.NavHost);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="222" x="10.8" y="66.716">final int graphId = navHost.getResourceId(androidx.navigation.R.styleable.NavHost_navGraph, 0);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.6" x="10.8" y="73.8178">if (graphId != 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="14" y="80.9195">//得到navGraph对象资源id</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.2" x="14" y="88.0213">mGraphId = graphId;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="10.8" y="95.123">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="4.4" y="102.2248">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="267" x2="285.8" y1="215.2938" y2="215.2938"/><line style="stroke:#A80036;stroke-width:0.4;" x1="285.8" x2="285.8" y1="215.2938" y2="220.4938"/><line style="stroke:#A80036;stroke-width:0.4;" x1="269.4" x2="285.8" y1="220.4938" y2="220.4938"/><polygon fill="#A80036" points="273.4,218.8938,269.4,220.4938,273.4,222.0938,271.8,220.4938" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="271.8" y="213.3512">2</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="276.2" y="213.3512">onCreate()</text><path d="M22.8,110.9674 L22.8,320.5674 L259.2,320.5674 L259.2,114.9674 L255.2,110.9674 L22.8,110.9674 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M255.2,110.9674 L255.2,114.9674 L259.2,114.9674 L255.2,110.9674 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="25.2" y="118.9266">NavHostFragment.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="11.6" x="25.2" y="126.0283">//205</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="140.8" x="25.2" y="133.1301">public void onCreate(@Nullable Bundle savedInstanceState) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="26.8" y="140.2318"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="133.6" x="31.6" y="147.3336">//构建NavHostController对象，空壳，继承至 NavController</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.2" x="31.6" y="154.4354">mNavController = new NavHostController(context);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="26.8" y="161.5371"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="210" x="31.6" y="168.6389">//OnBackPressedDispatcher作用：当点击手机返回键之后将事件分发给注册进来的callback</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="221.6" x="31.6" y="175.7406">mNavController.setOnBackPressedDispatcher(requireActivity().getOnBackPressedDispatcher());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="26.8" y="182.8424"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="3.2" x="31.6" y="189.9441">//</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.8" x="31.6" y="197.0459">onCreateNavController(mNavController);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="26.8" y="204.1477"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.2" x="31.6" y="211.2494">if (mGraphId != 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="38" y="218.3512">// Set from onInflate()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="178" x="38" y="225.4529">//把路由资源id传递进去，并加载资源文件，生成Navigation视图NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="84.8" x="38" y="232.5547">mNavController.setGraph(mGraphId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="31.6" y="239.6564">} else {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="111.2" x="38" y="246.7582">// See if it was set by NavHostFragment.create()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82" x="38" y="253.86">final Bundle args = getArguments();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="38" y="260.9617">final int graphId = args != null ? args.getInt(KEY_GRAPH_ID) : 0;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.6" x="38" y="268.0635">final Bundle startDestinationArgs = args != null</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126.4" x="50.8" y="275.1652">? args.getBundle(KEY_START_DESTINATION_ARGS)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="12.8" x="50.8" y="282.267">: null;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.6" x="38" y="289.3688">if (graphId != 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.6" x="44.4" y="296.4705">mNavController.setGraph(graphId, startDestinationArgs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="38" y="303.5723">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="31.6" y="310.674">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="25.2" y="317.7758">}</text><polygon fill="#A80036" points="349.4,355.7254,353.4,357.3254,349.4,358.9254,351,357.3254" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="269" x2="351.8" y1="357.3254" y2="357.3254"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="271.8" y="355.3828">3</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="33.6" x="276.2" y="355.3828">NavController()</text><path d="M360,326.5184 L360,380.1184 L556.4,380.1184 L556.4,330.5184 L552.4,326.5184 L360,326.5184 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M552.4,326.5184 L552.4,330.5184 L556.4,330.5184 L552.4,326.5184 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="362.4" y="334.4775">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="113.6" x="362.4" y="341.5793">public NavController(@NonNull Context context) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126.4" x="368.8" y="348.6811">//注册NavGraphNavigator 用来启动startDestination首页</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.6" x="368.8" y="355.7828">mNavigatorProvider.addNavigator(new NavGraphNavigator(mNavigatorProvider));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="127.6" x="368.8" y="362.8846">//注册ActivityNavigator Activity提供路由服务的Navigator</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="154.4" x="368.8" y="369.9863">mNavigatorProvider.addNavigator(new ActivityNavigator(mContext));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="362.4" y="377.0881">}</text><polygon fill="#A80036" points="273.4,391.7324,269.4,393.3324,273.4,394.9324,271.8,393.3324" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="271" x2="355.8" y1="393.3324" y2="393.3324"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="275.8" y="391.3898">4</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="281.8" y="391.3898"/><polygon fill="#A80036" points="349.4,463.2482,353.4,464.8482,349.4,466.4482,351,464.8482" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="269" x2="351.8" y1="464.8482" y2="464.8482"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="271.8" y="462.9057">5</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="73.2" x="276.2" y="462.9057">setOnBackPressedDispatcher()</text><path d="M360,398.5324 L360,522.9324 L568.4,522.9324 L568.4,402.5324 L564.4,398.5324 L360,398.5324 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M564.4,398.5324 L564.4,402.5324 L568.4,402.5324 L564.4,398.5324 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="362.4" y="406.4916">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="200" x="362.4" y="413.5934">void setOnBackPressedDispatcher(@NonNull OnBackPressedDispatcher dispatcher) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.6" x="368.8" y="420.6951">//把mOnBackPressedCallback注册进去</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164" x="368.8" y="427.7969">dispatcher.addCallback(mLifecycleOwner, mOnBackPressedCallback);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="362.4" y="434.8986">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="364" y="442.0004"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="127.2" x="364" y="449.1021">//点击手机返回键就会回调handleOnBackPressed()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="171.2" x="364" y="456.2039">//新思路：使用Activity中的OnBackPressedDispatcher注册一个回调监听，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="169.6" x="364" y="463.3057">//       点击手机返回键之后会分发到callback.handleOnBackPressed()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="154" x="362.4" y="470.4074">private final OnBackPressedCallback mOnBackPressedCallback =</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86" x="375.2" y="477.5092">new OnBackPressedCallback(false) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="368.8" y="484.6109">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.2" x="368.8" y="491.7127">public void handleOnBackPressed() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="375.2" y="498.8145">//页面回退栈操作</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38.8" x="375.2" y="505.9162">popBackStack();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="368.8" y="513.018">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="3.2" x="362.4" y="520.1197">};</text><polygon fill="#A80036" points="273.4,534.7641,269.4,536.3641,273.4,537.9641,271.8,536.3641" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="271" x2="355.8" y1="536.3641" y2="536.3641"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="275.8" y="534.4215">6</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="281.8" y="534.4215"/><line style="stroke:#A80036;stroke-width:0.4;" x1="269" x2="287.8" y1="571.322" y2="571.322"/><line style="stroke:#A80036;stroke-width:0.4;" x1="287.8" x2="287.8" y1="571.322" y2="576.522"/><line style="stroke:#A80036;stroke-width:0.4;" x1="271.4" x2="287.8" y1="576.522" y2="576.522"/><polygon fill="#A80036" points="275.4,574.922,271.4,576.522,275.4,578.122,273.8,576.522" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="273.8" y="569.3794">7</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.4" x="278.2" y="569.3794">onCreateNavController()</text><path d="M52.8,541.5641 L52.8,602.3641 L259.2,602.3641 L259.2,545.5641 L255.2,541.5641 L52.8,541.5641 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M255.2,541.5641 L255.2,545.5641 L259.2,545.5641 L255.2,541.5641 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="55.2" y="549.5232">NavHostFragment.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.6" x="55.2" y="556.625">protected void onCreateNavController(@NonNull NavController navController) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="158.4" x="61.6" y="563.7268">//1.通过navController得到NavigatorProvider(用来存储Navigator对象)，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="61.6" y="570.8285">//2.并注册DialogFragmentNavigator和FragmentNavigator</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114" x="61.6" y="577.9303">navController.getNavigatorProvider().addNavigator(</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="178.8" x="74.4" y="585.032">new DialogFragmentNavigator(requireContext(), getChildFragmentManager()));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="178" x="61.6" y="592.1338">navController.getNavigatorProvider().addNavigator(createFragmentNavigator());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="55.2" y="599.2355">}</text><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="271" x2="287.8" y1="617.4799" y2="617.4799"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="287.8" x2="287.8" y1="617.4799" y2="622.6799"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="269" x2="287.8" y1="622.6799" y2="622.6799"/><polygon fill="#A80036" points="273,621.0799,269,622.6799,273,624.2799,271.4,622.6799" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="273.8" y="615.5373">8</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="279.8" y="615.5373"/><polygon fill="#A80036" points="349.4,665.7396,353.4,667.3396,349.4,668.9396,351,667.3396" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="269" x2="351.8" y1="667.3396" y2="667.3396"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="271.8" y="665.397">9</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24.4" x="276.2" y="665.397">setGraph()</text><path d="M360,625.8799 L360,700.6799 L587.6,700.6799 L587.6,629.8799 L583.6,625.8799 L360,625.8799 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M583.6,625.8799 L583.6,629.8799 L587.6,629.8799 L583.6,625.8799 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="362.4" y="633.8391">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126" x="362.4" y="640.9408">public void setGraph(@NavigationRes int graphResId) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="63.2" x="368.8" y="648.0426">setGraph(graphResId, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="362.4" y="655.1443">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="364" y="662.2461"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="219.2" x="362.4" y="669.3479">public void setGraph(@NavigationRes int graphResId, @Nullable Bundle startDestinationArgs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.2" x="368.8" y="676.4496">//getNavInflater().inflate(graphResId)解析路由资源文件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="154.8" x="368.8" y="683.5514">setGraph(getNavInflater().inflate(graphResId), startDestinationArgs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="362.4" y="690.6531">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="364" y="697.7549"/><polygon fill="#A80036" points="457.8,813.8238,461.8,815.4238,457.8,817.0238,459.4,815.4238" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="358.2" x2="460.2" y1="815.4238" y2="815.4238"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="361" y="813.4813">10</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16.8" x="368.2" y="813.4813">inflate()</text><path d="M468.4,706.4975 L468.4,916.0975 L737.2,916.0975 L737.2,710.4975 L733.2,706.4975 L468.4,706.4975 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M733.2,706.4975 L733.2,710.4975 L737.2,710.4975 L733.2,706.4975 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="470.8" y="714.4566">NavInflater.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="131.6" x="470.8" y="721.5584">//NavInflater.inflate()解析路由资源文件,返回NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="95.6" x="470.8" y="728.6602">//[LayoutInflate.inflate()解析布局资源文件]</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="172.8" x="470.8" y="735.7619">//遍历xml文件中的标签，跟已知标签对比，再分门别类的解析节点下的属性</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132" x="470.8" y="742.8637">public NavGraph inflate(@NavigationRes int graphResId) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100.8" x="477.2" y="749.9654">Resources res = mContext.getResources();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.2" x="477.2" y="757.0672">XmlResourceParser parser = res.getXml(graphResId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="119.2" x="477.2" y="764.1689">final AttributeSet attrs = Xml.asAttributeSet(parser);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="9.2" x="477.2" y="771.2707">try {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="18.8" x="483.6" y="778.3725">int type;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="247.6" x="483.6" y="785.4742">while ((type = parser.next()) != XmlPullParser.START_TAG   &amp;&amp; type != XmlPullParser.END_DOCUMENT) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="31.2" x="490" y="792.576">// Empty loop</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="483.6" y="799.6777">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="472.4" y="806.7795"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.2" x="483.6" y="813.8813">String rootElement = parser.getName();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="483.6" y="820.983">//解析生成路由节点NavDestination对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.6" x="483.6" y="828.0848">NavDestination destination = inflate(res, parser, attrs, graphResId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="212.4" x="483.6" y="835.1865">//解析完成应该返回NavGraph对象，如果返回NavDestination对象不是NavGraph就会抛出异常</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.2" x="483.6" y="842.2883">if (!(destination instanceof NavGraph)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="172.8" x="490" y="849.39">throw new IllegalArgumentException("Root element &lt;" + rootElement + "&gt;"</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.8" x="502.8" y="856.4918">+ " did not inflate into a NavGraph");</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="483.6" y="863.5936">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.2" x="483.6" y="870.6953">//解析完成返回NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.8" x="483.6" y="877.7971">return (NavGraph) destination;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="477.2" y="884.8988">} catch (Exception e) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="19.6" x="477.2" y="892.0006">} finally {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="33.2" x="483.6" y="899.1023">parser.close();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="477.2" y="906.2041">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="470.8" y="913.3059">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="466.6" x2="485.4" y1="1044.1292" y2="1044.1292"/><line style="stroke:#A80036;stroke-width:0.4;" x1="485.4" x2="485.4" y1="1044.1292" y2="1049.3292"/><line style="stroke:#A80036;stroke-width:0.4;" x1="469" x2="485.4" y1="1049.3292" y2="1049.3292"/><polygon fill="#A80036" points="473,1047.7292,469,1049.3292,473,1050.9292,471.4,1049.3292" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="471.4" y="1042.1866">11</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16.8" x="478.6" y="1042.1866">inflate()</text><path d="M180,922.0484 L180,1167.2484 L458.8,1167.2484 L458.8,926.0484 L454.8,922.0484 L180,922.0484 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M454.8,922.0484 L454.8,926.0484 L458.8,926.0484 L454.8,922.0484 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="182.4" y="930.0076">NavInflater.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="182.4" y="937.1094">//解析生成路由节点NavDestination对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="217.2" x="182.4" y="944.2111">private NavDestination inflate(@NonNull Resources res, @NonNull XmlResourceParser parser,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102.4" x="195.2" y="951.3129">@NonNull AttributeSet attrs, int graphResId)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.2" x="195.2" y="958.4146">throws XmlPullParserException, IOException {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="176" x="188.8" y="965.5164">//通过XmlParser读出标签名称(&lt;navigation&gt; &lt;activity&gt; &lt;fragment&gt;  &lt;dialog&gt;)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="264" x="188.8" y="972.6182">//根据标签名称的到对应的Navigator对象： NavGraphNavigator ActivityNavigator FragmentNavigator DialogNavigator</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.6" x="188.8" y="979.7199">//第一个解析节点就是&lt;navigation&gt;得到NavGraphNavigator对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.6" x="188.8" y="986.8217">Navigator&lt;?&gt; navigator = mNavigatorProvider.getNavigator(parser.getName());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142" x="188.8" y="993.9234">//根据对应的Navigator对象执行其创建NavDestination对象方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130.4" x="188.8" y="1001.0252">final NavDestination dest = navigator.createDestination();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="184" y="1008.127"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48" x="188.8" y="1015.2287">//解析NavDestination</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="185.2" x="188.8" y="1022.3305">//这些数据解析完成之后都会存储在Destination中，路由的时候就可以创建和启动</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="71.6" x="188.8" y="1029.4322">dest.onInflate(mContext, attrs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="184" y="1036.534"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="148" x="188.8" y="1043.6357">while ((type = parser.next()) != XmlPullParser.END_DOCUMENT</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.2" x="201.6" y="1050.7375">&amp;&amp; ((depth = parser.getDepth()) &gt;= innerDepth</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86" x="201.6" y="1057.8393">|| type != XmlPullParser.END_TAG)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.8" x="195.2" y="1064.941">final String name = parser.getName();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.6" x="195.2" y="1072.0428">if (TAG_ARGUMENT.equals(name)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="137.6" x="201.6" y="1079.1445">inflateArgumentForDestination(res, dest, attrs, graphResId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="99.2" x="195.2" y="1086.2463">} else if (TAG_DEEP_LINK.equals(name)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74" x="201.6" y="1093.348">inflateDeepLink(res, dest, attrs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="195.2" y="1100.4498">} else if (TAG_ACTION.equals(name)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114" x="201.6" y="1107.5516">inflateAction(res, dest, attrs, parser, graphResId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.4" x="195.2" y="1114.6533">}else if (dest instanceof NavGraph) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="201.6" y="1121.7551">//第一个创建的对象NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="136" x="201.6" y="1128.8568">//递归调用inflate()方法，返回的节点就会添加到NavGraph中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="165.6" x="201.6" y="1135.9586">((NavGraph) dest).addDestination(inflate(res, parser, attrs, graphResId));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="195.2" y="1143.0604">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="188.8" y="1150.1621">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="188.8" y="1157.2639">return dest;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="182.4" y="1164.3656">}</text><polygon fill="#A80036" points="561.8,1191.6626,565.8,1193.2626,561.8,1194.8626,563.4,1193.2626" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="468.6" x2="564.2" y1="1193.2626" y2="1193.2626"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="471.4" y="1191.32">12</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.2" x="478.6" y="1191.32">ActivityNavigator.createDestination()</text><path d="M572.4,1173.1082 L572.4,1205.5082 L670.4,1205.5082 L670.4,1177.1082 L666.4,1173.1082 L572.4,1173.1082 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M666.4,1173.1082 L666.4,1177.1082 L670.4,1177.1082 L666.4,1173.1082 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="574.8" y="1181.0674">ActivityNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="574.8" y="1188.1691">public Destination createDestination() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.8" x="581.2" y="1195.2709">return new Destination(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="574.8" y="1202.3727">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="570.6" x2="589.4" y1="1233.7714" y2="1233.7714"/><line style="stroke:#A80036;stroke-width:0.4;" x1="589.4" x2="589.4" y1="1233.7714" y2="1238.9714"/><line style="stroke:#A80036;stroke-width:0.4;" x1="573" x2="589.4" y1="1238.9714" y2="1238.9714"/><polygon fill="#A80036" points="577,1237.3714,573,1238.9714,577,1240.5714,575.4,1238.9714" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="575.4" y="1231.8288">13</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40" x="582.6" y="1231.8288">new Destination()</text><path d="M358.8,1211.1152 L358.8,1257.5152 L562.8,1257.5152 L562.8,1215.1152 L558.8,1211.1152 L358.8,1211.1152 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M558.8,1211.1152 L558.8,1215.1152 L562.8,1215.1152 L558.8,1211.1152 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="361.2" y="1219.0744">ActivityNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="128.8" x="361.2" y="1226.1762">public static class Destination extends NavDestination {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="189.2" x="367.6" y="1233.2779">public Destination(@NonNull Navigator&lt;? extends Destination&gt; activityNavigator) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.8" x="374" y="1240.3797">super(activityNavigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="367.6" y="1247.4814">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="361.2" y="1254.5832">}</text><polygon fill="#A80036" points="649.8,1306.7363,653.8,1308.3363,649.8,1309.9363,651.4,1308.3363" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="572.6" x2="652.2" y1="1308.3363" y2="1308.3363"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="575.4" y="1306.3938">14</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="582.6" y="1306.3938">super(activityNavigator)</text><path d="M660.4,1263.3258 L660.4,1345.3258 L916.4,1345.3258 L916.4,1267.3258 L912.4,1263.3258 L660.4,1263.3258 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M912.4,1263.3258 L912.4,1267.3258 L916.4,1267.3258 L912.4,1263.3258 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="662.8" y="1271.285">NavDestination.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="198.8" x="662.8" y="1278.3867">//要么传递navigator对象要么传递navigatorName，让NavDestination持有navigatorName</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="247.6" x="662.8" y="1285.4885">//页面跳转时能够根据指定目标页id找到NavDestination节点，进而根据navigatorName找到创建它的Navigator</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90" x="662.8" y="1292.5902">//把NavDestination与Navigator关联起来</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="189.2" x="662.8" y="1299.692">public NavDestination(@NonNull Navigator&lt;? extends NavDestination&gt; navigator) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152.8" x="669.2" y="1306.7938">this(NavigatorProvider.getNameForNavigator(navigator.getClass()));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="662.8" y="1313.8955">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="664.4" y="1320.9973"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130" x="662.8" y="1328.099">public NavDestination(@NonNull String navigatorName) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="81.2" x="669.2" y="1335.2008">mNavigatorName = navigatorName;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="662.8" y="1342.3025">}</text><polygon fill="#A80036" points="575,1356.9469,571,1358.5469,575,1360.1469,573.4,1358.5469" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="572.6" x2="656.2" y1="1358.5469" y2="1358.5469"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="577.4" y="1356.6043">15</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="586.2" y="1356.6043"/><polygon fill="#A80036" points="471,1369.6486,467,1371.2486,471,1372.8486,469.4,1371.2486" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="468.6" x2="568.2" y1="1371.2486" y2="1371.2486"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="473.4" y="1369.3061">16</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="482.2" y="1369.3061"/><polygon fill="#A80036" points="561.8,1441.1645,565.8,1442.7645,561.8,1444.3645,563.4,1442.7645" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="466.6" x2="564.2" y1="1442.7645" y2="1442.7645"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="469.4" y="1440.8219">17</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62" x="476.6" y="1440.8219">ActivityNavigator.onInflate()</text><path d="M572.4,1376.4486 L572.4,1500.8486 L782.4,1500.8486 L782.4,1380.4486 L778.4,1376.4486 L572.4,1376.4486 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M778.4,1376.4486 L778.4,1380.4486 L782.4,1380.4486 L778.4,1376.4486 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="574.8" y="1384.4078">ActivityNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="201.6" x="574.8" y="1391.5096">//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="574.8" y="1398.6113">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="581.2" y="1405.7131">super.onInflate(context, attrs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.8" x="581.2" y="1412.8148">TypedArray a = context.getResources().obtainAttributes(attrs,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.8" x="594" y="1419.9166">R.styleable.ActivityNavigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.4" x="581.2" y="1427.0184">//解析Activity所在的包名</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="581.2" y="1434.1201">String targetPackage = a.getString(R.styleable.ActivityNavigator_targetPackage);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="576.4" y="1441.2219"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.8" x="581.2" y="1448.3236">//解析Activity所在className</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="178.4" x="581.2" y="1455.4254">String className = a.getString(R.styleable.ActivityNavigator_android_name);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="576.4" y="1462.5271"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.8" x="581.2" y="1469.6289">//解析Activity所在action</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="137.6" x="581.2" y="1476.7307">setAction(a.getString(R.styleable.ActivityNavigator_action));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="576.4" y="1483.8324"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="581.2" y="1490.9342">a.recycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="574.8" y="1498.0359">}</text><polygon fill="#A80036" points="649.8,1539.5364,653.8,1541.1364,649.8,1542.7364,651.4,1541.1364" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="570.6" x2="652.2" y1="1541.1364" y2="1541.1364"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="573.4" y="1539.1938">18</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="580.6" y="1539.1938">super.onInflate(context, attrs);</text><path d="M660.4,1506.7785 L660.4,1567.5785 L849.2,1567.5785 L849.2,1510.7785 L845.2,1506.7785 L660.4,1506.7785 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M845.2,1506.7785 L845.2,1510.7785 L849.2,1510.7785 L845.2,1506.7785 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="662.8" y="1514.7377">NavDestination.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="662.8" y="1521.8395">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.6" x="669.2" y="1528.9412">final TypedArray a = context.getResources().obtainAttributes(attrs,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52" x="682" y="1536.043">R.styleable.Navigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="59.2" x="669.2" y="1543.1447">//解析必备参数路由节点id</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="138" x="669.2" y="1550.2465">setId(a.getResourceId(R.styleable.Navigator_android_id, 0));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="669.2" y="1557.3482">a.recycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="662.8" y="1564.45">}</text><polygon fill="#A80036" points="575,1579.0943,571,1580.6943,575,1582.2943,573.4,1580.6943" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="572.6" x2="656.2" y1="1580.6943" y2="1580.6943"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="577.4" y="1578.7518">19</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="586.2" y="1578.7518"/><polygon fill="#A80036" points="471,1591.7961,467,1593.3961,471,1594.9961,469.4,1593.3961" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="468.6" x2="568.2" y1="1593.3961" y2="1593.3961"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="473.4" y="1591.4535">20</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="482.2" y="1591.4535"/><polygon fill="#A80036" points="737.8,1620.7014,741.8,1622.3014,737.8,1623.9014,739.4,1622.3014" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="466.6" x2="740.2" y1="1622.3014" y2="1622.3014"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="469.4" y="1620.3588">21</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.8" x="476.6" y="1620.3588">NavGraphNavigator.createDestination()</text><path d="M748.4,1598.5961 L748.4,1637.7961 L842.8,1637.7961 L842.8,1602.5961 L838.8,1598.5961 L748.4,1598.5961 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M838.8,1598.5961 L838.8,1602.5961 L842.8,1602.5961 L838.8,1598.5961 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="750.8" y="1606.5553">NavGraphNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="750.8" y="1613.657">//第一个创建的对象NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86" x="750.8" y="1620.7588">public NavGraph createDestination() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="61.2" x="757.2" y="1627.8605">return new NavGraph(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="750.8" y="1634.9623">}</text><polygon fill="#A80036" points="801.4,1736.8277,805.4,1738.4277,801.4,1740.0277,803,1738.4277" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="746.6" x2="803.8" y1="1738.4277" y2="1738.4277"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="749.4" y="1736.4852">22</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="756.6" y="1736.4852">new NavGraph(this)</text><path d="M812,1643.7049 L812,1824.9049 L1050.4,1824.9049 L1050.4,1647.7049 L1046.4,1643.7049 L812,1643.7049 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1046.4,1643.7049 L1046.4,1647.7049 L1050.4,1647.7049 L1046.4,1643.7049 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32.8" x="814.4" y="1651.6641">NavGraph.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.2" x="814.4" y="1658.7658">//NavGraph 特殊的NavDestination</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110.8" x="814.4" y="1665.8676">public class NavGraph extends NavDestination {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.4" x="820.8" y="1672.9693">//存储NavDestination路由节点 可套娃，自己嵌套自己</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="194.4" x="820.8" y="1680.0711">final SparseArrayCompat&lt;NavDestination&gt; mNodes = new SparseArrayCompat&lt;&gt;();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="119.6" x="820.8" y="1687.1729">//路由中需要启动首页的id 解析是在onInflate()方法中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.6" x="820.8" y="1694.2746">private int mStartDestId;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.2" x="820.8" y="1701.3764">private String mStartDestIdName;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="816" y="1708.4781"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="820.8" y="1715.5799">//第一个创建的对象NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.6" x="820.8" y="1722.6816">public NavGraph(@NonNull Navigator&lt;? extends NavGraph&gt; navGraphNavigator) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.4" x="827.2" y="1729.7834">super(navGraphNavigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="820.8" y="1736.8852">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="816" y="1743.9869"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.4" x="820.8" y="1751.0887">//解析NavDestination属性</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="820.8" y="1758.1904">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="820.8" y="1765.2922">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="827.2" y="1772.3939">super.onInflate(context, attrs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="217.2" x="827.2" y="1779.4957">TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="3.2" x="827.2" y="1786.5975">//</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="206.4" x="827.2" y="1793.6992">setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144" x="827.2" y="1800.801">mStartDestIdName = getDisplayName(context, mStartDestId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="827.2" y="1807.9027">a.recycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="820.8" y="1815.0045">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="814.4" y="1822.1063">}</text><polygon fill="#A80036" points="751,1836.7506,747,1838.3506,751,1839.9506,749.4,1838.3506" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="748.6" x2="807.8" y1="1838.3506" y2="1838.3506"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="753.4" y="1836.408">23</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="762.2" y="1836.408"/><polygon fill="#A80036" points="471,1849.4523,467,1851.0523,471,1852.6523,469.4,1851.0523" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="468.6" x2="744.2" y1="1851.0523" y2="1851.0523"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="473.4" y="1849.1098">24</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="482.2" y="1849.1098"/><polygon fill="#A80036" points="737.8,1903.2138,741.8,1904.8138,737.8,1906.4138,739.4,1904.8138" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="466.6" x2="740.2" y1="1904.8138" y2="1904.8138"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="469.4" y="1902.8712">25</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.6" x="476.6" y="1902.8712">NavGraphNavigator.onInflate()</text><path d="M748.4,1856.2523 L748.4,1945.4523 L980.4,1945.4523 L980.4,1860.2523 L976.4,1856.2523 L748.4,1856.2523 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M976.4,1856.2523 L976.4,1860.2523 L980.4,1860.2523 L976.4,1856.2523 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="750.8" y="1864.2115">NavGraphNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="201.6" x="750.8" y="1871.3133">//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.4" x="750.8" y="1878.415">//解析NavDestination属性</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="750.8" y="1885.5168">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="750.8" y="1892.6186">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="757.2" y="1899.7203">super.onInflate(context, attrs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="217.2" x="757.2" y="1906.8221">TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="3.2" x="757.2" y="1913.9238">//</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="206.4" x="757.2" y="1921.0256">setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144" x="757.2" y="1928.1273">mStartDestIdName = getDisplayName(context, mStartDestId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="757.2" y="1935.2291">a.recycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="750.8" y="1942.3309">}</text><polygon fill="#A80036" points="663,1983.8313,659,1985.4313,663,1987.0313,661.4,1985.4313" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="660.6" x2="742.2" y1="1985.4313" y2="1985.4313"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="665.4" y="1983.4888">26</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="672.6" y="1983.4888">super.onInflate(context, attrs);</text><path d="M462,1951.0734 L462,2011.8734 L650.8,2011.8734 L650.8,1955.0734 L646.8,1951.0734 L462,1951.0734 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M646.8,1951.0734 L646.8,1955.0734 L650.8,1955.0734 L646.8,1951.0734 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="464.4" y="1959.0326">NavDestination.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="180.4" x="464.4" y="1966.1344">public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.6" x="470.8" y="1973.2361">final TypedArray a = context.getResources().obtainAttributes(attrs,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52" x="483.6" y="1980.3379">R.styleable.Navigator);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="59.2" x="470.8" y="1987.4396">//解析必备参数路由节点id</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="138" x="470.8" y="1994.5414">setId(a.getResourceId(R.styleable.Navigator_android_id, 0));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="470.8" y="2001.6432">a.recycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="464.4" y="2008.7449">}</text><polygon fill="#A80036" points="737.8,2023.3893,741.8,2024.9893,737.8,2026.5893,739.4,2024.9893" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="656.6" x2="740.2" y1="2024.9893" y2="2024.9893"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="659.4" y="2023.0467">27</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="668.2" y="2023.0467"/><polygon fill="#A80036" points="471,2036.091,467,2037.691,471,2039.291,469.4,2037.691" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="468.6" x2="744.2" y1="2037.691" y2="2037.691"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="473.4" y="2035.7484">28</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="482.2" y="2035.7484"/><polygon fill="#A80036" points="801.4,2064.9963,805.4,2066.5963,801.4,2068.1963,803,2066.5963" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="466.6" x2="803.8" y1="2066.5963" y2="2066.5963"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="469.4" y="2064.6537">29</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="81.2" x="476.6" y="2064.6537">((NavGraph) dest).addDestination();</text><path d="M812,2042.891 L812,2082.091 L969.6,2082.091 L969.6,2046.891 L965.6,2042.891 L812,2042.891 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M965.6,2042.891 L965.6,2046.891 L969.6,2046.891 L965.6,2042.891 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32.8" x="814.4" y="2050.8502">NavGraph.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="814.4" y="2057.952">public final void addDestination(@NonNull NavDestination node) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.6" x="820.8" y="2065.0537">//存放到mNodes集合中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.4" x="820.8" y="2072.1555">mNodes.put(node.getId(), node);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="814.4" y="2079.2572">}</text><polygon fill="#A80036" points="471,2093.9016,467,2095.5016,471,2097.1016,469.4,2095.5016" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="468.6" x2="807.8" y1="2095.5016" y2="2095.5016"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="473.4" y="2093.559">30</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="482.2" y="2093.559"/><polygon fill="#A80036" points="362.6,2106.6033,358.6,2108.2033,362.6,2109.8033,361,2108.2033" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="360.2" x2="464.2" y1="2108.2033" y2="2108.2033"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="365" y="2106.2607">31</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="373.8" y="2106.2607"/><line style="stroke:#A80036;stroke-width:0.4;" x1="358.2" x2="377" y1="2150.263" y2="2150.263"/><line style="stroke:#A80036;stroke-width:0.4;" x1="377" x2="377" y1="2150.263" y2="2155.463"/><line style="stroke:#A80036;stroke-width:0.4;" x1="360.6" x2="377" y1="2155.463" y2="2155.463"/><polygon fill="#A80036" points="364.6,2153.863,360.6,2155.463,364.6,2157.063,363,2155.463" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="363" y="2148.3204">32</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30.8" x="370.2" y="2148.3204">setGraph(...);</text><path d="M134,2113.4033 L134,2188.2033 L350.4,2188.2033 L350.4,2117.4033 L346.4,2113.4033 L134,2113.4033 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M346.4,2113.4033 L346.4,2117.4033 L350.4,2117.4033 L346.4,2113.4033 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="136.4" y="2121.3625">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="208" x="136.4" y="2128.4643">public void setGraph(@NonNull NavGraph graph, @Nullable Bundle startDestinationArgs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.4" x="142.8" y="2135.566">if (mGraph != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="124.8" x="149.2" y="2142.6678">// Pop everything from the old graph off the back stack</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102" x="149.2" y="2149.7695">popBackStackInternal(mGraph.getId(), true);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="142.8" y="2156.8713">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62" x="142.8" y="2163.973">//保存生成的NavGraph对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.2" x="142.8" y="2171.0748">mGraph = graph;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="142.8" y="2178.1766">onGraphCreated(startDestinationArgs);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="136.4" y="2185.2783">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="360.2" x2="379" y1="2227.3297" y2="2227.3297"/><line style="stroke:#A80036;stroke-width:0.4;" x1="379" x2="379" y1="2227.3297" y2="2232.5297"/><line style="stroke:#A80036;stroke-width:0.4;" x1="362.6" x2="379" y1="2232.5297" y2="2232.5297"/><polygon fill="#A80036" points="366.6,2230.9297,362.6,2232.5297,366.6,2234.1297,365,2232.5297" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="365" y="2225.3871">33</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="372.2" y="2225.3871">onGraphCreated(startDestinationArgs);</text><path d="M118.8,2194.0209 L118.8,2261.6209 L350.4,2261.6209 L350.4,2198.0209 L346.4,2194.0209 L118.8,2194.0209 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M346.4,2194.0209 L346.4,2198.0209 L350.4,2198.0209 L346.4,2194.0209 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="121.2" y="2201.9801">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.8" x="121.2" y="2209.0818">private void onGraphCreated(@Nullable Bundle startDestinationArgs) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="127.6" y="2216.1836">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="122.8" y="2223.2854"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.8" x="127.6" y="2230.3871">// Navigate to the first destination in the graph</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="97.6" x="127.6" y="2237.4889">// if we haven't deep linked to a destination</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="216.8" x="127.6" y="2244.5906">//633 启动路由中第一个destination节点 前面都是解析和创建路由过程，下面就是路由跳转过程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114.8" x="127.6" y="2251.6924">navigate(mGraph, startDestinationArgs, null, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="121.2" y="2258.7941">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="362.2" x2="381" y1="2332.8034" y2="2332.8034"/><line style="stroke:#A80036;stroke-width:0.4;" x1="381" x2="381" y1="2332.8034" y2="2338.0034"/><line style="stroke:#A80036;stroke-width:0.4;" x1="364.6" x2="381" y1="2338.0034" y2="2338.0034"/><polygon fill="#A80036" points="368.6,2336.4034,364.6,2338.0034,368.6,2339.6034,367,2338.0034" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="367" y="2330.8608">34</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="23.6" x="374.2" y="2330.8608">navigate();</text><path d="M53.6,2267.5367 L53.6,2399.1367 L350.4,2399.1367 L350.4,2271.5367 L346.4,2267.5367 L53.6,2267.5367 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M346.4,2267.5367 L346.4,2271.5367 L350.4,2271.5367 L346.4,2267.5367 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="56" y="2275.4959">NavController.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="176.8" x="56" y="2282.5977">private void navigate(@NonNull NavDestination node, @Nullable Bundle args,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="68.8" y="2289.6994">@Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="57.6" y="2296.8012"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="134.4" x="62.4" y="2303.9029">//通过node.getNavigatorName()找到创建它的Navigator对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.4" x="62.4" y="2311.0047">//此时node是NavGraph，找到的是NavGraphNavigator对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="227.2" x="62.4" y="2318.1064">Navigator&lt;NavDestination&gt; navigator = mNavigatorProvider.getNavigator(node.getNavigatorName());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="57.6" y="2325.2082"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="204" x="62.4" y="2332.31">//通过NavGraphNavigator对象调用NavGraphNavigator.navigate()方法发起 真正的路由跳转</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="208.4" x="62.4" y="2339.4117">NavDestination newDest = navigator.navigate(node, finalArgs,navOptions, navigatorExtras);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46" x="62.4" y="2346.5135">if (newDest != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.4" x="68.8" y="2353.6152">if (mBackStack.isEmpty()) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="269.2" x="75.2" y="2360.717">NavBackStackEntry entry = new NavBackStackEntry(mContext, mGraph, finalArgs,mLifecycleOwner, mViewModel);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="257.2" x="75.2" y="2367.8188">//跳转成功之后就会把本次启动的路由节点添加到回退栈中，点击返回键被NavController拦截之后执行回退栈操作</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.4" x="75.2" y="2374.9205">mBackStack.add(entry);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="68.8" y="2382.0223">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="62.4" y="2389.124">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="56" y="2396.2258">}</text><polygon fill="#A80036" points="737.8,2494.5403,741.8,2496.1403,737.8,2497.7403,739.4,2496.1403" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="364.2" x2="740.2" y1="2496.1403" y2="2496.1403"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="367" y="2494.1978">35</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.8" x="374.2" y="2494.1978">NavGraphNavigator.navigate();</text><path d="M748.4,2404.9684 L748.4,2579.3684 L1019.6,2579.3684 L1019.6,2408.9684 L1015.6,2404.9684 L748.4,2404.9684 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1015.6,2404.9684 L1015.6,2408.9684 L1019.6,2408.9684 L1015.6,2404.9684 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="750.8" y="2412.9275">NavGraphNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="203.2" x="750.8" y="2420.0293">public NavDestination navigate(@NonNull NavGraph destination, @Nullable Bundle args,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164.4" x="763.6" y="2427.1311">@Nullable NavOptions navOptions, @Nullable Extras navigatorExtras) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="152.4" x="757.2" y="2434.2328">//根据NavGraph找到startDestinationId Navigation中要启动的首页id</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104" x="757.2" y="2441.3346">int startId = destination.getStartDestination();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.2" x="757.2" y="2448.4363">if (startId == 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100.8" x="763.6" y="2455.5381">//如果没有给路由指定首页启动id会抛出异常</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="149.2" x="763.6" y="2462.6398">throw new IllegalStateException("no start destination defined via"</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="65.6" x="776.4" y="2469.7416">+ " app:startDestination for "</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="76" x="776.4" y="2476.8434">+ destination.getDisplayName());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="757.2" y="2483.9451">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.6" x="757.2" y="2491.0469">//通过首页id找到首页NavDestination对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="158.8" x="757.2" y="2498.1486">NavDestination startDestination = destination.findNode(startId, false);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182" x="757.2" y="2505.2504">//通过首页NavDestination对象的NavigatorName属性找到创建节点的Navigator，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="175.2" x="757.2" y="2512.3521">//此时 Navigator 可能是 ActivityNavigator FragmentNavigator DialogNavigator</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="154" x="757.2" y="2519.4539">//也就是说 NavGraphNavigator 并没有真正的自己去执行路由操作，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="121.2" x="757.2" y="2526.5557">//而是把路由委托给其他三种类型的 Navigator 去执行</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="213.6" x="757.2" y="2533.6574">// NavGraphNavigator 这个类存在的作用就是当MobileNavigation路由资源文件加载完成之后，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="81.2" x="757.2" y="2540.7592">//能够把路由当中的首页给启动起来</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="252.4" x="757.2" y="2547.8609">Navigator&lt;NavDestination&gt; navigator = mNavigatorProvider.getNavigator(startDestination.getNavigatorName());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="752.4" y="2554.9627"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="97.2" x="757.2" y="2562.0645">//由其他三种类型的Navigator执行路由跳转</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="256.4" x="757.2" y="2569.1662">return navigator.navigate(startDestination, startDestination.addInDefaultArgs(args),navOptions, navigatorExtras);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="750.8" y="2576.268">}</text><polygon fill="#A80036" points="561.8,2688.786,565.8,2690.386,561.8,2691.986,563.4,2690.386" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="364.2" x2="564.2" y1="2690.386" y2="2690.386"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="367" y="2688.4435">36</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="63.2" x="374.2" y="2688.4435">ActivityNavigator.navigate();</text><path d="M572.4,2585.0105 L572.4,2787.8105 L787.6,2787.8105 L787.6,2589.0105 L783.6,2585.0105 L572.4,2585.0105 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M783.6,2585.0105 L783.6,2589.0105 L787.6,2589.0105 L783.6,2585.0105 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="574.8" y="2592.9697">ActivityNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="206.8" x="574.8" y="2600.0715">public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="587.6" y="2607.1732">@Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.8" x="581.2" y="2614.275">//根据传递destination构造Intent对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="112" x="581.2" y="2621.3768">Intent intent = new Intent(destination.getIntent());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36" x="581.2" y="2628.4785">if (args != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.8" x="587.6" y="2635.5803">//把启动页面需要的参数put进去</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="587.6" y="2642.682">intent.putExtras(args);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="581.2" y="2649.7838">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="110.8" x="581.2" y="2656.8855">//判断启动模式是NEW_TASK还是SINGLE_TOP</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="80.8" x="581.2" y="2663.9873">if (!(mContext instanceof Activity)) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="185.6" x="587.6" y="2671.0891">// If we're not launching from an Activity context we have to launch in a new task.</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="125.2" x="587.6" y="2678.1908">intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="581.2" y="2685.2926">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="147.2" x="581.2" y="2692.3943">if (navOptions != null &amp;&amp; navOptions.shouldLaunchSingleTop()) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="128.4" x="587.6" y="2699.4961">intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="581.2" y="2706.5979">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="576.4" y="2713.6996"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="581.2" y="2720.8014">//为页面打开退出设置动画效果</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="51.6" x="581.2" y="2727.9031">if (navOptions != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="127.2" x="587.6" y="2735.0049">// For use in applyPopAnimationsToPendingTransition()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="179.2" x="587.6" y="2742.1066">intent.putExtra(EXTRA_POP_ENTER_ANIM, navOptions.getPopEnterAnim());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="169.2" x="587.6" y="2749.2084">intent.putExtra(EXTRA_POP_EXIT_ANIM, navOptions.getPopExitAnim());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="581.2" y="2756.3102">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="576.4" y="2763.4119"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="191.2" x="581.2" y="2770.5137">//最终通过mContext.startActivity(intent)完成对Activity页面类型的路由节点路由能力</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.8" x="581.2" y="2777.6154">mContext.startActivity(intent);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="574.8" y="2784.7172">}</text><polygon fill="#A80036" points="368.6,2799.3615,364.6,2800.9615,368.6,2802.5615,367,2800.9615" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="366.2" x2="568.2" y1="2800.9615" y2="2800.9615"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="371" y="2799.0189">37</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="379.8" y="2799.0189"/><polygon fill="#A80036" points="861.6,2927.6914,865.6,2929.2914,861.6,2930.8914,863.2,2929.2914" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="364.2" x2="864" y1="2929.2914" y2="2929.2914"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="367" y="2927.3488">38</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68.4" x="374.2" y="2927.3488">FragmentNavigator.navigate();</text><path d="M872.4,2806.1615 L872.4,3044.1615 L1120.8,3044.1615 L1120.8,2810.1615 L1116.8,2806.1615 L872.4,2806.1615 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1116.8,2806.1615 L1116.8,2810.1615 L1120.8,2810.1615 L1116.8,2806.1615 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.6" x="874.8" y="2814.1207">FragmentNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="206.8" x="874.8" y="2821.2225">public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="887.6" y="2828.3242">@Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.6" x="881.2" y="2835.426">//根据destination得到className : Fragment全类名</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="113.2" x="881.2" y="2842.5277">String className = destination.getClassName();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130.4" x="881.2" y="2849.6295">//根据 className全类名 去反射构建一个 Fragment 对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="165.2" x="881.2" y="2856.7313">//instantiateFragment(mContext, mFragmentManager,className, args)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="233.6" x="881.2" y="2863.833">//--&gt;return fragmentManager.getFragmentFactory().instantiate(context.getClassLoader(), className);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="212.8" x="881.2" y="2870.9348">final Fragment frag = instantiateFragment(mContext, mFragmentManager,className, args);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="881.2" y="2878.0365">//设置 Fragment 启动需要的参数</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="881.2" y="2885.1383">frag.setArguments(args);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="881.2" y="2892.24">//开启事务</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="162.4" x="881.2" y="2899.3418">final FragmentTransaction ft = mFragmentManager.beginTransaction();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="876.4" y="2906.4436"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="80.4" x="881.2" y="2913.5453">//设置 Fragment 进场出场动画效果</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="176.4" x="881.2" y="2920.6471">ft.setCustomAnimations(enterAnim, exitAnim, popEnterAnim, popExitAnim);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="876.4" y="2927.7488"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="188.8" x="881.2" y="2934.8506">//通过 FragmentTransaction.replace()方法把本次要启动的 Fragment 添加到容器上</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="196.4" x="881.2" y="2941.9523">//注意:使用的replace()方法在界面来回切换会重新销毁和重建，重新执行生命周期方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.8" x="881.2" y="2949.0541">//如何避免?</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="148" x="881.2" y="2956.1559">//解决方案：自己定义一个FragmentNavigator,在navigate()方法时</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="150.8" x="881.2" y="2963.2576">//         也就是执行Fragment跳转时使用hide()和show()方法就可以</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="881.2" y="2970.3594">ft.replace(mContainerId, frag);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="876.4" y="2977.4611"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="881.2" y="2984.5629">//事务提交</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="881.2" y="2991.6646">ft.commit();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="125.6" x="881.2" y="2998.7664">// The commit succeeded, update our view of the world</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.2" x="881.2" y="3005.8682">if (isAdded) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.8" x="887.6" y="3012.9699">//commit执行成功就Fragment添加到回退栈中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58.8" x="887.6" y="3020.0717">mBackStack.add(destId);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="41.6" x="887.6" y="3027.1734">return destination;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="881.2" y="3034.2752">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="874.8" y="3041.377">}</text><polygon fill="#A80036" points="368.6,3056.0213,364.6,3057.6213,368.6,3059.2213,367,3057.6213" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="366.2" x2="868" y1="3057.6213" y2="3057.6213"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="371" y="3055.6787">39</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="379.8" y="3055.6787"/><polygon fill="#A80036" points="941.2,3145.2915,945.2,3146.8915,941.2,3148.4915,942.8,3146.8915" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="364.2" x2="943.6" y1="3146.8915" y2="3146.8915"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="367" y="3144.9489">40</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.8" x="374.2" y="3144.9489">DialogFragmentNavigator.navigate();</text><path d="M952,3062.8213 L952,3222.8213 L1236.8,3222.8213 L1236.8,3066.8213 L1232.8,3062.8213 L952,3062.8213 " fill="#FBFB77" filter="url(#f1ffoypkgvvbdm)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1232.8,3062.8213 L1232.8,3066.8213 L1236.8,3066.8213 L1232.8,3062.8213 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="954.4" y="3070.7805">DialogFragmentNavigator.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="217.6" x="954.4" y="3077.8822">public NavDestination navigate(@NonNull final Destination destination, @Nullable Bundle args,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.2" x="967.2" y="3084.984">@Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.4" x="960.8" y="3092.0857">//根据destination得到className : DialogFragFragment全类名</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="113.2" x="960.8" y="3099.1875">String className = destination.getClassName();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="151.2" x="960.8" y="3106.2893">//根据 DialogFragFragment全类名 去反射构建一个 Fragment 对象</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="270" x="960.8" y="3113.391">final Fragment frag = mFragmentManager.getFragmentFactory().instantiate(mContext.getClassLoader(), className);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="139.6" x="960.8" y="3120.4928">//判断当前Fragment是不是DialogFragment，不是就抛出异常</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142" x="960.8" y="3127.5945">if (!DialogFragment.class.isAssignableFrom(frag.getClass())) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202.4" x="967.2" y="3134.6963">throw new IllegalArgumentException("Dialog destination " + destination.getClassName()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98.4" x="980" y="3141.798">+ " is not an instance of DialogFragment");</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="960.8" y="3148.8998">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142" x="960.8" y="3156.0016">final DialogFragment dialogFragment = (DialogFragment) frag;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="960.8" y="3163.1033">//设置 DialogFragment 启动需要的参数</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="84.4" x="960.8" y="3170.2051">dialogFragment.setArguments(args);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="128" x="960.8" y="3177.3068">dialogFragment.getLifecycle().addObserver(mObserver);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="956" y="3184.4086"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.8" x="960.8" y="3191.5104">//通过 DialogFragment.show() 方法把DialogFragment显示出来</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.2" x="960.8" y="3198.6121">dialogFragment.show(mFragmentManager, DIALOG_TAG + mDialogCount++);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="956" y="3205.7139"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="41.6" x="960.8" y="3212.8156">return destination;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="954.4" y="3219.9174">}</text><polygon fill="#A80036" points="368.6,3234.5617,364.6,3236.1617,368.6,3237.7617,367,3236.1617" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="366.2" x2="947.6" y1="3236.1617" y2="3236.1617"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="371" y="3234.2191">41</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="379.8" y="3234.2191"/><!--MD5=[ba6e1499ce36156d7766ab8a95b5f7a9]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'1
+NavHostFragment.java -> NavHostFragment.java: onInflate(...)
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//348 解析navGraph
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs,
+            @Nullable Bundle savedInstanceState) {
+    final TypedArray navHost = context.obtainStyledAttributes(attrs,androidx.navigation.R.styleable.NavHost);
+    final int graphId = navHost.getResourceId(androidx.navigation.R.styleable.NavHost_navGraph, 0);
+    if (graphId != 0) {
+      //得到navGraph对象资源id
+      mGraphId = graphId;
+    }
+}
+end note
+
+'2
+NavHostFragment.java -> NavHostFragment.java: onCreate()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//205
+public void onCreate(@Nullable Bundle savedInstanceState) {
+
+    //构建NavHostController对象，空壳，继承至 NavController
+    mNavController = new NavHostController(context);
+
+    //OnBackPressedDispatcher作用：当点击手机返回键之后将事件分发给注册进来的callback
+    mNavController.setOnBackPressedDispatcher(requireActivity().getOnBackPressedDispatcher());
+
+    //
+    onCreateNavController(mNavController);
+
+    if (mGraphId != 0) {
+        // Set from onInflate()
+        //把路由资源id传递进去，并加载资源文件，生成Navigation视图NavGraph对象
+        mNavController.setGraph(mGraphId);
+    } else {
+        // See if it was set by NavHostFragment.create()
+        final Bundle args = getArguments();
+        final int graphId = args != null ? args.getInt(KEY_GRAPH_ID) : 0;
+        final Bundle startDestinationArgs = args != null
+                ? args.getBundle(KEY_START_DESTINATION_ARGS)
+                : null;
+        if (graphId != 0) {
+            mNavController.setGraph(graphId, startDestinationArgs);
+        }
+    }
+}
+end note
+
+'3
+NavHostFragment.java -> NavController.java: NavController()
+activate NavController.java
+note right
+NavController.java
+public NavController(@NonNull Context context) {
+    //注册NavGraphNavigator 用来启动startDestination首页
+    mNavigatorProvider.addNavigator(new NavGraphNavigator(mNavigatorProvider));
+    //注册ActivityNavigator Activity提供路由服务的Navigator
+    mNavigatorProvider.addNavigator(new ActivityNavigator(mContext));
+}
+end note
+
+'4
+NavController.java - -> NavHostFragment.java:
+deactivate NavController.java
+
+'5
+NavHostFragment.java -> NavController.java: setOnBackPressedDispatcher()
+activate NavController.java
+note right
+NavController.java
+void setOnBackPressedDispatcher(@NonNull OnBackPressedDispatcher dispatcher) {
+    //把mOnBackPressedCallback注册进去
+    dispatcher.addCallback(mLifecycleOwner, mOnBackPressedCallback);
+}
+
+ //点击手机返回键就会回调handleOnBackPressed()方法
+ //新思路：使用Activity中的OnBackPressedDispatcher注册一个回调监听，
+ //       点击手机返回键之后会分发到callback.handleOnBackPressed()方法
+private final OnBackPressedCallback mOnBackPressedCallback =
+        new OnBackPressedCallback(false) {
+    @Override
+    public void handleOnBackPressed() {
+        //页面回退栈操作
+        popBackStack();
+    }
+};
+end note
+
+'6
+NavController.java - -> NavHostFragment.java:
+deactivate NavController.java
+
+'7
+NavHostFragment.java -> NavHostFragment.java: onCreateNavController()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+protected void onCreateNavController(@NonNull NavController navController) {
+    //1.通过navController得到NavigatorProvider(用来存储Navigator对象)，
+    //2.并注册DialogFragmentNavigator和FragmentNavigator
+    navController.getNavigatorProvider().addNavigator(
+            new DialogFragmentNavigator(requireContext(), getChildFragmentManager()));
+    navController.getNavigatorProvider().addNavigator(createFragmentNavigator());
+}
+end note
+
+'8
+NavHostFragment.java - -> NavHostFragment.java:
+deactivate NavHostFragment.java
+
+'9
+NavHostFragment.java -> NavController.java: setGraph()
+activate NavController.java
+note right
+NavController.java
+public void setGraph(@NavigationRes int graphResId) {
+    setGraph(graphResId, null);
+}
+
+public void setGraph(@NavigationRes int graphResId, @Nullable Bundle startDestinationArgs) {
+    //getNavInflater().inflate(graphResId)解析路由资源文件
+    setGraph(getNavInflater().inflate(graphResId), startDestinationArgs);
+}
+
+end note
+
+'10
+NavController.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note right
+NavInflater.java
+//NavInflater.inflate()解析路由资源文件,返回NavGraph对象
+//[LayoutInflate.inflate()解析布局资源文件]
+//遍历xml文件中的标签，跟已知标签对比，再分门别类的解析节点下的属性
+public NavGraph inflate(@NavigationRes int graphResId) {
+    Resources res = mContext.getResources();
+    XmlResourceParser parser = res.getXml(graphResId);
+    final AttributeSet attrs = Xml.asAttributeSet(parser);
+    try {
+        int type;
+        while ((type = parser.next()) != XmlPullParser.START_TAG   && type != XmlPullParser.END_DOCUMENT) {
+            // Empty loop
+        }
+
+        String rootElement = parser.getName();
+        //解析生成路由节点NavDestination对象
+        NavDestination destination = inflate(res, parser, attrs, graphResId);
+        //解析完成应该返回NavGraph对象，如果返回NavDestination对象不是NavGraph就会抛出异常
+        if (!(destination instanceof NavGraph)) {
+            throw new IllegalArgumentException("Root element <" + rootElement + ">"
+                    + " did not inflate into a NavGraph");
+        }
+        //解析完成返回NavGraph对象
+        return (NavGraph) destination;
+    } catch (Exception e) {
+    } finally {
+        parser.close();
+    }
+}
+end note
+
+'11
+NavInflater.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note left
+NavInflater.java
+//解析生成路由节点NavDestination对象
+private NavDestination inflate(@NonNull Resources res, @NonNull XmlResourceParser parser,
+        @NonNull AttributeSet attrs, int graphResId)
+        throws XmlPullParserException, IOException {
+    //通过XmlParser读出标签名称(<navigation> <activity> <fragment>  <dialog>)
+    //根据标签名称的到对应的Navigator对象： NavGraphNavigator ActivityNavigator FragmentNavigator DialogNavigator
+    //第一个解析节点就是<navigation>得到NavGraphNavigator对象
+    Navigator<?> navigator = mNavigatorProvider.getNavigator(parser.getName());
+    //根据对应的Navigator对象执行其创建NavDestination对象方法
+    final NavDestination dest = navigator.createDestination();
+
+    //解析NavDestination
+    //这些数据解析完成之后都会存储在Destination中，路由的时候就可以创建和启动
+    dest.onInflate(mContext, attrs);
+
+    while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
+            && ((depth = parser.getDepth()) >= innerDepth
+            || type != XmlPullParser.END_TAG)) {
+        final String name = parser.getName();
+        if (TAG_ARGUMENT.equals(name)) {
+            inflateArgumentForDestination(res, dest, attrs, graphResId);
+        } else if (TAG_DEEP_LINK.equals(name)) {
+            inflateDeepLink(res, dest, attrs);
+        } else if (TAG_ACTION.equals(name)) {
+            inflateAction(res, dest, attrs, parser, graphResId);
+        }else if (dest instanceof NavGraph) {
+            //第一个创建的对象NavGraph对象
+            //递归调用inflate()方法，返回的节点就会添加到NavGraph中
+            ((NavGraph) dest).addDestination(inflate(res, parser, attrs, graphResId));
+        }
+    }
+    return dest;
+}
+end note
+
+'12 ActivityNavigator.createDestination()方法为例
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.createDestination()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public Destination createDestination() {
+    return new Destination(this);
+}
+end note
+
+'13
+ActivityNavigator.java -> ActivityNavigator.java: new Destination()
+activate ActivityNavigator.java
+note left
+ActivityNavigator.java
+public static class Destination extends NavDestination {
+    public Destination(@NonNull Navigator<? extends Destination> activityNavigator) {
+        super(activityNavigator);
+    }
+}
+end note
+
+'14
+ActivityNavigator.java -> NavDestination.java: super(activityNavigator)
+activate NavDestination.java
+note right
+NavDestination.java
+//要么传递navigator对象要么传递navigatorName，让NavDestination持有navigatorName
+//页面跳转时能够根据指定目标页id找到NavDestination节点，进而根据navigatorName找到创建它的Navigator
+//把NavDestination与Navigator关联起来
+public NavDestination(@NonNull Navigator<? extends NavDestination> navigator) {
+    this(NavigatorProvider.getNameForNavigator(navigator.getClass()));
+}
+
+public NavDestination(@NonNull String navigatorName) {
+    mNavigatorName = navigatorName;
+}
+end note
+
+'15
+NavDestination.java - -> ActivityNavigator.java
+deactivate NavDestination.java
+deactivate ActivityNavigator.java
+
+'16
+ActivityNavigator.java - -> NavInflater.java
+deactivate ActivityNavigator.java
+deactivate NavInflater.java
+
+'17 以ActivityNavigator.onInflate()方法为例
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.onInflate()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.ActivityNavigator);
+    //解析Activity所在的包名
+    String targetPackage = a.getString(R.styleable.ActivityNavigator_targetPackage);
+
+    //解析Activity所在className
+    String className = a.getString(R.styleable.ActivityNavigator_android_name);
+
+    //解析Activity所在action
+    setAction(a.getString(R.styleable.ActivityNavigator_action));
+
+    a.recycle();
+}
+end note
+
+'18
+ActivityNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note right
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+'19
+NavDestination.java - -> ActivityNavigator.java
+deactivate NavDestination.java
+
+'20
+ActivityNavigator.java - -> NavInflater.java
+deactivate ActivityNavigator.java
+
+'21 以NavGraphNavigator.createDestination()方法为例
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.createDestination()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//第一个创建的对象NavGraph对象
+public NavGraph createDestination() {
+    return new NavGraph(this);
+}
+end note
+
+'22
+NavGraphNavigator.java -> NavGraph.java: new NavGraph(this)
+activate NavGraph.java
+note right
+NavGraph.java
+//NavGraph 特殊的NavDestination
+public class NavGraph extends NavDestination {
+    //存储NavDestination路由节点 可套娃，自己嵌套自己
+    final SparseArrayCompat<NavDestination> mNodes = new SparseArrayCompat<>();
+    //路由中需要启动首页的id 解析是在onInflate()方法中
+    private int mStartDestId;
+    private String mStartDestIdName;
+
+    //第一个创建的对象NavGraph对象
+    public NavGraph(@NonNull Navigator<? extends NavGraph> navGraphNavigator) {
+        super(navGraphNavigator);
+    }
+
+    //解析NavDestination属性
+    @Override
+    public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+        super.onInflate(context, attrs);
+        TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+        //
+        setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+        mStartDestIdName = getDisplayName(context, mStartDestId);
+        a.recycle();
+    }
+}
+end note
+
+'23
+NavGraph.java - -> NavGraphNavigator.java
+deactivate NavGraph.java
+
+'24
+NavGraphNavigator.java - -> NavInflater.java
+deactivate NavGraphNavigator.java
+
+'25 以NavGraphNavigator.onInflate()方法为例
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.onInflate()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+//解析NavDestination属性
+@Override
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+    //
+    setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+    mStartDestIdName = getDisplayName(context, mStartDestId);
+    a.recycle();
+}
+end note
+
+'26
+NavGraphNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note left
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+'27
+NavDestination.java - -> NavGraphNavigator.java
+deactivate NavDestination.java
+
+'28
+NavGraphNavigator.java - -> NavInflater.java
+deactivate NavGraphNavigator.java
+
+'29
+NavInflater.java -> NavGraph.java: ((NavGraph) dest).addDestination();
+activate NavGraph.java
+note right
+NavGraph.java
+public final void addDestination(@NonNull NavDestination node) {
+    //存放到mNodes集合中
+    mNodes.put(node.getId(), node);
+}
+end note
+
+'30
+NavGraph.java - -> NavInflater.java
+deactivate NavGraph.java
+
+'31
+NavInflater.java - -> NavController.java
+deactivate NavInflater.java
+
+'32
+NavController.java -> NavController.java: setGraph(...);
+activate NavController.java
+note left
+NavController.java
+public void setGraph(@NonNull NavGraph graph, @Nullable Bundle startDestinationArgs) {
+    if (mGraph != null) {
+        // Pop everything from the old graph off the back stack
+        popBackStackInternal(mGraph.getId(), true);
+    }
+    //保存生成的NavGraph对象
+    mGraph = graph;
+    onGraphCreated(startDestinationArgs);
+}
+end note
+
+'33
+NavController.java -> NavController.java: onGraphCreated(startDestinationArgs);
+activate NavController.java
+note left
+NavController.java
+private void onGraphCreated(@Nullable Bundle startDestinationArgs) {
+    ...
+
+    // Navigate to the first destination in the graph
+    // if we haven't deep linked to a destination
+    //633 启动路由中第一个destination节点 前面都是解析和创建路由过程，下面就是路由跳转过程
+    navigate(mGraph, startDestinationArgs, null, null);
+}
+end note
+
+'34
+NavController.java -> NavController.java: navigate();
+activate NavController.java
+note left
+NavController.java
+private void navigate(@NonNull NavDestination node, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+
+    //通过node.getNavigatorName()找到创建它的Navigator对象
+    //此时node是NavGraph，找到的是NavGraphNavigator对象
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(node.getNavigatorName());
+
+    //通过NavGraphNavigator对象调用NavGraphNavigator.navigate()方法发起 真正的路由跳转
+    NavDestination newDest = navigator.navigate(node, finalArgs,navOptions, navigatorExtras);
+    if (newDest != null) {
+        if (mBackStack.isEmpty()) {
+            NavBackStackEntry entry = new NavBackStackEntry(mContext, mGraph, finalArgs,mLifecycleOwner, mViewModel);
+            //跳转成功之后就会把本次启动的路由节点添加到回退栈中，点击返回键被NavController拦截之后执行回退栈操作
+            mBackStack.add(entry);
+        }
+    }
+}
+end note
+
+'35
+NavController.java -> NavGraphNavigator.java: NavGraphNavigator.navigate();
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+public NavDestination navigate(@NonNull NavGraph destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Extras navigatorExtras) {
+    //根据NavGraph找到startDestinationId Navigation中要启动的首页id
+    int startId = destination.getStartDestination();
+    if (startId == 0) {
+        //如果没有给路由指定首页启动id会抛出异常
+        throw new IllegalStateException("no start destination defined via"
+                + " app:startDestination for "
+                + destination.getDisplayName());
+    }
+    //通过首页id找到首页NavDestination对象
+    NavDestination startDestination = destination.findNode(startId, false);
+    //通过首页NavDestination对象的NavigatorName属性找到创建节点的Navigator，
+    //此时 Navigator 可能是 ActivityNavigator FragmentNavigator DialogNavigator
+    //也就是说 NavGraphNavigator 并没有真正的自己去执行路由操作，
+    //而是把路由委托给其他三种类型的 Navigator 去执行
+    // NavGraphNavigator 这个类存在的作用就是当MobileNavigation路由资源文件加载完成之后，
+    //能够把路由当中的首页给启动起来
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(startDestination.getNavigatorName());
+
+    //由其他三种类型的Navigator执行路由跳转
+    return navigator.navigate(startDestination, startDestination.addInDefaultArgs(args),navOptions, navigatorExtras);
+}
+end note
+
+'36 以ActivityNavigator.navigate()方法为例
+NavController.java -> ActivityNavigator.java: ActivityNavigator.navigate();
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据传递destination构造Intent对象
+    Intent intent = new Intent(destination.getIntent());
+    if (args != null) {
+        //把启动页面需要的参数put进去
+        intent.putExtras(args);
+    }
+    //判断启动模式是NEW_TASK还是SINGLE_TOP
+    if (!(mContext instanceof Activity)) {
+        // If we're not launching from an Activity context we have to launch in a new task.
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    }
+    if (navOptions != null && navOptions.shouldLaunchSingleTop()) {
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    }
+
+    //为页面打开退出设置动画效果
+    if (navOptions != null) {
+        // For use in applyPopAnimationsToPendingTransition()
+        intent.putExtra(EXTRA_POP_ENTER_ANIM, navOptions.getPopEnterAnim());
+        intent.putExtra(EXTRA_POP_EXIT_ANIM, navOptions.getPopExitAnim());
+    }
+
+    //最终通过mContext.startActivity(intent)完成对Activity页面类型的路由节点路由能力
+    mContext.startActivity(intent);
+}
+end note
+
+'37
+ActivityNavigator.java - -> NavController.java
+deactivate ActivityNavigator.java
+
+'38 以FragmentNavigator.navigate()方法为例
+NavController.java -> FragmentNavigator.java: FragmentNavigator.navigate();
+activate FragmentNavigator.java
+note right
+FragmentNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : Fragment全类名
+    String className = destination.getClassName();
+    //根据 className全类名 去反射构建一个 Fragment 对象
+    //instantiateFragment(mContext, mFragmentManager,className, args)
+    //- ->return fragmentManager.getFragmentFactory().instantiate(context.getClassLoader(), className);
+    final Fragment frag = instantiateFragment(mContext, mFragmentManager,className, args);
+    //设置 Fragment 启动需要的参数
+    frag.setArguments(args);
+    //开启事务
+    final FragmentTransaction ft = mFragmentManager.beginTransaction();
+
+    //设置 Fragment 进场出场动画效果
+    ft.setCustomAnimations(enterAnim, exitAnim, popEnterAnim, popExitAnim);
+
+    //通过 FragmentTransaction.replace()方法把本次要启动的 Fragment 添加到容器上
+    //注意:使用的replace()方法在界面来回切换会重新销毁和重建，重新执行生命周期方法
+    //如何避免?
+    //解决方案：自己定义一个FragmentNavigator,在navigate()方法时
+    //         也就是执行Fragment跳转时使用hide()和show()方法就可以
+    ft.replace(mContainerId, frag);
+
+    //事务提交
+    ft.commit();
+    // The commit succeeded, update our view of the world
+    if (isAdded) {
+        //commit执行成功就Fragment添加到回退栈中
+        mBackStack.add(destId);
+        return destination;
+    }
+}
+end note
+
+'39
+FragmentNavigator.java - -> NavController.java
+deactivate FragmentNavigator.java
+
+'40 以DialogFragmentNavigator.navigate()方法为例
+NavController.java -> DialogFragmentNavigator.java: DialogFragmentNavigator.navigate();
+activate DialogFragmentNavigator.java
+note right
+DialogFragmentNavigator.java
+public NavDestination navigate(@NonNull final Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : DialogFragFragment全类名
+    String className = destination.getClassName();
+    //根据 DialogFragFragment全类名 去反射构建一个 Fragment 对象
+    final Fragment frag = mFragmentManager.getFragmentFactory().instantiate(mContext.getClassLoader(), className);
+    //判断当前Fragment是不是DialogFragment，不是就抛出异常
+    if (!DialogFragment.class.isAssignableFrom(frag.getClass())) {
+        throw new IllegalArgumentException("Dialog destination " + destination.getClassName()
+                + " is not an instance of DialogFragment");
+    }
+    final DialogFragment dialogFragment = (DialogFragment) frag;
+    //设置 DialogFragment 启动需要的参数
+    dialogFragment.setArguments(args);
+    dialogFragment.getLifecycle().addObserver(mObserver);
+
+    //通过 DialogFragment.show() 方法把DialogFragment显示出来
+    dialogFragment.show(mFragmentManager, DIALOG_TAG + mDialogCount++);
+
+    return destination;
+}
+end note
+
+'41 
+DialogFragmentNavigator.java -> NavController.java
+deactivate DialogFragmentNavigator.java
+@enduml
+
+@startuml
+
+autonumber
+
+NavHostFragment.java -> NavHostFragment.java: onInflate(...)
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//348 解析navGraph
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs,
+            @Nullable Bundle savedInstanceState) {
+    final TypedArray navHost = context.obtainStyledAttributes(attrs,androidx.navigation.R.styleable.NavHost);
+    final int graphId = navHost.getResourceId(androidx.navigation.R.styleable.NavHost_navGraph, 0);
+    if (graphId != 0) {
+      //得到navGraph对象资源id
+      mGraphId = graphId;
+    }
+}
+end note
+
+NavHostFragment.java -> NavHostFragment.java: onCreate()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//205
+public void onCreate(@Nullable Bundle savedInstanceState) {
+
+    //构建NavHostController对象，空壳，继承至 NavController
+    mNavController = new NavHostController(context);
+
+    //OnBackPressedDispatcher作用：当点击手机返回键之后将事件分发给注册进来的callback
+    mNavController.setOnBackPressedDispatcher(requireActivity().getOnBackPressedDispatcher());
+
+    //
+    onCreateNavController(mNavController);
+
+    if (mGraphId != 0) {
+        // Set from onInflate()
+        //把路由资源id传递进去，并加载资源文件，生成Navigation视图NavGraph对象
+        mNavController.setGraph(mGraphId);
+    } else {
+        // See if it was set by NavHostFragment.create()
+        final Bundle args = getArguments();
+        final int graphId = args != null ? args.getInt(KEY_GRAPH_ID) : 0;
+        final Bundle startDestinationArgs = args != null
+                ? args.getBundle(KEY_START_DESTINATION_ARGS)
+                : null;
+        if (graphId != 0) {
+            mNavController.setGraph(graphId, startDestinationArgs);
+        }
+    }
+}
+end note
+
+NavHostFragment.java -> NavController.java: NavController()
+activate NavController.java
+note right
+NavController.java
+public NavController(@NonNull Context context) {
+    //注册NavGraphNavigator 用来启动startDestination首页
+    mNavigatorProvider.addNavigator(new NavGraphNavigator(mNavigatorProvider));
+    //注册ActivityNavigator Activity提供路由服务的Navigator
+    mNavigatorProvider.addNavigator(new ActivityNavigator(mContext));
+}
+end note
+
+NavController.java - -> NavHostFragment.java:
+deactivate NavController.java
+
+NavHostFragment.java -> NavController.java: setOnBackPressedDispatcher()
+activate NavController.java
+note right
+NavController.java
+void setOnBackPressedDispatcher(@NonNull OnBackPressedDispatcher dispatcher) {
+    //把mOnBackPressedCallback注册进去
+    dispatcher.addCallback(mLifecycleOwner, mOnBackPressedCallback);
+}
+
+ //点击手机返回键就会回调handleOnBackPressed()方法
+ //新思路：使用Activity中的OnBackPressedDispatcher注册一个回调监听，
+ //       点击手机返回键之后会分发到callback.handleOnBackPressed()方法
+private final OnBackPressedCallback mOnBackPressedCallback =
+        new OnBackPressedCallback(false) {
+    @Override
+    public void handleOnBackPressed() {
+        //页面回退栈操作
+        popBackStack();
+    }
+};
+end note
+
+NavController.java - -> NavHostFragment.java:
+deactivate NavController.java
+
+NavHostFragment.java -> NavHostFragment.java: onCreateNavController()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+protected void onCreateNavController(@NonNull NavController navController) {
+    //1.通过navController得到NavigatorProvider(用来存储Navigator对象)，
+    //2.并注册DialogFragmentNavigator和FragmentNavigator
+    navController.getNavigatorProvider().addNavigator(
+            new DialogFragmentNavigator(requireContext(), getChildFragmentManager()));
+    navController.getNavigatorProvider().addNavigator(createFragmentNavigator());
+}
+end note
+
+NavHostFragment.java - -> NavHostFragment.java:
+deactivate NavHostFragment.java
+
+NavHostFragment.java -> NavController.java: setGraph()
+activate NavController.java
+note right
+NavController.java
+public void setGraph(@NavigationRes int graphResId) {
+    setGraph(graphResId, null);
+}
+
+public void setGraph(@NavigationRes int graphResId, @Nullable Bundle startDestinationArgs) {
+    //getNavInflater().inflate(graphResId)解析路由资源文件
+    setGraph(getNavInflater().inflate(graphResId), startDestinationArgs);
+}
+
+end note
+
+NavController.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note right
+NavInflater.java
+//NavInflater.inflate()解析路由资源文件,返回NavGraph对象
+//[LayoutInflate.inflate()解析布局资源文件]
+//遍历xml文件中的标签，跟已知标签对比，再分门别类的解析节点下的属性
+public NavGraph inflate(@NavigationRes int graphResId) {
+    Resources res = mContext.getResources();
+    XmlResourceParser parser = res.getXml(graphResId);
+    final AttributeSet attrs = Xml.asAttributeSet(parser);
+    try {
+        int type;
+        while ((type = parser.next()) != XmlPullParser.START_TAG   && type != XmlPullParser.END_DOCUMENT) {
+            // Empty loop
+        }
+
+        String rootElement = parser.getName();
+        //解析生成路由节点NavDestination对象
+        NavDestination destination = inflate(res, parser, attrs, graphResId);
+        //解析完成应该返回NavGraph对象，如果返回NavDestination对象不是NavGraph就会抛出异常
+        if (!(destination instanceof NavGraph)) {
+            throw new IllegalArgumentException("Root element <" + rootElement + ">"
+                    + " did not inflate into a NavGraph");
+        }
+        //解析完成返回NavGraph对象
+        return (NavGraph) destination;
+    } catch (Exception e) {
+    } finally {
+        parser.close();
+    }
+}
+end note
+
+NavInflater.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note left
+NavInflater.java
+//解析生成路由节点NavDestination对象
+private NavDestination inflate(@NonNull Resources res, @NonNull XmlResourceParser parser,
+        @NonNull AttributeSet attrs, int graphResId)
+        throws XmlPullParserException, IOException {
+    //通过XmlParser读出标签名称(<navigation> <activity> <fragment>  <dialog>)
+    //根据标签名称的到对应的Navigator对象： NavGraphNavigator ActivityNavigator FragmentNavigator DialogNavigator
+    //第一个解析节点就是<navigation>得到NavGraphNavigator对象
+    Navigator<?> navigator = mNavigatorProvider.getNavigator(parser.getName());
+    //根据对应的Navigator对象执行其创建NavDestination对象方法
+    final NavDestination dest = navigator.createDestination();
+
+    //解析NavDestination
+    //这些数据解析完成之后都会存储在Destination中，路由的时候就可以创建和启动
+    dest.onInflate(mContext, attrs);
+
+    while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
+            && ((depth = parser.getDepth()) >= innerDepth
+            || type != XmlPullParser.END_TAG)) {
+        final String name = parser.getName();
+        if (TAG_ARGUMENT.equals(name)) {
+            inflateArgumentForDestination(res, dest, attrs, graphResId);
+        } else if (TAG_DEEP_LINK.equals(name)) {
+            inflateDeepLink(res, dest, attrs);
+        } else if (TAG_ACTION.equals(name)) {
+            inflateAction(res, dest, attrs, parser, graphResId);
+        }else if (dest instanceof NavGraph) {
+            //第一个创建的对象NavGraph对象
+            //递归调用inflate()方法，返回的节点就会添加到NavGraph中
+            ((NavGraph) dest).addDestination(inflate(res, parser, attrs, graphResId));
+        }
+    }
+    return dest;
+}
+end note
+
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.createDestination()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public Destination createDestination() {
+    return new Destination(this);
+}
+end note
+
+ActivityNavigator.java -> ActivityNavigator.java: new Destination()
+activate ActivityNavigator.java
+note left
+ActivityNavigator.java
+public static class Destination extends NavDestination {
+    public Destination(@NonNull Navigator<? extends Destination> activityNavigator) {
+        super(activityNavigator);
+    }
+}
+end note
+
+ActivityNavigator.java -> NavDestination.java: super(activityNavigator)
+activate NavDestination.java
+note right
+NavDestination.java
+//要么传递navigator对象要么传递navigatorName，让NavDestination持有navigatorName
+//页面跳转时能够根据指定目标页id找到NavDestination节点，进而根据navigatorName找到创建它的Navigator
+//把NavDestination与Navigator关联起来
+public NavDestination(@NonNull Navigator<? extends NavDestination> navigator) {
+    this(NavigatorProvider.getNameForNavigator(navigator.getClass()));
+}
+
+public NavDestination(@NonNull String navigatorName) {
+    mNavigatorName = navigatorName;
+}
+end note
+
+NavDestination.java - -> ActivityNavigator.java
+deactivate NavDestination.java
+deactivate ActivityNavigator.java
+
+ActivityNavigator.java - -> NavInflater.java
+deactivate ActivityNavigator.java
+deactivate NavInflater.java
+
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.onInflate()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.ActivityNavigator);
+    //解析Activity所在的包名
+    String targetPackage = a.getString(R.styleable.ActivityNavigator_targetPackage);
+
+    //解析Activity所在className
+    String className = a.getString(R.styleable.ActivityNavigator_android_name);
+
+    //解析Activity所在action
+    setAction(a.getString(R.styleable.ActivityNavigator_action));
+
+    a.recycle();
+}
+end note
+
+ActivityNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note right
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+NavDestination.java - -> ActivityNavigator.java
+deactivate NavDestination.java
+
+ActivityNavigator.java - -> NavInflater.java
+deactivate ActivityNavigator.java
+
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.createDestination()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//第一个创建的对象NavGraph对象
+public NavGraph createDestination() {
+    return new NavGraph(this);
+}
+end note
+
+NavGraphNavigator.java -> NavGraph.java: new NavGraph(this)
+activate NavGraph.java
+note right
+NavGraph.java
+//NavGraph 特殊的NavDestination
+public class NavGraph extends NavDestination {
+    //存储NavDestination路由节点 可套娃，自己嵌套自己
+    final SparseArrayCompat<NavDestination> mNodes = new SparseArrayCompat<>();
+    //路由中需要启动首页的id 解析是在onInflate()方法中
+    private int mStartDestId;
+    private String mStartDestIdName;
+
+    //第一个创建的对象NavGraph对象
+    public NavGraph(@NonNull Navigator<? extends NavGraph> navGraphNavigator) {
+        super(navGraphNavigator);
+    }
+
+    //解析NavDestination属性
+    @Override
+    public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+        super.onInflate(context, attrs);
+        TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+        //
+        setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+        mStartDestIdName = getDisplayName(context, mStartDestId);
+        a.recycle();
+    }
+}
+end note
+
+NavGraph.java - -> NavGraphNavigator.java
+deactivate NavGraph.java
+
+NavGraphNavigator.java - -> NavInflater.java
+deactivate NavGraphNavigator.java
+
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.onInflate()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+//解析NavDestination属性
+@Override
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+    //
+    setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+    mStartDestIdName = getDisplayName(context, mStartDestId);
+    a.recycle();
+}
+end note
+
+NavGraphNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note left
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+NavDestination.java - -> NavGraphNavigator.java
+deactivate NavDestination.java
+
+NavGraphNavigator.java - -> NavInflater.java
+deactivate NavGraphNavigator.java
+
+NavInflater.java -> NavGraph.java: ((NavGraph) dest).addDestination();
+activate NavGraph.java
+note right
+NavGraph.java
+public final void addDestination(@NonNull NavDestination node) {
+    //存放到mNodes集合中
+    mNodes.put(node.getId(), node);
+}
+end note
+
+NavGraph.java - -> NavInflater.java
+deactivate NavGraph.java
+
+NavInflater.java - -> NavController.java
+deactivate NavInflater.java
+
+NavController.java -> NavController.java: setGraph(...);
+activate NavController.java
+note left
+NavController.java
+public void setGraph(@NonNull NavGraph graph, @Nullable Bundle startDestinationArgs) {
+    if (mGraph != null) {
+        // Pop everything from the old graph off the back stack
+        popBackStackInternal(mGraph.getId(), true);
+    }
+    //保存生成的NavGraph对象
+    mGraph = graph;
+    onGraphCreated(startDestinationArgs);
+}
+end note
+
+NavController.java -> NavController.java: onGraphCreated(startDestinationArgs);
+activate NavController.java
+note left
+NavController.java
+private void onGraphCreated(@Nullable Bundle startDestinationArgs) {
+    ...
+
+    // Navigate to the first destination in the graph
+    // if we haven't deep linked to a destination
+    //633 启动路由中第一个destination节点 前面都是解析和创建路由过程，下面就是路由跳转过程
+    navigate(mGraph, startDestinationArgs, null, null);
+}
+end note
+
+NavController.java -> NavController.java: navigate();
+activate NavController.java
+note left
+NavController.java
+private void navigate(@NonNull NavDestination node, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+
+    //通过node.getNavigatorName()找到创建它的Navigator对象
+    //此时node是NavGraph，找到的是NavGraphNavigator对象
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(node.getNavigatorName());
+
+    //通过NavGraphNavigator对象调用NavGraphNavigator.navigate()方法发起 真正的路由跳转
+    NavDestination newDest = navigator.navigate(node, finalArgs,navOptions, navigatorExtras);
+    if (newDest != null) {
+        if (mBackStack.isEmpty()) {
+            NavBackStackEntry entry = new NavBackStackEntry(mContext, mGraph, finalArgs,mLifecycleOwner, mViewModel);
+            //跳转成功之后就会把本次启动的路由节点添加到回退栈中，点击返回键被NavController拦截之后执行回退栈操作
+            mBackStack.add(entry);
+        }
+    }
+}
+end note
+
+NavController.java -> NavGraphNavigator.java: NavGraphNavigator.navigate();
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+public NavDestination navigate(@NonNull NavGraph destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Extras navigatorExtras) {
+    //根据NavGraph找到startDestinationId Navigation中要启动的首页id
+    int startId = destination.getStartDestination();
+    if (startId == 0) {
+        //如果没有给路由指定首页启动id会抛出异常
+        throw new IllegalStateException("no start destination defined via"
+                + " app:startDestination for "
+                + destination.getDisplayName());
+    }
+    //通过首页id找到首页NavDestination对象
+    NavDestination startDestination = destination.findNode(startId, false);
+    //通过首页NavDestination对象的NavigatorName属性找到创建节点的Navigator，
+    //此时 Navigator 可能是 ActivityNavigator FragmentNavigator DialogNavigator
+    //也就是说 NavGraphNavigator 并没有真正的自己去执行路由操作，
+    //而是把路由委托给其他三种类型的 Navigator 去执行
+    // NavGraphNavigator 这个类存在的作用就是当MobileNavigation路由资源文件加载完成之后，
+    //能够把路由当中的首页给启动起来
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(startDestination.getNavigatorName());
+
+    //由其他三种类型的Navigator执行路由跳转
+    return navigator.navigate(startDestination, startDestination.addInDefaultArgs(args),navOptions, navigatorExtras);
+}
+end note
+
+NavController.java -> ActivityNavigator.java: ActivityNavigator.navigate();
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据传递destination构造Intent对象
+    Intent intent = new Intent(destination.getIntent());
+    if (args != null) {
+        //把启动页面需要的参数put进去
+        intent.putExtras(args);
+    }
+    //判断启动模式是NEW_TASK还是SINGLE_TOP
+    if (!(mContext instanceof Activity)) {
+        // If we're not launching from an Activity context we have to launch in a new task.
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    }
+    if (navOptions != null && navOptions.shouldLaunchSingleTop()) {
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    }
+
+    //为页面打开退出设置动画效果
+    if (navOptions != null) {
+        // For use in applyPopAnimationsToPendingTransition()
+        intent.putExtra(EXTRA_POP_ENTER_ANIM, navOptions.getPopEnterAnim());
+        intent.putExtra(EXTRA_POP_EXIT_ANIM, navOptions.getPopExitAnim());
+    }
+
+    //最终通过mContext.startActivity(intent)完成对Activity页面类型的路由节点路由能力
+    mContext.startActivity(intent);
+}
+end note
+
+ActivityNavigator.java - -> NavController.java
+deactivate ActivityNavigator.java
+
+NavController.java -> FragmentNavigator.java: FragmentNavigator.navigate();
+activate FragmentNavigator.java
+note right
+FragmentNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : Fragment全类名
+    String className = destination.getClassName();
+    //根据 className全类名 去反射构建一个 Fragment 对象
+    //instantiateFragment(mContext, mFragmentManager,className, args)
+    //- ->return fragmentManager.getFragmentFactory().instantiate(context.getClassLoader(), className);
+    final Fragment frag = instantiateFragment(mContext, mFragmentManager,className, args);
+    //设置 Fragment 启动需要的参数
+    frag.setArguments(args);
+    //开启事务
+    final FragmentTransaction ft = mFragmentManager.beginTransaction();
+
+    //设置 Fragment 进场出场动画效果
+    ft.setCustomAnimations(enterAnim, exitAnim, popEnterAnim, popExitAnim);
+
+    //通过 FragmentTransaction.replace()方法把本次要启动的 Fragment 添加到容器上
+    //注意:使用的replace()方法在界面来回切换会重新销毁和重建，重新执行生命周期方法
+    //如何避免?
+    //解决方案：自己定义一个FragmentNavigator,在navigate()方法时
+    //         也就是执行Fragment跳转时使用hide()和show()方法就可以
+    ft.replace(mContainerId, frag);
+
+    //事务提交
+    ft.commit();
+    // The commit succeeded, update our view of the world
+    if (isAdded) {
+        //commit执行成功就Fragment添加到回退栈中
+        mBackStack.add(destId);
+        return destination;
+    }
+}
+end note
+
+FragmentNavigator.java - -> NavController.java
+deactivate FragmentNavigator.java
+
+NavController.java -> DialogFragmentNavigator.java: DialogFragmentNavigator.navigate();
+activate DialogFragmentNavigator.java
+note right
+DialogFragmentNavigator.java
+public NavDestination navigate(@NonNull final Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : DialogFragFragment全类名
+    String className = destination.getClassName();
+    //根据 DialogFragFragment全类名 去反射构建一个 Fragment 对象
+    final Fragment frag = mFragmentManager.getFragmentFactory().instantiate(mContext.getClassLoader(), className);
+    //判断当前Fragment是不是DialogFragment，不是就抛出异常
+    if (!DialogFragment.class.isAssignableFrom(frag.getClass())) {
+        throw new IllegalArgumentException("Dialog destination " + destination.getClassName()
+                + " is not an instance of DialogFragment");
+    }
+    final DialogFragment dialogFragment = (DialogFragment) frag;
+    //设置 DialogFragment 启动需要的参数
+    dialogFragment.setArguments(args);
+    dialogFragment.getLifecycle().addObserver(mObserver);
+
+    //通过 DialogFragment.show() 方法把DialogFragment显示出来
+    dialogFragment.show(mFragmentManager, DIALOG_TAG + mDialogCount++);
+
+    return destination;
+}
+end note
+
+DialogFragmentNavigator.java -> NavController.java
+deactivate DialogFragmentNavigator.java
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

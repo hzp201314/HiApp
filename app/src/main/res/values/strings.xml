@@ -7,4 +7,8 @@
     <string name="if_category">&#xf00a6;</string>
     <string name="if_favorite">&#xe639;</string>
     <string name="if_favorite1">&#xe620;</string>
+    <string name="title_activity_navigation_demo">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

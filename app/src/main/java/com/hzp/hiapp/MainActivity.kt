@@ -10,6 +10,7 @@ import com.hzp.hi.library.util.ActivityManager
 import com.hzp.hiapp.demo.banner.HiBannerDemoActivity
 import com.hzp.hiapp.demo.item.HiItemDataDemoActivity
 import com.hzp.hiapp.demo.log.HiLogDemoActivity
+import com.hzp.hiapp.demo.navigation.NavigationDemoActivity
 import com.hzp.hiapp.demo.refresh.HiRefreshDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabBottomDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabTopDemoActivity
@@ -84,6 +85,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     Intent(
                         this,
                         HiItemDataDemoActivity::class.java
+                    )
+                )
+            }
+            R.id.tv_navigation -> {
+                startActivity(
+                    Intent(
+                        this,
+                        NavigationDemoActivity::class.java
                     )
                 )
             }

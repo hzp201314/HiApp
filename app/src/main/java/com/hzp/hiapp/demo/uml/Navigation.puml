@@ -1,0 +1,620 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'Navigation路由如何解析资源文件
+'Navigation路由节点如何被创建
+'Activity，Fragment，DialogFragment这三种默认界面路由能力如何实现(如何路由跳转）
+
+'Navigation缺点：
+'1.路由中所有路由节点必须在mobile_navigation.xml资源文件中定义,不够灵活
+'2.Fragment路由类型节点执行路由的时候使用replace()方法，页面切换会销毁重建，造成页面生命周期重启，数据重新加载，不够友好
+'3.不支持路由过程拦截和监听
+
+'1
+NavHostFragment.java -> NavHostFragment.java: onInflate(...)
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//348 解析navGraph
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs,
+            @Nullable Bundle savedInstanceState) {
+    final TypedArray navHost = context.obtainStyledAttributes(attrs,androidx.navigation.R.styleable.NavHost);
+    final int graphId = navHost.getResourceId(androidx.navigation.R.styleable.NavHost_navGraph, 0);
+    if (graphId != 0) {
+      //得到navGraph对象资源id
+      mGraphId = graphId;
+    }
+}
+end note
+
+'2
+NavHostFragment.java -> NavHostFragment.java: onCreate()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+//205
+public void onCreate(@Nullable Bundle savedInstanceState) {
+
+    //构建NavHostController对象，空壳，继承至 NavController
+    mNavController = new NavHostController(context);
+
+    //OnBackPressedDispatcher作用：当点击手机返回键之后将事件分发给注册进来的callback
+    mNavController.setOnBackPressedDispatcher(requireActivity().getOnBackPressedDispatcher());
+
+    //
+    onCreateNavController(mNavController);
+
+    if (mGraphId != 0) {
+        // Set from onInflate()
+        //把路由资源id传递进去，并加载资源文件，生成Navigation视图NavGraph对象
+        mNavController.setGraph(mGraphId);
+    } else {
+        // See if it was set by NavHostFragment.create()
+        final Bundle args = getArguments();
+        final int graphId = args != null ? args.getInt(KEY_GRAPH_ID) : 0;
+        final Bundle startDestinationArgs = args != null
+                ? args.getBundle(KEY_START_DESTINATION_ARGS)
+                : null;
+        if (graphId != 0) {
+            mNavController.setGraph(graphId, startDestinationArgs);
+        }
+    }
+}
+end note
+
+'3
+NavHostFragment.java -> NavController.java: NavController()
+activate NavController.java
+note right
+NavController.java
+public NavController(@NonNull Context context) {
+    //注册NavGraphNavigator 用来启动startDestination首页
+    mNavigatorProvider.addNavigator(new NavGraphNavigator(mNavigatorProvider));
+    //注册ActivityNavigator Activity提供路由服务的Navigator
+    mNavigatorProvider.addNavigator(new ActivityNavigator(mContext));
+}
+end note
+
+'4
+NavController.java --> NavHostFragment.java:
+deactivate NavController.java
+
+'5
+NavHostFragment.java -> NavController.java: setOnBackPressedDispatcher()
+activate NavController.java
+note right
+NavController.java
+void setOnBackPressedDispatcher(@NonNull OnBackPressedDispatcher dispatcher) {
+    //把mOnBackPressedCallback注册进去
+    dispatcher.addCallback(mLifecycleOwner, mOnBackPressedCallback);
+}
+
+ //点击手机返回键就会回调handleOnBackPressed()方法
+ //新思路：使用Activity中的OnBackPressedDispatcher注册一个回调监听，
+ //       点击手机返回键之后会分发到callback.handleOnBackPressed()方法
+private final OnBackPressedCallback mOnBackPressedCallback =
+        new OnBackPressedCallback(false) {
+    @Override
+    public void handleOnBackPressed() {
+        //页面回退栈操作
+        popBackStack();
+    }
+};
+end note
+
+'6
+NavController.java --> NavHostFragment.java:
+deactivate NavController.java
+
+'7
+NavHostFragment.java -> NavHostFragment.java: onCreateNavController()
+activate NavHostFragment.java
+note left
+NavHostFragment.java
+protected void onCreateNavController(@NonNull NavController navController) {
+    //1.通过navController得到NavigatorProvider(用来存储Navigator对象)，
+    //2.并注册DialogFragmentNavigator和FragmentNavigator
+    navController.getNavigatorProvider().addNavigator(
+            new DialogFragmentNavigator(requireContext(), getChildFragmentManager()));
+    navController.getNavigatorProvider().addNavigator(createFragmentNavigator());
+}
+end note
+
+'8
+NavHostFragment.java --> NavHostFragment.java:
+deactivate NavHostFragment.java
+
+'9
+NavHostFragment.java -> NavController.java: setGraph()
+activate NavController.java
+note right
+NavController.java
+public void setGraph(@NavigationRes int graphResId) {
+    setGraph(graphResId, null);
+}
+
+public void setGraph(@NavigationRes int graphResId, @Nullable Bundle startDestinationArgs) {
+    //getNavInflater().inflate(graphResId)解析路由资源文件
+    setGraph(getNavInflater().inflate(graphResId), startDestinationArgs);
+}
+
+end note
+
+'10
+NavController.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note right
+NavInflater.java
+//NavInflater.inflate()解析路由资源文件,返回NavGraph对象
+//[LayoutInflate.inflate()解析布局资源文件]
+//遍历xml文件中的标签，跟已知标签对比，再分门别类的解析节点下的属性
+public NavGraph inflate(@NavigationRes int graphResId) {
+    Resources res = mContext.getResources();
+    XmlResourceParser parser = res.getXml(graphResId);
+    final AttributeSet attrs = Xml.asAttributeSet(parser);
+    try {
+        int type;
+        while ((type = parser.next()) != XmlPullParser.START_TAG   && type != XmlPullParser.END_DOCUMENT) {
+            // Empty loop
+        }
+
+        String rootElement = parser.getName();
+        //解析生成路由节点NavDestination对象
+        NavDestination destination = inflate(res, parser, attrs, graphResId);
+        //解析完成应该返回NavGraph对象，如果返回NavDestination对象不是NavGraph就会抛出异常
+        if (!(destination instanceof NavGraph)) {
+            throw new IllegalArgumentException("Root element <" + rootElement + ">"
+                    + " did not inflate into a NavGraph");
+        }
+        //解析完成返回NavGraph对象
+        return (NavGraph) destination;
+    } catch (Exception e) {
+    } finally {
+        parser.close();
+    }
+}
+end note
+
+'11
+NavInflater.java -> NavInflater.java: inflate()
+activate NavInflater.java
+note left
+NavInflater.java
+//解析生成路由节点NavDestination对象
+private NavDestination inflate(@NonNull Resources res, @NonNull XmlResourceParser parser,
+        @NonNull AttributeSet attrs, int graphResId)
+        throws XmlPullParserException, IOException {
+    //通过XmlParser读出标签名称(<navigation> <activity> <fragment>  <dialog>)
+    //根据标签名称的到对应的Navigator对象： NavGraphNavigator ActivityNavigator FragmentNavigator DialogNavigator
+    //第一个解析节点就是<navigation>得到NavGraphNavigator对象
+    Navigator<?> navigator = mNavigatorProvider.getNavigator(parser.getName());
+    //根据对应的Navigator对象执行其创建NavDestination对象方法
+    final NavDestination dest = navigator.createDestination();
+
+    //解析NavDestination
+    //这些数据解析完成之后都会存储在Destination中，路由的时候就可以创建和启动
+    dest.onInflate(mContext, attrs);
+
+    while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
+            && ((depth = parser.getDepth()) >= innerDepth
+            || type != XmlPullParser.END_TAG)) {
+        final String name = parser.getName();
+        if (TAG_ARGUMENT.equals(name)) {
+            inflateArgumentForDestination(res, dest, attrs, graphResId);
+        } else if (TAG_DEEP_LINK.equals(name)) {
+            inflateDeepLink(res, dest, attrs);
+        } else if (TAG_ACTION.equals(name)) {
+            inflateAction(res, dest, attrs, parser, graphResId);
+        }else if (dest instanceof NavGraph) {
+            //第一个创建的对象NavGraph对象
+            //递归调用inflate()方法，返回的节点就会添加到NavGraph中
+            ((NavGraph) dest).addDestination(inflate(res, parser, attrs, graphResId));
+        }
+    }
+    return dest;
+}
+end note
+
+'12 ActivityNavigator.createDestination()方法为例
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.createDestination()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public Destination createDestination() {
+    return new Destination(this);
+}
+end note
+
+'13
+ActivityNavigator.java -> ActivityNavigator.java: new Destination()
+activate ActivityNavigator.java
+note left
+ActivityNavigator.java
+public static class Destination extends NavDestination {
+    public Destination(@NonNull Navigator<? extends Destination> activityNavigator) {
+        super(activityNavigator);
+    }
+}
+end note
+
+'14
+ActivityNavigator.java -> NavDestination.java: super(activityNavigator)
+activate NavDestination.java
+note right
+NavDestination.java
+//要么传递navigator对象要么传递navigatorName，让NavDestination持有navigatorName
+//页面跳转时能够根据指定目标页id找到NavDestination节点，进而根据navigatorName找到创建它的Navigator
+//把NavDestination与Navigator关联起来
+public NavDestination(@NonNull Navigator<? extends NavDestination> navigator) {
+    this(NavigatorProvider.getNameForNavigator(navigator.getClass()));
+}
+
+public NavDestination(@NonNull String navigatorName) {
+    mNavigatorName = navigatorName;
+}
+end note
+
+'15
+NavDestination.java --> ActivityNavigator.java
+deactivate NavDestination.java
+deactivate ActivityNavigator.java
+
+'16
+ActivityNavigator.java --> NavInflater.java
+deactivate ActivityNavigator.java
+deactivate NavInflater.java
+
+'17 以ActivityNavigator.onInflate()方法为例
+NavInflater.java -> ActivityNavigator.java: ActivityNavigator.onInflate()
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.ActivityNavigator);
+    //解析Activity所在的包名
+    String targetPackage = a.getString(R.styleable.ActivityNavigator_targetPackage);
+
+    //解析Activity所在className
+    String className = a.getString(R.styleable.ActivityNavigator_android_name);
+
+    //解析Activity所在action
+    setAction(a.getString(R.styleable.ActivityNavigator_action));
+
+    a.recycle();
+}
+end note
+
+'18
+ActivityNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note right
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+'19
+NavDestination.java --> ActivityNavigator.java
+deactivate NavDestination.java
+
+'20
+ActivityNavigator.java --> NavInflater.java
+deactivate ActivityNavigator.java
+
+'21 以NavGraphNavigator.createDestination()方法为例
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.createDestination()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//第一个创建的对象NavGraph对象
+public NavGraph createDestination() {
+    return new NavGraph(this);
+}
+end note
+
+'22
+NavGraphNavigator.java -> NavGraph.java: new NavGraph(this)
+activate NavGraph.java
+note right
+NavGraph.java
+//NavGraph 特殊的NavDestination
+public class NavGraph extends NavDestination {
+    //存储NavDestination路由节点 可套娃，自己嵌套自己
+    final SparseArrayCompat<NavDestination> mNodes = new SparseArrayCompat<>();
+    //路由中需要启动首页的id 解析是在onInflate()方法中
+    private int mStartDestId;
+    private String mStartDestIdName;
+
+    //第一个创建的对象NavGraph对象
+    public NavGraph(@NonNull Navigator<? extends NavGraph> navGraphNavigator) {
+        super(navGraphNavigator);
+    }
+
+    //解析NavDestination属性
+    @Override
+    public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+        super.onInflate(context, attrs);
+        TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+        //
+        setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+        mStartDestIdName = getDisplayName(context, mStartDestId);
+        a.recycle();
+    }
+}
+end note
+
+'23
+NavGraph.java --> NavGraphNavigator.java
+deactivate NavGraph.java
+
+'24
+NavGraphNavigator.java --> NavInflater.java
+deactivate NavGraphNavigator.java
+
+'25 以NavGraphNavigator.onInflate()方法为例
+NavInflater.java -> NavGraphNavigator.java: NavGraphNavigator.onInflate()
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+//NavDestination父类解析完毕解析子类onInflate() 以ActivityNavigator.onInflate()方法为例
+//解析NavDestination属性
+@Override
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    super.onInflate(context, attrs);
+    TypedArray a = context.getResources().obtainAttributes(attrs,R.styleable.NavGraphNavigator);
+    //
+    setStartDestination(a.getResourceId(R.styleable.NavGraphNavigator_startDestination, 0));
+    mStartDestIdName = getDisplayName(context, mStartDestId);
+    a.recycle();
+}
+end note
+
+'26
+NavGraphNavigator.java -> NavDestination.java:  super.onInflate(context, attrs);
+activate NavDestination.java
+note left
+NavDestination.java
+public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs) {
+    final TypedArray a = context.getResources().obtainAttributes(attrs,
+            R.styleable.Navigator);
+    //解析必备参数路由节点id
+    setId(a.getResourceId(R.styleable.Navigator_android_id, 0));
+    a.recycle();
+}
+end note
+
+'27
+NavDestination.java --> NavGraphNavigator.java
+deactivate NavDestination.java
+
+'28
+NavGraphNavigator.java --> NavInflater.java
+deactivate NavGraphNavigator.java
+
+'29
+NavInflater.java -> NavGraph.java: ((NavGraph) dest).addDestination();
+activate NavGraph.java
+note right
+NavGraph.java
+public final void addDestination(@NonNull NavDestination node) {
+    //存放到mNodes集合中
+    mNodes.put(node.getId(), node);
+}
+end note
+
+'30
+NavGraph.java --> NavInflater.java
+deactivate NavGraph.java
+
+'31
+NavInflater.java --> NavController.java
+deactivate NavInflater.java
+
+'32
+NavController.java -> NavController.java: setGraph(...);
+activate NavController.java
+note left
+NavController.java
+public void setGraph(@NonNull NavGraph graph, @Nullable Bundle startDestinationArgs) {
+    if (mGraph != null) {
+        // Pop everything from the old graph off the back stack
+        popBackStackInternal(mGraph.getId(), true);
+    }
+    //保存生成的NavGraph对象
+    mGraph = graph;
+    onGraphCreated(startDestinationArgs);
+}
+end note
+
+'33
+NavController.java -> NavController.java: onGraphCreated(startDestinationArgs);
+activate NavController.java
+note left
+NavController.java
+private void onGraphCreated(@Nullable Bundle startDestinationArgs) {
+    ...
+
+    // Navigate to the first destination in the graph
+    // if we haven't deep linked to a destination
+    //633 启动路由中第一个destination节点 前面都是解析和创建路由过程，下面就是路由跳转过程
+    navigate(mGraph, startDestinationArgs, null, null);
+}
+end note
+
+'34
+NavController.java -> NavController.java: navigate();
+activate NavController.java
+note left
+NavController.java
+private void navigate(@NonNull NavDestination node, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+
+    //通过node.getNavigatorName()找到创建它的Navigator对象
+    //此时node是NavGraph，找到的是NavGraphNavigator对象
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(node.getNavigatorName());
+
+    //通过NavGraphNavigator对象调用NavGraphNavigator.navigate()方法发起 真正的路由跳转
+    NavDestination newDest = navigator.navigate(node, finalArgs,navOptions, navigatorExtras);
+    if (newDest != null) {
+        if (mBackStack.isEmpty()) {
+            NavBackStackEntry entry = new NavBackStackEntry(mContext, mGraph, finalArgs,mLifecycleOwner, mViewModel);
+            //跳转成功之后就会把本次启动的路由节点添加到回退栈中，点击返回键被NavController拦截之后执行回退栈操作
+            mBackStack.add(entry);
+        }
+    }
+}
+end note
+
+'35
+NavController.java -> NavGraphNavigator.java: NavGraphNavigator.navigate();
+activate NavGraphNavigator.java
+note right
+NavGraphNavigator.java
+public NavDestination navigate(@NonNull NavGraph destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Extras navigatorExtras) {
+    //根据NavGraph找到startDestinationId Navigation中要启动的首页id
+    int startId = destination.getStartDestination();
+    if (startId == 0) {
+        //如果没有给路由指定首页启动id会抛出异常
+        throw new IllegalStateException("no start destination defined via"
+                + " app:startDestination for "
+                + destination.getDisplayName());
+    }
+    //通过首页id找到首页NavDestination对象
+    NavDestination startDestination = destination.findNode(startId, false);
+    //通过首页NavDestination对象的NavigatorName属性找到创建节点的Navigator，
+    //此时 Navigator 可能是 ActivityNavigator FragmentNavigator DialogNavigator
+    //也就是说 NavGraphNavigator 并没有真正的自己去执行路由操作，
+    //而是把路由委托给其他三种类型的 Navigator 去执行
+    // NavGraphNavigator 这个类存在的作用就是当MobileNavigation路由资源文件加载完成之后，
+    //能够把路由当中的首页给启动起来
+    Navigator<NavDestination> navigator = mNavigatorProvider.getNavigator(startDestination.getNavigatorName());
+
+    //由其他三种类型的Navigator执行路由跳转
+    return navigator.navigate(startDestination, startDestination.addInDefaultArgs(args),navOptions, navigatorExtras);
+}
+end note
+
+'36 以ActivityNavigator.navigate()方法为例
+NavController.java -> ActivityNavigator.java: ActivityNavigator.navigate();
+activate ActivityNavigator.java
+note right
+ActivityNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据传递destination构造Intent对象
+    Intent intent = new Intent(destination.getIntent());
+    if (args != null) {
+        //把启动页面需要的参数put进去
+        intent.putExtras(args);
+    }
+    //判断启动模式是NEW_TASK还是SINGLE_TOP
+    if (!(mContext instanceof Activity)) {
+        // If we're not launching from an Activity context we have to launch in a new task.
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    }
+    if (navOptions != null && navOptions.shouldLaunchSingleTop()) {
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+    }
+
+    //为页面打开退出设置动画效果
+    if (navOptions != null) {
+        // For use in applyPopAnimationsToPendingTransition()
+        intent.putExtra(EXTRA_POP_ENTER_ANIM, navOptions.getPopEnterAnim());
+        intent.putExtra(EXTRA_POP_EXIT_ANIM, navOptions.getPopExitAnim());
+    }
+
+    //最终通过mContext.startActivity(intent)完成对Activity页面类型的路由节点路由能力
+    mContext.startActivity(intent);
+}
+end note
+
+'37
+ActivityNavigator.java --> NavController.java
+deactivate ActivityNavigator.java
+
+'38 以FragmentNavigator.navigate()方法为例
+NavController.java -> FragmentNavigator.java: FragmentNavigator.navigate();
+activate FragmentNavigator.java
+note right
+FragmentNavigator.java
+public NavDestination navigate(@NonNull Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : Fragment全类名
+    String className = destination.getClassName();
+    //根据 className全类名 去反射构建一个 Fragment 对象
+    //instantiateFragment(mContext, mFragmentManager,className, args)
+    //-->return fragmentManager.getFragmentFactory().instantiate(context.getClassLoader(), className);
+    final Fragment frag = instantiateFragment(mContext, mFragmentManager,className, args);
+    //设置 Fragment 启动需要的参数
+    frag.setArguments(args);
+    //开启事务
+    final FragmentTransaction ft = mFragmentManager.beginTransaction();
+
+    //设置 Fragment 进场出场动画效果
+    ft.setCustomAnimations(enterAnim, exitAnim, popEnterAnim, popExitAnim);
+
+    //通过 FragmentTransaction.replace()方法把本次要启动的 Fragment 添加到容器上
+    //注意:使用的replace()方法在界面来回切换会重新销毁和重建，重新执行生命周期方法
+    //如何避免?
+    //解决方案：自己定义一个FragmentNavigator,在navigate()方法时
+    //         也就是执行Fragment跳转时使用hide()和show()方法就可以
+    ft.replace(mContainerId, frag);
+
+    //事务提交
+    ft.commit();
+    // The commit succeeded, update our view of the world
+    if (isAdded) {
+        //commit执行成功就Fragment添加到回退栈中
+        mBackStack.add(destId);
+        return destination;
+    }
+}
+end note
+
+'39
+FragmentNavigator.java --> NavController.java
+deactivate FragmentNavigator.java
+
+'40 以DialogFragmentNavigator.navigate()方法为例
+NavController.java -> DialogFragmentNavigator.java: DialogFragmentNavigator.navigate();
+activate DialogFragmentNavigator.java
+note right
+DialogFragmentNavigator.java
+public NavDestination navigate(@NonNull final Destination destination, @Nullable Bundle args,
+        @Nullable NavOptions navOptions, @Nullable Navigator.Extras navigatorExtras) {
+    //根据destination得到className : DialogFragFragment全类名
+    String className = destination.getClassName();
+    //根据 DialogFragFragment全类名 去反射构建一个 Fragment 对象
+    final Fragment frag = mFragmentManager.getFragmentFactory().instantiate(mContext.getClassLoader(), className);
+    //判断当前Fragment是不是DialogFragment，不是就抛出异常
+    if (!DialogFragment.class.isAssignableFrom(frag.getClass())) {
+        throw new IllegalArgumentException("Dialog destination " + destination.getClassName()
+                + " is not an instance of DialogFragment");
+    }
+    final DialogFragment dialogFragment = (DialogFragment) frag;
+    //设置 DialogFragment 启动需要的参数
+    dialogFragment.setArguments(args);
+    dialogFragment.getLifecycle().addObserver(mObserver);
+
+    //通过 DialogFragment.show() 方法把DialogFragment显示出来
+    dialogFragment.show(mFragmentManager, DIALOG_TAG + mDialogCount++);
+
+    return destination;
+}
+end note
+
+'41
+DialogFragmentNavigator.java -> NavController.java
+deactivate DialogFragmentNavigator.java
+@enduml
