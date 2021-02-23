@@ -6,6 +6,6 @@ import com.hzp.hiapp.R;
 public class HomePageFragment  extends HiBaseFragment {
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_home;
+        return R.layout.fragment_home_page;
     }
 }

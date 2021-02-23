@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.alibaba:fastjson:1.2.59'
+    api 'com.google.auto.service:auto-service:1.0-rc6'
+    api project(path: ':nav-annotation')
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+
+
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/hi-library" />
             <option value="$PROJECT_DIR$/hi-ui" />
+            <option value="$PROJECT_DIR$/nav-annotation" />
+            <option value="$PROJECT_DIR$/nav-compiler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
