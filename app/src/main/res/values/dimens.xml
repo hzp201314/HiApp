@@ -13,6 +13,15 @@
     <dimen name="dp_55">55dp</dimen>
     <dimen name="dp_65">65dp</dimen>
 
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+
+
     <dimen name="font_12">12sp</dimen>
     <dimen name="font_14">14sp</dimen>
     <dimen name="font_18">18sp</dimen>

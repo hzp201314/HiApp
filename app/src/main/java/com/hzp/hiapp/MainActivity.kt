@@ -12,6 +12,7 @@ import com.hzp.hiapp.demo.item.HiItemDataDemoActivity
 import com.hzp.hiapp.demo.log.HiLogDemoActivity
 import com.hzp.hiapp.demo.navigation.NavigationDemoActivity
 import com.hzp.hiapp.demo.refresh.HiRefreshDemoActivity
+import com.hzp.hiapp.demo.route.ARouterDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabBottomDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabTopDemoActivity
 import com.hzp.hiapp.demo.test.TestActivityManagerActivity
@@ -93,6 +94,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     Intent(
                         this,
                         NavigationDemoActivity::class.java
+                    )
+                )
+            }
+            R.id.tv_arouter -> {
+                startActivity(
+                    Intent(
+                        this,
+                        ARouterDemoActivity::class.java
                     )
                 )
             }

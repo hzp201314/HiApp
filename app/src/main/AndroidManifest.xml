@@ -14,9 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".demo.route.ARouterDemoActivity"></activity>
+        <activity android:name=".route.DegradeGlobalActivity" />
+        <activity android:name=".demo.route.VipActivity" />
+        <activity android:name=".demo.route.AuthenticationActivity" />
+        <activity android:name=".demo.route.ProfileDetailActivity" />
         <activity
             android:name=".demo.navigation.NavigationDemoActivity"
-            android:label="@string/title_activity_navigation_demo"></activity>
+            android:label="@string/title_activity_navigation_demo" />
         <activity android:name=".demo.item.HiItemDataDemoActivity" />
         <activity android:name=".demo.test.TestActivityManagerActivity" />
         <activity android:name=".demo.banner.HiBannerDemoActivity" />
