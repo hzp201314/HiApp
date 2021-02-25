@@ -33,7 +33,7 @@ public abstract class HiLogConfig {
 
     /*堆栈深度(默认:5)*/
     public int stackTraceDepth() {
-        return 5;
+        return 0;
     }
 
     /*注册打印器(默认:未注入)*/

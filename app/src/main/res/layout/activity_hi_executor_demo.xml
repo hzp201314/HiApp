@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo.executor.HiExecutorDemoActivity">
+
+    <Button
+        android:id="@+id/btn_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按任务优先级执行"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_paused_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停/恢复线程池所有任务"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/btn_priority"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_async_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="异步结果回调主线程"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/btn_paused_resume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

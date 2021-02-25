@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.hzp.hi.library.log.HiLog
 import com.hzp.hi.library.util.ActivityManager
 import com.hzp.hiapp.demo.banner.HiBannerDemoActivity
+import com.hzp.hiapp.demo.executor.HiExecutorDemoActivity
 import com.hzp.hiapp.demo.item.HiItemDataDemoActivity
 import com.hzp.hiapp.demo.log.HiLogDemoActivity
 import com.hzp.hiapp.demo.navigation.NavigationDemoActivity
@@ -102,6 +103,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     Intent(
                         this,
                         ARouterDemoActivity::class.java
+                    )
+                )
+            }
+            R.id.tv_hi_executor -> {
+                startActivity(
+                    Intent(
+                        this,
+                        HiExecutorDemoActivity::class.java
                     )
                 )
             }
