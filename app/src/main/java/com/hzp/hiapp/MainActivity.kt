@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.google.gson.JsonObject
 import com.hzp.hi.library.log.HiLog
+import com.hzp.hi.library.restful.HiCallback
+import com.hzp.hi.library.restful.HiResponse
 import com.hzp.hi.library.util.ActivityManager
 import com.hzp.hiapp.demo.banner.HiBannerDemoActivity
 import com.hzp.hiapp.demo.coroutine.CoroutineSceneDemoActivity
@@ -18,6 +21,9 @@ import com.hzp.hiapp.demo.route.ARouterDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabBottomDemoActivity
 import com.hzp.hiapp.demo.tab.HiTabTopDemoActivity
 import com.hzp.hiapp.demo.test.TestActivityManagerActivity
+import com.hzp.hiapp.http.ApiFactory
+import com.hzp.hiapp.http.api.TestApi
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +36,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
+        ApiFactory.create(TestApi::class.java).listCities("imooc")
+            .enqueue(object :HiCallback<JsonObject>{
+                override fun onSuccess(response: HiResponse<JsonObject>) {
 
+                }
+
+                override fun onFailed(throwable: Throwable) {
+
+                }
+
+            })
     }
 
     override fun onClick(v: View?) {

@@ -1,0 +1,692 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'1
+Retrofit.java -> Retrofit.java: new Retrofit.Builder()...build()
+activate Retrofit.java
+note left
+Retrofit.java
+Retrofit retrofit = new Retrofit.Builder()
+    .baseUrl("https://api.example.com/")
+    .addConverterFactory(GsonConverterFactory.create())
+    .build();
+
+//校验传递参数，没有传递给默认
+public Retrofit build() {
+    //必传baseUrl
+    if (baseUrl == null) {
+    throw new IllegalStateException("Base URL required.");
+    }
+
+    okhttp3.Call.Factory callFactory = this.callFactory;
+    if (callFactory == null) {
+        //默认OkHttpClient
+        callFactory = new OkHttpClient();
+    }
+
+    //线程切换器，子线程->主线程
+    Executor callbackExecutor = this.callbackExecutor;
+    if (callbackExecutor == null) {
+        callbackExecutor = platform.defaultCallbackExecutor();
+    }
+
+    // Make a defensive copy of the adapters and add the default Call adapter.
+    List<CallAdapter.Factory> callAdapterFactories = new ArrayList<>(this.callAdapterFactories);
+    //CallAdapter转换器
+    callAdapterFactories.addAll(platform.defaultCallAdapterFactories(callbackExecutor));
+    //通过defaultCallAdapterFactory创建内部类对象CallAdapter，复写adapt方法，将call包装成ExecutorCallbackCall
+    //当用户调用ExecutorCallbackCall.enqueue()方法就会调用被代理对象的delegate.enqueue()方法。
+    //执行成功后在回调里面callbackExecutor.execute()完成线程切换，
+    //最后通过callback.onResponse()方法把结果回调到用户手里
+
+    // Make a defensive copy of the converters.
+    List<Converter.Factory> converterFactories = new ArrayList<>(
+      1 + this.converterFactories.size() + platform.defaultConverterFactoriesSize());
+
+    // Add the built-in converter factory first. This prevents overriding its behavior but also
+    // ensures correct behavior when using converters that consume all types.
+    //添加response转换器
+    //默认转换器BuiltInConverters
+    converterFactories.add(new BuiltInConverters());
+    converterFactories.addAll(this.converterFactories);
+    converterFactories.addAll(platform.defaultConverterFactories());
+
+    //callFactory，callAdapter转换器，responseConverter转换器初始化完成后，创建Retrofit对象
+    return new Retrofit(callFactory, baseUrl, unmodifiableList(converterFactories),
+      unmodifiableList(callAdapterFactories), callbackExecutor, validateEagerly);
+}
+
+end note
+
+'2
+Retrofit.java -> Platform.java: callbackExecutor = platform.defaultCallbackExecutor();
+activate Platform.java
+note right
+Platform.java
+class Platform {
+    private static final Platform PLATFORM = findPlatform();
+
+    static Platform get() {
+        return PLATFORM;
+    }
+
+    private static Platform findPlatform() {
+    try {
+        //加载android.os.Build类，存在则在android环境，否则就在Java环境
+        Class.forName("android.os.Build");
+        if (Build.VERSION.SDK_INT != 0) {
+            return new Android();
+        }
+    } catch (ClassNotFoundException ignored) {
+    }
+        return new Platform(true);
+    }
+}
+
+
+end note
+
+'3
+Platform.java -> Platform.java: new Android().defaultCallbackExecutor()
+activate Platform.java
+note left
+static final class Android extends Platform {
+    Android() {
+        super(Build.VERSION.SDK_INT >= 24);
+    }
+
+    @Override public Executor defaultCallbackExecutor() {
+        return new MainThreadExecutor();
+    }
+
+    static final class MainThreadExecutor implements Executor {
+        private final Handler handler = new Handler(Looper.getMainLooper());
+
+        @Override public void execute(Runnable r) {
+            handler.post(r);
+        }
+    }
+}
+
+end note
+
+'4
+Platform.java --> Retrofit.java
+deactivate Platform.java
+deactivate Platform.java
+
+'5
+Retrofit.java -> Platform.java: platform.defaultCallAdapterFactories(callbackExecutor)
+activate Platform.java
+note right
+List<? extends CallAdapter.Factory> defaultCallAdapterFactories(@Nullable Executor callbackExecutor) {
+    //默认CallAdapter转换器
+    DefaultCallAdapterFactory executorFactory = new DefaultCallAdapterFactory(callbackExecutor);
+    return hasJava8Types
+        ? asList(CompletableFutureCallAdapterFactory.INSTANCE, executorFactory)
+        : singletonList(executorFactory);
+}
+
+end note
+
+'6
+Platform.java -> DefaultCallAdapterFactory.java: new DefaultCallAdapterFactory(callbackExecutor))
+activate DefaultCallAdapterFactory.java
+note right
+final class DefaultCallAdapterFactory extends CallAdapter.Factory {
+
+    //复写get方法
+    @Override public @Nullable CallAdapter<?, ?> get(
+        Type returnType, Annotation[] annotations, Retrofit retrofit) {
+            ...
+            //返回CallAdapter
+            return new CallAdapter<Object, Call<?>>() {
+                //response泛型类型
+                @Override public Type responseType() {
+                    return responseType;
+                }
+
+                //复写adapt转换器方法 将call包装成ExecutorCallbackCall
+                @Override public Call<Object> adapt(Call<Object> call) {
+                    return executor == null
+                        ? call
+                        : new ExecutorCallbackCall<>(executor, call);
+                }
+            };
+        }
+    )
+}
+end note
+
+'7
+DefaultCallAdapterFactory.java -> DefaultCallAdapterFactory.java: new ExecutorCallbackCall<>(executor, call)
+activate DefaultCallAdapterFactory.java
+note left
+static final class ExecutorCallbackCall<T> implements Call<T> {
+    final Executor callbackExecutor;
+    final Call<T> delegate;
+
+    ExecutorCallbackCall(Executor callbackExecutor, Call<T> delegate) {
+        this.callbackExecutor = callbackExecutor;
+        this.delegate = delegate;
+    }
+
+    //执行enquene()方法
+    @Override public void enqueue(final Callback<T> callback) {
+        Objects.requireNonNull(callback, "callback == null");
+
+        //调用代理对象enqueue()方法
+        delegate.enqueue(new Callback<T>() {
+            @Override public void onResponse(Call<T> call, final Response<T> response) {
+                //通过callbackExecutor.execute()方法把线程切换到主线程
+                callbackExecutor.execute(() -> {
+                    if (delegate.isCanceled()) {
+                        // Emulate OkHttp's behavior of throwing/delivering an IOException on cancellation.
+                        callback.onFailure(ExecutorCallbackCall.this, new IOException("Canceled"));
+                    } else {
+                        //通过callback.onResponse()方法把结果回调到用户手里
+                        callback.onResponse(ExecutorCallbackCall.this, response);
+                    }
+                });
+            }
+
+            @Override public void onFailure(Call<T> call, final Throwable t) {
+                callbackExecutor.execute(() -> callback.onFailure(ExecutorCallbackCall.this, t));
+            }
+        });
+    }
+
+}
+end note
+
+
+'8
+DefaultCallAdapterFactory.java --> Platform.java:
+deactivate DefaultCallAdapterFactory.java
+deactivate DefaultCallAdapterFactory.java
+'9
+Platform.java --> Retrofit.java:
+deactivate Platform.java
+
+'10
+Retrofit.java -> BuiltInConverters.java:new BuiltInConverters()
+note right
+final class BuiltInConverters extends Converter.Factory {
+
+    @Override public @Nullable Converter<ResponseBody, ?> responseBodyConverter(
+        Type type, Annotation[] annotations, Retrofit retrofit) {
+            //返回值类型泛型是不是ResponseBody
+            if (type == ResponseBody.class) {
+                return Utils.isAnnotationPresent(annotations, Streaming.class)
+                ? StreamingResponseBodyConverter.INSTANCE
+                : BufferingResponseBodyConverter.INSTANCE;
+            }
+            //返回值类型泛型是不是Void
+            if (type == Void.class) {
+                return VoidResponseBodyConverter.INSTANCE;
+            }
+            if (checkForKotlinUnit) {
+                try {
+                    //返回值类型泛型是不是Unit
+                    if (type == Unit.class) {
+                        return UnitResponseBodyConverter.INSTANCE;
+                    }
+                } catch (NoClassDefFoundError ignored) {
+                    checkForKotlinUnit = false;
+                }
+            }
+            return null;
+        }
+    }
+}
+
+end note
+
+'11
+BuiltInConverters.java --> Retrofit.java:
+deactivate BuiltInConverters.java
+
+'12
+Retrofit.java --> Retrofit.java:new Retrofit()
+activate Retrofit.java
+note left
+//创建Retrofit对象保存这些信息
+Retrofit(okhttp3.Call.Factory callFactory, HttpUrl baseUrl,
+  List<Converter.Factory> converterFactories, List<CallAdapter.Factory> callAdapterFactories,
+  @Nullable Executor callbackExecutor, boolean validateEagerly) {
+    this.callFactory = callFactory;
+    this.baseUrl = baseUrl;
+    this.converterFactories = converterFactories; // Copy+unmodifiable at call site.
+    this.callAdapterFactories = callAdapterFactories; // Copy+unmodifiable at call site.
+    this.callbackExecutor = callbackExecutor;
+    this.validateEagerly = validateEagerly;
+}
+end note
+
+'13
+Retrofit.java --> Retrofit.java:new Retrofit().create()
+activate Retrofit.java
+note left
+public <T> T create(final Class<T> service) {
+    //校验service对象是否是接口类型
+    validateServiceInterface(service);
+    //把传递进来的service对象用动态代理的方式在运行时拿到代理对象泛型T
+    return (T) Proxy.newProxyInstance(service.getClassLoader(), new Class<?>[] { service },
+        new InvocationHandler() {
+            private final Platform platform = Platform.get();
+            private final Object[] emptyArgs = new Object[0];
+            //调用接口里定义的方法
+            @Override public @Nullable Object invoke(Object proxy, Method method,
+                @Nullable Object[] args) throws Throwable {
+                    // If the method is a method from Object then defer to normal invocation.
+                    //object内置方法，不用解析直接执行
+                    if (method.getDeclaringClass() == Object.class) {
+                      return method.invoke(this, args);
+                    }
+                    //是否是默认方法
+                    if (platform.isDefaultMethod(method)) {
+                      return platform.invokeDefaultMethod(method, service, proxy, args);
+                    }
+                    //解析方法的注解入参返回值等信息,调用invoke()方法，
+                    //ServiceMethod.invoke()抽象方法，HttpServiceMethod.invoke()实现方法
+                    return loadServiceMethod(method).invoke(args != null ? args : emptyArgs);
+                }
+            });
+        }
+    }
+}
+end note
+
+'14
+Retrofit.java --> Retrofit.java:loadServiceMethod(method)
+activate Retrofit.java
+note left
+ServiceMethod<?> loadServiceMethod(Method method) {
+    //查找之前是否解析过
+    ServiceMethod<?> result = serviceMethodCache.get(method);
+    if (result != null) return result;
+
+    synchronized (serviceMethodCache) {
+        result = serviceMethodCache.get(method);
+        if (result == null) {
+            //解析注解
+            result = ServiceMethod.parseAnnotations(this, method);
+            serviceMethodCache.put(method, result);
+        }
+    }
+    return result;
+}
+
+end note
+
+'15
+Retrofit.java --> ServiceMethod.java:ServiceMethod.parseAnnotations(this, method)
+activate ServiceMethod.java
+note right
+static <T> ServiceMethod<T> parseAnnotations(Retrofit retrofit, Method method) {
+    //1.解析方法注解并且保存下来，2.根据已经解析出来的方法信息和参数创建request对象
+    RequestFactory requestFactory = RequestFactory.parseAnnotations(retrofit, method);
+
+    //解析方法返回值类型
+    Type returnType = method.getGenericReturnType();
+
+    //确定callAdapter类型
+    return HttpServiceMethod.parseAnnotations(retrofit, method, requestFactory);
+}
+end note
+
+'16
+ServiceMethod.java -> RequestFactory.java:RequestFactory.parseAnnotations(retrofit, method);
+activate RequestFactory.java
+note right
+static RequestFactory parseAnnotations(Retrofit retrofit, Method method) {
+    return new Builder(retrofit, method).build();
+}
+
+Builder(Retrofit retrofit, Method method) {
+    this.retrofit = retrofit;
+    this.method = method;
+    //方法注解
+    this.methodAnnotations = method.getAnnotations();
+    //参数类型
+    this.parameterTypes = method.getGenericParameterTypes();
+    //参数注解
+    this.parameterAnnotationsArray = method.getParameterAnnotations();
+}
+
+RequestFactory build() {
+    //根据构造函数得到的方法注解、参数类型、参数注解去遍历解析一个个注解
+    for (Annotation annotation : methodAnnotations) {
+        //解析方法注解
+        parseMethodAnnotation(annotation);
+    }
+    //校验参数
+    ...
+    //解析参数
+    int parameterCount = parameterAnnotationsArray.length;
+    //模板模式:将一个个的参数类型封装为ParameterHandler中
+    parameterHandlers = new ParameterHandler<?>[parameterCount];
+    for (int p = 0, lastParameter = parameterCount - 1; p < parameterCount; p++) {
+        //解析参数:parseParameterAnnotation(p, parameterType, annotations, annotation);
+        //方法最后一个参数判断是否是suspend修饰协程方法
+        parameterHandlers[p] =parseParameter(p, parameterTypes[p], parameterAnnotationsArray[p], p == lastParameter);
+    }
+
+}
+end note
+
+'17
+RequestFactory.java --> ServiceMethod.java
+deactivate RequestFactory.java
+
+'18
+ServiceMethod.java -> HttpServiceMethod.java
+activate HttpServiceMethod.java
+note right
+  static <ResponseT, ReturnT> HttpServiceMethod<ResponseT, ReturnT> parseAnnotations(
+      Retrofit retrofit, Method method, RequestFactory requestFactory) {
+
+    Annotation[] annotations = method.getAnnotations();
+    Type adapterType;
+    if (isKotlinSuspendFunction) {
+      Type[] parameterTypes = method.getGenericParameterTypes();
+      //通过suspend修饰的协程方法，需要通过最后一个参数拿到返回值
+      //suspend test(): String -> Object test(Continuation var1) -> Continuation<in T>
+      Type responseType = Utils.getParameterLowerBound(0,
+          (ParameterizedType) parameterTypes[parameterTypes.length - 1]);
+      if (getRawType(responseType) == Response.class && responseType instanceof ParameterizedType) {
+        // Unwrap the actual body type from Response<T>.
+        responseType = Utils.getParameterUpperBound(0, (ParameterizedType) responseType);
+        continuationWantsResponse = true;
+      } else {
+        // TODO figure out if type is nullable or not
+        // Metadata metadata = method.getDeclaringClass().getAnnotation(Metadata.class)
+        // Find the entry for method
+        // Determine if return type is nullable or not
+      }
+      //把ResponseType包装成Call对象，才能够发起网络请求
+      adapterType = new Utils.ParameterizedTypeImpl(null, Call.class, responseType);
+      annotations = SkipCallbackExecutorImpl.ensurePresent(annotations);
+    } else {
+      adapterType = method.getGenericReturnType();
+    }
+
+    //根据Call对象adapterType类型创建CallAdapter适配器，默认DefaultCallAdapter
+    CallAdapter<ResponseT, ReturnT> callAdapter = createCallAdapter(retrofit, method, adapterType, annotations);
+    Type responseType = callAdapter.responseType();
+
+    //根据responseType返回值类型，创建response转换器，默认转换器BuiltInConverters
+    Converter<ResponseBody, ResponseT> responseConverter = createResponseConverter(retrofit, method, responseType);
+
+    //创建callFactory，默认OkHttpClient
+    okhttp3.Call.Factory callFactory = retrofit.callFactory;
+    if (!isKotlinSuspendFunction) {
+      //普通方法，创建CallAdapted对象
+      return new CallAdapted<>(requestFactory, callFactory, responseConverter, callAdapter);
+    } else if (continuationWantsResponse) {
+      //suspend方法并且返回值是Response<T>类型
+      //noinspection unchecked Kotlin compiler guarantees ReturnT to be Object.
+      return (HttpServiceMethod<ResponseT, ReturnT>) new SuspendForResponse<>(requestFactory,
+          callFactory, responseConverter, (CallAdapter<ResponseT, Call<ResponseT>>) callAdapter);
+    } else {
+      //suspend方法并且返回值是JavaBean对象(User,List<User>类型)
+      //noinspection unchecked Kotlin compiler guarantees ReturnT to be Object.
+      return (HttpServiceMethod<ResponseT, ReturnT>) new SuspendForBody<>(requestFactory,
+          callFactory, responseConverter, (CallAdapter<ResponseT, Call<ResponseT>>) callAdapter,
+          continuationBodyNullable);
+    }
+  }
+
+end note
+
+'19
+HttpServiceMethod.java -> HttpServiceMethod.java: new CallAdapted<>(requestFactory, callFactory, responseConverter, callAdapter);
+activate HttpServiceMethod.java
+note left
+  //创建CallAdapted对象，复写adapt()方法
+  static final class CallAdapted<ResponseT, ReturnT> extends HttpServiceMethod<ResponseT, ReturnT> {
+    private final CallAdapter<ResponseT, ReturnT> callAdapter;
+
+    CallAdapted(RequestFactory requestFactory, okhttp3.Call.Factory callFactory,
+        Converter<ResponseBody, ResponseT> responseConverter,
+        CallAdapter<ResponseT, ReturnT> callAdapter) {
+      super(requestFactory, callFactory, responseConverter);
+      this.callAdapter = callAdapter;
+    }
+
+    @Override protected ReturnT adapt(Call<ResponseT> call, Object[] args) {
+      //CallAdapter.adapt() 接口方法，默认实现 DefaultCallAdapterFactory.java 中匿名内部类中复写adapt()方法
+      return callAdapter.adapt(call);
+    }
+  }
+
+end note
+
+'20
+HttpServiceMethod.java -> DefaultCallAdapterFactory.java:DefaultCallAdapterFactory.get()
+activate DefaultCallAdapterFactory.java
+note right
+  @Override public @Nullable CallAdapter<?, ?> get(
+      Type returnType, Annotation[] annotations, Retrofit retrofit) {
+
+    return new CallAdapter<Object, Call<?>>() {
+      @Override public Type responseType() {
+        return responseType;
+      }
+
+      //复写adapt方法，把Call对象包装成ExecutorCallbackCall对象，
+      //一但调用ExecutorCallbackCall.enqueue()方法,触发被代理对象的delegate.enqueue()方法
+      //当网络请求成功之后，通过callbackExecutor.execute()MainHandler去切换线程
+      //在通过callback把数据回调用户
+      @Override public Call<Object> adapt(Call<Object> call) {
+        return executor == null? call: new ExecutorCallbackCall<>(executor, call);
+      }
+    };
+  }
+
+end note
+
+'21
+DefaultCallAdapterFactory.java -> DefaultCallAdapterFactory.java
+activate DefaultCallAdapterFactory.java
+note left
+static final class ExecutorCallbackCall<T> implements Call<T> {
+    //一但调用ExecutorCallbackCall.enqueue()方法,触发被代理对象的delegate.enqueue()方法
+    //当网络请求成功之后，通过callbackExecutor.execute()MainHandler去切换线程
+    //在通过callback把数据回调用户
+    @Override public void enqueue(final Callback<T> callback) {
+
+      delegate.enqueue(new Callback<T>() {
+        @Override public void onResponse(Call<T> call, final Response<T> response) {
+          callbackExecutor.execute(() -> {
+            if (delegate.isCanceled()) {
+              // Emulate OkHttp's behavior of throwing/delivering an IOException on cancellation.
+              callback.onFailure(ExecutorCallbackCall.this, new IOException("Canceled"));
+            } else {
+              callback.onResponse(ExecutorCallbackCall.this, response);
+            }
+          });
+        }
+      });
+    }
+}
+end note
+
+'22
+DefaultCallAdapterFactory.java --> HttpServiceMethod.java
+deactivate DefaultCallAdapterFactory.java
+deactivate DefaultCallAdapterFactory.java
+'23
+HttpServiceMethod.java --> HttpServiceMethod.java
+deactivate HttpServiceMethod.java
+
+'24
+HttpServiceMethod.java -> HttpServiceMethod.java: new SuspendForResponse<>(...)
+activate HttpServiceMethod.java
+note left
+  static final class SuspendForResponse<ResponseT> extends HttpServiceMethod<ResponseT, Object> {
+    private final CallAdapter<ResponseT, Call<ResponseT>> callAdapter;
+
+    SuspendForResponse(RequestFactory requestFactory, okhttp3.Call.Factory callFactory,
+        Converter<ResponseBody, ResponseT> responseConverter,
+        CallAdapter<ResponseT, Call<ResponseT>> callAdapter) {
+      super(requestFactory, callFactory, responseConverter);
+      this.callAdapter = callAdapter;
+    }
+
+    //复写adapt方法
+    @Override protected Object adapt(Call<ResponseT> call, Object[] args) {
+      //默认DefaultCallAdapter,将call包装成ExecutorCallbackCall
+      call = callAdapter.adapt(call);
+
+      //最后一个入参， Continuation 对象
+      //noinspection unchecked Checked by reflection inside RequestFactory.
+      Continuation<Response<ResponseT>> continuation =
+          (Continuation<Response<ResponseT>>) args[args.length - 1];
+
+      // See SuspendForBody for explanation about this try/catch.
+      try {
+        //
+        return KotlinExtensions.awaitResponse(call, continuation);
+      } catch (Exception e) {
+        return KotlinExtensions.suspendAndThrow(e, continuation);
+      }
+    }
+  }
+
+end note
+
+'25
+HttpServiceMethod.java -> KotlinExtensions.kt: KotlinExtensions.awaitResponse(call, continuation);
+activate KotlinExtensions.kt
+note right
+//返回值是Response<T>
+//Call对象的扩展方法
+suspend fun <T> Call<T>.awaitResponse(): Response<T> {
+  //suspendCancellableCoroutine把普通函数变成挂起函数，当调用接口当中的suspend方法时就会触发enqueue()方法
+  return suspendCancellableCoroutine { continuation ->
+    continuation.invokeOnCancellation {
+      cancel()
+    }
+    //直接触发enqueue()方法，不需要主动调用
+    enqueue(object : Callback<T> {
+      //当enqueue()方法执行完成后continuation.resume(response)方法恢复协程
+      override fun onResponse(call: Call<T>, response: Response<T>) {
+        continuation.resume(response)
+      }
+
+      override fun onFailure(call: Call<T>, t: Throwable) {
+        continuation.resumeWithException(t)
+      }
+    })
+  }
+}
+end note
+
+'26
+KotlinExtensions.java --> HttpServiceMethod.kt:;
+deactivate KotlinExtensions.kt
+'27
+HttpServiceMethod.java --> HttpServiceMethod.java:
+deactivate HttpServiceMethod.java
+
+'28
+HttpServiceMethod.java -> HttpServiceMethod.java: new SuspendForBody<>(...)
+activate HttpServiceMethod.java
+note left
+ static final class SuspendForBody<ResponseT> extends HttpServiceMethod<ResponseT, Object> {
+    ...
+    //复写adapt方法
+    @Override protected Object adapt(Call<ResponseT> call, Object[] args) {
+      //调用callAdapter.adapt()方法，默认DefaultCallAdapter，将call包装成ExecutorCallbackCall
+      call = callAdapter.adapt(call);
+
+      //最后一个入参， Continuation 对象
+      //noinspection unchecked Checked by reflection inside RequestFactory.
+      Continuation<ResponseT> continuation = (Continuation<ResponseT>) args[args.length - 1];
+
+      try {
+        //调用await()或者awaitNullable()方法
+        return isNullable
+            ? KotlinExtensions.awaitNullable(call, continuation)
+            : KotlinExtensions.await(call, continuation);
+      } catch (Exception e) {
+        return KotlinExtensions.suspendAndThrow(e, continuation);
+      }
+    }
+  }
+end note
+
+'29
+HttpServiceMethod.java -> KotlinExtensions.kt: KotlinExtensions.await(call, continuation);
+activate KotlinExtensions.kt
+note right
+//返回值是任意类型，User、List<User>
+//Call对象的扩展方法
+suspend fun <T : Any> Call<T>.await(): T {
+  return suspendCancellableCoroutine { continuation ->
+    continuation.invokeOnCancellation {
+      cancel()
+    }
+    //执行玩enqueue()方法回调onResponse()方法恢复协程
+    enqueue(object : Callback<T> {
+      override fun onResponse(call: Call<T>, response: Response<T>) {
+        if (response.isSuccessful) {
+          val body = response.body()
+          if (body == null) {
+            continuation.resumeWithException(e)
+          } else {
+            continuation.resume(body)
+          }
+        } else {
+          continuation.resumeWithException(HttpException(response))
+        }
+      }
+
+      override fun onFailure(call: Call<T>, t: Throwable) {
+        continuation.resumeWithException(t)
+      }
+    })
+  }
+}
+end note
+
+'30
+KotlinExtensions.kt --> HttpServiceMethod.java
+deactivate KotlinExtensions.kt
+'31
+HttpServiceMethod.java --> HttpServiceMethod.java
+deactivate HttpServiceMethod.java
+
+'32
+HttpServiceMethod.java --> Retrofit.java
+deactivate HttpServiceMethod.java
+deactivate ServiceMethod.java
+deactivate Retrofit.java
+
+'33
+Retrofit.java -> HttpServiceMethod.java: loadServiceMethod(method).invoke(args != null ? args : emptyArgs);
+activate HttpServiceMethod.java
+note right
+  @Override final @Nullable ReturnT invoke(Object[] args) {
+    //创建OkHttpCall对象，对OkHttp的Call对象的包装。隔离OkHttp
+    Call<ResponseT> call = new OkHttpCall<>(requestFactory, args, callFactory, responseConverter);
+    return adapt(call, args);
+  }
+end note
+
+'34
+HttpServiceMethod.java -> HttpServiceMethod.java: adapt(call, args);
+activate HttpServiceMethod.java
+note left
+ //抽象方法，默认实现是CallAdapter、SuspendForBody、SuspendForResponse的adapt()方法见18步
+ //在具体实现类里拿到callAdapter适配器对象去做转换,默认DefaultCallAdapter，
+ //复写adapt方法，把Call对象包装成ExecutorCallbackCall对象，
+ //一但调用ExecutorCallbackCall.enqueue()方法,触发被代理对象的delegate.enqueue()方法
+ //当网络请求成功之后，通过callbackExecutor.execute()MainHandler去切换线程
+ //在通过callback把数据回调用户
+ protected abstract @Nullable ReturnT adapt(Call<ResponseT> call, Object[] args);
+end note
+@enduml

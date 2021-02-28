@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+            <InputItemLayout
+              app:hint="请输入手机号"
+              app:inputType="text|number|password"
+              app:title="用户名"
+              app:inputTextAppearance="@style/inputTextAppearance"
+              app:titleTextAppearance="@style/titleTextAppearance"
+              app:topLineAppearance="@style/lineAppearance"
+              app:bottomLineAppearance="@style/full_width_lineAppearance"
+            >
+    -->
+    <!--自定义输入框布局-->
+    <declare-styleable name="InputItemLayout">
+        <attr name="hint" format="string" />
+        <attr name="title" format="string" />
+        <attr name="maxInputLength" format="integer" />
+        <attr name="inputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="password" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="inputTextAppearance" format="reference" />
+        <attr name="titleTextAppearance" format="reference" />
+        <attr name="topLineAppearance" format="reference" />
+        <attr name="bottomLineAppearance" format="reference" />
+    </declare-styleable>
+
+    <!--输入框文本样式-->
+    <declare-styleable name="inputTextAppearance">
+        <!--提示颜色-->
+        <attr name="hintColor" format="color" />
+        <!--输入文字颜色-->
+        <attr name="inputColor" format="color" />
+        <!--输入文字大小-->
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+    <!--标题文本样式-->
+    <declare-styleable name="titleTextAppearance">
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <!--最小宽度-->
+        <attr name="minWidth" format="dimension" />
+    </declare-styleable>
+
+    <!--下划线样式-->
+    <declare-styleable name="lineAppearance">
+        <attr name="color" format="color" />
+        <attr name="height" format="dimension" />
+        <attr name="leftMargin" format="dimension" />
+        <attr name="rightMargin" format="dimension" />
+        <attr name="enable" format="boolean" />
+    </declare-styleable>
+</resources>

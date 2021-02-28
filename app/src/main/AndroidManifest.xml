@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.coroutine.CoroutineSceneDemoActivity"></activity>
+        <activity android:name=".demo.login.LoginActivity"></activity>
+        <activity android:name=".demo.coroutine.CoroutineSceneDemoActivity" />
         <activity android:name=".demo.executor.HiExecutorDemoActivity" />
         <activity android:name=".demo.route.ARouterDemoActivity" />
         <activity android:name=".route.DegradeGlobalActivity" />
