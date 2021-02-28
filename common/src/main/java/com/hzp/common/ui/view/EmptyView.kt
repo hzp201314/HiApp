@@ -60,10 +60,10 @@ class EmptyView @JvmOverloads constructor(
         }
     }
 
-//    @JvmOverloads
-//    fun setHelpAction(@StringRes actionId: Int = R.string.if_detail, listener: OnClickListener) {
-//        empty_tips.setText(actionId)
-//        empty_tips.setOnClickListener(listener)
-//        empty_tips.visibility = if (actionId == -1) View.GONE else View.VISIBLE
-//    }
+    @JvmOverloads//参数可选
+    fun setHelpAction(@StringRes actionId: Int = R.string.if_detail, listener: OnClickListener) {
+        empty_tips.setText(actionId)
+        empty_tips.setOnClickListener(listener)
+        empty_tips.visibility = if (actionId == -1) View.GONE else View.VISIBLE
+    }
 }

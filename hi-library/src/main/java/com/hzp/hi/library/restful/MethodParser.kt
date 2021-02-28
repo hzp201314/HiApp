@@ -8,7 +8,7 @@ import java.lang.reflect.*
 /**
  * 方法解析器
  */
-class MethodParser(private val baseUrl: String, method: Method, args: Array<Any>) {
+class MethodParser(private val baseUrl: String, method: Method) {
     private var replaceRelativeUrl: String? = null
     private var domainUrl: String? = null
     private var formPost: Boolean = true
@@ -219,8 +219,8 @@ class MethodParser(private val baseUrl: String, method: Method, args: Array<Any>
     }
 
     companion object {
-        fun parse(baseUrl: String, method: Method, args: Array<Any>): MethodParser {
-            return MethodParser(baseUrl, method, args)
+        fun parse(baseUrl: String, method: Method): MethodParser {
+            return MethodParser(baseUrl, method)
         }
     }
 }

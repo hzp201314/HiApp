@@ -35,10 +35,10 @@ class HiRestful constructor(val baseUrl: String, callFactory: HiCall.Factory) {
             arrayOf<Class<*>>(service),
             object :InvocationHandler{
                 //bugFix:此处需要考虑 空参数
-                override fun invoke(proxy: Any?, method: Method, args: Array<Any>): Any {
+                override fun invoke(proxy: Any?, method: Method, args: Array<Any>?): Any {
                     var methodParser=methodService.get(method)
                     if(methodParser==null){
-                        methodParser=MethodParser.parse(baseUrl,method,args)
+                        methodParser=MethodParser.parse(baseUrl,method)
                         methodService[method]=methodParser
                     }
                     //bugFix：此处 应当考虑到 methodParser复用，每次调用都应当解析入参

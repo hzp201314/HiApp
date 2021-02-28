@@ -1,10 +1,11 @@
-package com.hzp.hiapp.demo.login
+package com.hzp.hiapp.biz.account
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
+import com.alibaba.android.arouter.facade.annotation.Route
 import com.hzp.common.ui.component.HiBaseActivity
 import com.hzp.common.utils.SPUtil
 import com.hzp.hi.library.restful.HiCallback
@@ -14,6 +15,7 @@ import com.hzp.hiapp.http.ApiFactory
 import com.hzp.hiapp.http.api.AccountApi
 import kotlinx.android.synthetic.main.activity_login.*
 
+@Route(path = "/account/login")
 class LoginActivity : HiBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -13,8 +13,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".demo.login.LoginActivity"></activity>
+        <activity android:name=".biz.account.RegistrationActivity"></activity>
+        <activity android:name=".biz.account.LoginActivity" />
         <activity android:name=".demo.coroutine.CoroutineSceneDemoActivity" />
         <activity android:name=".demo.executor.HiExecutorDemoActivity" />
         <activity android:name=".demo.route.ARouterDemoActivity" />

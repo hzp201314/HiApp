@@ -8,6 +8,7 @@ import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.facade.annotation.Interceptor
 import com.alibaba.android.arouter.facade.callback.InterceptorCallback
 import com.alibaba.android.arouter.facade.template.IInterceptor
+import com.alibaba.android.arouter.launcher.ARouter
 import java.lang.RuntimeException
 
 /**
@@ -31,7 +32,6 @@ open class BizInterceptor : IInterceptor {
         if ((flag and (RouteFlag.FLAG_LOGIN)) != 0) {
             //login
             callback!!.onInterrupt(RuntimeException("need login"))
-            showToast("请先登录")
             loginIntercept()
         } else if ((flag and (RouteFlag.FLAG_AUTHENTICATION) != 0)) {
             callback!!.onInterrupt(RuntimeException("need authentication"))
@@ -54,7 +54,11 @@ open class BizInterceptor : IInterceptor {
     }
 
     private fun loginIntercept() {
-
+        Handler(Looper.getMainLooper()).post {
+            Toast.makeText(context, "请先登录", Toast.LENGTH_SHORT).show()
+//            HiRoute.startActivity(null, destination = HiRoute.Destination.ACCOUNT_LOGIN)
+            ARouter.getInstance().build("/account/login").navigation()
+        }
     }
 
 
