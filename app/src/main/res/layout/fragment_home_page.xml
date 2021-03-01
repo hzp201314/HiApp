@@ -5,14 +5,29 @@
     android:background="@color/color_white"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textColor="@color/color_000"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:textSize="30sp"/>
+    <com.hzp.common.ui.view.IconFontTextView
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_home_search"
+        android:gravity="center"
+        android:text="@string/home_search_hint"
+        android:textColor="@color/color_9fa"
+        android:textSize="14sp" />
+
+    <com.hzp.hi.ui.tab.top.HiTabTopLayout
+        android:id="@+id/top_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/color_white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

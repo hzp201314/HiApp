@@ -12,6 +12,11 @@
     <dimen name="dp_45">45dp</dimen>
     <dimen name="dp_55">55dp</dimen>
     <dimen name="dp_65">65dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="dp_140">140dp</dimen>
 
     <dimen name="sp_10">10sp</dimen>
     <dimen name="sp_12">12sp</dimen>

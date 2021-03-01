@@ -69,7 +69,7 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
         final int bottom = head.getBottom();
         //没有在最初的位置，恢复
         if (bottom > 0) {
-            //下over pull 200，height 100
+            //先下拉，下over pull 200，height 100
             //  bottom  =100 ,height 100
             recover(bottom);
         }

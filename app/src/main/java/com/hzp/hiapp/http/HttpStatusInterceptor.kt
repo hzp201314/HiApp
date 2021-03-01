@@ -4,6 +4,7 @@ import android.os.Bundle
 import com.alibaba.android.arouter.launcher.ARouter
 import com.hzp.hi.library.restful.HiInterceptor
 import com.hzp.hi.library.restful.HiResponse
+import com.hzp.hiapp.route.HiRoute
 
 class HttpStatusInterceptor:HiInterceptor {
     override fun intercept(chain: HiInterceptor.Chain): Boolean {
@@ -13,8 +14,8 @@ class HttpStatusInterceptor:HiInterceptor {
             val code = response.code
             when (code) {
                 HiResponse.RC_NEED_LOGIN->{
-//                    HiRoute.startActivity(null,destination = HiRoute.Destination.ACCOUNT_LOGIN)
-                     ARouter.getInstance().build("/account/login").navigation()
+                    HiRoute.startActivity(null,destination = HiRoute.Destination.ACCOUNT_LOGIN)
+//                     ARouter.getInstance().build("/account/login").navigation()
                 }
                 //token过期
                 //a | b
@@ -28,12 +29,12 @@ class HttpStatusInterceptor:HiInterceptor {
                     bundle.putString("degrade_title","非法访问")
                     bundle.putString("degrade_desc",response.msg)
                     bundle.putString("degrade_action",helpUrl)
-//                    HiRoute.startActivity(null,bundle,HiRoute.Destination.DEGRADE_GLOBAL)
-                    ARouter.getInstance().build("/degrade/global/activity")
-                        .withString("degrade_title", "非法访问")
-                        .withString("degrade_desc", response.msg)
-                        .withString("degrade_action", helpUrl)
-                        .navigation()
+                    HiRoute.startActivity(null,bundle,HiRoute.Destination.DEGRADE_GLOBAL)
+//                    ARouter.getInstance().build("/degrade/global/activity")
+//                        .withString("degrade_title", "非法访问")
+//                        .withString("degrade_desc", response.msg)
+//                        .withString("degrade_action", helpUrl)
+//                        .navigation()
                 }
             }
         }

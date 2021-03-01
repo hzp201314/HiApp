@@ -31,6 +31,7 @@ import com.hzp.hiapp.http.api.AccountApi
 import com.hzp.hiapp.model.CourseNotice
 import com.hzp.hiapp.model.Notice
 import com.hzp.hiapp.model.UserProfile
+import com.hzp.hiapp.route.HiRoute
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : HiBaseFragment() {
@@ -137,8 +138,8 @@ class ProfileFragment : HiBaseFragment() {
             models.add(hiBannerMo)
         }
         hi_banner.setOnBannerClickListener { viewHolder, bannerMo, position ->
-            var intent=Intent(Intent.ACTION_VIEW, Uri.parse(bannerNoticeList[position].url))
-//            HiRoute.startActivity4Browser(bannerNoticeList[position].url)
+//            var intent=Intent(Intent.ACTION_VIEW, Uri.parse(bannerNoticeList[position].url))
+            HiRoute.startActivity4Browser(bannerNoticeList[position].url)
 
         }
         hi_banner.setBannerData(R.layout.layout_profile_banner_item, models)

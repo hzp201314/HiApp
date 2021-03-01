@@ -8,6 +8,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.hzp.common.ui.component.HiBaseActivity
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse
+import com.hzp.hi.library.util.HiStatusBar
 import com.hzp.hiapp.R
 import com.hzp.hiapp.http.ApiFactory
 import com.hzp.hiapp.http.api.AccountApi
@@ -17,6 +18,8 @@ import kotlinx.android.synthetic.main.activity_registration.*
 class RegistrationActivity : HiBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        HiStatusBar.setStatusBar(this, true, translucent = false)
+
         setContentView(R.layout.activity_registration)
 
         action_back.setOnClickListener { onBackPressed() }

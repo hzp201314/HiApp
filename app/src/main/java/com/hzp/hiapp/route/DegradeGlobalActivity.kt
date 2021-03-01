@@ -45,8 +45,9 @@ class DegradeGlobalActivity : AppCompatActivity() {
 
         if (degrade_action != null) {
             emptyView.setHelpAction(listener = View.OnClickListener {
-                var intent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse(degrade_action))
-                startActivity(intent)
+//                var intent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse(degrade_action))
+//                startActivity(intent)
+                HiRoute.startActivity4Browser(degrade_action!!)
             })
         }
     }

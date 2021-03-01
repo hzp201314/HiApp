@@ -17,19 +17,19 @@ import com.hzp.hi.ui.R;
 /**
  * 文本刷新视图
  */
-public class HiTextOverView extends HiOverView{
+public class HiTextOverView extends HiOverView {
     private TextView mText;
     private View mRotateView;
 
-    public HiTextOverView(@NonNull Context context) {
+    public HiTextOverView(Context context) {
         super(context);
     }
 
-    public HiTextOverView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public HiTextOverView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public HiTextOverView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public HiTextOverView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

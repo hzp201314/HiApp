@@ -57,4 +57,18 @@ abstract class HiDataItem<DATA, VH : RecyclerView.ViewHolder>(data: DATA?) {
         return 0
     }
 
+    /**
+     * 该item被滑进屏幕
+     */
+    open fun onViewAttachedToWindow(holder: VH) {
+
+    }
+
+    /**
+     * 该item被滑出屏幕
+     */
+    open fun onViewDetachedFromWindow(holder: VH) {
+
+    }
+
 }

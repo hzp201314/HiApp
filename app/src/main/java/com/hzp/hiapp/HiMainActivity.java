@@ -7,10 +7,12 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
 import com.alibaba.android.arouter.BuildConfig;
+import com.hzp.hi.library.util.HiStatusBar;
 import com.hzp.hiapp.logic.MainActivityLogic;
 
 import java.lang.reflect.InvocationTargetException;
@@ -25,6 +27,7 @@ public class HiMainActivity extends AppCompatActivity implements MainActivityLog
         /*MainActivity辅助类，解决MainActivity代码过多问题*/
         activityLogic = new MainActivityLogic(this, savedInstanceState);
 
+        HiStatusBar.INSTANCE.setStatusBar(this,true, Color.WHITE,false);
     }
 
 
