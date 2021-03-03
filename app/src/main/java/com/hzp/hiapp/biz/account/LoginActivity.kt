@@ -16,6 +16,7 @@ import com.hzp.hiapp.http.ApiFactory
 import com.hzp.hiapp.http.api.AccountApi
 import kotlinx.android.synthetic.main.activity_login.*
 
+//tom1 astom1123
 @Route(path = "/account/login")
 class LoginActivity : HiBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,6 +54,7 @@ class LoginActivity : HiBaseActivity() {
                         showToast(getString(R.string.login_success))
                         //usermanager
                         val data = response.data
+                        AccountManager.loginSuccess(data!!)
                         SPUtil.putString("boarding-pass",data!!)
                         setResult(Activity.RESULT_OK, Intent())
                         finish()

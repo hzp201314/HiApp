@@ -4,14 +4,16 @@ import com.hzp.common.utils.SPUtil
 import com.hzp.hi.library.log.HiLog
 import com.hzp.hi.library.restful.HiInterceptor
 import com.hzp.hi.library.restful.HiRequest
+import com.hzp.hiapp.biz.account.AccountManager
 
 class BizInterceptor : HiInterceptor {
     override fun intercept(chain: HiInterceptor.Chain): Boolean {
         val request = chain.request()
         val response = chain.response()
         if (chain.isRequestPeriod) {
-            val boardingPass = SPUtil.getString("boarding-pass") ?: ""
-            request.addHeader("boarding-pass", boardingPass)
+//            val boardingPass = SPUtil.getString("boarding-pass") ?: ""
+//            request.addHeader("boarding-pass", boardingPass)
+            request.addHeader("boarding-pass", AccountManager.getBoardingPass()?:"")
             //TODO token拿不到，防止盗版
             request.addHeader("auth-token", "MTU5Mjg1MDg3NDcwNw==")
         }else if (response != null) {

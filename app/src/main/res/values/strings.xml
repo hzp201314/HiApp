@@ -78,4 +78,5 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="fetch_user_profile_failed">用户信息获取失败</string>
 </resources>

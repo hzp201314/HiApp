@@ -16,6 +16,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Observer
 import com.alibaba.android.arouter.launcher.ARouter
 import com.hzp.common.ui.component.HiBaseFragment
 import com.hzp.common.ui.view.loadCircle
@@ -26,6 +27,7 @@ import com.hzp.hi.library.util.HiDisplayUtil
 import com.hzp.hi.ui.banner.core.HiBannerAdapter
 import com.hzp.hi.ui.banner.core.HiBannerMo
 import com.hzp.hiapp.R
+import com.hzp.hiapp.biz.account.AccountManager
 import com.hzp.hiapp.http.ApiFactory
 import com.hzp.hiapp.http.api.AccountApi
 import com.hzp.hiapp.model.CourseNotice
@@ -64,21 +66,29 @@ class ProfileFragment : HiBaseFragment() {
     }
 
     private fun queryLoginUserData() {
-        ApiFactory.create(AccountApi::class.java).profile()
-            .enqueue(object : HiCallback<UserProfile> {
-                override fun onSuccess(response: HiResponse<UserProfile>) {
-                    val userProfile = response.data
-                    if (response.code == HiResponse.SUCCESS && userProfile != null) {
-                        updateUI(userProfile)
-                    } else {
-                        showToast(response.msg);
-                    }
-                }
+        AccountManager.getUserProfile(this, Observer { profile ->
+            if (profile != null) {
+                updateUI(profile)
+            } else {
+                showToast(getString(R.string.fetch_user_profile_failed))
+            }
+        }, onlyCache = false)
 
-                override fun onFailed(throwable: Throwable) {
-                    showToast(throwable.message);
-                }
-            })
+//        ApiFactory.create(AccountApi::class.java).profile()
+//            .enqueue(object : HiCallback<UserProfile> {
+//                override fun onSuccess(response: HiResponse<UserProfile>) {
+//                    val userProfile = response.data
+//                    if (response.code == HiResponse.SUCCESS && userProfile != null) {
+//                        updateUI(userProfile)
+//                    } else {
+//                        showToast(response.msg);
+//                    }
+//                }
+//
+//                override fun onFailed(throwable: Throwable) {
+//                    showToast(throwable.message);
+//                }
+//            })
     }
 
     private fun showToast(message: String?) {
@@ -104,13 +114,16 @@ class ProfileFragment : HiBaseFragment() {
         } else {
             user_avatar.setImageResource(R.drawable.ic_avatar_default)
             user_name.setOnClickListener {
+                AccountManager.login(context, Observer { success->
+                    queryLoginUserData()
+                })
 //                HiRoute.startActivity(
 //                    activity,
 //                    destination = HiRoute.Destination.ACCOUNT_LOGIN,
 //                    requestCode = REQUEST_CODE_LOGIN_PROFILE
 //                )
-                ARouter.getInstance().build("/account/login")
-                    .navigation(activity, REQUEST_CODE_LOGIN_PROFILE)
+//                ARouter.getInstance().build("/account/login")
+//                    .navigation(activity, REQUEST_CODE_LOGIN_PROFILE)
             }
         }
 
@@ -179,10 +192,10 @@ class ProfileFragment : HiBaseFragment() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_CODE_LOGIN_PROFILE && resultCode == Activity.RESULT_OK && data != null) {
-            //刷新当前页面数据
-            queryLoginUserData()
-        }
+//        if (requestCode == REQUEST_CODE_LOGIN_PROFILE && resultCode == Activity.RESULT_OK && data != null) {
+//            //刷新当前页面数据
+//            queryLoginUserData()
+//        }
     }
 
 }
