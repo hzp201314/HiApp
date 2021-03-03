@@ -59,6 +59,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
     api project(path: ':nav-annotation')
+    debugImplementation project(path: ':hi-debugtool')
 //    annotationProcessor(':nav-compiler')
     kapt project(':nav-compiler')
     testImplementation 'junit:junit:4.12'

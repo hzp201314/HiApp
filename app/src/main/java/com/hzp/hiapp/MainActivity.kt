@@ -1,10 +1,13 @@
 package com.hzp.hiapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.DialogFragment
+import com.alibaba.android.arouter.BuildConfig
 import com.google.gson.JsonObject
 import com.hzp.hi.library.log.HiLog
 import com.hzp.hi.library.restful.HiCallback
@@ -23,6 +26,7 @@ import com.hzp.hiapp.demo.tab.HiTabTopDemoActivity
 import com.hzp.hiapp.demo.test.TestActivityManagerActivity
 import com.hzp.hiapp.http.ApiFactory
 import com.hzp.hiapp.http.api.TestApi
+import java.lang.reflect.InvocationTargetException
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -140,6 +144,33 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 )
             }
         }
+    }
+
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+            //音量下键点击事件
+            if (BuildConfig.DEBUG) {
+                try {
+                    val aClass =
+                        Class.forName("com.hzp.debugtool.DebugToolDialogFragment")
+                    val target = aClass.getConstructor()
+                        .newInstance() as DialogFragment
+                    target.show(supportFragmentManager, "debug_tool")
+                } catch (e: ClassNotFoundException) {
+                    e.printStackTrace()
+                } catch (e: InstantiationException) {
+                    e.printStackTrace()
+                } catch (e: InvocationTargetException) {
+                    e.printStackTrace()
+                } catch (e: NoSuchMethodException) {
+                    e.printStackTrace()
+                } catch (e: IllegalAccessException) {
+                    e.printStackTrace()
+                }
+            }
+        }
+        return super.onKeyDown(keyCode, event)
     }
 
 

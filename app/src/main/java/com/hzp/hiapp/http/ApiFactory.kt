@@ -16,6 +16,7 @@ object ApiFactory {
         hiRestful.addInterceptor(BizInterceptor())
         hiRestful.addInterceptor(HttpStatusInterceptor())
 
+        //还原为HttpS
         SPUtil.putBoolean(KEY_DEGRADE_HTTP,false)
     }
 

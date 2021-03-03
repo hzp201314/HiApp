@@ -36,21 +36,21 @@ public class HiMainActivity extends AppCompatActivity implements MainActivityLog
         if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
             //音量下键点击事件
             if (BuildConfig.DEBUG) {
-//                try {
-//                    Class<?> aClass = Class.forName("com.hzp.hiapp.debug.DebugToolDialogFragment");
-//                    DialogFragment target = (DialogFragment) aClass.getConstructor().newInstance();
-//                    target.show(getSupportFragmentManager(), "debug_tool");
-//                } catch (ClassNotFoundException e) {
-//                    e.printStackTrace();
-//                } catch (InstantiationException e) {
-//                    e.printStackTrace();
-//                } catch (InvocationTargetException e) {
-//                    e.printStackTrace();
-//                } catch (NoSuchMethodException e) {
-//                    e.printStackTrace();
-//                } catch (IllegalAccessException e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    Class<?> aClass = Class.forName("com.hzp.debugtool.DebugToolDialogFragment");
+                    DialogFragment target = (DialogFragment) aClass.getConstructor().newInstance();
+                    target.show(getSupportFragmentManager(), "debug_tool");
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return super.onKeyDown(keyCode, event);
