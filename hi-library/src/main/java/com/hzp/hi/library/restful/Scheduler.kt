@@ -1,5 +1,10 @@
 package com.hzp.hi.library.restful
 
+import com.hzp.hi.library.cache.HiStorage
+import com.hzp.hi.library.executor.HiExecutor
+import com.hzp.hi.library.log.HiLog
+import com.hzp.hi.library.util.MainHandler
+
 /**
  * 代理CallFactory创建出来的call对象，从而实现拦截器的派发动作
  */
@@ -20,7 +25,16 @@ class Scheduler(
         override fun execute(): HiResponse<T> {
             dispatchInterceptor(request, null)
 
+            if(request.cacheStrategy == CacheStrategy.CACHE_FIRST){
+                val cacheResponse =readCache<T>()
+                if(cacheResponse.data!=null){
+                    return cacheResponse
+                }
+            }
+
             val response = delegate.execute()
+
+            saveCacheIfNeed(response)
 
             dispatchInterceptor(request, response)
 
@@ -28,11 +42,27 @@ class Scheduler(
         }
 
         override fun enqueue(callback: HiCallback<T>) {
-            dispatchInterceptor(request,null)
+            dispatchInterceptor(request, null)
 
-            delegate.enqueue(object :HiCallback<T>{
+            if (request.cacheStrategy == CacheStrategy.CACHE_FIRST) {
+                HiExecutor.execute(runnable = Runnable {
+                    val cacheResponse = readCache<T>()
+                    if (cacheResponse.data != null) {
+                        //抛到主线程里面
+                        MainHandler.sendAtFrontOfQueue(runnable = Runnable {
+                            callback.onSuccess(cacheResponse)
+                        })
+                        HiLog.d("enqueue,cache:${request.getCacheKey()}")
+
+                    }
+                })
+            }
+
+            delegate.enqueue(object : HiCallback<T> {
                 override fun onSuccess(response: HiResponse<T>) {
-                    dispatchInterceptor(request,response)
+                    dispatchInterceptor(request, response)
+
+                    saveCacheIfNeed(response)
 
                     callback.onSuccess(response)
                 }
@@ -41,6 +71,29 @@ class Scheduler(
                     callback.onFailed(throwable)
                 }
             })
+        }
+
+        private fun saveCacheIfNeed(response: HiResponse<T>) {
+            if (request.cacheStrategy == CacheStrategy.CACHE_FIRST || request.cacheStrategy == CacheStrategy.NET_CACHE) {
+                if (response.data != null) {
+                    HiExecutor.execute(runnable = Runnable {
+                        HiStorage.saveCache(request.getCacheKey(), response.data)
+                    })
+                }
+            }
+        }
+
+        private fun <T> readCache(): HiResponse<T> {
+            //hiStorage查询缓存需要提供一个cache_key
+            //方案一:request的url+参数
+            //方案二:CacheStrategy注解定义时扩展一个参数cacheKey
+            val cacheKey = request.getCacheKey()
+            val cache = HiStorage.getCache<T>(cacheKey)
+            val cacheResponse = HiResponse<T>()
+            cacheResponse.data = cache
+            cacheResponse.code = HiResponse.CACHE_SUCCESS
+            cacheResponse.msg = "缓存获取成功"
+            return cacheResponse
         }
 
 

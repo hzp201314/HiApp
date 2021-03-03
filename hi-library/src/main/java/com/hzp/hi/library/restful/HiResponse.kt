@@ -7,6 +7,7 @@ open class HiResponse<T> {
 
     companion object {
         const val SUCCESS: Int = 0
+        const val CACHE_SUCCESS: Int = 304   //取缓存成功
         const val RC_HAS_ERROR = 5000                   //有错误
         const val RC_ACCOUNT_INVALID = 5001            //账号不存在
         const val RC_PWD_INVALID = 5002               //密码错误
@@ -30,7 +31,7 @@ open class HiResponse<T> {
     var msg: String? = null//错误信息
 
     fun successful(): Boolean {
-        return code == SUCCESS
+        return code == SUCCESS || code == CACHE_SUCCESS
     }
 
 }

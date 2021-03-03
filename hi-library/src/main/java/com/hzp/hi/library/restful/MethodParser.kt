@@ -10,6 +10,7 @@ import java.lang.reflect.*
  */
 class MethodParser(private val baseUrl: String, method: Method) {
     private var replaceRelativeUrl: String? = null
+    private var cacheStrategy: Int = CacheStrategy.NET_ONLY
     private var domainUrl: String? = null
     private var formPost: Boolean = true
     private var httpMethod: Int = -1
@@ -107,6 +108,8 @@ class MethodParser(private val baseUrl: String, method: Method) {
                     //relativeUrl=home/{categoryId}
                     replaceRelativeUrl = relativeUrl.replace("{$replaceName}", replacement)
                 }
+            } else if (annotation is CacheStrategy) {
+                cacheStrategy = value as Int
             } else {
                 throw IllegalStateException("cannot handle parameter annotation :" + annotation.javaClass.toString())
             }
@@ -141,6 +144,8 @@ class MethodParser(private val baseUrl: String, method: Method) {
                 }
             } else if (annotation is BaseUrl) {
                 domainUrl = annotation.value
+            } else if (annotation is CacheStrategy) {
+                cacheStrategy = annotation.value
             } else {
                 throw IllegalStateException("cannot handle method annotation:" + annotation.javaClass.toString())
             }
@@ -203,7 +208,7 @@ class MethodParser(private val baseUrl: String, method: Method) {
         return false
     }
 
-    fun newRequest(method: Method,args: Array<out Any>?):HiRequest{
+    fun newRequest(method: Method, args: Array<out Any>?): HiRequest {
         val arguments: Array<Any> = args as Array<Any>? ?: arrayOf()
         parseMethodParameters(method, arguments)
 
@@ -215,6 +220,7 @@ class MethodParser(private val baseUrl: String, method: Method) {
         request.headers = headers
         request.httpMethod = httpMethod
         request.formPost = formPost
+        request.cacheStrategy = cacheStrategy
         return request
     }
 

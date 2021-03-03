@@ -20,7 +20,11 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+                arguments = [
+                        AROUTER_MODULE_NAME  : project.getName(),
+                        AROUTER_GENERATE_DOC : "enable",
+                        "room.schemaLocation": "$projectDir/schemas".toString()
+                ]
             }
         }
     }
@@ -86,5 +90,14 @@ dependencies {
 
 
     implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+
+
+    // Room数据库依赖
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
 
 }

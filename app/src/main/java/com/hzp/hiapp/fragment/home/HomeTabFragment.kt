@@ -6,6 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hzp.common.ui.component.HiAbsListFragment
+import com.hzp.hi.library.restful.CacheStrategy
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse
 import com.hzp.hi.ui.item.HiDataItem
@@ -31,14 +32,16 @@ class HomeTabFragment : HiAbsListFragment() {
         categoryId=arguments?.getString("categoryId",DEFAULT_HOT_TAB_CATEGORY_ID)
         super.onViewCreated(view, savedInstanceState)
 
-        queryTabCategoryList()
+        queryTabCategoryList(CacheStrategy.CACHE_FIRST)
 
-        enableLoadMore { queryTabCategoryList() }
+        //加载更多
+        enableLoadMore { queryTabCategoryList(CacheStrategy.NET_ONLY) }
     }
 
+    //下拉刷新
     override fun onRefresh() {
         super.onRefresh()
-        queryTabCategoryList()
+        queryTabCategoryList(CacheStrategy.NET_CACHE)
     }
 
     override fun createLayoutManager(): RecyclerView.LayoutManager {
@@ -46,9 +49,9 @@ class HomeTabFragment : HiAbsListFragment() {
         return if(isHotTab) super.createLayoutManager() else GridLayoutManager(context,2)
     }
 
-    private fun queryTabCategoryList() {
+    private fun queryTabCategoryList(cacheStrategy: Int) {
         ApiFactory.create(HomeApi::class.java)
-            .queryTabCategoryList(categoryId!!,pageIndex,10)
+            .queryTabCategoryList(cacheStrategy,categoryId!!,pageIndex,10)
             .enqueue(object :HiCallback<HomeModel>{
                 override fun onSuccess(response: HiResponse<HomeModel>) {
                     if(response.successful()&&response.data!=null){

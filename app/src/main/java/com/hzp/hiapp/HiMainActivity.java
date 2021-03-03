@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 
 import com.alibaba.android.arouter.BuildConfig;
+import com.hzp.hi.library.util.HiDataBus;
 import com.hzp.hi.library.util.HiStatusBar;
 import com.hzp.hiapp.logic.MainActivityLogic;
 
@@ -27,7 +28,11 @@ public class HiMainActivity extends AppCompatActivity implements MainActivityLog
         /*MainActivity辅助类，解决MainActivity代码过多问题*/
         activityLogic = new MainActivityLogic(this, savedInstanceState);
 
+        //设置状态栏
         HiStatusBar.INSTANCE.setStatusBar(this,true, Color.WHITE,false);
+
+        //发送黏性事件
+        HiDataBus.INSTANCE.<String>with("stickyData").setStickyData("stickyData from mainActivity");
     }
 
 
