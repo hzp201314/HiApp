@@ -23,6 +23,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    
+    repositories {
+        flatDir{
+            dirs 'libs'
+        }
+    }
+
 }
 
 dependencies {
@@ -35,7 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-
+//    implementation ':libbreakpad'
 
     // Room数据库依赖
     implementation "androidx.room:room-runtime:$room_version"
@@ -44,4 +51,6 @@ dependencies {
     implementation "androidx.room:room-ktx:$room_version"
     // optional - Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
+
+    implementation(name:'libbreakpad',ext:'aar')
 }

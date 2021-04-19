@@ -21,7 +21,7 @@ class ActivityManager private constructor() {
     private var activityStartCount = 0
 
     /*标记位：当前应用是否正在前台，应用打开默认前台：true*/
-    private var front = true;
+    var front = true;
 
     /*初始化*/
     fun init(application: Application) {
