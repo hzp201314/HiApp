@@ -23,7 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    
+
     repositories {
         flatDir{
             dirs 'libs'
@@ -53,4 +53,6 @@ dependencies {
     testImplementation "androidx.room:room-testing:$room_version"
 
     implementation(name:'libbreakpad',ext:'aar')
+
+    api 'org.aspectj:aspectjrt:1.8.9'
 }
