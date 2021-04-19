@@ -1,0 +1,317 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+note left
+Lifecycle详解
+Lifecycle是Google推出的一个可以感知（Activity/Fragment）等组件生命周期的一个组件。
+使用Lifecycle，可以避免在（Activity/Fragment）生命周期函数里写过多的逻辑代码，
+可以使我们的业务逻辑更加的解耦。
+下面介绍Lifecycle的使用以及原理。
+end note
+'Lifecycle详解
+'添加observer，并根据宿主状态更新观察者状态
+LifecycleRegistry.java ->LifecycleRegistry.java: LifecycleRegistry.addObserver(observer)
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+@Override
+public void addObserver(@NonNull LifecycleObserver observer) {
+    //宿主状态：INITIALIZED、CREATED、STARTED、RESUMED、DESTROYED
+    State initialState = mState == DESTROYED ? DESTROYED : INITIALIZED;
+    //包装observer和State
+    ObserverWithState statefulObserver = new ObserverWithState(observer, initialState);
+    ObserverWithState previous = mObserverMap.putIfAbsent(observer, statefulObserver);
+
+    LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+    //计算当前宿主状态
+    State targetState = calculateTargetState(observer);
+
+    //循环  让当前观察者从INITIALIZED状态前进到宿主当前状态targetState
+    while ((statefulObserver.mState.compareTo(targetState) < 0
+            && mObserverMap.contains(observer))) {
+        pushParentState(statefulObserver.mState);
+        //分发事件，让宿主状态前进
+        //分发事件时根据观察者状态推导出应该分发的事件，再根据分发事件推导出观察者的状态
+        statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));
+        popParentState();
+        //计算当前宿主状态
+        targetState = calculateTargetState(observer);
+    }
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+static class ObserverWithState {
+    State mState;
+    LifecycleEventObserver mLifecycleObserver;
+
+    void dispatchEvent(LifecycleOwner owner, Event event) {
+        //根据分发的事件反推出宿主状态
+        State newState = getStateAfter(event);
+        mState = min(mState, newState);
+        //通知所有观察者宿主当前生命周期状态改变
+        mLifecycleObserver.onStateChanged(owner, event);
+        //当前宿主状态更新
+        mState = newState;
+    }
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: upEvent(statefulObserver.mState)
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//根据观察者状态推导出应该分发的事件
+private static Event upEvent(State state) {
+    switch (state) {
+        case INITIALIZED:
+        case DESTROYED:
+            return ON_CREATE;
+        case CREATED:
+            return ON_START;
+        case STARTED:
+            return ON_RESUME;
+        case RESUMED:
+            throw new IllegalArgumentException();
+    }
+    throw new IllegalArgumentException("Unexpected state value " + state);
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+
+LifecycleRegistry.java ->LifecycleRegistry.java: getStateAfter(event)
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//根据宿主当前分发的事件(生命周期状态)反推出宿主状态，如果是ON_CREATE状态，则前进一步变为CREATED状态
+static State getStateAfter(Event event) {
+    switch (event) {
+        case ON_CREATE:
+        case ON_STOP:
+            return CREATED;
+        case ON_START:
+        case ON_PAUSE:
+            return STARTED;
+        case ON_RESUME:
+            return RESUMED;
+        case ON_DESTROY:
+            return DESTROYED;
+        case ON_ANY:
+            break;
+    }
+    throw new IllegalArgumentException("Unexpected event value " + event);
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+
+
+'宿主生命周期和宿主状态关系，
+'每一个周期变化时都会分发相应的事件，根据分发事件推导出宿主新状态
+'然后遍历所有观察者让观察者状态也随之升级(前进)或者降级(倒退)，并且把本次事件分发给观察者
+LifecycleRegistry.java ->LifecycleRegistry.java: handleLifecycleEvent()
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//会在每一个生命周期方法里面调用handleLifecycleEvent(event)分发事件
+public void handleLifecycleEvent(@NonNull Lifecycle.Event event) {
+    //根据宿主当前分发的事件(生命周期状态)反推出宿主状态，如果是ON_CREATE状态，则前进一步变为CREATED状态
+    State next = getStateAfter(event);
+    //状态同步
+    moveToState(next);
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: getStateAfter(event)
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//根据宿主当前分发的事件(生命周期状态)反推出宿主状态，如果是ON_CREATE状态，则前进一步变为CREATED状态
+static State getStateAfter(Event event) {
+    switch (event) {
+        case ON_CREATE:
+        case ON_STOP:
+            return CREATED;
+        case ON_START:
+        case ON_PAUSE:
+            return STARTED;
+        case ON_RESUME:
+            return RESUMED;
+        case ON_DESTROY:
+            return DESTROYED;
+        case ON_ANY:
+            break;
+    }
+    throw new IllegalArgumentException("Unexpected event value " + event);
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java ->LifecycleRegistry.java: moveToState(next)
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//状态同步
+private void moveToState(State next) {
+    ...
+    //真正的状态同步
+    sync();
+    ...
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: sync()
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//真正的状态同步
+private void sync() {
+    LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+    //isSynced()往mObserverMap集合里面注册的Observer是不是所有观察者的状态都已经分发完，
+    //都已经同步到根宿主一直状态,如果没有
+    while (!isSynced()) {
+
+        //宿主状态<观察者状态：生命周期倒退阶段
+        //前台切后台，执行onPause()，RESUMED->STARTED
+        //宿主进入状态：STARTED，观察者状态：还处于 RESUMED
+        //此时宿主状态<观察者状态，执行backwardPass(lifecycleOwner);
+        if (mState.compareTo(mObserverMap.eldest().getValue().mState) < 0) {
+            //让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+            backwardPass(lifecycleOwner);
+        }
+        Entry<LifecycleObserver, ObserverWithState> newest = mObserverMap.newest();
+        //宿主状态>观察者状态：生命周期前进阶段
+        //后台切前台，执行onResume(),STARTED->RESUMED ，
+        //宿主进入状态：RESUMED，观察者状态：还处于 STARTED
+        if (!mNewEventOccurred && newest != null
+                && mState.compareTo(newest.getValue().mState) > 0) {
+            forwardPass(lifecycleOwner);
+        }
+    }
+    mNewEventOccurred = false;
+}
+end note
+
+
+LifecycleRegistry.java ->LifecycleRegistry.java: backwardPass(lifecycleOwner);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//遍历，让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+private void backwardPass(LifecycleOwner lifecycleOwner) {
+    Iterator<Entry<LifecycleObserver, ObserverWithState>> descendingIterator =
+            mObserverMap.descendingIterator();
+    while (descendingIterator.hasNext() && !mNewEventOccurred) {
+        Entry<LifecycleObserver, ObserverWithState> entry = descendingIterator.next();
+        ObserverWithState observer = entry.getValue();
+        while ((observer.mState.compareTo(mState) > 0 && !mNewEventOccurred
+                && mObserverMap.contains(entry.getKey()))) {
+            //倒退观察者状态
+            //生命周期事件降级,计算出分发事件
+            Event event = downEvent(observer.mState);
+            pushParentState(getStateAfter(event));
+            //分发事件
+            observer.dispatchEvent(lifecycleOwner, event);
+            popParentState();
+        }
+    }
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: downEvent(observer.mState);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//倒退观察者状态，生命周期事件降级
+//eg:观察者状态RESUMED,分发一个ON_PAUSE事件
+private static Event downEvent(State state) {
+    switch (state) {
+        case INITIALIZED:
+            throw new IllegalArgumentException();
+        case CREATED:
+            return ON_DESTROY;
+        case STARTED:
+            return ON_STOP;
+        case RESUMED:
+            return ON_PAUSE;
+        case DESTROYED:
+            throw new IllegalArgumentException();
+    }
+    throw new IllegalArgumentException("Unexpected state value " + state);
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java ->LifecycleRegistry.java: observer.dispatchEvent(lifecycleOwner, event);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+static class ObserverWithState {
+    //分发事件
+    void dispatchEvent(LifecycleOwner owner, Event event) {
+        //倒推出观察者新的状态
+        State newState = getStateAfter(event);
+        mState = min(mState, newState);
+        //通知所有观察者宿主当前生命周期状态改变
+        mLifecycleObserver.onStateChanged(owner, event);
+        //观察者状态降级到和宿主一样的状态
+        mState = newState;
+    }
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+LifecycleRegistry.java ->LifecycleRegistry.java: forwardPass(lifecycleOwner);
+activate LifecycleRegistry.java
+note left
+//遍历，让集合里面所有观察者的状态都前进到和宿主一样的状态，并且分发事件
+private void forwardPass(LifecycleOwner lifecycleOwner) {
+    Iterator<Entry<LifecycleObserver, ObserverWithState>> ascendingIterator =
+            mObserverMap.iteratorWithAdditions();
+    while (ascendingIterator.hasNext() && !mNewEventOccurred) {
+        Entry<LifecycleObserver, ObserverWithState> entry = ascendingIterator.next();
+        ObserverWithState observer = entry.getValue();
+        while ((observer.mState.compareTo(mState) < 0 && !mNewEventOccurred
+                && mObserverMap.contains(entry.getKey()))) {
+            //前进观察者状态
+            pushParentState(observer.mState);
+            //upEvent(observer.mState)：生命周期事件前进，计算出分发事件
+            //eg：STARTED状态计算出分发事件ON_RESUME
+            //分发事件 根据分发事件倒推出观察者新的状态，让观察者和宿主状态一样
+            observer.dispatchEvent(lifecycleOwner, upEvent(observer.mState));
+            popParentState();
+        }
+    }
+}
+end note
+
+LifecycleRegistry.java -->LifecycleRegistry.java:
+deactivate LifecycleRegistry.java
+
+@enduml

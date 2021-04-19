@@ -1,0 +1,574 @@
+·@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'1
+LearnLifeCycleActivity.kt -> LearnLifeCycleActivity.kt: onCreate()
+activate LearnLifeCycleActivity.kt
+note left
+//LearnLifeCycleActivity.kt
+class LearnLifeCycleActivity :AppCompatActivity(){
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_learn_lifecycle)
+        lifecycle.addObserver(LearnLifecycleObserver())
+    }
+
+    class LearnLifecycleObserver :LifecycleObserver{
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+        fun onCreate(){
+            Log.e(TAG,"====onCreate====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_START)
+        fun onStart(){
+            Log.e(TAG,"====onStart====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+        fun onResume(){
+            Log.e(TAG,"=====onResume====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+        fun onPause(){
+            Log.e(TAG,"=====onPause====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+        fun onStop(){
+            Log.e(TAG,"=====onStop====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+        fun onDestroy(){
+            Log.e(TAG,"=====onDestroy====")
+        }
+    }
+}
+end note
+
+'2
+LearnLifeCycleActivity.kt -> ComponentActivity.java: lifecycle
+activate ComponentActivity.java
+note right
+//ComponentActivity.java
+private final LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);
+...
+//lifecycle就是LifecycleRegistry，
+//而调用lifecycle.addObserver方法其实就是调用LifecycleRegistry的addObserver方法。
+public Lifecycle getLifecycle() {
+  return mLifecycleRegistry;
+}
+
+
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    //ComponentActivity实现了LifecycleOwner，
+    //并且在ComponentActivity的onCreate方法里有个ReportFragment.injectIfNeededIn(this);
+    ReportFragment.injectIfNeededIn(this);
+}
+end note
+
+'3
+ComponentActivity.java -> LifecycleRegistry.java: new LifecycleRegistry(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+public class LifecycleRegistry extends Lifecycle {
+...
+}
+end note
+
+'4
+LifecycleRegistry.java -> Lifecycle.java:
+activate Lifecycle.java
+note right
+//Lifecycle.java
+//Lifecycle主要有三个方法抽象方法addObserver，removeObserver，getCurrentState
+//两个枚举类Event，State。
+//Event 就是改变生命周期的事件，State 是目前 Activity/Fragment 所处生命周期的状态
+public abstract class Lifecycle {
+    //添加观察者
+    public abstract void addObserver(@NonNull LifecycleObserver observer);
+    //移除观察者
+    public abstract void removeObserver(@NonNull LifecycleObserver observer);
+    //获取当前的观察者
+    public abstract State getCurrentState();
+
+    //事件
+    public enum Event {
+        ON_CREATE,
+        ON_START,
+        ON_RESUME,
+        ON_PAUSE,
+        ON_STOP,
+        ON_DESTROY,
+        ON_ANY
+    }
+
+    //状态
+    public enum State {
+        DESTROYED,
+        INITIALIZED,
+        CREATED,
+        STARTED,
+        RESUMED
+    }
+}
+
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+                ON_CREATE
+            |-----------|--------->|          |           |
+            |           |          | ON_START |           |
+            |           |          |--------->|           |
+            |           |          |          | ON_RESUME |
+            |           |          |          |---------->|
+Events      |           |          |          |           |
+            |           |          |          | ON_PAUSE  |
+            |           |          |          |<----------|
+            |           |          | ON_STOP  |           |
+            |           |          |<---------|           |
+            |           |ON_DESTROY|          |           |
+            |           |<---------|          |           |
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+end note
+
+'5
+Lifecycle.java --> LifecycleRegistry.java:
+deactivate Lifecycle.java
+
+'6
+LifecycleRegistry.java --> ComponentActivity.java:
+deactivate LifecycleRegistry.java
+
+'7
+'ComponentActivity.java --> LearnLifeCycleActivity.kt:
+'deactivate ComponentActivity.java
+
+
+'8
+LearnLifeCycleActivity.kt -> LifecycleRegistry.java: lifecycle.addObserver(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+...
+private FastSafeIterableMap<LifecycleObserver, ObserverWithState> mObserverMap =
+            new FastSafeIterableMap<>();
+...
+@Override
+public void addObserver(@NonNull LifecycleObserver observer) {
+   //初始化State状态:INITIALIZED
+   State initialState = mState == DESTROYED ? DESTROYED : INITIALIZED;
+   //把State状态跟observer观察者。作为参数传入ObserverWithState，构建ObserverWithState的实例。
+   ObserverWithState statefulObserver = new ObserverWithState(observer, initialState);
+   //mObserverMaps是个HashMap集合，把observer跟statefulObserver键值对形式存储到集合中。
+   ObserverWithState previous = mObserverMap.putIfAbsent(observer, statefulObserver);
+
+   LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+   //计算当前宿主状态
+   State targetState = calculateTargetState(observer);
+   //遍历  让当前观察者从INITIALIZED状态前进到宿主当前状态targetState
+   while ((statefulObserver.mState.compareTo(targetState) < 0
+           && mObserverMap.contains(observer))) {
+       pushParentState(statefulObserver.mState);
+       //upEvent(statefulObserver.mState):根据观察者状态计算出应该分发事件
+       //再根据分发事件推导出观察者的状态，并让观察者状态前进，
+       statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));
+       popParentState();
+       //再次计算宿主状态
+       targetState = calculateTargetState(observer);
+   }
+
+}
+end note
+
+'9
+LifecycleRegistry.java -> ObserverWithState.java: new ObserverWithState(observer, initialState)
+activate ObserverWithState.java
+note right
+//ObserverWithState.java
+static class ObserverWithState {
+     State mState;
+     LifecycleEventObserver mLifecycleObserver;
+
+     //ObserverWithState是持有State跟Observer的对象。
+     //接着看Lifecycling.lifecycleEventObserver(observer); 方法
+     ObserverWithState(LifecycleObserver observer, State initialState) {
+         mLifecycleObserver = Lifecycling.lifecycleEventObserver(observer);
+         mState = initialState;
+     }
+     ...
+ }
+end note
+
+'10
+ObserverWithState.java -> LifecycleEventObserver.java: Lifecycling.lifecycleEventObserver(observer)
+activate LifecycleEventObserver.java
+note right
+//LifecycleEventObserver.java
+static LifecycleEventObserver lifecycleEventObserver(Object object) {
+    ...
+
+    int type = getObserverConstructorType(klass);
+    if (type == GENERATED_CALLBACK) {
+        ...
+        //如果build.gradle文件中添加了编译器依赖"androidx.lifecycle.lifecycle-compiler"
+        //则会在编译时自动生成适配的类:LearnLifeCycleObserver_LifecycleAdapter
+        //这样就不用通过反射执行生命周期方法
+        return new CompositeGeneratedAdaptersObserver(adapters);
+    }
+    //传进来的observer其实又被ReflectiveGenericLifecycleObserver包了一层，
+    //接着看看ReflectiveGenericLifecycleObserver
+    return new ReflectiveGenericLifecycleObserver(object);
+}
+end note
+
+'11
+LifecycleEventObserver.java -> ReflectiveGenericLifecycleObserver.java: new ReflectiveGenericLifecycleObserver(object)
+activate ReflectiveGenericLifecycleObserver.java
+note right
+//ReflectiveGenericLifecycleObserver.java
+class ReflectiveGenericLifecycleObserver implements LifecycleEventObserver {
+ private final Object mWrapped;
+ private final CallbackInfo mInfo;
+
+ ReflectiveGenericLifecycleObserver(Object wrapped) {
+     mWrapped = wrapped;
+     //再来看看CallbackInfo是什么，
+     mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+ }
+
+ @Override
+ public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+     mInfo.invokeCallbacks(source, event, mWrapped);
+  }
+}
+end note
+
+'12
+ReflectiveGenericLifecycleObserver.java -> ClassesInfoCache.java:  ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+activate ClassesInfoCache.java
+note right
+//ClassesInfoCache.java
+CallbackInfo getInfo(Class<?> klass) {
+     CallbackInfo existing = mCallbackMap.get(klass);
+     if (existing != null) {
+         return existing;
+     }
+     existing = createInfo(klass, null);
+     return existing;
+ }
+ private CallbackInfo createInfo(Class<?> klass, @Nullable Method[] declaredMethods) {
+     ...
+     Method[] methods = declaredMethods != null ? declaredMethods : getDeclaredMethods(klass);
+     boolean hasLifecycleMethods = false;
+     for (Method method : methods) {
+         //解析@OnLifecycleEvent注解
+         OnLifecycleEvent annotation = method.getAnnotation(OnLifecycleEvent.class);
+         ...
+         //获取注解的值
+         Lifecycle.Event event = annotation.value();
+         ...
+         MethodReference methodReference = new MethodReference(callType, method);
+         verifyAndPutHandler(handlerToEvent, methodReference, event, klass);
+     }
+     //并且存储集合最终都封装到CallbackInfo这个类中
+     CallbackInfo info = new CallbackInfo(handlerToEvent);
+     mCallbackMap.put(klass, info);
+     mHasLifecycleMethods.put(klass, hasLifecycleMethods);
+     return info;
+ }
+end note
+
+'13
+ClassesInfoCache.java --> ReflectiveGenericLifecycleObserver.java:
+deactivate ClassesInfoCache.java
+
+'14
+ReflectiveGenericLifecycleObserver.java --> LifecycleEventObserver.java:
+deactivate ReflectiveGenericLifecycleObserver.java
+
+'15
+LifecycleEventObserver.java --> ObserverWithState.java:
+deactivate LifecycleEventObserver.java
+
+'16
+ObserverWithState.java --> LifecycleRegistry.java:
+deactivate ObserverWithState.java
+
+'17
+LifecycleRegistry.java --> LearnLifeCycleActivity.kt:
+deactivate LifecycleRegistry.java
+
+'18
+ComponentActivity.java -> ReportFragment.java: ReportFragment.injectIfNeededIn(this);
+activate ReportFragment.java
+note right
+//ReportFragment.java
+public static void injectIfNeededIn(Activity activity) {
+    // ProcessLifecycleOwner should always correctly work and some activities may not extend
+    // FragmentActivity from support lib, so we use framework fragments for activities
+    android.app.FragmentManager manager = activity.getFragmentManager();
+    if (manager.findFragmentByTag(REPORT_FRAGMENT_TAG) == null) {
+        //添加一个new ReportFragment()
+        manager.beginTransaction().add(new ReportFragment(), REPORT_FRAGMENT_TAG).commit();
+        // Hopefully, we are the first to make a transaction.
+        manager.executePendingTransactions();
+    }
+}
+
+//发现在ReportFragment的生命周期里调用了dispatch这个方法，
+//并且传入对应的生命周期事件（如：dispatch(Lifecycle.Event.ON_DESTROY);）
+//接着我们来看看dispatch的方法
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+    dispatchCreate(mProcessListener);
+    dispatch(Lifecycle.Event.ON_CREATE);
+}
+
+@Override
+public void onStart() {
+    super.onStart();
+    dispatchStart(mProcessListener);
+    dispatch(Lifecycle.Event.ON_START);
+}
+
+@Override
+public void onResume() {
+    super.onResume();
+    dispatchResume(mProcessListener);
+    dispatch(Lifecycle.Event.ON_RESUME);
+}
+
+@Override
+public void onPause() {
+    super.onPause();
+    dispatch(Lifecycle.Event.ON_PAUSE);
+}
+
+@Override
+public void onStop() {
+    super.onStop();
+    dispatch(Lifecycle.Event.ON_STOP);
+}
+
+@Override
+public void onDestroy() {
+    super.onDestroy();
+    dispatch(Lifecycle.Event.ON_DESTROY);
+    // just want to be sure that we won't leak reference to an activity
+    mProcessListener = null;
+}
+//我们看到代码会判断activity是否是LifecycleOwner类型，
+//并且lifecycle是否是LifecycleRegistry，
+//接着会调用 LifecycleRegistry的handleLifecycleEvent()方法。并且事件作为参数传入。
+//根据我们上面查看的源码，ComponentActivity是实现了LifecycleOwner，
+//并且lifecycle就是LifecycleRegistry。
+//所以来看看LifecycleRegistry的handleLifecycleEvent()方法
+private void dispatch(Lifecycle.Event event) {
+    Activity activity = getActivity();
+    if (activity instanceof LifecycleRegistryOwner) {
+        ((LifecycleRegistryOwner) activity).getLifecycle().handleLifecycleEvent(event);
+        return;
+    }
+
+    if (activity instanceof LifecycleOwner) {
+        Lifecycle lifecycle = ((LifecycleOwner) activity).getLifecycle();
+        if (lifecycle instanceof LifecycleRegistry) {
+            ((LifecycleRegistry) lifecycle).handleLifecycleEvent(event);
+        }
+    }
+}
+end note
+
+'19
+ReportFragment.java -> LifecycleRegistry.java: lifecycle.handleLifecycleEvent(event);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+public void handleLifecycleEvent(@NonNull Lifecycle.Event event) {
+    //将Event转成State
+    //根据宿主当前分发的事件(生命周期)反推出宿主状态，
+    //eg:如果是ON_CREATE事件，则前进一步变为CREATED状态
+    State next = getStateAfter(event);
+    //状态同步
+    moveToState(next);
+}
+end note
+
+'20
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+private void moveToState(State next) {
+    ...
+    //真正的状态同步
+    sync();
+    ...
+}
+end note
+
+'21
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+//真正的状态同步
+private void sync() {
+    LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+    //isSynced()：往mObserverMap集合里面注册的Observer是不是所有观察者的状态都已经分发完，
+    //是不是都已经同步到根宿主一致状态,如果没有，继续循环遍历
+    while (!isSynced()) {
+        // 生命周期后退逻辑
+        //宿主状态<观察者状态：生命周期倒退阶段
+        //前台切后台，执行onPause()，RESUMED->STARTED
+        //宿主进入状态：STARTED，观察者状态：还处于 RESUMED
+        //此时宿主状态<观察者状态，执行backwardPass(lifecycleOwner);
+        if (mState.compareTo(mObserverMap.eldest().getValue().mState) < 0) {
+            //让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+            backwardPass(lifecycleOwner);
+        }
+        Entry<LifecycleObserver, ObserverWithState> newest = mObserverMap.newest();
+        // 生命周期前进逻辑
+        //宿主状态>观察者状态：生命周期前进阶段
+        //后台切前台，执行onResume(),STARTED->RESUMED ，
+        //宿主进入状态：RESUMED，观察者状态：还处于 STARTED
+        if (!mNewEventOccurred && newest != null
+                && mState.compareTo(newest.getValue().mState) > 0) {
+            forwardPass(lifecycleOwner);
+        }
+    }
+}
+end note
+
+'22
+LifecycleRegistry.java ->LifecycleRegistry.java: backwardPass(lifecycleOwner);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//遍历，让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+private void backwardPass(LifecycleOwner lifecycleOwner) {
+    Iterator<Entry<LifecycleObserver, ObserverWithState>> descendingIterator =
+            mObserverMap.descendingIterator();
+    while (descendingIterator.hasNext() && !mNewEventOccurred) {
+        Entry<LifecycleObserver, ObserverWithState> entry = descendingIterator.next();
+        ObserverWithState observer = entry.getValue();
+        while ((observer.mState.compareTo(mState) > 0 && !mNewEventOccurred
+                && mObserverMap.contains(entry.getKey()))) {
+            //倒退观察者状态
+            //生命周期事件降级,根据状态计算出分发事件
+            //eg:观察者状态RESUMED,分发一个ON_PAUSE事件
+            Event event = downEvent(observer.mState);
+            pushParentState(getStateAfter(event));
+            //分发事件
+            observer.dispatchEvent(lifecycleOwner, event);
+            popParentState();
+        }
+    }
+}
+end note
+
+'23
+LifecycleRegistry.java ->ObserverWithState.java: observer.dispatchEvent(lifecycleOwner, event);
+activate ObserverWithState.java
+note right
+ObserverWithState.java
+static class ObserverWithState {
+    //分发事件
+    void dispatchEvent(LifecycleOwner owner, Event event) {
+        //倒推出观察者新的状态
+        State newState = getStateAfter(event);
+        mState = min(mState, newState);
+        //mLifecycleObserver的实现类是ReflectiveGenericLifecycleObserver，
+        //所以来看ReflectiveGenericLifecycleObserver的onStateChanged()方法
+        //通知所有观察者宿主当前生命周期状态改变
+        mLifecycleObserver.onStateChanged(owner, event);
+        //观察者状态降级到和宿主一样的状态
+        mState = newState;
+    }
+}
+end note
+
+'24
+ObserverWithState.java ->ReflectiveGenericLifecycleObserver.java: mLifecycleObserver.onStateChanged(owner, event);
+activate ReflectiveGenericLifecycleObserver.java
+note right
+...
+private final CallbackInfo mInfo;
+...
+ReflectiveGenericLifecycleObserver(Object wrapped) {
+        mWrapped = wrapped;
+        mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+}
+@Override
+public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+        //CallbackInfo的invokeCallbacks()方法
+        mInfo.invokeCallbacks(source, event, mWrapped);
+}
+end note
+
+'25
+ReflectiveGenericLifecycleObserver.java ->ClassesInfoCache.java:  mInfo.invokeCallbacks(source, event, mWrapped);
+activate ClassesInfoCache.java
+note right
+void invokeCallbacks(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            invokeMethodsForEvent(mEventToHandlers.get(event), source, event, target);
+            invokeMethodsForEvent(mEventToHandlers.get(Lifecycle.Event.ON_ANY), source, event,
+                    target);
+}
+
+private static void invokeMethodsForEvent(List<MethodReference> handlers,
+                LifecycleOwner source, Lifecycle.Event event, Object mWrapped) {
+            if (handlers != null) {
+                for (int i = handlers.size() - 1; i >= 0; i--) {
+                    //其实是调用到了MethodReference的invokeCallback()方法
+                    handlers.get(i).invokeCallback(source, event, mWrapped);
+                }
+            }
+}
+end note
+
+'26
+ClassesInfoCache.java ->ClassesInfoCache.java:  invokeCallback(source, event, mWrapped);
+activate ClassesInfoCache.java
+note left
+//这里会mMethod会通过反射去调用。
+//那这个mMethod是什么呢？我们前面分析到CallbackInfo的createInfo的方法的时候
+//会发现，其实method就是我们传入的observer的对应的注解了OnLifecycleEvent的方法。
+ //总结： 组件Activity/Fragment会在相应的声命周期函数里调用dispatch方法分发事件，
+ //并调用LifecycleRegistry的handleLifecycleEvent去处理事件。
+ //LifecycleRegistry会根据传入的生命周期事件，去决定是否是向前还是向后的逻辑。
+ //然后经过ObserverWithState->ReflectiveGenericLifecycleObserver -> CallbackInfo -> MethodReference，
+ //最终通过反射真正调用到自定义LifecycleObserver添加了注解的方法。
+ //这就是整个流程
+void invokeCallback(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            //noinspection TryWithIdenticalCatches
+            try {
+                switch (mCallType) {
+                    case CALL_TYPE_NO_ARG:
+                        mMethod.invoke(target);
+                        break;
+                    case CALL_TYPE_PROVIDER:
+                        mMethod.invoke(target, source);
+                        break;
+                    case CALL_TYPE_PROVIDER_WITH_EVENT:
+                        mMethod.invoke(target, source, event);
+                        break;
+                }
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException("Failed to call observer method", e.getCause());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+}
+end note
+
+@enduml

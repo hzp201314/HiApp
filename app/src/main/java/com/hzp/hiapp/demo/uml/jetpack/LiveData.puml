@@ -1,0 +1,239 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+LiveData.java -> LiveData.java: observe(owner,  observer);
+activate LiveData.java
+note left
+//LiveData.java
+@MainThread
+public void observe(@NonNull LifecycleOwner owner, @NonNull Observer<? super T> observer) {
+    assertMainThread("observe");
+    //如果宿主是destroy状态的话，将直接返回，不会被加入观察者行列
+    if (owner.getLifecycle().getCurrentState() == DESTROYED) {
+        // ignore
+        return;
+    }
+    //把 owner 和 observer 包装成一个 LifecycleBoundObserver，
+    //LifecycleBoundObserver实现了LifecycleEventObserver，具备具有生命周期
+    LifecycleBoundObserver wrapper = new LifecycleBoundObserver(owner, observer);
+    //将observer和wrapper分别作为key和value存入Map中,用于遍历集合进行消息分发
+    ObserverWrapper existing = mObservers.putIfAbsent(observer, wrapper);
+    //把lifecycle注册到宿主生命周期中，
+    //每一次生命周期变动都会回调到LifecycleBoundObserver.onStateChanged()方法
+    owner.getLifecycle().addObserver(wrapper);
+}
+end note
+LiveData.java --> LiveData.java:
+deactivate LiveData.java
+
+
+
+LiveData.java -> LiveData.LifecycleBoundObserver.java: onStateChanged();
+activate LiveData.LifecycleBoundObserver.java
+note right
+//LiveData.LifecycleBoundObserver.java
+class LifecycleBoundObserver extends ObserverWrapper implements GenericLifecycleObserver {
+    @NonNull
+    final LifecycleOwner mOwner;
+
+    LifecycleBoundObserver(@NonNull LifecycleOwner owner, Observer<? super T> observer) {
+        super(observer);
+        mOwner = owner;
+    }
+
+    @Override
+    boolean shouldBeActive() {
+        //判断当前宿主是否处于可见状态
+        return mOwner.getLifecycle().getCurrentState().isAtLeast(STARTED);
+    }
+
+    @Override
+    public void onStateChanged(LifecycleOwner source, Lifecycle.Event event) {
+        //如果宿主是destroy状态的话 移除观察者并返回
+        if (mOwner.getLifecycle().getCurrentState() == DESTROYED) {
+            removeObserver(mObserver);
+            return;
+        }
+        //激活StateChanged
+        activeStateChanged(shouldBeActive());
+    }
+
+    @Override
+    boolean isAttachedTo(LifecycleOwner owner) {
+        return mOwner == owner;
+    }
+
+    @Override
+    void detachObserver() {
+        mOwner.getLifecycle().removeObserver(this);
+    }
+}
+
+end note
+
+LiveData.LifecycleBoundObserver.java -> LiveData.ObserverWrapper.java:  activeStateChanged(shouldBeActive());
+activate LiveData.ObserverWrapper.java
+note right
+//LiveData.ObserverWrapper.java
+private abstract class ObserverWrapper {
+    final Observer<? super T> mObserver;
+    boolean mActive;
+
+    int mLastVersion = START_VERSION;
+
+    void activeStateChanged(boolean newActive) {
+        if (newActive == mActive) {
+            return;
+        }
+        // immediately set active state, so we'd never dispatch anything to inactive
+        // owner
+        mActive = newActive;
+        //如果=0，则当前LiveData中没有任何观察者处于活跃状态
+        boolean wasInactive = LiveData.this.mActiveCount == 0;
+        //添加第一个观察者触发 onActive();
+        LiveData.this.mActiveCount += mActive ? 1 : -1;
+        if (wasInactive && mActive) {
+            //当且仅当只有一个活跃观察者的时候触发
+            onActive();
+        }
+        if (LiveData.this.mActiveCount == 0 && !mActive) {
+            //没有任何一个活跃观察者触发
+            onInactive();
+        }
+        //当前观察者处于活跃状态，开始数据分发
+        if (mActive) {
+            dispatchingValue(this);
+        }
+    }
+}
+end note
+
+
+LiveData.ObserverWrapper.java -> LiveData.java:   dispatchingValue(this);
+deactivate LiveData.ObserverWrapper.java
+deactivate LiveData.LifecycleBoundObserver.java
+activate LiveData.java
+note left
+void dispatchingValue(@Nullable ObserverWrapper initiator) {
+    if (mDispatchingValue) {
+        mDispatchInvalidated = true;
+        return;
+    }
+    mDispatchingValue = true;
+    do {
+        mDispatchInvalidated = false;
+        if (initiator != null) {
+            //不为空 分发数据给传入的observer
+            considerNotify(initiator);
+            initiator = null;
+        } else {
+            //为空，setValue()过来的数据，分发数据给所有的observer
+            for (Iterator<Map.Entry<Observer<? super T>, ObserverWrapper>> iterator =
+                    mObservers.iteratorWithAdditions(); iterator.hasNext(); ) {
+                //分发数据
+                considerNotify(iterator.next().getValue());
+                if (mDispatchInvalidated) {
+                    break;
+                }
+            }
+        }
+    } while (mDispatchInvalidated);
+    mDispatchingValue = false;
+}
+end note
+
+
+LiveData.java -> LiveData.java:   considerNotify();
+activate LiveData.java
+note left
+private void considerNotify(ObserverWrapper observer) {
+    if (!observer.mActive) {
+        return;
+    }
+    // Check latest state b4 dispatch. Maybe it changed state but we didn't get the event yet.
+    //
+    // we still first check observer.active to keep it as the entrance for events. So even if
+    // the observer moved to an active state, if we've not received that event, we better not
+    // notify for a more predictable notification order.
+    //观察者是否处于活跃状态，如果是通过observeForever()注册的则永远为true
+    //等价于宿主是否可见，不可见就返回
+    if (!observer.shouldBeActive()) {
+        observer.activeStateChanged(false);
+        return;
+    }
+
+    //避免数据多次重复发送
+    //黏性事件：如果liveData已经发送过数据，此时新注册的Observer仍然能够收到消息
+    //根本原因：ObserverWrapper的version在创建时=-1，没有主动和LiveData的version对齐
+    //如果不需要黏性事件，可以自定义Observer实现Observer，复写onChange()方法，
+    //根据是否需要黏性事件,决定是否分发消息
+    if (observer.mLastVersion >= mVersion) {
+        return;
+    }
+    //更新版本，observer的version与liveData的version对齐
+    observer.mLastVersion = mVersion;
+    //把数据派发给observer
+    observer.mObserver.onChanged((T) mData);
+}
+end note
+
+LiveData.java --> LiveData.java:
+deactivate LiveData.java
+deactivate LiveData.java
+
+LiveData.java -> LiveData.java: setValue(data);
+activate LiveData.java
+note left
+//LiveData.java
+@MainThread
+protected void setValue(T value) {
+    //检查是否在主线程
+    assertMainThread("setValue");
+    //版本++
+    mVersion++;
+    mData = value;
+    //调用dispatchingValue()方法并传入null，将数据分发给各个观察者
+    dispatchingValue(null);
+}
+end note
+
+LiveData.java --> LiveData.java:
+deactivate LiveData.java
+
+LiveData.java -> LiveData.java: postValue(data);
+activate LiveData.java
+note left
+//LiveData.java
+protected void postValue(T value) {
+    boolean postTask;
+    synchronized (mDataLock) {
+        postTask = mPendingData == NOT_SET;
+        //把数据保存到mPendingData中
+        mPendingData = value;
+    }
+    if (!postTask) {
+        return;
+    }
+    //用handler把消息post到主线程中
+    ArchTaskExecutor.getInstance().postToMainThread(mPostValueRunnable);
+}
+
+private final Runnable mPostValueRunnable = new Runnable() {
+    @Override
+    public void run() {
+        Object newValue;
+        synchronized (mDataLock) {
+            newValue = mPendingData;
+            mPendingData = NOT_SET;
+        }
+        //调用setValue()方法传入数据
+        setValue((T) newValue);
+    }
+};
+end note
+
+LiveData.java --> LiveData.java:
+deactivate LiveData.java
+@enduml

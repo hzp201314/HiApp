@@ -53,5 +53,9 @@ class GoodsListActivity : HiBaseActivity() {
         //监听黏性事件
         HiDataBus.with<String>("stickyData")
             .observerSticky(this, true, Observer { showToast("data from data$it") })
+
+        //监听非黏性事件
+        HiDataBus.with<String>("stickyData")
+            .observerSticky(this, false, Observer { showToast("data from data$it") })
     }
 }

@@ -61,7 +61,7 @@ public class NavProcessor extends AbstractProcessor {
 
             try {
                 FileObject resource = filer.createResource(StandardLocation.CLASS_OUTPUT, "", OUTPUT_FILE_NAME);
-                // 生成临时文件绝对路径:/app/build/intermediates/javac/debug/classes/目录下
+                // 生成临时文件绝对路径:/app/build/intermediates/javac/debug/classes/
                 // 目标存储路径：/app/main/assets/
                 String resourcePath = resource.toUri().getPath();
 

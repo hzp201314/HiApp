@@ -1,0 +1,334 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+HiActivity.kt -> HiActivity.kt: onCreate()
+activate HiActivity.kt
+note left
+//定义一个类继承ViewModel，ViewModel主要负责为界面准备数据，
+//所以我们一般会在ViewModel里使用LiveData去承载数据。
+//如下有个用户列表users变量
+class HiViewModel : ViewModel() {
+    private val users: MutableLiveData<List<User>> by lazy {
+        MutableLiveData().also {
+            loadUsers()
+        }
+    }
+    fun getUsers(): LiveData<List<User>> {
+        return users
+    }
+    private fun loadUsers() {
+        // Do an asynchronous operation to fetch users.
+    }
+}
+
+//在Activity中去使用用户列表。val model=ViewModelProvider(this).get(MyViewModel::class.java)
+//通过ViewModelProvider去创建ViewModel对象，接着就可以使用ViewModel里面的liveData了
+//注意：ViewModel 绝不能引用视图View、Lifecycle 或可能存储对 Activity 上下文的引用的任何类，
+//避免存在内存泄漏。
+class HiActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        val model=ViewModelProvider(this).get(MyViewModel::class.java)
+        model.getUsers().observe(this, Observer<List<User>>{ users ->
+            // update UI
+        })
+    }
+}
+end note
+
+HiActivity.kt -> ViewModelProvider.java: ViewModelProvider(this)
+activate ViewModelProvider.java
+note right
+//ViewModelProvider.java
+private final Factory mFactory;
+private final ViewModelStore mViewModelStore;
+//我们发现ViewModelProvider的构造函数需要传入的参数ViewModelStoreOwner，
+//而我们的Activity继承 ComponentActivity而ComponentActivity刚好实现了ViewModelStoreOwner
+public ViewModelProvider(@NonNull ViewModelStoreOwner owner) {
+    //owner.getViewModelStore():根据上面分析，owner其实就是ComponentActivity，
+    //所以我们看ComponentActivity的getViewModelStore方法,
+    //owner.getViewModelStore()其实就是创建了一个ViewModelStore对象。
+    //第二个参数Factory：如果owner是HasDefaultViewModelProviderFactory，
+    //那么就调用HasDefaultViewModelProviderFactory的getDefaultViewModelProviderFactory()方法，
+    //最终mFactory=ViewModelProvider.AndroidViewModelFactory.getInstance(application)
+    //否则就调用NewInstanceFactory.getInstance()方法。
+    //我们看具体代码最终看到就是新建了一个new NewInstanceFactory()对象
+
+    //总结一下:ViewModelProvider(this)做了什么事情
+    //1.创建一个ViewModeStore，创建一个Factory，根据不同的类型有可能是创建的是NewInstanceFactory
+    //2.把ViewModeStore赋值给全局变量mViewModelStore，把创建出来的Factory复制给全局变量mFactory
+    this(owner.getViewModelStore(), owner instanceof HasDefaultViewModelProviderFactory
+            ? ((HasDefaultViewModelProviderFactory) owner).getDefaultViewModelProviderFactory()
+            : NewInstanceFactory.getInstance());
+}
+
+public ViewModelProvider(@NonNull ViewModelStore store, @NonNull Factory factory) {
+    mFactory = factory;
+    //存储ViewModel实例   ViewModelStore本质是个HashMap
+    //private final HashMap<String, ViewModel> mMap = new HashMap<>();
+    mViewModelStore = store;
+}
+end note
+
+
+ViewModelProvider.java -> ComponentActivity.java: owner.getViewModelStore()
+activate ComponentActivity.java
+note right
+//ComponentActivity.java
+public class ComponentActivity extends androidx.core.app.ComponentActivity implements
+      LifecycleOwner,
+      ViewModelStoreOwner,
+      SavedStateRegistryOwner,
+      OnBackPressedDispatcherOwner {
+      ...
+}
+
+//这里我们发现getViewModelStore()其实就是返回一个ViewModelStore对象。
+//如果NonConfigurationInstances存在viewModelStore就使用NonConfigurationInstances存储的，
+//如果没有就new一个。具体看看NonConfigurationInstances是啥
+public ViewModelStore getViewModelStore() {
+      if (mViewModelStore == null) {
+          NonConfigurationInstances nc =
+                  (NonConfigurationInstances) getLastNonConfigurationInstance();
+          if (nc != null) {
+              // Restore the ViewModelStore from NonConfigurationInstances
+              mViewModelStore = nc.viewModelStore;
+          }
+          if (mViewModelStore == null) {
+              mViewModelStore = new ViewModelStore();
+          }
+      }
+      return mViewModelStore;
+}
+end note
+
+ComponentActivity.java -> ComponentActivity.java:
+activate ComponentActivity.java
+note left
+//ComponentActivity.NonConfigurationInstances.java
+//NonConfigurationInstances就是一个静态对象，里面包含一个ViewModelStore，
+//我们再来看看ViewModelStore
+static final class NonConfigurationInstances {
+      Object custom;
+      ViewModelStore viewModelStore;
+}
+end note
+
+ComponentActivity.java -> ViewModelStore.java:
+activate ViewModelStore.java
+note left
+//ViewModelStore.java
+public class ViewModelStore {
+  //ViewModelStore里面有个存储viewModel的HashMap，key是String，value是ViewModel。
+  //所以总结一下：owner.getViewModelStore()其实就是创建了一个ViewModelStore对象。
+  private final HashMap<String, ViewModel> mMap = new HashMap<>();
+  final void put(String key, ViewModel viewModel) {
+      ViewModel oldViewModel = mMap.put(key, viewModel);
+      if (oldViewModel != null) {
+          oldViewModel.onCleared();
+      }
+  }
+  final ViewModel get(String key) {
+      return mMap.get(key);
+  }
+  Set<String> keys() {
+      return new HashSet<>(mMap.keySet());
+  }
+  public final void clear() {
+      for (ViewModel vm : mMap.values()) {
+          vm.clear();
+      }
+      mMap.clear();
+  }
+}
+end note
+
+ViewModelStore.java --> ComponentActivity.java.java:
+deactivate ViewModelStore.java
+ComponentActivity.java --> ViewModelProvider.java:
+deactivate ComponentActivity.java
+deactivate ComponentActivity.java
+
+ViewModelProvider.java -> ViewModelProvider.java: NewInstanceFactory.getInstance();
+activate ViewModelProvider.java
+note left
+//ViewModelProvider.java
+static NewInstanceFactory getInstance() {
+     if (sInstance == null) {
+         //我们看到就是new了一个NewInstanceFactory对象。
+         sInstance = new NewInstanceFactory();
+     }
+     return sInstance;
+}
+end note
+
+ViewModelProvider.java --> HiActivity.kt:
+deactivate ViewModelProvider.java
+deactivate ViewModelProvider.java
+
+HiActivity.kt -> ViewModelProvider.java: ViewModelProvider(this).get(MyViewModel::class.java);
+activate ViewModelProvider.java
+note right
+//ViewModelProvider.java
+private static final String DEFAULT_KEY ="androidx.lifecycle.ViewModelProvider.DefaultKey";
+
+//传递ViewModel的class对象
+@NonNull
+@MainThread
+public <T extends ViewModel> T get(@NonNull Class<T> modelClass) {
+    String canonicalName = modelClass.getCanonicalName();
+    //
+    return get(DEFAULT_KEY + ":" + canonicalName, modelClass);
+}
+
+@NonNull
+@MainThread
+public <T extends ViewModel> T get(@NonNull String key, @NonNull Class<T> modelClass) {
+    //从ViewModelStore中根据key获取ViewModel实例
+    // key是DEFAULT_KEY:+传入的viewModel的名字
+    ViewModel viewModel = mViewModelStore.get(key);
+
+
+    //如果有拿到就返回
+    if (modelClass.isInstance(viewModel)) {
+        return (T) viewModel;
+    }
+    //如果没有拿到就通过viewModel = (mFactory).create(modelClass);
+    //Factory的create方法去创建。
+    //我们知道之前跟到的Factory是NewInstanceFactory，
+    //所以来看看NewInstanceFactory的create方法
+    if (mFactory instanceof KeyedFactory) {
+        viewModel = ((KeyedFactory) (mFactory)).create(key, modelClass);
+    } else {
+        viewModel = (mFactory).create(modelClass);
+    }
+    //创建完成之后再键值对形式存储到ViewModelStore中。
+    mViewModelStore.put(key, viewModel);
+    return (T) viewModel;
+}
+end note
+
+ViewModelProvider.java -> ViewModelProvider.java
+activate ViewModelProvider.java
+note left
+@NonNull
+@Override
+public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
+    //noinspection TryWithIdenticalCatches
+    try {
+        //通过反射的方式直接new了一个ViewModel对象。
+        return modelClass.newInstance();
+    } catch (InstantiationException e) {
+        throw new RuntimeException("Cannot create an instance of " + modelClass, e);
+    } catch (IllegalAccessException e) {
+        throw new RuntimeException("Cannot create an instance of " + modelClass, e);
+    }
+}
+end note
+
+ViewModelProvider.java --> HiActivity.kt
+deactivate ViewModelProvider.java
+deactivate ViewModelProvider.java
+
+
+HiActivity.kt -> ActivityThread.java
+activate ActivityThread.java
+note right
+//ActivityThread.java
+//通过上面我们知道了，ViewModel是存储在ViewModelStore中的，
+//而每个Activity都有个ViewModelStore，如果ViewModelStore没有被重新创建，
+//那么ViewModel就不会被重新创建。
+//而通过上面我们也知道ViewModelStore是存储在NonConfigurationInstances类中，
+//NonConfigurationInstances是ComponentActivity里的一个静态内部类，
+//那何时去存储到NonConfigurationInstances类中的呢？
+//我们如下分析： 首先状态得保存下来，才能在重建的时候取出来。
+//既然是要保存状态，那肯定是在onDestroy()的时候保存的，
+//所以直接来看看ActivityThread$performDestroyActivity()
+ActivityClientRecord performDestroyActivity(IBinder token, boolean finishing,
+        int configChanges, boolean getNonConfigInstance, String reason) {
+      ...
+    if (getNonConfigInstance) {
+        try {
+            //关键代码
+            r.lastNonConfigurationInstances
+                    = r.activity.retainNonConfigurationInstances();
+        } catch (Exception e) {
+
+        }
+    }
+
+    ...
+    return r;
+}
+end note
+
+
+ActivityThread.java -> Activity.java:
+activate Activity.java
+note right
+NonConfigurationInstances retainNonConfigurationInstances() {
+        Object activity = onRetainNonConfigurationInstance();
+        HashMap<String, Object> children = onRetainNonConfigurationChildInstances();
+        FragmentManagerNonConfig fragments = mFragments.retainNestedNonConfig();
+
+        ArrayMap<String, LoaderManager> loaders = mFragments.retainLoaderNonConfig();
+        NonConfigurationInstances nci = new NonConfigurationInstances();
+        nci.activity = activity;
+        nci.children = children;
+        nci.fragments = fragments;
+        nci.loaders = loaders;
+        if (mVoiceInteractor != null) {
+            mVoiceInteractor.retainInstance();
+            //看到ViewModelStore是在这个地方被存储到NonConfigurationInstances对象中的。
+            //那么什么时候会把存储的数据再拿过来用呢？我们来看看Activity的attach方法。
+            nci.voiceInteractor = mVoiceInteractor;
+        }
+        return nci;
+}
+end note
+
+Activity.java -> Activity.java
+activate Activity.java
+note left
+public final Activity startActivityNow(Activity parent, String id,
+        Intent intent, ActivityInfo activityInfo, IBinder token, Bundle state,
+        Activity.NonConfigurationInstances lastNonConfigurationInstances, IBinder assistToken) {
+        ActivityClientRecord r = new ActivityClientRecord();
+        ...
+        //我们看到NonConfigurationInstances对象保存在ActivityClientRecord中
+        r.lastNonConfigurationInstances = lastNonConfigurationInstances;
+        ...
+        return performLaunchActivity(r, null /* customIntent */);
+}
+private Activity performLaunchActivity(ActivityClientRecord r, Intent customIntent) {
+    ...
+    activity.attach(appContext, this, getInstrumentation(), r.token,
+                    r.ident, app, r.intent, r.activityInfo, title, r.parent,
+                    r.embeddedID, r.lastNonConfigurationInstances, config,
+                    r.referrer, r.voiceInteractor, window, r.configCallback,
+                    r.assistToken);
+
+    ...
+    return activity;
+}
+//然后在重启Activity的onAttach()方法中将NonConfigurationInstances拿回来，从而实现了数据的不丢失。
+final void attach(Context context, ActivityThread aThread,
+            Instrumentation instr, IBinder token, int ident,
+            Application application, Intent intent, ActivityInfo info,
+            CharSequence title, Activity parent, String id,
+            NonConfigurationInstances lastNonConfigurationInstances,
+            Configuration config, String referrer, IVoiceInteractor voiceInteractor,
+            Window window, ActivityConfigCallback activityConfigCallback, IBinder assistToken) {
+   ...
+    mLastNonConfigurationInstances = lastNonConfigurationInstances;
+   
+    ...
+}
+end note
+
+Activity.java --> HiActivity.kt
+deactivate Activity.java
+deactivate Activity.java
+deactivate ActivityThread.java
+
+@enduml

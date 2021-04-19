@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3337.6px" preserveAspectRatio="none" style="width:1215px;height:3337px;" version="1.1" viewBox="0 0 1215 3337" width="1215.2px" zoomAndPan="magnify"><defs><filter height="300%" id="f7cvolcx7fk5t" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.6" dy="1.6" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="3140.426" style="stroke:#A80036;stroke-width:0.4;" width="4" x="146.8" y="175.385"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="2925.475" style="stroke:#A80036;stroke-width:0.4;" width="4" x="218.2" y="390.3359"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="388.5405" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="474.5044"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="735.9652" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="984.273"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="1003.1303" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="2312.6807"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="936.1162" style="stroke:#A80036;stroke-width:0.4;" width="4" x="298.2" y="2379.6947"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="802.2354" style="stroke:#A80036;stroke-width:0.4;" width="4" x="300.2" y="2513.5755"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="618.6424" style="stroke:#A80036;stroke-width:0.4;" width="4" x="302.2" y="2697.1686"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="181.5931" style="stroke:#A80036;stroke-width:0.4;" width="4" x="389.4" y="668.7501"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="557.4248" style="stroke:#A80036;stroke-width:0.4;" width="4" x="447.6" y="1150.1117"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="481.8107" style="stroke:#A80036;stroke-width:0.4;" width="4" x="447.6" y="2834.0002"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="432.1476" style="stroke:#A80036;stroke-width:0.4;" width="4" x="564" y="1262.6872"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="296.2177" style="stroke:#A80036;stroke-width:0.4;" width="4" x="691.6" y="1385.9153"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="376.337" style="stroke:#A80036;stroke-width:0.4;" width="4" x="691.6" y="2939.4739"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="114.1264" style="stroke:#A80036;stroke-width:0.4;" width="4" x="848" y="1555.3049"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="270.8633" style="stroke:#A80036;stroke-width:0.4;" width="4" x="848" y="3044.9477"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="104.4246" style="stroke:#A80036;stroke-width:0.4;" width="4" x="850" y="3211.3863"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="1314.555" style="stroke:#A80036;stroke-width:0.4;" width="4" x="963.2" y="2001.256"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="148.8" x2="148.8" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="220" x2="220" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="298" x2="298" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="391.2" x2="391.2" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="449.6" x2="449.6" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="566" x2="566" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="693.6" x2="693.6" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="850" x2="850" y1="17.248" y2="3319.4109"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:5.0,5.0;" x1="965.2" x2="965.2" y1="17.248" y2="3319.4109"/><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="67.2" x="114.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="61.6" x="117.2" y="11.2176">LearnLifeCycleActivity.kt</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="67.2" x="114.4" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="61.6" x="117.2" y="3328.2285">LearnLifeCycleActivity.kt</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="64.4" x="187.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="58.8" x="190" y="11.2176">ComponentActivity.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="64.4" x="187.2" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="58.8" x="190" y="3328.2285">ComponentActivity.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="60.4" x="267.2" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="54.8" x="270" y="11.2176">LifecycleRegistry.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="60.4" x="267.2" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="54.8" x="270" y="3328.2285">LifecycleRegistry.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="39.6" x="370.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="34" x="373.6" y="11.2176">Lifecycle.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="39.6" x="370.8" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="34" x="373.6" y="3328.2285">Lifecycle.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="65.6" x="416" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="60" x="418.8" y="11.2176">ObserverWithState.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="65.6" x="416" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="60" x="418.8" y="3328.2285">ObserverWithState.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="77.6" x="526.4" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="72" x="529.2" y="11.2176">LifecycleEventObserver.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="77.6" x="526.4" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="72" x="529.2" y="3328.2285">LifecycleEventObserver.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="108" x="638.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="102.4" x="641.6" y="11.2176">ReflectiveGenericLifecycleObserver.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="108" x="638.8" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="102.4" x="641.6" y="3328.2285">ReflectiveGenericLifecycleObserver.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="63.2" x="817.6" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="57.6" x="820.4" y="11.2176">ClassesInfoCache.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="63.2" x="817.6" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="57.6" x="820.4" y="3328.2285">ClassesInfoCache.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="59.2" x="934.8" y="2"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="53.6" x="937.6" y="11.2176">ReportFragment.java</text><rect fill="#FEFECE" filter="url(#f7cvolcx7fk5t)" height="13.248" style="stroke:#A80036;stroke-width:0.6000000000000001;" width="59.2" x="934.8" y="3319.0109"/><text fill="#000000" font-family="sans-serif" font-size="5.6" lengthAdjust="spacing" textLength="53.6" x="937.6" y="3328.2285">ReportFragment.java</text><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="3140.426" style="stroke:#A80036;stroke-width:0.4;" width="4" x="146.8" y="175.385"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="2925.475" style="stroke:#A80036;stroke-width:0.4;" width="4" x="218.2" y="390.3359"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="388.5405" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="474.5044"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="735.9652" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="984.273"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="1003.1303" style="stroke:#A80036;stroke-width:0.4;" width="4" x="296.2" y="2312.6807"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="936.1162" style="stroke:#A80036;stroke-width:0.4;" width="4" x="298.2" y="2379.6947"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="802.2354" style="stroke:#A80036;stroke-width:0.4;" width="4" x="300.2" y="2513.5755"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="618.6424" style="stroke:#A80036;stroke-width:0.4;" width="4" x="302.2" y="2697.1686"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="181.5931" style="stroke:#A80036;stroke-width:0.4;" width="4" x="389.4" y="668.7501"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="557.4248" style="stroke:#A80036;stroke-width:0.4;" width="4" x="447.6" y="1150.1117"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="481.8107" style="stroke:#A80036;stroke-width:0.4;" width="4" x="447.6" y="2834.0002"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="432.1476" style="stroke:#A80036;stroke-width:0.4;" width="4" x="564" y="1262.6872"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="296.2177" style="stroke:#A80036;stroke-width:0.4;" width="4" x="691.6" y="1385.9153"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="376.337" style="stroke:#A80036;stroke-width:0.4;" width="4" x="691.6" y="2939.4739"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="114.1264" style="stroke:#A80036;stroke-width:0.4;" width="4" x="848" y="1555.3049"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="270.8633" style="stroke:#A80036;stroke-width:0.4;" width="4" x="848" y="3044.9477"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="104.4246" style="stroke:#A80036;stroke-width:0.4;" width="4" x="850" y="3211.3863"/><rect fill="#FFFFFF" filter="url(#f7cvolcx7fk5t)" height="1314.555" style="stroke:#A80036;stroke-width:0.4;" width="4" x="963.2" y="2001.256"/><line style="stroke:#A80036;stroke-width:0.4;" x1="148.8" x2="167.6" y1="170.185" y2="170.185"/><line style="stroke:#A80036;stroke-width:0.4;" x1="167.6" x2="167.6" y1="170.185" y2="175.385"/><line style="stroke:#A80036;stroke-width:0.4;" x1="151.2" x2="167.6" y1="175.385" y2="175.385"/><polygon fill="#A80036" points="155.2,173.785,151.2,175.385,155.2,176.985,153.6,175.385" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="153.6" y="168.2424">1</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="158" y="168.2424">onCreate()</text><path d="M2,23.248 L2,318.048 L143.2,318.048 L143.2,27.248 L139.2,23.248 L2,23.248 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M139.2,23.248 L139.2,27.248 L143.2,27.248 L139.2,23.248 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60" x="4.4" y="31.2072">//LearnLifeCycleActivity.kt</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116.8" x="4.4" y="38.309">class LearnLifeCycleActivity :AppCompatActivity(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122" x="10.8" y="45.4107">override fun onCreate(savedInstanceState: Bundle?) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.6" x="17.2" y="52.5125">super.onCreate(savedInstanceState)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="112" x="17.2" y="59.6143">setContentView(R.layout.activity_learn_lifecycle)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="109.2" x="17.2" y="66.716">lifecycle.addObserver(LearnLifecycleObserver())</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="10.8" y="73.8178">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="80.9195"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="113.2" x="10.8" y="88.0213">class LearnLifecycleObserver :LifecycleObserver{</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="95.123"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116" x="17.2" y="102.2248">@OnLifecycleEvent(Lifecycle.Event.ON_CREATE)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="17.2" y="109.3266">fun onCreate(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78.4" x="23.6" y="116.4283">Log.e(TAG,"====onCreate====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="123.5301">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="130.6318"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="111.6" x="17.2" y="137.7336">@OnLifecycleEvent(Lifecycle.Event.ON_START)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30" x="17.2" y="144.8354">fun onStart(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.4" x="23.6" y="151.9371">Log.e(TAG,"====onStart====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="159.0389">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="166.1406"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.6" x="17.2" y="173.2424">@OnLifecycleEvent(Lifecycle.Event.ON_RESUME)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="38" x="17.2" y="180.3441">fun onResume(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.6" x="23.6" y="187.4459">Log.e(TAG,"=====onResume====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="194.5477">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="201.6494"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="113.2" x="17.2" y="208.7512">@OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="33.6" x="17.2" y="215.8529">fun onPause(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="81.2" x="23.6" y="222.9547">Log.e(TAG,"=====onPause====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="230.0564">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="237.1582"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="109.2" x="17.2" y="244.26">@OnLifecycleEvent(Lifecycle.Event.ON_STOP)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.6" x="17.2" y="251.3617">fun onStop(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.2" x="23.6" y="258.4635">Log.e(TAG,"=====onStop====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="265.5652">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="6" y="272.667"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="120" x="17.2" y="279.7688">@OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="17.2" y="286.8705">fun onDestroy(){</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="84.4" x="23.6" y="293.9723">Log.e(TAG,"=====onDestroy====")</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="17.2" y="301.074">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="10.8" y="308.1758">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="4.4" y="315.2775">}</text><polygon fill="#A80036" points="213.4,388.7359,217.4,390.3359,213.4,391.9359,215,390.3359" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="150.8" x2="215.8" y1="390.3359" y2="390.3359"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="153.6" y="388.3934">2</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="18.8" x="158" y="388.3934">lifecycle</text><path d="M224,324.0201 L224,448.4201 L441.2,448.4201 L441.2,328.0201 L437.2,324.0201 L224,324.0201 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M437.2,324.0201 L437.2,328.0201 L441.2,328.0201 L437.2,324.0201 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.8" x="226.4" y="331.9793">//ComponentActivity.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182.4" x="226.4" y="339.0811">private final LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="226.4" y="346.1828">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.2" x="226.4" y="353.2846">//lifecycle就是LifecycleRegistry，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="198.8" x="226.4" y="360.3863">//而调用lifecycle.addObserver方法其实就是调用LifecycleRegistry的addObserver方法。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="71.2" x="226.4" y="367.4881">public Lifecycle getLifecycle() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.4" x="229.6" y="374.5898">return mLifecycleRegistry;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="226.4" y="381.6916">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="228" y="388.7934"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="228" y="395.8951"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="226.4" y="402.9969">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="148.8" x="226.4" y="410.0986">protected void onCreate(@Nullable Bundle savedInstanceState) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.2" x="232.8" y="417.2004">super.onCreate(savedInstanceState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102.4" x="232.8" y="424.3021">//ComponentActivity实现了LifecycleOwner，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202.4" x="232.8" y="431.4039">//并且在ComponentActivity的onCreate方法里有个ReportFragment.injectIfNeededIn(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="232.8" y="438.5057">ReportFragment.injectIfNeededIn(this);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="226.4" y="445.6074">}</text><polygon fill="#A80036" points="291.4,472.9044,295.4,474.5044,291.4,476.1044,293,474.5044" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="222.2" x2="293.8" y1="474.5044" y2="474.5044"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="225" y="472.5618">3</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="62" x="229.4" y="472.5618">new LifecycleRegistry(this)</text><path d="M302,454.35 L302,486.75 L424.4,486.75 L424.4,458.35 L420.4,454.35 L302,454.35 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M420.4,454.35 L420.4,458.35 L424.4,458.35 L420.4,454.35 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="304.4" y="462.3092">//LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114" x="304.4" y="469.4109">public class LifecycleRegistry extends Lifecycle {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="304.4" y="476.5127">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="304.4" y="483.6145">}</text><polygon fill="#A80036" points="384.6,667.1501,388.6,668.7501,384.6,670.3501,386.2,668.7501" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="300.2" x2="387" y1="668.7501" y2="668.7501"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="303" y="666.8075">4</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="309" y="666.8075"/><path d="M395.2,492.357 L395.2,837.157 L603.6,837.157 L603.6,496.357 L599.6,492.357 L395.2,492.357 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M599.6,492.357 L599.6,496.357 L603.6,496.357 L599.6,492.357 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34" x="397.6" y="500.3162">//Lifecycle.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="193.2" x="397.6" y="507.418">//Lifecycle主要有三个方法抽象方法addObserver，removeObserver，getCurrentState</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="64.8" x="397.6" y="514.5197">//两个枚举类Event，State。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="200" x="397.6" y="521.6215">//Event 就是改变生命周期的事件，State 是目前 Activity/Fragment 所处生命周期的状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="73.2" x="397.6" y="528.7232">public abstract class Lifecycle {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.2" x="404" y="535.825">//添加观察者</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="166" x="404" y="542.9268">public abstract void addObserver(@NonNull LifecycleObserver observer);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.2" x="404" y="550.0285">//移除观察者</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="174" x="404" y="557.1303">public abstract void removeObserver(@NonNull LifecycleObserver observer);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="404" y="564.232">//获取当前的观察者</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.8" x="404" y="571.3338">public abstract State getCurrentState();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="399.2" y="578.4355"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="13.6" x="404" y="585.5373">//事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="404" y="592.6391">public enum Event {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32.8" x="410.4" y="599.7408">ON_CREATE,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="28.4" x="410.4" y="606.8426">ON_START,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="410.4" y="613.9443">ON_RESUME,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="30" x="410.4" y="621.0461">ON_PAUSE,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="410.4" y="628.1479">ON_STOP,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36.8" x="410.4" y="635.2496">ON_DESTROY,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="21.2" x="410.4" y="642.3514">ON_ANY</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="404" y="649.4531">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="399.2" y="656.5549"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="13.6" x="404" y="663.6566">//状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.2" x="404" y="670.7584">public enum State {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="33.6" x="410.4" y="677.8602">DESTROYED,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.2" x="410.4" y="684.9619">INITIALIZED,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="410.4" y="692.0637">CREATED,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="25.2" x="410.4" y="699.1654">STARTED,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26" x="410.4" y="706.2672">RESUMED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="404" y="713.3689">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="397.6" y="720.4707">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="399.2" y="727.5725"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="172.8" x="397.6" y="734.6742">States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="31.2" x="423.2" y="741.776">ON_CREATE</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.2" x="416.8" y="748.8777">|</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="418" y="748.8777">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="419.6" y="748.8777">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="2.8" x="421.2" y="748.8777">-|</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="424" y="748.8777">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.8" x="425.6" y="748.8777">----&gt;|          |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.2" x="416.8" y="755.9795">|           |          | ON_START |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="37.2" x="416.8" y="763.0813">|           |          |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="454" y="763.0813">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="29.6" x="455.6" y="763.0813">----&gt;|           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.6" x="416.8" y="770.183">|           |          |          | ON_RESUME |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54.4" x="416.8" y="777.2848">|           |          |          |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="471.2" y="777.2848">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="472.8" y="777.2848">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.4" x="474.4" y="777.2848">&gt;|</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98.4" x="397.6" y="784.3865">Events      |           |          |          |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.8" x="416.8" y="791.4883">|           |          |          | ON_PAUSE  |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.6" x="416.8" y="798.59">|           |          |          |&lt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="474.4" y="798.59">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="476" y="798.59">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.2" x="477.6" y="798.59">|</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.4" x="416.8" y="805.6918">|           |          | ON_STOP  |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.4" x="416.8" y="812.7936">|           |          |&lt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="457.2" y="812.7936">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="26.4" x="458.8" y="812.7936">----|           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92.4" x="416.8" y="819.8953">|           |ON_DESTROY|          |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="23.2" x="416.8" y="826.9971">|           |&lt;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" text-decoration="line-through" textLength="1.6" x="440" y="826.9971">-</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="43.6" x="441.6" y="826.9971">----|          |           |</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="172.8" x="397.6" y="834.0988">States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED</text><polygon fill="#A80036" points="304.6,848.7432,300.6,850.3432,304.6,851.9432,303,850.3432" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="302.2" x2="391" y1="850.3432" y2="850.3432"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="307" y="848.4006">5</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="313" y="848.4006"/><polygon fill="#A80036" points="226.6,861.4449,222.6,863.0449,226.6,864.6449,225,863.0449" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="224.2" x2="297.8" y1="863.0449" y2="863.0449"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="229" y="861.1023">6</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="235" y="861.1023"/><polygon fill="#A80036" points="291.4,982.673,295.4,984.273,291.4,985.873,293,984.273" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="150.8" x2="293.8" y1="984.273" y2="984.273"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="153.6" y="982.3305">7</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="60.8" x="158" y="982.3305">lifecycle.addObserver(this)</text><path d="M302,868.2449 L302,1092.2449 L546.4,1092.2449 L546.4,872.2449 L542.4,868.2449 L302,868.2449 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M542.4,868.2449 L542.4,872.2449 L546.4,872.2449 L542.4,868.2449 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="304.4" y="876.2041">//LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="304.4" y="883.3059">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="199.2" x="304.4" y="890.4076">private FastSafeIterableMap&lt;LifecycleObserver, ObserverWithState&gt; mObserverMap =</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.6" x="323.6" y="897.5094">new FastSafeIterableMap&lt;&gt;();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="304.4" y="904.6111">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="304.4" y="911.7129">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="147.2" x="304.4" y="918.8146">public void addObserver(@NonNull LifecycleObserver observer) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="309.2" y="925.9164">//初始化State状态:INITIALIZED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="175.2" x="309.2" y="933.0182">State initialState = mState == DESTROYED ? DESTROYED : INITIALIZED;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="231.2" x="309.2" y="940.1199">//把State状态跟observer观察者。作为参数传入ObserverWithState，构建ObserverWithState的实例。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="194.8" x="309.2" y="947.2217">ObserverWithState statefulObserver = new ObserverWithState(observer, initialState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="218" x="309.2" y="954.3234">//mObserverMaps是个HashMap集合，把observer跟statefulObserver键值对形式存储到集合中。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="197.2" x="309.2" y="961.4252">ObserverWithState previous = mObserverMap.putIfAbsent(observer, statefulObserver);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="306" y="968.527"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130" x="309.2" y="975.6287">LifecycleOwner lifecycleOwner = mLifecycleOwner.get();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="306" y="982.7305"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="309.2" y="989.8322">//计算当前宿主状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.6" x="309.2" y="996.934">State targetState = calculateTargetState(observer);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.6" x="309.2" y="1004.0357">//遍历  让当前观察者从INITIALIZED状态前进到宿主当前状态targetState</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="137.2" x="309.2" y="1011.1375">while ((statefulObserver.mState.compareTo(targetState) &lt; 0</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.6" x="322" y="1018.2393">&amp;&amp; mObserverMap.contains(observer))) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="99.2" x="315.6" y="1025.341">pushParentState(statefulObserver.mState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="165.2" x="315.6" y="1032.4428">//upEvent(statefulObserver.mState):根据观察者状态计算出应该分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.6" x="315.6" y="1039.5445">//再根据分发事件推导出观察者的状态，并让观察者状态前进，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="190" x="315.6" y="1046.6463">statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="315.6" y="1053.748">popParentState();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="315.6" y="1060.8498">//再次计算宿主状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.6" x="315.6" y="1067.9516">targetState = calculateTargetState(observer);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="309.2" y="1075.0533">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="306" y="1082.1551"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="304.4" y="1089.2568">}</text><polygon fill="#A80036" points="442.8,1148.5117,446.8,1150.1117,442.8,1151.7117,444.4,1150.1117" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="300.2" x2="445.2" y1="1150.1117" y2="1150.1117"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="303" y="1148.1691">8</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.4" x="307.4" y="1148.1691">new ObserverWithState(observer, initialState)</text><path d="M453.6,1097.9994 L453.6,1193.9994 L630,1193.9994 L630,1101.9994 L626,1097.9994 L453.6,1097.9994 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M626,1097.9994 L626,1101.9994 L630,1101.9994 L626,1097.9994 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="57.2" x="456" y="1105.9586">//ObserverWithState.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="456" y="1113.0604">static class ObserverWithState {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="32.4" x="464" y="1120.1621">State mState;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102" x="464" y="1127.2639">LifecycleEventObserver mLifecycleObserver;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="457.6" y="1134.3656"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="121.2" x="464" y="1141.4674">//ObserverWithState是持有State跟Observer的对象。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.8" x="464" y="1148.5691">//接着看Lifecycling.lifecycleEventObserver(observer); 方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.2" x="464" y="1155.6709">ObserverWithState(LifecycleObserver observer, State initialState) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.6" x="470.4" y="1162.7727">mLifecycleObserver = Lifecycling.lifecycleEventObserver(observer);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="49.2" x="470.4" y="1169.8744">mState = initialState;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="464" y="1176.9762">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="464" y="1184.0779">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="457.6" y="1191.1797">}</text><polygon fill="#A80036" points="559.2,1261.0872,563.2,1262.6872,559.2,1264.2872,560.8,1262.6872" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="451.6" x2="561.6" y1="1262.6872" y2="1262.6872"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="2.8" x="454.4" y="1260.7446">9</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100.4" x="458.8" y="1260.7446">Lifecycling.lifecycleEventObserver(observer)</text><path d="M570,1199.9223 L570,1317.5223 L774,1317.5223 L774,1203.9223 L770,1199.9223 L570,1199.9223 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M770,1199.9223 L770,1203.9223 L774,1203.9223 L770,1199.9223 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="67.2" x="572.4" y="1207.8814">//LifecycleEventObserver.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="158.8" x="572.4" y="1214.9832">static LifecycleEventObserver lifecycleEventObserver(Object object) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="578.8" y="1222.085">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="574" y="1229.1867"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.4" x="578.8" y="1236.2885">int type = getObserverConstructorType(klass);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92" x="578.8" y="1243.3902">if (type == GENERATED_CALLBACK) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="585.2" y="1250.492">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="182.8" x="585.2" y="1257.5938">//如果build.gradle文件中添加了编译器依赖"androidx.lifecycle.lifecycle-compiler"</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="173.2" x="585.2" y="1264.6955">//则会在编译时自动生成适配的类:LearnLifeCycleObserver_LifecycleAdapter</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="91.6" x="585.2" y="1271.7973">//这样就不用通过反射执行生命周期方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="140.4" x="585.2" y="1278.899">return new CompositeGeneratedAdaptersObserver(adapters);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="578.8" y="1286.0008">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170.8" x="578.8" y="1293.1025">//传进来的observer其实又被ReflectiveGenericLifecycleObserver包了一层，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.8" x="578.8" y="1300.2043">//接着看看ReflectiveGenericLifecycleObserver</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="125.2" x="578.8" y="1307.3061">return new ReflectiveGenericLifecycleObserver(object);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="572.4" y="1314.4078">}</text><polygon fill="#A80036" points="686.8,1384.3153,690.8,1385.9153,686.8,1387.5153,688.4,1385.9153" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="568" x2="689.2" y1="1385.9153" y2="1385.9153"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="570.8" y="1383.9728">10</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.8" x="578" y="1383.9728">new ReflectiveGenericLifecycleObserver(object)</text><path d="M697.6,1323.1504 L697.6,1440.7504 L909.6,1440.7504 L909.6,1327.1504 L905.6,1323.1504 L697.6,1323.1504 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M905.6,1323.1504 L905.6,1327.1504 L909.6,1327.1504 L905.6,1323.1504 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="94.4" x="700" y="1331.1096">//ReflectiveGenericLifecycleObserver.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.6" x="700" y="1338.2113">class ReflectiveGenericLifecycleObserver implements LifecycleEventObserver {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="701.6" y="1345.3131">private final Object mWrapped;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="701.6" y="1352.4148">private final CallbackInfo mInfo;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="701.6" y="1359.5166"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.2" x="701.6" y="1366.6184">ReflectiveGenericLifecycleObserver(Object wrapped) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.4" x="708" y="1373.7201">mWrapped = wrapped;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.8" x="708" y="1380.8219">//再来看看CallbackInfo是什么，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="156.4" x="708" y="1387.9236">mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="701.6" y="1395.0254">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="701.6" y="1402.1271"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="701.6" y="1409.2289">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202" x="701.6" y="1416.3307">public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.2" x="708" y="1423.4324">mInfo.invokeCallbacks(source, event, mWrapped);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="703.2" y="1430.5342">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="700" y="1437.6359">}</text><polygon fill="#A80036" points="843.2,1553.7049,847.2,1555.3049,843.2,1556.9049,844.8,1555.3049" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="695.6" x2="845.6" y1="1555.3049" y2="1555.3049"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="698.4" y="1553.3623">11</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="137.6" x="705.6" y="1553.3623">ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());</text><path d="M854,1446.3785 L854,1655.9785 L1089.2,1655.9785 L1089.2,1450.3785 L1085.2,1446.3785 L854,1446.3785 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1085.2,1446.3785 L1085.2,1450.3785 L1089.2,1450.3785 L1085.2,1446.3785 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.2" x="856.4" y="1454.3377">//ClassesInfoCache.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="856.4" y="1461.4395">CallbackInfo getInfo(Class&lt;?&gt; klass) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114.4" x="864.4" y="1468.5412">CallbackInfo existing = mCallbackMap.get(klass);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="864.4" y="1475.643">if (existing != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="870.8" y="1482.7447">return existing;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="864.4" y="1489.8465">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="864.4" y="1496.9482">existing = createInfo(klass, null);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="864.4" y="1504.05">return existing;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="858" y="1511.1518">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="201.2" x="858" y="1518.2535">private CallbackInfo createInfo(Class&lt;?&gt; klass, @Nullable Method[] declaredMethods) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="864.4" y="1525.3553">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="218.8" x="864.4" y="1532.457">Method[] methods = declaredMethods != null ? declaredMethods : getDeclaredMethods(klass);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.2" x="864.4" y="1539.5588">boolean hasLifecycleMethods = false;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.4" x="864.4" y="1546.6605">for (Method method : methods) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.2" x="870.8" y="1553.7623">//解析@OnLifecycleEvent注解</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="181.6" x="870.8" y="1560.8641">OnLifecycleEvent annotation = method.getAnnotation(OnLifecycleEvent.class);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="870.8" y="1567.9658">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="34.4" x="870.8" y="1575.0676">//获取注解的值</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="96.8" x="870.8" y="1582.1693">Lifecycle.Event event = annotation.value();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="870.8" y="1589.2711">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="184.4" x="870.8" y="1596.3729">MethodReference methodReference = new MethodReference(callType, method);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.8" x="870.8" y="1603.4746">verifyAndPutHandler(handlerToEvent, methodReference, event, klass);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="864.4" y="1610.5764">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="114.4" x="864.4" y="1617.6781">//并且存储集合最终都封装到CallbackInfo这个类中</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="122.8" x="864.4" y="1624.7799">CallbackInfo info = new CallbackInfo(handlerToEvent);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="71.6" x="864.4" y="1631.8816">mCallbackMap.put(klass, info);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132" x="864.4" y="1638.9834">mHasLifecycleMethods.put(klass, hasLifecycleMethods);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24.4" x="864.4" y="1646.0852">return info;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="858" y="1653.1869">}</text><polygon fill="#A80036" points="700,1667.8313,696,1669.4313,700,1671.0313,698.4,1669.4313" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="697.6" x2="849.6" y1="1669.4313" y2="1669.4313"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="702.4" y="1667.4887">12</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="711.2" y="1667.4887"/><polygon fill="#A80036" points="572.4,1680.533,568.4,1682.133,572.4,1683.733,570.8,1682.133" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="570" x2="693.2" y1="1682.133" y2="1682.133"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="574.8" y="1680.1904">13</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="583.6" y="1680.1904"/><polygon fill="#A80036" points="456,1693.2348,452,1694.8348,456,1696.4348,454.4,1694.8348" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="453.6" x2="565.6" y1="1694.8348" y2="1694.8348"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="458.4" y="1692.8922">14</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="467.2" y="1692.8922"/><polygon fill="#A80036" points="304.6,1705.9365,300.6,1707.5365,304.6,1709.1365,303,1707.5365" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="302.2" x2="449.2" y1="1707.5365" y2="1707.5365"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="307" y="1705.5939">15</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="315.8" y="1705.5939"/><polygon fill="#A80036" points="155.2,1718.6383,151.2,1720.2383,155.2,1721.8383,153.6,1720.2383" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;stroke-dasharray:2.0,2.0;" x1="152.8" x2="297.8" y1="1720.2383" y2="1720.2383"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="157.6" y="1718.2957">16</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="166.4" y="1718.2957"/><polygon fill="#A80036" points="958.4,1999.656,962.4,2001.256,958.4,2002.856,960,2001.256" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="222.2" x2="960.8" y1="2001.256" y2="2001.256"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="225" y="1999.3134">17</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="232.2" y="1999.3134">ReportFragment.injectIfNeededIn(this);</text><path d="M969.2,1725.4383 L969.2,2269.0383 L1211.6,2269.0383 L1211.6,1729.4383 L1207.6,1725.4383 L969.2,1725.4383 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1207.6,1725.4383 L1207.6,1729.4383 L1211.6,1729.4383 L1207.6,1725.4383 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="50.8" x="971.6" y="1733.3975">//ReportFragment.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="117.2" x="971.6" y="1740.4992">public static void injectIfNeededIn(Activity activity) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="211.2" x="978" y="1747.601">// ProcessLifecycleOwner should always correctly work and some activities may not extend</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="186" x="978" y="1754.7027">// FragmentActivity from support lib, so we use framework fragments for activities</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170" x="978" y="1761.8045">android.app.FragmentManager manager = activity.getFragmentManager();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.6" x="978" y="1768.9063">if (manager.findFragmentByTag(REPORT_FRAGMENT_TAG) == null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="984.4" y="1776.008">//添加一个new ReportFragment()</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="221.2" x="984.4" y="1783.1098">manager.beginTransaction().add(new ReportFragment(), REPORT_FRAGMENT_TAG).commit();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="116.8" x="984.4" y="1790.2115">// Hopefully, we are the first to make a transaction.</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.2" x="984.4" y="1797.3133">manager.executePendingTransactions();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="978" y="1804.415">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="1811.5168">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="1818.6186"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="148.4" x="971.6" y="1825.7203">//发现在ReportFragment的生命周期里调用了dispatch这个方法，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="187.6" x="971.6" y="1832.8221">//并且传入对应的生命周期事件（如：dispatch(Lifecycle.Event.ON_DESTROY);）</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.8" x="971.6" y="1839.9238">//接着我们来看看dispatch的方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="1847.0256">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="135.2" x="971.6" y="1854.1273">public void onActivityCreated(Bundle savedInstanceState) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="104.8" x="978" y="1861.2291">super.onActivityCreated(savedInstanceState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="81.6" x="978" y="1868.3309">dispatchCreate(mProcessListener);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92" x="978" y="1875.4326">dispatch(Lifecycle.Event.ON_CREATE);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="1882.5344">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="1889.6361"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="1896.7379">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.8" x="971.6" y="1903.8396">public void onStart() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="36" x="978" y="1910.9414">super.onStart();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="978" y="1918.0432">dispatchStart(mProcessListener);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="978" y="1925.1449">dispatch(Lifecycle.Event.ON_START);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="1932.2467">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="1939.3484"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="1946.4502">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="56.8" x="971.6" y="1953.552">public void onResume() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="978" y="1960.6537">super.onResume();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.6" x="978" y="1967.7555">dispatchResume(mProcessListener);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="93.6" x="978" y="1974.8572">dispatch(Lifecycle.Event.ON_RESUME);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="1981.959">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="1989.0607"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="1996.1625">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.4" x="971.6" y="2003.2643">public void onPause() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="978" y="2010.366">super.onPause();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.2" x="978" y="2017.4678">dispatch(Lifecycle.Event.ON_PAUSE);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="2024.5695">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="2031.6713"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="2038.773">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="48.4" x="971.6" y="2045.8748">public void onStop() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="35.6" x="978" y="2052.9766">super.onStop();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.2" x="978" y="2060.0783">dispatch(Lifecycle.Event.ON_STOP);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="2067.1801">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="2074.2818"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="971.6" y="2081.3836">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.6" x="971.6" y="2088.4854">public void onDestroy() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="42.8" x="978" y="2095.5871">super.onDestroy();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="96" x="978" y="2102.6889">dispatch(Lifecycle.Event.ON_DESTROY);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146.8" x="978" y="2109.7906">// just want to be sure that we won't leak reference to an activity</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="58" x="978" y="2116.8924">mProcessListener = null;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="2123.9941">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.4" x="971.6" y="2131.0959">//我们看到代码会判断activity是否是LifecycleOwner类型，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="92.8" x="971.6" y="2138.1977">//并且lifecycle是否是LifecycleRegistry，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="200" x="971.6" y="2145.2994">//接着会调用 LifecycleRegistry的handleLifecycleEvent()方法。并且事件作为参数传入。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170" x="971.6" y="2152.4012">//根据我们上面查看的源码，ComponentActivity是实现了LifecycleOwner，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.6" x="971.6" y="2159.5029">//并且lifecycle就是LifecycleRegistry。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="136" x="971.6" y="2166.6047">//所以来看看LifecycleRegistry的handleLifecycleEvent()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="101.2" x="971.6" y="2173.7064">private void dispatch(Lifecycle.Event event) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="69.6" x="978" y="2180.8082">Activity activity = getActivity();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.6" x="978" y="2187.91">if (activity instanceof LifecycleRegistryOwner) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.6" x="984.4" y="2195.0117">((LifecycleRegistryOwner) activity).getLifecycle().handleLifecycleEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.8" x="984.4" y="2202.1135">return;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="978" y="2209.2152">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="973.2" y="2216.317"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.4" x="978" y="2223.4188">if (activity instanceof LifecycleOwner) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="140.4" x="984.4" y="2230.5205">Lifecycle lifecycle = ((LifecycleOwner) activity).getLifecycle();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="95.6" x="984.4" y="2237.6223">if (lifecycle instanceof LifecycleRegistry) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="133.2" x="990.8" y="2244.724">((LifecycleRegistry) lifecycle).handleLifecycleEvent(event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="984.4" y="2251.8258">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="978" y="2258.9275">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="971.6" y="2266.0293">}</text><polygon fill="#A80036" points="304.6,2311.0807,300.6,2312.6807,304.6,2314.2807,303,2312.6807" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="302.2" x2="962.8" y1="2312.6807" y2="2312.6807"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="307" y="2310.7381">18</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="85.6" x="314.2" y="2310.7381">lifecycle.handleLifecycleEvent(event);</text><path d="M130.4,2274.7719 L130.4,2342.3719 L292.4,2342.3719 L292.4,2278.7719 L288.4,2274.7719 L130.4,2274.7719 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M288.4,2274.7719 L288.4,2278.7719 L292.4,2278.7719 L288.4,2274.7719 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="132.8" y="2282.7311">//LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="153.6" x="132.8" y="2289.8328">public void handleLifecycleEvent(@NonNull Lifecycle.Event event) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44" x="139.2" y="2296.9346">//将Event转成State</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="126" x="139.2" y="2304.0363">//根据宿主当前分发的事件(生命周期)反推出宿主状态，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="144" x="139.2" y="2311.1381">//eg:如果是ON_CREATE事件，则前进一步变为CREATED状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="77.6" x="139.2" y="2318.2398">State next = getStateAfter(event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="139.2" y="2325.3416">//状态同步</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="139.2" y="2332.4434">moveToState(next);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="132.8" y="2339.5451">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="300.2" x2="319" y1="2374.4947" y2="2374.4947"/><line style="stroke:#A80036;stroke-width:0.4;" x1="319" x2="319" y1="2374.4947" y2="2379.6947"/><line style="stroke:#A80036;stroke-width:0.4;" x1="302.6" x2="319" y1="2379.6947" y2="2379.6947"/><polygon fill="#A80036" points="306.6,2378.0947,302.6,2379.6947,306.6,2381.2947,305,2379.6947" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="305" y="2372.5521">19</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="312.2" y="2372.5521">moveToState(next);</text><path d="M196.8,2348.2877 L196.8,2401.8877 L292.4,2401.8877 L292.4,2352.2877 L288.4,2348.2877 L196.8,2348.2877 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M288.4,2348.2877 L288.4,2352.2877 L292.4,2352.2877 L288.4,2348.2877 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="199.2" y="2356.2469">//LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.2" x="199.2" y="2363.3486">private void moveToState(State next) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="205.6" y="2370.4504">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="205.6" y="2377.5521">//真正的状态同步</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16" x="205.6" y="2384.6539">sync();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="205.6" y="2391.7557">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="199.2" y="2398.8574">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="302.2" x2="321" y1="2508.3755" y2="2508.3755"/><line style="stroke:#A80036;stroke-width:0.4;" x1="321" x2="321" y1="2508.3755" y2="2513.5755"/><line style="stroke:#A80036;stroke-width:0.4;" x1="304.6" x2="321" y1="2513.5755" y2="2513.5755"/><polygon fill="#A80036" points="308.6,2511.9755,304.6,2513.5755,308.6,2515.1755,307,2513.5755" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="307" y="2506.4329">20</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.8" x="314.2" y="2506.4329">moveToState(next);</text><path d="M54,2407.6 L54,2610.4 L292.4,2610.4 L292.4,2411.6 L288.4,2407.6 L54,2407.6 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M288.4,2407.6 L288.4,2411.6 L292.4,2411.6 L288.4,2407.6 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="53.2" x="56.4" y="2415.5592">//LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="56.4" y="2422.6609">//真正的状态同步</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="44.4" x="56.4" y="2429.7627">private void sync() {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130" x="62.8" y="2436.8645">LifecycleOwner lifecycleOwner = mLifecycleOwner.get();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="58" y="2443.9662"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="223.6" x="62.8" y="2451.068">//isSynced()：往mObserverMap集合里面注册的Observer是不是所有观察者的状态都已经分发完，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="145.2" x="62.8" y="2458.1697">//是不是都已经同步到根宿主一致状态,如果没有，继续循环遍历</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="62.8" y="2465.2715">while (!isSynced()) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.4" x="69.2" y="2472.3732">// 生命周期后退逻辑</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100" x="69.2" y="2479.475">//宿主状态&lt;观察者状态：生命周期倒退阶段</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="128" x="69.2" y="2486.5768">//前台切后台，执行onPause()，RESUMED-&gt;STARTED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.8" x="69.2" y="2493.6785">//宿主进入状态：STARTED，观察者状态：还处于 RESUMED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="151.6" x="69.2" y="2500.7803">//此时宿主状态&lt;观察者状态，执行backwardPass(lifecycleOwner);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="164" x="69.2" y="2507.882">if (mState.compareTo(mObserverMap.eldest().getValue().mState) &lt; 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="169.6" x="75.6" y="2514.9838">//让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.4" x="75.6" y="2522.0855">backwardPass(lifecycleOwner);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="69.2" y="2529.1873">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="188.4" x="69.2" y="2536.2891">Entry&lt;LifecycleObserver, ObserverWithState&gt; newest = mObserverMap.newest();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.4" x="69.2" y="2543.3908">// 生命周期前进逻辑</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100" x="69.2" y="2550.4926">//宿主状态&gt;观察者状态：生命周期前进阶段</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="135.6" x="69.2" y="2557.5943">//后台切前台，执行onResume(),STARTED-&gt;RESUMED ，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="142.8" x="69.2" y="2564.6961">//宿主进入状态：RESUMED，观察者状态：还处于 STARTED</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="97.6" x="69.2" y="2571.7979">if (!mNewEventOccurred &amp;&amp; newest != null</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="130" x="82" y="2578.8996">&amp;&amp; mState.compareTo(newest.getValue().mState) &gt; 0) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="66.8" x="75.6" y="2586.0014">forwardPass(lifecycleOwner);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="69.2" y="2593.1031">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="62.8" y="2600.2049">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="56.4" y="2607.3066">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="304.2" x2="323" y1="2691.9686" y2="2691.9686"/><line style="stroke:#A80036;stroke-width:0.4;" x1="323" x2="323" y1="2691.9686" y2="2697.1686"/><line style="stroke:#A80036;stroke-width:0.4;" x1="306.6" x2="323" y1="2697.1686" y2="2697.1686"/><polygon fill="#A80036" points="310.6,2695.5686,306.6,2697.1686,310.6,2698.7686,309,2697.1686" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="309" y="2690.026">21</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="72.4" x="316.2" y="2690.026">backwardPass(lifecycleOwner);</text><path d="M86.4,2616.0492 L86.4,2768.8492 L292.4,2768.8492 L292.4,2620.0492 L288.4,2616.0492 L86.4,2616.0492 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M288.4,2616.0492 L288.4,2620.0492 L292.4,2620.0492 L288.4,2616.0492 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="50" x="88.8" y="2624.0084">LifecycleRegistry.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="185.2" x="88.8" y="2631.1102">//遍历，让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="137.6" x="88.8" y="2638.2119">private void backwardPass(LifecycleOwner lifecycleOwner) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.6" x="95.2" y="2645.3137">Iterator&lt;Entry&lt;LifecycleObserver, ObserverWithState&gt;&gt; descendingIterator =</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="83.6" x="108" y="2652.4154">mObserverMap.descendingIterator();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="146" x="95.2" y="2659.5172">while (descendingIterator.hasNext() &amp;&amp; !mNewEventOccurred) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="184.8" x="101.6" y="2666.6189">Entry&lt;LifecycleObserver, ObserverWithState&gt; entry = descendingIterator.next();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="109.2" x="101.6" y="2673.7207">ObserverWithState observer = entry.getValue();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="170.4" x="101.6" y="2680.8225">while ((observer.mState.compareTo(mState) &gt; 0 &amp;&amp; !mNewEventOccurred</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="107.2" x="114.4" y="2687.9242">&amp;&amp; mObserverMap.contains(entry.getKey()))) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="108" y="2695.026">//倒退观察者状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="103.6" x="108" y="2702.1277">//生命周期事件降级,根据状态计算出分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.6" x="108" y="2709.2295">//eg:观察者状态RESUMED,分发一个ON_PAUSE事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="100" x="108" y="2716.3313">Event event = downEvent(observer.mState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.2" x="108" y="2723.433">pushParentState(getStateAfter(event));</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="108" y="2730.5348">//分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.8" x="108" y="2737.6365">observer.dispatchEvent(lifecycleOwner, event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="40.8" x="108" y="2744.7383">popParentState();</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="101.6" y="2751.84">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="95.2" y="2758.9418">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="88.8" y="2766.0436">}</text><polygon fill="#A80036" points="442.8,2832.4002,446.8,2834.0002,442.8,2835.6002,444.4,2834.0002" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="306.2" x2="445.2" y1="2834.0002" y2="2834.0002"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="309" y="2832.0576">22</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="106.8" x="316.2" y="2832.0576">observer.dispatchEvent(lifecycleOwner, event);</text><path d="M453.6,2774.7861 L453.6,2885.1861 L636.8,2885.1861 L636.8,2778.7861 L632.8,2774.7861 L453.6,2774.7861 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M632.8,2774.7861 L632.8,2778.7861 L636.8,2778.7861 L632.8,2774.7861 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="54" x="456" y="2782.7453">ObserverWithState.java</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="75.2" x="456" y="2789.8471">static class ObserverWithState {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="462.4" y="2796.9488">//分发事件</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="129.2" x="462.4" y="2804.0506">void dispatchEvent(LifecycleOwner owner, Event event) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.2" x="468.8" y="2811.1523">//倒推出观察者新的状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.2" x="468.8" y="2818.2541">State newState = getStateAfter(event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="78" x="468.8" y="2825.3559">mState = min(mState, newState);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="160.4" x="468.8" y="2832.4576">//mLifecycleObserver的实现类是ReflectiveGenericLifecycleObserver，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="162" x="468.8" y="2839.5594">//所以来看ReflectiveGenericLifecycleObserver的onStateChanged()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="102" x="468.8" y="2846.6611">//通知所有观察者宿主当前生命周期状态改变</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="118.8" x="468.8" y="2853.7629">mLifecycleObserver.onStateChanged(owner, event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="86.4" x="468.8" y="2860.8646">//观察者状态降级到和宿主一样的状态</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="46.4" x="468.8" y="2867.9664">mState = newState;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="462.4" y="2875.0682">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="456" y="2882.1699">}</text><polygon fill="#A80036" points="686.8,2937.8739,690.8,2939.4739,686.8,2941.0739,688.4,2939.4739" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="451.6" x2="689.2" y1="2939.4739" y2="2939.4739"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="454.4" y="2937.5313">23</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="118.8" x="461.6" y="2937.5313">mLifecycleObserver.onStateChanged(owner, event);</text><path d="M697.6,2890.9125 L697.6,2980.1125 L908,2980.1125 L908,2894.9125 L904,2890.9125 L697.6,2890.9125 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M904,2890.9125 L904,2894.9125 L908,2894.9125 L904,2890.9125 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="700" y="2898.8717">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="70.8" x="700" y="2905.9734">private final CallbackInfo mInfo;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="4.8" x="700" y="2913.0752">...</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="123.2" x="700" y="2920.177">ReflectiveGenericLifecycleObserver(Object wrapped) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="52.4" x="712.8" y="2927.2787">mWrapped = wrapped;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="156.4" x="712.8" y="2934.3805">mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="700" y="2941.4822">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="24" x="700" y="2948.584">@Override</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="202" x="700" y="2955.6857">public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.2" x="712.8" y="2962.7875">//CallbackInfo的invokeCallbacks()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.2" x="712.8" y="2969.8893">mInfo.invokeCallbacks(source, event, mWrapped);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="700" y="2976.991">}</text><polygon fill="#A80036" points="843.2,3043.3477,847.2,3044.9477,843.2,3046.5477,844.8,3044.9477" style="stroke:#A80036;stroke-width:0.4;"/><line style="stroke:#A80036;stroke-width:0.4;" x1="695.6" x2="845.6" y1="3044.9477" y2="3044.9477"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="698.4" y="3043.0051">24</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="115.2" x="705.6" y="3043.0051">mInfo.invokeCallbacks(source, event, mWrapped);</text><path d="M854,2985.7336 L854,3096.1336 L1086.4,3096.1336 L1086.4,2989.7336 L1082.4,2985.7336 L854,2985.7336 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M1082.4,2985.7336 L1082.4,2989.7336 L1086.4,2989.7336 L1082.4,2985.7336 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="191.2" x="856.4" y="2993.6928">void invokeCallbacks(LifecycleOwner source, Lifecycle.Event event, Object target) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="177.2" x="875.6" y="3000.7945">invokeMethodsForEvent(mEventToHandlers.get(event), source, event, target);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="204.8" x="875.6" y="3007.8963">invokeMethodsForEvent(mEventToHandlers.get(Lifecycle.Event.ON_ANY), source, event,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="16.4" x="888.4" y="3014.998">target);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="856.4" y="3022.0998">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="0" x="858" y="3029.2016"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="175.6" x="856.4" y="3036.3033">private static void invokeMethodsForEvent(List&lt;MethodReference&gt; handlers,</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="154" x="882" y="3043.4051">LifecycleOwner source, Lifecycle.Event event, Object mWrapped) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="45.6" x="875.6" y="3050.5068">if (handlers != null) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="94.4" x="882" y="3057.6086">for (int i = handlers.size() - 1; i &gt;= 0; i--) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="133.2" x="888.4" y="3064.7104">//其实是调用到了MethodReference的invokeCallback()方法</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="132.8" x="888.4" y="3071.8121">handlers.get(i).invokeCallback(source, event, mWrapped);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="882" y="3078.9139">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="875.6" y="3086.0156">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="856.4" y="3093.1174">}</text><line style="stroke:#A80036;stroke-width:0.4;" x1="852" x2="870.8" y1="3206.1863" y2="3206.1863"/><line style="stroke:#A80036;stroke-width:0.4;" x1="870.8" x2="870.8" y1="3206.1863" y2="3211.3863"/><line style="stroke:#A80036;stroke-width:0.4;" x1="854.4" x2="870.8" y1="3211.3863" y2="3211.3863"/><polygon fill="#A80036" points="858.4,3209.7863,854.4,3211.3863,858.4,3212.9863,856.8,3211.3863" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" font-weight="bold" lengthAdjust="spacing" textLength="5.6" x="856.8" y="3204.2438">25</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="98.4" x="864" y="3204.2438">invokeCallback(source, event, mWrapped);</text><path d="M591.6,3101.86 L591.6,3311.46 L844.4,3311.46 L844.4,3105.86 L840.4,3101.86 L591.6,3101.86 " fill="#FBFB77" filter="url(#f7cvolcx7fk5t)" style="stroke:#A80036;stroke-width:0.4;"/><path d="M840.4,3101.86 L840.4,3105.86 L844.4,3105.86 L840.4,3101.86 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.4;"/><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="87.2" x="594" y="3109.8191">//这里会mMethod会通过反射去调用。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="189.6" x="594" y="3116.9209">//那这个mMethod是什么呢？我们前面分析到CallbackInfo的createInfo的方法的时候</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="204.4" x="594" y="3124.0227">//会发现，其实method就是我们传入的observer的对应的注解了OnLifecycleEvent的方法。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="200" x="595.6" y="3131.1244">//总结： 组件Activity/Fragment会在相应的声命周期函数里调用dispatch方法分发事件，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="143.2" x="595.6" y="3138.2262">//并调用LifecycleRegistry的handleLifecycleEvent去处理事件。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="193.6" x="595.6" y="3145.3279">//LifecycleRegistry会根据传入的生命周期事件，去决定是否是向前还是向后的逻辑。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="242.8" x="595.6" y="3152.4297">//然后经过ObserverWithState-&gt;ReflectiveGenericLifecycleObserver -&gt; CallbackInfo -&gt; MethodReference，</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="163.6" x="595.6" y="3159.5314">//最终通过反射真正调用到自定义LifecycleObserver添加了注解的方法。</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="39.6" x="595.6" y="3166.6332">//这就是整个流程</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="188.4" x="594" y="3173.735">void invokeCallback(LifecycleOwner source, Lifecycle.Event event, Object target) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="90.4" x="613.2" y="3180.8367">//noinspection TryWithIdenticalCatches</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="9.2" x="613.2" y="3187.9385">try {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="47.2" x="619.6" y="3195.0402">switch (mCallType) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="68" x="626" y="3202.142">case CALL_TYPE_NO_ARG:</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="55.6" x="632.4" y="3209.2438">mMethod.invoke(target);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="632.4" y="3216.3455">break;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="73.2" x="626" y="3223.4473">case CALL_TYPE_PROVIDER:</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.4" x="632.4" y="3230.549">mMethod.invoke(target, source);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="632.4" y="3237.6508">break;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="108.8" x="626" y="3244.7525">case CALL_TYPE_PROVIDER_WITH_EVENT:</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="89.6" x="632.4" y="3251.8543">mMethod.invoke(target, source, event);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="14.4" x="632.4" y="3258.9561">break;</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="619.6" y="3266.0578">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="88.8" x="613.2" y="3273.1596">} catch (InvocationTargetException e) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="178" x="619.6" y="3280.2613">throw new RuntimeException("Failed to call observer method", e.getCause());</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="82.4" x="613.2" y="3287.3631">} catch (IllegalAccessException e) {</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="74.8" x="619.6" y="3294.4648">throw new RuntimeException(e);</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="613.2" y="3301.5666">}</text><text fill="#000000" font-family="sans-serif" font-size="5.2" lengthAdjust="spacing" textLength="1.6" x="594" y="3308.6684">}</text><!--MD5=[e99453a13dca668a1961b165a637d3b4]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+'1
+LearnLifeCycleActivity.kt -> LearnLifeCycleActivity.kt: onCreate()
+activate LearnLifeCycleActivity.kt
+note left
+//LearnLifeCycleActivity.kt
+class LearnLifeCycleActivity :AppCompatActivity(){
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_learn_lifecycle)
+        lifecycle.addObserver(LearnLifecycleObserver())
+    }
+
+    class LearnLifecycleObserver :LifecycleObserver{
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+        fun onCreate(){
+            Log.e(TAG,"====onCreate====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_START)
+        fun onStart(){
+            Log.e(TAG,"====onStart====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+        fun onResume(){
+            Log.e(TAG,"=====onResume====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+        fun onPause(){
+            Log.e(TAG,"=====onPause====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+        fun onStop(){
+            Log.e(TAG,"=====onStop====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+        fun onDestroy(){
+            Log.e(TAG,"=====onDestroy====")
+        }
+    }
+}
+end note
+
+'2
+LearnLifeCycleActivity.kt -> ComponentActivity.java: lifecycle
+activate ComponentActivity.java
+note right
+//ComponentActivity.java
+private final LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);
+...
+//lifecycle就是LifecycleRegistry，
+//而调用lifecycle.addObserver方法其实就是调用LifecycleRegistry的addObserver方法。
+public Lifecycle getLifecycle() {
+  return mLifecycleRegistry;
+}
+
+
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    //ComponentActivity实现了LifecycleOwner，
+    //并且在ComponentActivity的onCreate方法里有个ReportFragment.injectIfNeededIn(this);
+    ReportFragment.injectIfNeededIn(this);
+}
+end note
+
+'3
+ComponentActivity.java -> LifecycleRegistry.java: new LifecycleRegistry(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+public class LifecycleRegistry extends Lifecycle {
+...
+}
+end note
+
+'4
+LifecycleRegistry.java -> Lifecycle.java:
+activate Lifecycle.java
+note right
+//Lifecycle.java
+//Lifecycle主要有三个方法抽象方法addObserver，removeObserver，getCurrentState
+//两个枚举类Event，State。
+//Event 就是改变生命周期的事件，State 是目前 Activity/Fragment 所处生命周期的状态
+public abstract class Lifecycle {
+    //添加观察者
+    public abstract void addObserver(@NonNull LifecycleObserver observer);
+    //移除观察者
+    public abstract void removeObserver(@NonNull LifecycleObserver observer);
+    //获取当前的观察者
+    public abstract State getCurrentState();
+
+    //事件
+    public enum Event {
+        ON_CREATE,
+        ON_START,
+        ON_RESUME,
+        ON_PAUSE,
+        ON_STOP,
+        ON_DESTROY,
+        ON_ANY
+    }
+
+    //状态
+    public enum State {
+        DESTROYED,
+        INITIALIZED,
+        CREATED,
+        STARTED,
+        RESUMED
+    }
+}
+
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+                ON_CREATE
+            |- - - - - - - - - - -|- - - - - - - - ->|          |           |
+            |           |          | ON_START |           |
+            |           |          |- - - - - - - - ->|           |
+            |           |          |          | ON_RESUME |
+            |           |          |          |- - - - - - - - - ->|
+Events      |           |          |          |           |
+            |           |          |          | ON_PAUSE  |
+            |           |          |          |<- - - - - - - - - -|
+            |           |          | ON_STOP  |           |
+            |           |          |<- - - - - - - - -|           |
+            |           |ON_DESTROY|          |           |
+            |           |<- - - - - - - - -|          |           |
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+end note
+
+'5
+Lifecycle.java - -> LifecycleRegistry.java:
+deactivate Lifecycle.java
+
+'6
+LifecycleRegistry.java - -> ComponentActivity.java:
+deactivate LifecycleRegistry.java
+
+'7
+'ComponentActivity.java - -> LearnLifeCycleActivity.kt:
+'deactivate ComponentActivity.java
+
+
+'8
+LearnLifeCycleActivity.kt -> LifecycleRegistry.java: lifecycle.addObserver(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+...
+private FastSafeIterableMap<LifecycleObserver, ObserverWithState> mObserverMap =
+            new FastSafeIterableMap<>();
+...
+@Override
+public void addObserver(@NonNull LifecycleObserver observer) {
+   //初始化State状态:INITIALIZED
+   State initialState = mState == DESTROYED ? DESTROYED : INITIALIZED;
+   //把State状态跟observer观察者。作为参数传入ObserverWithState，构建ObserverWithState的实例。
+   ObserverWithState statefulObserver = new ObserverWithState(observer, initialState);
+   //mObserverMaps是个HashMap集合，把observer跟statefulObserver键值对形式存储到集合中。
+   ObserverWithState previous = mObserverMap.putIfAbsent(observer, statefulObserver);
+
+   LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+   //计算当前宿主状态
+   State targetState = calculateTargetState(observer);
+   //遍历  让当前观察者从INITIALIZED状态前进到宿主当前状态targetState
+   while ((statefulObserver.mState.compareTo(targetState) < 0
+           && mObserverMap.contains(observer))) {
+       pushParentState(statefulObserver.mState);
+       //upEvent(statefulObserver.mState):根据观察者状态计算出应该分发事件
+       //再根据分发事件推导出观察者的状态，并让观察者状态前进，
+       statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));
+       popParentState();
+       //再次计算宿主状态
+       targetState = calculateTargetState(observer);
+   }
+
+}
+end note
+
+'9
+LifecycleRegistry.java -> ObserverWithState.java: new ObserverWithState(observer, initialState)
+activate ObserverWithState.java
+note right
+//ObserverWithState.java
+static class ObserverWithState {
+     State mState;
+     LifecycleEventObserver mLifecycleObserver;
+
+     //ObserverWithState是持有State跟Observer的对象。
+     //接着看Lifecycling.lifecycleEventObserver(observer); 方法
+     ObserverWithState(LifecycleObserver observer, State initialState) {
+         mLifecycleObserver = Lifecycling.lifecycleEventObserver(observer);
+         mState = initialState;
+     }
+     ...
+ }
+end note
+
+'10
+ObserverWithState.java -> LifecycleEventObserver.java: Lifecycling.lifecycleEventObserver(observer)
+activate LifecycleEventObserver.java
+note right
+//LifecycleEventObserver.java
+static LifecycleEventObserver lifecycleEventObserver(Object object) {
+    ...
+
+    int type = getObserverConstructorType(klass);
+    if (type == GENERATED_CALLBACK) {
+        ...
+        //如果build.gradle文件中添加了编译器依赖"androidx.lifecycle.lifecycle-compiler"
+        //则会在编译时自动生成适配的类:LearnLifeCycleObserver_LifecycleAdapter
+        //这样就不用通过反射执行生命周期方法
+        return new CompositeGeneratedAdaptersObserver(adapters);
+    }
+    //传进来的observer其实又被ReflectiveGenericLifecycleObserver包了一层，
+    //接着看看ReflectiveGenericLifecycleObserver
+    return new ReflectiveGenericLifecycleObserver(object);
+}
+end note
+
+'11
+LifecycleEventObserver.java -> ReflectiveGenericLifecycleObserver.java: new ReflectiveGenericLifecycleObserver(object)
+activate ReflectiveGenericLifecycleObserver.java
+note right
+//ReflectiveGenericLifecycleObserver.java
+class ReflectiveGenericLifecycleObserver implements LifecycleEventObserver {
+ private final Object mWrapped;
+ private final CallbackInfo mInfo;
+
+ ReflectiveGenericLifecycleObserver(Object wrapped) {
+     mWrapped = wrapped;
+     //再来看看CallbackInfo是什么，
+     mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+ }
+
+ @Override
+ public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+     mInfo.invokeCallbacks(source, event, mWrapped);
+  }
+}
+end note
+
+'12
+ReflectiveGenericLifecycleObserver.java -> ClassesInfoCache.java:  ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+activate ClassesInfoCache.java
+note right
+//ClassesInfoCache.java
+CallbackInfo getInfo(Class<?> klass) {
+     CallbackInfo existing = mCallbackMap.get(klass);
+     if (existing != null) {
+         return existing;
+     }
+     existing = createInfo(klass, null);
+     return existing;
+ }
+ private CallbackInfo createInfo(Class<?> klass, @Nullable Method[] declaredMethods) {
+     ...
+     Method[] methods = declaredMethods != null ? declaredMethods : getDeclaredMethods(klass);
+     boolean hasLifecycleMethods = false;
+     for (Method method : methods) {
+         //解析@OnLifecycleEvent注解
+         OnLifecycleEvent annotation = method.getAnnotation(OnLifecycleEvent.class);
+         ...
+         //获取注解的值
+         Lifecycle.Event event = annotation.value();
+         ...
+         MethodReference methodReference = new MethodReference(callType, method);
+         verifyAndPutHandler(handlerToEvent, methodReference, event, klass);
+     }
+     //并且存储集合最终都封装到CallbackInfo这个类中
+     CallbackInfo info = new CallbackInfo(handlerToEvent);
+     mCallbackMap.put(klass, info);
+     mHasLifecycleMethods.put(klass, hasLifecycleMethods);
+     return info;
+ }
+end note
+
+'13
+ClassesInfoCache.java - -> ReflectiveGenericLifecycleObserver.java:
+deactivate ClassesInfoCache.java
+
+'14
+ReflectiveGenericLifecycleObserver.java - -> LifecycleEventObserver.java:
+deactivate ReflectiveGenericLifecycleObserver.java
+
+'15
+LifecycleEventObserver.java - -> ObserverWithState.java:
+deactivate LifecycleEventObserver.java
+
+'16
+ObserverWithState.java - -> LifecycleRegistry.java:
+deactivate ObserverWithState.java
+
+'17
+LifecycleRegistry.java - -> LearnLifeCycleActivity.kt:
+deactivate LifecycleRegistry.java
+
+'18
+ComponentActivity.java -> ReportFragment.java: ReportFragment.injectIfNeededIn(this);
+activate ReportFragment.java
+note right
+//ReportFragment.java
+public static void injectIfNeededIn(Activity activity) {
+    // ProcessLifecycleOwner should always correctly work and some activities may not extend
+    // FragmentActivity from support lib, so we use framework fragments for activities
+    android.app.FragmentManager manager = activity.getFragmentManager();
+    if (manager.findFragmentByTag(REPORT_FRAGMENT_TAG) == null) {
+        //添加一个new ReportFragment()
+        manager.beginTransaction().add(new ReportFragment(), REPORT_FRAGMENT_TAG).commit();
+        // Hopefully, we are the first to make a transaction.
+        manager.executePendingTransactions();
+    }
+}
+
+//发现在ReportFragment的生命周期里调用了dispatch这个方法，
+//并且传入对应的生命周期事件（如：dispatch(Lifecycle.Event.ON_DESTROY);）
+//接着我们来看看dispatch的方法
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+    dispatchCreate(mProcessListener);
+    dispatch(Lifecycle.Event.ON_CREATE);
+}
+
+@Override
+public void onStart() {
+    super.onStart();
+    dispatchStart(mProcessListener);
+    dispatch(Lifecycle.Event.ON_START);
+}
+
+@Override
+public void onResume() {
+    super.onResume();
+    dispatchResume(mProcessListener);
+    dispatch(Lifecycle.Event.ON_RESUME);
+}
+
+@Override
+public void onPause() {
+    super.onPause();
+    dispatch(Lifecycle.Event.ON_PAUSE);
+}
+
+@Override
+public void onStop() {
+    super.onStop();
+    dispatch(Lifecycle.Event.ON_STOP);
+}
+
+@Override
+public void onDestroy() {
+    super.onDestroy();
+    dispatch(Lifecycle.Event.ON_DESTROY);
+    // just want to be sure that we won't leak reference to an activity
+    mProcessListener = null;
+}
+//我们看到代码会判断activity是否是LifecycleOwner类型，
+//并且lifecycle是否是LifecycleRegistry，
+//接着会调用 LifecycleRegistry的handleLifecycleEvent()方法。并且事件作为参数传入。
+//根据我们上面查看的源码，ComponentActivity是实现了LifecycleOwner，
+//并且lifecycle就是LifecycleRegistry。
+//所以来看看LifecycleRegistry的handleLifecycleEvent()方法
+private void dispatch(Lifecycle.Event event) {
+    Activity activity = getActivity();
+    if (activity instanceof LifecycleRegistryOwner) {
+        ((LifecycleRegistryOwner) activity).getLifecycle().handleLifecycleEvent(event);
+        return;
+    }
+
+    if (activity instanceof LifecycleOwner) {
+        Lifecycle lifecycle = ((LifecycleOwner) activity).getLifecycle();
+        if (lifecycle instanceof LifecycleRegistry) {
+            ((LifecycleRegistry) lifecycle).handleLifecycleEvent(event);
+        }
+    }
+}
+end note
+
+'19
+ReportFragment.java -> LifecycleRegistry.java: lifecycle.handleLifecycleEvent(event);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+public void handleLifecycleEvent(@NonNull Lifecycle.Event event) {
+    //将Event转成State
+    //根据宿主当前分发的事件(生命周期)反推出宿主状态，
+    //eg:如果是ON_CREATE事件，则前进一步变为CREATED状态
+    State next = getStateAfter(event);
+    //状态同步
+    moveToState(next);
+}
+end note
+
+'20
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+private void moveToState(State next) {
+    ...
+    //真正的状态同步
+    sync();
+    ...
+}
+end note
+
+'21
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+//真正的状态同步
+private void sync() {
+    LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+    //isSynced()：往mObserverMap集合里面注册的Observer是不是所有观察者的状态都已经分发完，
+    //是不是都已经同步到根宿主一致状态,如果没有，继续循环遍历
+    while (!isSynced()) {
+        // 生命周期后退逻辑
+        //宿主状态<观察者状态：生命周期倒退阶段
+        //前台切后台，执行onPause()，RESUMED->STARTED
+        //宿主进入状态：STARTED，观察者状态：还处于 RESUMED
+        //此时宿主状态<观察者状态，执行backwardPass(lifecycleOwner);
+        if (mState.compareTo(mObserverMap.eldest().getValue().mState) < 0) {
+            //让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+            backwardPass(lifecycleOwner);
+        }
+        Entry<LifecycleObserver, ObserverWithState> newest = mObserverMap.newest();
+        // 生命周期前进逻辑
+        //宿主状态>观察者状态：生命周期前进阶段
+        //后台切前台，执行onResume(),STARTED->RESUMED ，
+        //宿主进入状态：RESUMED，观察者状态：还处于 STARTED
+        if (!mNewEventOccurred && newest != null
+                && mState.compareTo(newest.getValue().mState) > 0) {
+            forwardPass(lifecycleOwner);
+        }
+    }
+}
+end note
+
+'22
+LifecycleRegistry.java ->LifecycleRegistry.java: backwardPass(lifecycleOwner);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//遍历，让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+private void backwardPass(LifecycleOwner lifecycleOwner) {
+    Iterator<Entry<LifecycleObserver, ObserverWithState>> descendingIterator =
+            mObserverMap.descendingIterator();
+    while (descendingIterator.hasNext() && !mNewEventOccurred) {
+        Entry<LifecycleObserver, ObserverWithState> entry = descendingIterator.next();
+        ObserverWithState observer = entry.getValue();
+        while ((observer.mState.compareTo(mState) > 0 && !mNewEventOccurred
+                && mObserverMap.contains(entry.getKey()))) {
+            //倒退观察者状态
+            //生命周期事件降级,根据状态计算出分发事件
+            //eg:观察者状态RESUMED,分发一个ON_PAUSE事件
+            Event event = downEvent(observer.mState);
+            pushParentState(getStateAfter(event));
+            //分发事件
+            observer.dispatchEvent(lifecycleOwner, event);
+            popParentState();
+        }
+    }
+}
+end note
+
+'23
+LifecycleRegistry.java ->ObserverWithState.java: observer.dispatchEvent(lifecycleOwner, event);
+activate ObserverWithState.java
+note right
+ObserverWithState.java
+static class ObserverWithState {
+    //分发事件
+    void dispatchEvent(LifecycleOwner owner, Event event) {
+        //倒推出观察者新的状态
+        State newState = getStateAfter(event);
+        mState = min(mState, newState);
+        //mLifecycleObserver的实现类是ReflectiveGenericLifecycleObserver，
+        //所以来看ReflectiveGenericLifecycleObserver的onStateChanged()方法
+        //通知所有观察者宿主当前生命周期状态改变
+        mLifecycleObserver.onStateChanged(owner, event);
+        //观察者状态降级到和宿主一样的状态
+        mState = newState;
+    }
+}
+end note
+
+'24
+ObserverWithState.java ->ReflectiveGenericLifecycleObserver.java: mLifecycleObserver.onStateChanged(owner, event);
+activate ReflectiveGenericLifecycleObserver.java
+note right
+...
+private final CallbackInfo mInfo;
+...
+ReflectiveGenericLifecycleObserver(Object wrapped) {
+        mWrapped = wrapped;
+        mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+}
+@Override
+public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+        //CallbackInfo的invokeCallbacks()方法
+        mInfo.invokeCallbacks(source, event, mWrapped);
+}
+end note
+
+'25
+ReflectiveGenericLifecycleObserver.java ->ClassesInfoCache.java:  mInfo.invokeCallbacks(source, event, mWrapped);
+activate ClassesInfoCache.java
+note right
+void invokeCallbacks(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            invokeMethodsForEvent(mEventToHandlers.get(event), source, event, target);
+            invokeMethodsForEvent(mEventToHandlers.get(Lifecycle.Event.ON_ANY), source, event,
+                    target);
+}
+
+private static void invokeMethodsForEvent(List<MethodReference> handlers,
+                LifecycleOwner source, Lifecycle.Event event, Object mWrapped) {
+            if (handlers != null) {
+                for (int i = handlers.size() - 1; i >= 0; i- -) {
+                    //其实是调用到了MethodReference的invokeCallback()方法
+                    handlers.get(i).invokeCallback(source, event, mWrapped);
+                }
+            }
+}
+end note
+
+'26
+ClassesInfoCache.java ->ClassesInfoCache.java:  invokeCallback(source, event, mWrapped);
+activate ClassesInfoCache.java
+note left
+//这里会mMethod会通过反射去调用。
+//那这个mMethod是什么呢？我们前面分析到CallbackInfo的createInfo的方法的时候
+//会发现，其实method就是我们传入的observer的对应的注解了OnLifecycleEvent的方法。
+ //总结： 组件Activity/Fragment会在相应的声命周期函数里调用dispatch方法分发事件，
+ //并调用LifecycleRegistry的handleLifecycleEvent去处理事件。
+ //LifecycleRegistry会根据传入的生命周期事件，去决定是否是向前还是向后的逻辑。
+ //然后经过ObserverWithState->ReflectiveGenericLifecycleObserver -> CallbackInfo -> MethodReference，
+ //最终通过反射真正调用到自定义LifecycleObserver添加了注解的方法。
+ //这就是整个流程
+void invokeCallback(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            //noinspection TryWithIdenticalCatches
+            try {
+                switch (mCallType) {
+                    case CALL_TYPE_NO_ARG:
+                        mMethod.invoke(target);
+                        break;
+                    case CALL_TYPE_PROVIDER:
+                        mMethod.invoke(target, source);
+                        break;
+                    case CALL_TYPE_PROVIDER_WITH_EVENT:
+                        mMethod.invoke(target, source, event);
+                        break;
+                }
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException("Failed to call observer method", e.getCause());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+}
+end note
+
+@enduml
+
+@startuml
+
+autonumber
+
+LearnLifeCycleActivity.kt -> LearnLifeCycleActivity.kt: onCreate()
+activate LearnLifeCycleActivity.kt
+note left
+//LearnLifeCycleActivity.kt
+class LearnLifeCycleActivity :AppCompatActivity(){
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_learn_lifecycle)
+        lifecycle.addObserver(LearnLifecycleObserver())
+    }
+
+    class LearnLifecycleObserver :LifecycleObserver{
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+        fun onCreate(){
+            Log.e(TAG,"====onCreate====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_START)
+        fun onStart(){
+            Log.e(TAG,"====onStart====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+        fun onResume(){
+            Log.e(TAG,"=====onResume====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+        fun onPause(){
+            Log.e(TAG,"=====onPause====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+        fun onStop(){
+            Log.e(TAG,"=====onStop====")
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+        fun onDestroy(){
+            Log.e(TAG,"=====onDestroy====")
+        }
+    }
+}
+end note
+
+LearnLifeCycleActivity.kt -> ComponentActivity.java: lifecycle
+activate ComponentActivity.java
+note right
+//ComponentActivity.java
+private final LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);
+...
+//lifecycle就是LifecycleRegistry，
+//而调用lifecycle.addObserver方法其实就是调用LifecycleRegistry的addObserver方法。
+public Lifecycle getLifecycle() {
+  return mLifecycleRegistry;
+}
+
+
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    //ComponentActivity实现了LifecycleOwner，
+    //并且在ComponentActivity的onCreate方法里有个ReportFragment.injectIfNeededIn(this);
+    ReportFragment.injectIfNeededIn(this);
+}
+end note
+
+ComponentActivity.java -> LifecycleRegistry.java: new LifecycleRegistry(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+public class LifecycleRegistry extends Lifecycle {
+...
+}
+end note
+
+LifecycleRegistry.java -> Lifecycle.java:
+activate Lifecycle.java
+note right
+//Lifecycle.java
+//Lifecycle主要有三个方法抽象方法addObserver，removeObserver，getCurrentState
+//两个枚举类Event，State。
+//Event 就是改变生命周期的事件，State 是目前 Activity/Fragment 所处生命周期的状态
+public abstract class Lifecycle {
+    //添加观察者
+    public abstract void addObserver(@NonNull LifecycleObserver observer);
+    //移除观察者
+    public abstract void removeObserver(@NonNull LifecycleObserver observer);
+    //获取当前的观察者
+    public abstract State getCurrentState();
+
+    //事件
+    public enum Event {
+        ON_CREATE,
+        ON_START,
+        ON_RESUME,
+        ON_PAUSE,
+        ON_STOP,
+        ON_DESTROY,
+        ON_ANY
+    }
+
+    //状态
+    public enum State {
+        DESTROYED,
+        INITIALIZED,
+        CREATED,
+        STARTED,
+        RESUMED
+    }
+}
+
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+                ON_CREATE
+            |- - - - - - - - - - -|- - - - - - - - ->|          |           |
+            |           |          | ON_START |           |
+            |           |          |- - - - - - - - ->|           |
+            |           |          |          | ON_RESUME |
+            |           |          |          |- - - - - - - - - ->|
+Events      |           |          |          |           |
+            |           |          |          | ON_PAUSE  |
+            |           |          |          |<- - - - - - - - - -|
+            |           |          | ON_STOP  |           |
+            |           |          |<- - - - - - - - -|           |
+            |           |ON_DESTROY|          |           |
+            |           |<- - - - - - - - -|          |           |
+States  INITIALIZED   DESTROYED  CREATED  STARTED      RESUMED
+end note
+
+Lifecycle.java - -> LifecycleRegistry.java:
+deactivate Lifecycle.java
+
+LifecycleRegistry.java - -> ComponentActivity.java:
+deactivate LifecycleRegistry.java
+
+
+
+LearnLifeCycleActivity.kt -> LifecycleRegistry.java: lifecycle.addObserver(this)
+activate LifecycleRegistry.java
+note right
+//LifecycleRegistry.java
+...
+private FastSafeIterableMap<LifecycleObserver, ObserverWithState> mObserverMap =
+            new FastSafeIterableMap<>();
+...
+@Override
+public void addObserver(@NonNull LifecycleObserver observer) {
+   //初始化State状态:INITIALIZED
+   State initialState = mState == DESTROYED ? DESTROYED : INITIALIZED;
+   //把State状态跟observer观察者。作为参数传入ObserverWithState，构建ObserverWithState的实例。
+   ObserverWithState statefulObserver = new ObserverWithState(observer, initialState);
+   //mObserverMaps是个HashMap集合，把observer跟statefulObserver键值对形式存储到集合中。
+   ObserverWithState previous = mObserverMap.putIfAbsent(observer, statefulObserver);
+
+   LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+   //计算当前宿主状态
+   State targetState = calculateTargetState(observer);
+   //遍历  让当前观察者从INITIALIZED状态前进到宿主当前状态targetState
+   while ((statefulObserver.mState.compareTo(targetState) < 0
+           && mObserverMap.contains(observer))) {
+       pushParentState(statefulObserver.mState);
+       //upEvent(statefulObserver.mState):根据观察者状态计算出应该分发事件
+       //再根据分发事件推导出观察者的状态，并让观察者状态前进，
+       statefulObserver.dispatchEvent(lifecycleOwner, upEvent(statefulObserver.mState));
+       popParentState();
+       //再次计算宿主状态
+       targetState = calculateTargetState(observer);
+   }
+
+}
+end note
+
+LifecycleRegistry.java -> ObserverWithState.java: new ObserverWithState(observer, initialState)
+activate ObserverWithState.java
+note right
+//ObserverWithState.java
+static class ObserverWithState {
+     State mState;
+     LifecycleEventObserver mLifecycleObserver;
+
+     //ObserverWithState是持有State跟Observer的对象。
+     //接着看Lifecycling.lifecycleEventObserver(observer); 方法
+     ObserverWithState(LifecycleObserver observer, State initialState) {
+         mLifecycleObserver = Lifecycling.lifecycleEventObserver(observer);
+         mState = initialState;
+     }
+     ...
+ }
+end note
+
+ObserverWithState.java -> LifecycleEventObserver.java: Lifecycling.lifecycleEventObserver(observer)
+activate LifecycleEventObserver.java
+note right
+//LifecycleEventObserver.java
+static LifecycleEventObserver lifecycleEventObserver(Object object) {
+    ...
+
+    int type = getObserverConstructorType(klass);
+    if (type == GENERATED_CALLBACK) {
+        ...
+        //如果build.gradle文件中添加了编译器依赖"androidx.lifecycle.lifecycle-compiler"
+        //则会在编译时自动生成适配的类:LearnLifeCycleObserver_LifecycleAdapter
+        //这样就不用通过反射执行生命周期方法
+        return new CompositeGeneratedAdaptersObserver(adapters);
+    }
+    //传进来的observer其实又被ReflectiveGenericLifecycleObserver包了一层，
+    //接着看看ReflectiveGenericLifecycleObserver
+    return new ReflectiveGenericLifecycleObserver(object);
+}
+end note
+
+LifecycleEventObserver.java -> ReflectiveGenericLifecycleObserver.java: new ReflectiveGenericLifecycleObserver(object)
+activate ReflectiveGenericLifecycleObserver.java
+note right
+//ReflectiveGenericLifecycleObserver.java
+class ReflectiveGenericLifecycleObserver implements LifecycleEventObserver {
+ private final Object mWrapped;
+ private final CallbackInfo mInfo;
+
+ ReflectiveGenericLifecycleObserver(Object wrapped) {
+     mWrapped = wrapped;
+     //再来看看CallbackInfo是什么，
+     mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+ }
+
+ @Override
+ public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+     mInfo.invokeCallbacks(source, event, mWrapped);
+  }
+}
+end note
+
+ReflectiveGenericLifecycleObserver.java -> ClassesInfoCache.java:  ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+activate ClassesInfoCache.java
+note right
+//ClassesInfoCache.java
+CallbackInfo getInfo(Class<?> klass) {
+     CallbackInfo existing = mCallbackMap.get(klass);
+     if (existing != null) {
+         return existing;
+     }
+     existing = createInfo(klass, null);
+     return existing;
+ }
+ private CallbackInfo createInfo(Class<?> klass, @Nullable Method[] declaredMethods) {
+     ...
+     Method[] methods = declaredMethods != null ? declaredMethods : getDeclaredMethods(klass);
+     boolean hasLifecycleMethods = false;
+     for (Method method : methods) {
+         //解析@OnLifecycleEvent注解
+         OnLifecycleEvent annotation = method.getAnnotation(OnLifecycleEvent.class);
+         ...
+         //获取注解的值
+         Lifecycle.Event event = annotation.value();
+         ...
+         MethodReference methodReference = new MethodReference(callType, method);
+         verifyAndPutHandler(handlerToEvent, methodReference, event, klass);
+     }
+     //并且存储集合最终都封装到CallbackInfo这个类中
+     CallbackInfo info = new CallbackInfo(handlerToEvent);
+     mCallbackMap.put(klass, info);
+     mHasLifecycleMethods.put(klass, hasLifecycleMethods);
+     return info;
+ }
+end note
+
+ClassesInfoCache.java - -> ReflectiveGenericLifecycleObserver.java:
+deactivate ClassesInfoCache.java
+
+ReflectiveGenericLifecycleObserver.java - -> LifecycleEventObserver.java:
+deactivate ReflectiveGenericLifecycleObserver.java
+
+LifecycleEventObserver.java - -> ObserverWithState.java:
+deactivate LifecycleEventObserver.java
+
+ObserverWithState.java - -> LifecycleRegistry.java:
+deactivate ObserverWithState.java
+
+LifecycleRegistry.java - -> LearnLifeCycleActivity.kt:
+deactivate LifecycleRegistry.java
+
+ComponentActivity.java -> ReportFragment.java: ReportFragment.injectIfNeededIn(this);
+activate ReportFragment.java
+note right
+//ReportFragment.java
+public static void injectIfNeededIn(Activity activity) {
+    // ProcessLifecycleOwner should always correctly work and some activities may not extend
+    // FragmentActivity from support lib, so we use framework fragments for activities
+    android.app.FragmentManager manager = activity.getFragmentManager();
+    if (manager.findFragmentByTag(REPORT_FRAGMENT_TAG) == null) {
+        //添加一个new ReportFragment()
+        manager.beginTransaction().add(new ReportFragment(), REPORT_FRAGMENT_TAG).commit();
+        // Hopefully, we are the first to make a transaction.
+        manager.executePendingTransactions();
+    }
+}
+
+//发现在ReportFragment的生命周期里调用了dispatch这个方法，
+//并且传入对应的生命周期事件（如：dispatch(Lifecycle.Event.ON_DESTROY);）
+//接着我们来看看dispatch的方法
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+    super.onActivityCreated(savedInstanceState);
+    dispatchCreate(mProcessListener);
+    dispatch(Lifecycle.Event.ON_CREATE);
+}
+
+@Override
+public void onStart() {
+    super.onStart();
+    dispatchStart(mProcessListener);
+    dispatch(Lifecycle.Event.ON_START);
+}
+
+@Override
+public void onResume() {
+    super.onResume();
+    dispatchResume(mProcessListener);
+    dispatch(Lifecycle.Event.ON_RESUME);
+}
+
+@Override
+public void onPause() {
+    super.onPause();
+    dispatch(Lifecycle.Event.ON_PAUSE);
+}
+
+@Override
+public void onStop() {
+    super.onStop();
+    dispatch(Lifecycle.Event.ON_STOP);
+}
+
+@Override
+public void onDestroy() {
+    super.onDestroy();
+    dispatch(Lifecycle.Event.ON_DESTROY);
+    // just want to be sure that we won't leak reference to an activity
+    mProcessListener = null;
+}
+//我们看到代码会判断activity是否是LifecycleOwner类型，
+//并且lifecycle是否是LifecycleRegistry，
+//接着会调用 LifecycleRegistry的handleLifecycleEvent()方法。并且事件作为参数传入。
+//根据我们上面查看的源码，ComponentActivity是实现了LifecycleOwner，
+//并且lifecycle就是LifecycleRegistry。
+//所以来看看LifecycleRegistry的handleLifecycleEvent()方法
+private void dispatch(Lifecycle.Event event) {
+    Activity activity = getActivity();
+    if (activity instanceof LifecycleRegistryOwner) {
+        ((LifecycleRegistryOwner) activity).getLifecycle().handleLifecycleEvent(event);
+        return;
+    }
+
+    if (activity instanceof LifecycleOwner) {
+        Lifecycle lifecycle = ((LifecycleOwner) activity).getLifecycle();
+        if (lifecycle instanceof LifecycleRegistry) {
+            ((LifecycleRegistry) lifecycle).handleLifecycleEvent(event);
+        }
+    }
+}
+end note
+
+ReportFragment.java -> LifecycleRegistry.java: lifecycle.handleLifecycleEvent(event);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+public void handleLifecycleEvent(@NonNull Lifecycle.Event event) {
+    //将Event转成State
+    //根据宿主当前分发的事件(生命周期)反推出宿主状态，
+    //eg:如果是ON_CREATE事件，则前进一步变为CREATED状态
+    State next = getStateAfter(event);
+    //状态同步
+    moveToState(next);
+}
+end note
+
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+private void moveToState(State next) {
+    ...
+    //真正的状态同步
+    sync();
+    ...
+}
+end note
+
+LifecycleRegistry.java->LifecycleRegistry.java: moveToState(next);
+activate LifecycleRegistry.java
+note left
+//LifecycleRegistry.java
+//真正的状态同步
+private void sync() {
+    LifecycleOwner lifecycleOwner = mLifecycleOwner.get();
+
+    //isSynced()：往mObserverMap集合里面注册的Observer是不是所有观察者的状态都已经分发完，
+    //是不是都已经同步到根宿主一致状态,如果没有，继续循环遍历
+    while (!isSynced()) {
+        // 生命周期后退逻辑
+        //宿主状态<观察者状态：生命周期倒退阶段
+        //前台切后台，执行onPause()，RESUMED->STARTED
+        //宿主进入状态：STARTED，观察者状态：还处于 RESUMED
+        //此时宿主状态<观察者状态，执行backwardPass(lifecycleOwner);
+        if (mState.compareTo(mObserverMap.eldest().getValue().mState) < 0) {
+            //让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+            backwardPass(lifecycleOwner);
+        }
+        Entry<LifecycleObserver, ObserverWithState> newest = mObserverMap.newest();
+        // 生命周期前进逻辑
+        //宿主状态>观察者状态：生命周期前进阶段
+        //后台切前台，执行onResume(),STARTED->RESUMED ，
+        //宿主进入状态：RESUMED，观察者状态：还处于 STARTED
+        if (!mNewEventOccurred && newest != null
+                && mState.compareTo(newest.getValue().mState) > 0) {
+            forwardPass(lifecycleOwner);
+        }
+    }
+}
+end note
+
+LifecycleRegistry.java ->LifecycleRegistry.java: backwardPass(lifecycleOwner);
+activate LifecycleRegistry.java
+note left
+LifecycleRegistry.java
+//遍历，让集合里面所有观察者的状态都倒退到和宿主一样的状态，并且分发事件
+private void backwardPass(LifecycleOwner lifecycleOwner) {
+    Iterator<Entry<LifecycleObserver, ObserverWithState>> descendingIterator =
+            mObserverMap.descendingIterator();
+    while (descendingIterator.hasNext() && !mNewEventOccurred) {
+        Entry<LifecycleObserver, ObserverWithState> entry = descendingIterator.next();
+        ObserverWithState observer = entry.getValue();
+        while ((observer.mState.compareTo(mState) > 0 && !mNewEventOccurred
+                && mObserverMap.contains(entry.getKey()))) {
+            //倒退观察者状态
+            //生命周期事件降级,根据状态计算出分发事件
+            //eg:观察者状态RESUMED,分发一个ON_PAUSE事件
+            Event event = downEvent(observer.mState);
+            pushParentState(getStateAfter(event));
+            //分发事件
+            observer.dispatchEvent(lifecycleOwner, event);
+            popParentState();
+        }
+    }
+}
+end note
+
+LifecycleRegistry.java ->ObserverWithState.java: observer.dispatchEvent(lifecycleOwner, event);
+activate ObserverWithState.java
+note right
+ObserverWithState.java
+static class ObserverWithState {
+    //分发事件
+    void dispatchEvent(LifecycleOwner owner, Event event) {
+        //倒推出观察者新的状态
+        State newState = getStateAfter(event);
+        mState = min(mState, newState);
+        //mLifecycleObserver的实现类是ReflectiveGenericLifecycleObserver，
+        //所以来看ReflectiveGenericLifecycleObserver的onStateChanged()方法
+        //通知所有观察者宿主当前生命周期状态改变
+        mLifecycleObserver.onStateChanged(owner, event);
+        //观察者状态降级到和宿主一样的状态
+        mState = newState;
+    }
+}
+end note
+
+ObserverWithState.java ->ReflectiveGenericLifecycleObserver.java: mLifecycleObserver.onStateChanged(owner, event);
+activate ReflectiveGenericLifecycleObserver.java
+note right
+...
+private final CallbackInfo mInfo;
+...
+ReflectiveGenericLifecycleObserver(Object wrapped) {
+        mWrapped = wrapped;
+        mInfo = ClassesInfoCache.sInstance.getInfo(mWrapped.getClass());
+}
+@Override
+public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Event event) {
+        //CallbackInfo的invokeCallbacks()方法
+        mInfo.invokeCallbacks(source, event, mWrapped);
+}
+end note
+
+ReflectiveGenericLifecycleObserver.java ->ClassesInfoCache.java:  mInfo.invokeCallbacks(source, event, mWrapped);
+activate ClassesInfoCache.java
+note right
+void invokeCallbacks(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            invokeMethodsForEvent(mEventToHandlers.get(event), source, event, target);
+            invokeMethodsForEvent(mEventToHandlers.get(Lifecycle.Event.ON_ANY), source, event,
+                    target);
+}
+
+private static void invokeMethodsForEvent(List<MethodReference> handlers,
+                LifecycleOwner source, Lifecycle.Event event, Object mWrapped) {
+            if (handlers != null) {
+                for (int i = handlers.size() - 1; i >= 0; i- -) {
+                    //其实是调用到了MethodReference的invokeCallback()方法
+                    handlers.get(i).invokeCallback(source, event, mWrapped);
+                }
+            }
+}
+end note
+
+ClassesInfoCache.java ->ClassesInfoCache.java:  invokeCallback(source, event, mWrapped);
+activate ClassesInfoCache.java
+note left
+//这里会mMethod会通过反射去调用。
+//那这个mMethod是什么呢？我们前面分析到CallbackInfo的createInfo的方法的时候
+//会发现，其实method就是我们传入的observer的对应的注解了OnLifecycleEvent的方法。
+ //总结： 组件Activity/Fragment会在相应的声命周期函数里调用dispatch方法分发事件，
+ //并调用LifecycleRegistry的handleLifecycleEvent去处理事件。
+ //LifecycleRegistry会根据传入的生命周期事件，去决定是否是向前还是向后的逻辑。
+ //然后经过ObserverWithState->ReflectiveGenericLifecycleObserver -> CallbackInfo -> MethodReference，
+ //最终通过反射真正调用到自定义LifecycleObserver添加了注解的方法。
+ //这就是整个流程
+void invokeCallback(LifecycleOwner source, Lifecycle.Event event, Object target) {
+            //noinspection TryWithIdenticalCatches
+            try {
+                switch (mCallType) {
+                    case CALL_TYPE_NO_ARG:
+                        mMethod.invoke(target);
+                        break;
+                    case CALL_TYPE_PROVIDER:
+                        mMethod.invoke(target, source);
+                        break;
+                    case CALL_TYPE_PROVIDER_WITH_EVENT:
+                        mMethod.invoke(target, source, event);
+                        break;
+                }
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException("Failed to call observer method", e.getCause());
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+}
+end note
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
