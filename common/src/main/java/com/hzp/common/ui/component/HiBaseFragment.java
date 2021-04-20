@@ -1,9 +1,11 @@
 package com.hzp.common.ui.component;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
@@ -32,5 +34,11 @@ public abstract class HiBaseFragment extends Fragment {
             return false;
         }
         return true;
+    }
+
+    public void showToast(String message) {
+        if (TextUtils.isEmpty(message)) {
+            Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+        }
     }
 }

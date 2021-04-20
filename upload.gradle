@@ -1,0 +1,90 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+def siteUrl = 'https://github.com/mrme2014/devio-plugin'      // 项目的主页
+def gitUrl = 'https://github.com/mrme2014/devio-plugin.git'   // Git仓库的url
+group = 'org.devio.as.proj.plugin'
+version = "1.0.0"
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
+install{
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'jar'
+                description 'description'
+                url siteUrl
+                developers {
+                    developer {
+                        id 'id'
+                        name 'qiaomu'
+                        email '123456@gmail.com'
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+//生成jar包的task
+task sourcesJar(type: Jar){
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+//生成javaDoc的jar
+task javadoc(type: Javadoc){
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClassPath().join(File.pathSeparator))
+}
+task javadocJar(type: Jar, dependsOn: javadoc){
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+//设置编码格式，如果不设置可能会在gradlew install的时候出现GBK编码映射错误
+javadoc {
+ options {
+     encoding "UTF-8"
+     charSet "UTF-8"
+     author true
+     version true
+     links "http://docs.oracle.com/javase/8/docs/api"
+ }
+}
+
+//上传到JCenter
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    user = properties.getProperty("bintray.user")    //读取 local.properties 文件里面的 bintray.user
+    key = properties.getProperty("bintray.apikey")   //读取 local.properties 文件里面的 bintray.apikey
+    configurations = ['archives']
+    pkg {
+        //这里的repo值必须要和你创建Maven仓库的时候的名字一样
+        repo = "devio"
+        //发布到JCenter上的项目名字
+        name = 'devio-plugin'
+        //项目描述
+        desc = 'A colorful circle view with text.'
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        publish = true
+    }
+}

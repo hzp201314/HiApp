@@ -1,3 +1,4 @@
+//include ':buildSrc'
 include ':libbreakpad'
 include ':launchstarter'
 include ':hi-debugtool'
