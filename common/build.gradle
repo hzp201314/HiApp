@@ -3,18 +3,28 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+apply from: '../dependency.gradle'
+
+def ext = rootProject.ext
+def dependency = rootProject.ext.dependencies
 android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.2"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion ext.minSdkVersion
+        targetSdkVersion ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -27,20 +37,45 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation project(path: ':hi-library')
-    implementation project(path: ':hi-ui')
-    api 'com.google.android.material:material:1.0.0'
-    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation dependency.lifecycle_extensions
+    kapt dependency.lifecycle_compiler
+    api dependency.constraintlayout
+    api dependency.appcompat
+    api dependency.material
+    api dependency.recyclerview
+    api dependency.fragment_ktx
 
     //glide图片
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation dependency.glide
+    kapt dependency.glide_compiler
+
+    //http
+    implementation dependency.retrofit
+    api dependency.gson
+
+    //arouter
+    implementation dependency.arouter_api
+    kapt dependency.arouter_compiler
+
+
+    //封装的工具库 aspectj,cache,crash,executor,fps,log,restful,taskflow,util
+    implementation project(path: ':hi-library')
+
+    //UI
+    implementation project(path: ':hi-ui')
+
+//    api project(':flutter')
+
 }

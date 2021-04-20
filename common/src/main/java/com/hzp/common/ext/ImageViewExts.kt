@@ -1,42 +1,66 @@
-package com.hzp.common.ui.view
+package com.hzp.common.ext
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.drawable.Drawable
+import android.text.TextUtils
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.target.SimpleTarget
+import com.bumptech.glide.request.transition.Transition
+import com.hzp.hi.library.util.HiViewUtil
 
-fun ImageView.loadUrl(url: String) {
+fun ImageView.loadUrl(url:String){
+    if(HiViewUtil.isActivityDestroyed(context)||TextUtils.isEmpty(url))return
     Glide.with(context).load(url).into(this)
 }
 
+
+fun ImageView.loadUrl(url: String,callback:(Drawable)->Unit){
+    //you cannot load url from destory activity
+    if (HiViewUtil.isActivityDestroyed(context) || TextUtils.isEmpty(url)) return
+    Glide.with(context).load(url).into(object : SimpleTarget<Drawable>(){
+        override fun onResourceReady(resource: Drawable, transition: Transition<in Drawable>?) {
+            callback(resource)
+        }
+    })
+}
+
 //圆形
-fun ImageView.loadCircle(url: String) {
-    Glide.with(this).load(url)
-        .transform(CircleCrop()).into(this)
+//@BindingAdapter(value = ["circleUrl"])
+fun ImageView.loadCircle(circleUrl: String?) {
+    if (HiViewUtil.isActivityDestroyed(context) || TextUtils.isEmpty(circleUrl)) return
+    Glide.with(this).load(circleUrl).transform(CircleCrop()).into(this)
 }
 
 //圆角
 //巨坑，glide 的 图片裁剪 和 imageview scaleType 有冲突。 centerCrop .
+//@BindingAdapter(value = ["url", "corner"], requireAll = false)
 fun ImageView.loadCorner(url: String, corner: Int) {
-    Glide.with(this).load(url).transform(CenterCrop(), RoundedCorners(corner)).into(this)
+    if (HiViewUtil.isActivityDestroyed(context) || TextUtils.isEmpty(url)) return
+    val transform = Glide.with(this).load(url).transform(CenterCrop())
+    if(corner>0){
+        RoundedCorners(corner)
+    }
+    transform.into(this)
 }
 
 //圆角描边
 fun ImageView.loadCircleBorder(
     url: String,
-    borderWidth: Float = 0f,
-    borderColor: Int = Color.WHITE
-) {
-
-    Glide.with(this).load(url).transform(CircleBorderTransform(borderWidth, borderColor)).into(this)
-
+    borderWith: Float = 0f,
+    borderColor: Int=Color.WHITE
+){
+    if (HiViewUtil.isActivityDestroyed(context) || TextUtils.isEmpty(url))return
+    Glide.with(this).load(url).transform(CircleBorderTransform(borderWith,borderColor)).into(this)
 }
+
 
 /*自定义圆角描边*/
 class CircleBorderTransform(private val borderWidth: Float, borderColor: Int) : CircleCrop() {
