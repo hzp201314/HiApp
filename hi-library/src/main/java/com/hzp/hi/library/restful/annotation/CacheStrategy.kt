@@ -1,4 +1,4 @@
-package com.hzp.hi.library.restful
+package com.hzp.hi.library.restful.annotation
 
 /**
  * 缓存策略

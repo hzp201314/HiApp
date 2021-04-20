@@ -8,7 +8,7 @@ interface HiInterceptor {
      * Chain 对象会在我们派发拦截器的时候 创建
      */
     interface Chain{
-        //是否时request请求
+        //是否是request请求
         val isRequestPeriod:Boolean get()=false
         fun request():HiRequest
 

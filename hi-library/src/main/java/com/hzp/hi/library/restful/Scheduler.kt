@@ -3,6 +3,7 @@ package com.hzp.hi.library.restful
 import com.hzp.hi.library.cache.HiStorage
 import com.hzp.hi.library.executor.HiExecutor
 import com.hzp.hi.library.log.HiLog
+import com.hzp.hi.library.restful.annotation.CacheStrategy
 import com.hzp.hi.library.util.MainHandler
 
 /**

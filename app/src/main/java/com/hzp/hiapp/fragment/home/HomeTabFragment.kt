@@ -6,7 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hzp.common.ui.component.HiAbsListFragment
-import com.hzp.hi.library.restful.CacheStrategy
+import com.hzp.hi.library.restful.annotation.CacheStrategy
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse
 import com.hzp.hi.ui.item.HiDataItem

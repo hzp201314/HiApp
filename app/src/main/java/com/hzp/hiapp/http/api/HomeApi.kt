@@ -1,6 +1,6 @@
 package com.hzp.hiapp.http.api
 
-import com.hzp.hi.library.restful.CacheStrategy
+import com.hzp.hi.library.restful.annotation.CacheStrategy
 import com.hzp.hi.library.restful.HiCall
 import com.hzp.hi.library.restful.annotation.Filed
 import com.hzp.hi.library.restful.annotation.GET

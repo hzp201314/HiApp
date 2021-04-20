@@ -2,6 +2,7 @@ package com.hzp.hi.library.restful
 
 import android.text.TextUtils
 import androidx.annotation.IntDef
+import com.hzp.hi.library.restful.annotation.CacheStrategy
 import java.lang.Exception
 import java.lang.reflect.Type
 import java.net.URLEncoder
@@ -26,6 +27,8 @@ open class HiRequest {
         companion object {
             const val GET = 0
             const val POST = 1
+            const val PUT = 2
+            const val DELETE = 3
         }
     }
 
@@ -73,7 +76,7 @@ open class HiRequest {
             builder.append("?")
         }
 
-        if (parameters != null) {
+        cacheStrategyKey = if (parameters != null) {
             for ((key, value) in parameters!!) {
                 try {
                     val encodeValue = URLEncoder.encode(value, "UTF-8")
@@ -84,9 +87,9 @@ open class HiRequest {
                 }
             }
             builder.deleteCharAt(builder.length - 1)
-            cacheStrategyKey = builder.toString()
+            builder.toString()
         } else {
-            cacheStrategyKey = endUrl
+            endUrl
         }
 
         return cacheStrategyKey
