@@ -7,8 +7,6 @@ import androidx.core.widget.ContentLoadingProgressBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hzp.common.R
-import com.hzp.common.ui.view.EmptyView
-import com.hzp.common.ui.view.HiRecyclerView
 import com.hzp.hi.ui.item.HiAdapter
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hi.ui.refresh.HiOverView

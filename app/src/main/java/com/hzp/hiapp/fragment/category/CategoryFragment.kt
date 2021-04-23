@@ -10,7 +10,6 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import com.hzp.common.ui.component.HiBaseFragment
-import com.hzp.common.ui.view.EmptyView
 import com.hzp.common.ui.view.loadUrl
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse

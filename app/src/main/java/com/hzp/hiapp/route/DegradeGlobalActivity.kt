@@ -1,14 +1,11 @@
 package com.hzp.hiapp.route
 
-import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
-import com.hzp.common.ui.view.EmptyView
 import com.hzp.hiapp.R
 
 /**

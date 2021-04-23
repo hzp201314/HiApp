@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:gravity="center">
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/empty_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:gravity="center"
         android:text="&#xe601;"
         android:textSize="60sp">
-    </com.hzp.common.ui.view.IconFontTextView>
+    </com.hzp.hi.ui.icfont.IconFontTextView>
     <TextView
         android:id="@+id/empty_title"
         android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:textSize="14sp"
             tools:text="虽然什么也没有,要不下拉刷新看看"></TextView>
 
-        <com.hzp.common.ui.view.IconFontTextView
+        <com.hzp.hi.ui.icfont.IconFontTextView
             android:id="@+id/empty_tips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:textSize="20sp"
             android:visibility="gone"
             tools:visibility="visible">
-        </com.hzp.common.ui.view.IconFontTextView>
+        </com.hzp.hi.ui.icfont.IconFontTextView>
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton xmlns:app="http://schemas.android.com/apk/res-auto"

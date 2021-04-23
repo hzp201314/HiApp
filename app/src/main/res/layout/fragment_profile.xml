@@ -110,7 +110,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.hzp.common.ui.view.IconFontTextView
+        <com.hzp.hi.ui.icfont.IconFontTextView
             android:id="@+id/item_course"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -149,7 +149,7 @@
         android:layout_marginLeft="24dp"
         android:background="@color/color_eee"/>
 
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/item_collection"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_45"
@@ -164,7 +164,7 @@
         android:layout_marginLeft="24dp"
         android:background="@color/color_eee" />
 
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/item_adress"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_45"
@@ -180,7 +180,7 @@
         android:background="@color/color_eee" />
 
 
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/item_history"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_45"

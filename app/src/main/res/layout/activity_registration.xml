@@ -14,7 +14,7 @@
         android:background="@color/color_white">
 
 
-        <com.hzp.common.ui.view.IconFontTextView
+        <com.hzp.hi.ui.icfont.IconFontTextView
             android:id="@+id/action_back"
             android:layout_width="@dimen/dp_45"
             android:layout_height="@dimen/dp_45"
@@ -41,7 +41,7 @@
         android:layout_height="1px"
         android:background="@color/color_d1d2" />
 
-    <com.hzp.common.ui.view.InputItemLayout
+    <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_orderId"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
@@ -57,7 +57,7 @@
         app:titleTextAppearance="@style/titleTextAppearance"
         app:topLineAppearance="@style/lineAppearance" />
 
-    <com.hzp.common.ui.view.InputItemLayout
+    <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_moocId"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
@@ -71,7 +71,7 @@
         app:titleTextAppearance="@style/titleTextAppearance" />
 
 
-    <com.hzp.common.ui.view.InputItemLayout
+    <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_username"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
@@ -84,7 +84,7 @@
         app:title="@string/input_item_title_user_name"
         app:titleTextAppearance="@style/titleTextAppearance" />
 
-    <com.hzp.common.ui.view.InputItemLayout
+    <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_pwd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
@@ -98,7 +98,7 @@
         app:titleTextAppearance="@style/titleTextAppearance" />
 
 
-    <com.hzp.common.ui.view.InputItemLayout
+    <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_pwd_check"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"

@@ -16,7 +16,7 @@
         android:textColor="@color/color_000"
         android:textSize="@dimen/sp_16" />
 
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/search_container"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_35"

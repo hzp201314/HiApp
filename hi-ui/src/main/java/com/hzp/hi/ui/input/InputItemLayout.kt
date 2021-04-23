@@ -1,4 +1,4 @@
-package com.hzp.common.ui.view
+package com.hzp.hi.ui.input
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,16 +10,14 @@ import android.text.InputFilter
 import android.text.InputType
 import android.util.AttributeSet
 import android.util.TypedValue
-import android.view.Gravity
+import android.view.Gravity.CENTER
+import android.view.Gravity.LEFT
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.hzp.common.R
+import com.hzp.hi.ui.R
 
-/**
- * 输入框组件
- */
 class InputItemLayout : LinearLayout {
     private lateinit var titleView: TextView
     private lateinit var editText: EditText
@@ -35,17 +33,16 @@ class InputItemLayout : LinearLayout {
         attributeSet,
         defStyle
     ) {
+
         dividerDrawable = ColorDrawable()
         showDividers = SHOW_DIVIDER_BEGINNING
 
         //去加载 去读取 自定义sytle属性
         orientation = HORIZONTAL
-        
-        //解析属性
+
         val array = context.obtainStyledAttributes(attributeSet, R.styleable.InputItemLayout)
 
         //解析title 属性
-        array.getString(R.styleable.InputItemLayout_title)
         val title = array.getString(R.styleable.InputItemLayout_title)
         val titleResId = array.getResourceId(R.styleable.InputItemLayout_titleTextAppearance, 0)
         parseTitleStyle(title, titleResId)
@@ -62,7 +59,6 @@ class InputItemLayout : LinearLayout {
         topLine = parseLineStyle(topResId)
         bottomLine = parseLineStyle(bottomResId)
 
-
         if (topLine.enable) {
             topPaint.color = topLine.color
             topPaint.style = Paint.Style.FILL_AND_STROKE
@@ -78,38 +74,34 @@ class InputItemLayout : LinearLayout {
         array.recycle()
     }
 
-    fun getTitleView(): TextView {
-        return titleView
-    }
-
-    fun getEditText(): EditText {
-        return editText
-    }
-
-    override fun onDraw(canvas: Canvas?) {
-        super.onDraw(canvas)
-        //巨坑
-        if (topLine.enable) {
-            canvas!!.drawLine(
-                topLine.leftMargin,
-                0f,
-                measuredWidth - topLine.rightMargin,
-                0f,
-                topPaint
+    @SuppressLint("CustomViewStyleable")
+    private fun parseLineStyle(resId: Int): Line {
+        val line = Line()
+        val array = context.obtainStyledAttributes(resId, R.styleable.lineAppearance)
+        line.color =
+            array.getColor(
+                R.styleable.lineAppearance_color,
+                ContextCompat.getColor(context, R.color.color_d1d2)
             )
-        }
+        line.height = array.getDimensionPixelOffset(R.styleable.lineAppearance_height, 0).toFloat()
+        line.leftMargin =
+            array.getDimensionPixelOffset(R.styleable.lineAppearance_leftMargin, 0).toFloat()
+        line.rightMargin =
+            array.getDimensionPixelOffset(R.styleable.lineAppearance_rightMargin, 0).toFloat()
+        line.enable = array.getBoolean(R.styleable.lineAppearance_enable, false)
 
-        if (bottomLine.enable) {
-            canvas!!.drawLine(
-                bottomLine.leftMargin,
-                height - bottomLine.height,
-                measuredWidth - bottomLine.rightMargin,
-                height - bottomLine.height,
-                bottomPaint
-            )
-        }
+        array.recycle()
+        return line
     }
 
+
+    inner class Line {
+        var color = 0
+        var height = 0f
+        var leftMargin = 0f
+        var rightMargin = 0f;
+        var enable: Boolean = false
+    }
 
     @SuppressLint("CustomViewStyleable")
     private fun parseInputStyle(hint: String?, resId: Int, inputType: Int) {
@@ -131,11 +123,12 @@ class InputItemLayout : LinearLayout {
             applyUnit(TypedValue.COMPLEX_UNIT_SP, 15f)
         )
 
-        val maxInputLength = array.getInteger(R.styleable.InputItemLayout_maxInputLength, 20)
+        val maxInputLength = array.getInteger(R.styleable.inputTextAppearance_maxInputLength, 0)
 
-        //右侧输入框EditText
         editText = EditText(context)
-        editText.filters = arrayOf(InputFilter.LengthFilter(maxInputLength))//最多可输入的字符数
+        if (maxInputLength > 0) {
+            editText.filters = arrayOf(InputFilter.LengthFilter(maxInputLength))//最多可输入的字符数
+        }
         editText.setPadding(0, 0, 0, 0)
         val params = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT)
         params.weight = 1f
@@ -145,7 +138,7 @@ class InputItemLayout : LinearLayout {
         editText.hint = hint
         editText.setTextColor(inputColor)
         editText.setHintTextColor(hintColor)
-        editText.gravity = Gravity.LEFT or (Gravity.CENTER)
+        editText.gravity = LEFT or (CENTER)
         editText.setBackgroundColor(Color.TRANSPARENT)
         editText.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize.toFloat())
 
@@ -188,7 +181,7 @@ class InputItemLayout : LinearLayout {
         titleView.setTextColor(titleColor)
         titleView.layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT)
         titleView.minWidth = minWidth
-        titleView.gravity = Gravity.LEFT or (Gravity.CENTER)
+        titleView.gravity = LEFT or (CENTER)
         titleView.text = title
 
 
@@ -197,36 +190,42 @@ class InputItemLayout : LinearLayout {
         array.recycle()
     }
 
-    @SuppressLint("CustomViewStyleable")
-    private fun parseLineStyle(resId: Int): Line {
-        val line = Line()
-        val array = context.obtainStyledAttributes(resId, R.styleable.lineAppearance)
-        line.color =
-            array.getColor(
-                R.styleable.lineAppearance_color,
-                ContextCompat.getColor(context, R.color.color_d1d2)
-            )
-        line.height = array.getDimensionPixelOffset(R.styleable.lineAppearance_height, 0).toFloat()
-        line.leftMargin =
-            array.getDimensionPixelOffset(R.styleable.lineAppearance_leftMargin, 0).toFloat()
-        line.rightMargin =
-            array.getDimensionPixelOffset(R.styleable.lineAppearance_rightMargin, 0).toFloat()
-        line.enable = array.getBoolean(R.styleable.lineAppearance_enable, false)
 
-        array.recycle()
-        return line
+    override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
+
+
+        //巨坑
+        if (topLine.enable) {
+            canvas!!.drawLine(
+                topLine.leftMargin,
+                0f,
+                measuredWidth - topLine.rightMargin,
+                0f,
+                topPaint
+            )
+        }
+
+        if (bottomLine.enable) {
+            canvas!!.drawLine(
+                bottomLine.leftMargin,
+                height - bottomLine.height,
+                measuredWidth - bottomLine.rightMargin,
+                height - bottomLine.height,
+                bottomPaint
+            )
+        }
     }
 
     private fun applyUnit(applyUnit: Int, value: Float): Int {
         return TypedValue.applyDimension(applyUnit, value, resources.displayMetrics).toInt()
     }
 
+    fun getTitleView(): TextView {
+        return titleView
+    }
 
-    inner class Line{
-        var color = 0
-        var height = 0f
-        var leftMargin = 0f
-        var rightMargin = 0f;
-        var enable: Boolean = false
+    fun getEditText(): EditText {
+        return editText
     }
 }

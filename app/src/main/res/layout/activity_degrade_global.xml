@@ -7,18 +7,18 @@
     android:orientation="vertical"
     tools:context=".route.DegradeGlobalActivity">
 
-    <com.hzp.common.ui.view.IconFontTextView
+    <com.hzp.hi.ui.icfont.IconFontTextView
         android:id="@+id/action_back"
         android:layout_width="@dimen/dp_45"
         android:layout_height="@dimen/dp_45"
         android:gravity="center"
         android:text="@string/if_back_soild"
         android:textSize="@dimen/sp_30">
-    </com.hzp.common.ui.view.IconFontTextView>
+    </com.hzp.hi.ui.icfont.IconFontTextView>
 
-    <com.hzp.common.ui.view.EmptyView
+    <com.hzp.hi.ui.empty.EmptyView
         android:id="@+id/empty_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.hzp.common.ui.view.EmptyView>
+    </com.hzp.hi.ui.empty.EmptyView>
 </LinearLayout>
