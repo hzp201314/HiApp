@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color_white"
+    android:gravity="center">
+
+    <com.hzp.hi.ui.icfont.IconFontTextView
+        android:id="@+id/empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:gravity="center"
+        android:text="#&#xe60c;"
+        android:textSize="@dimen/sp_60"/>
+
+    <TextView
+        android:id="@+id/empty_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/color_565"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="@string/list_empty_desc"
+        tools:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_9b9"
+            android:textSize="@dimen/sp_14"
+            tools:text="@string/nothing_try_refresh"/>
+
+        <com.hzp.hi.ui.icfont.IconFontTextView
+            android:id="@+id/empty_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:gravity="center"
+            android:text="@string/if_detail"
+            android:textColor="@color/color_298"
+            android:textSize="@dimen/sp_20"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/empty_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/refresh"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"
+        app:backgroundTint="@color/color_dd2"
+        app:cornerRadius="@dimen/dp_8"
+        tools:visibility="visible"/>
+
+
+
+</LinearLayout>

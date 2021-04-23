@@ -7,7 +7,7 @@ import android.view.View
 import android.view.WindowManager
 
 /**
- * 状态栏
+ * 状态栏设置
  */
 object HiStatusBar {
 

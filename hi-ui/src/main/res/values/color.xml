@@ -8,4 +8,19 @@
 
     <!-- Hi slider -->
     <color name="left_menu_background">#f1f1f1</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_999">#999999</color>
+    <color name="color_565">#565A5A</color>
+    <color name="color_000">#000000</color>
+    <color name="color_666">#666666</color>
+    <color name="color_127">#DD3127</color>
+    <color name="color_298">#2983E5</color>
+    <color name="color_9b9">#9B9C9D</color>
+    <color name="color_d1d2">#D1D2D3</color>
+    <color name="color_8f9">#F7F8F9</color>
+
+    <color name="color_333">#333333</color>
+    <color name="color_dd2">#DD2F24</color>
+    <color name="color_eee">#eeeeee</color>
+    <color name="color_eaeeef">#EAEEEF</color>
 </resources>

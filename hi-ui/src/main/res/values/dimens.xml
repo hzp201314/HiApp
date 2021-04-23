@@ -16,4 +16,17 @@
     <dimen name="font_12">12sp</dimen>
     <dimen name="font_14">14sp</dimen>
     <dimen name="font_18">18sp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_60">60sp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="dp_25">25sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
 </resources>

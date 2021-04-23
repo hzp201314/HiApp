@@ -21,6 +21,12 @@ public class HiDisplayUtil {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics());
     }
 
+    /*sp转px*/
+    public static int sp2px(float dp) {
+        Resources resources = AppGlobals.INSTANCE.get().getResources();
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, dp, resources.getDisplayMetrics());
+    }
+
 
     /*获取屏幕宽度*/
     public static int getDisplayWidthInPx(@NonNull Context context) {
@@ -45,5 +51,16 @@ public class HiDisplayUtil {
             return size.y;
         }
         return 0;
+    }
+
+    /*获取状态栏高度*/
+    public static int getStatusBarDimensionPx() {
+        int statusBarHeight = 0;
+        Resources res = AppGlobals.INSTANCE.get().getResources();
+        int resourceId = res.getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            statusBarHeight = res.getDimensionPixelSize(resourceId);
+        }
+        return statusBarHeight;
     }
 }
