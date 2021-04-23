@@ -26,26 +26,16 @@ class HiSliderView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
-
-    private var menuItemAttr: MenuItemAttr
-    private val MENU_WIDTH = applyUnit(TypedValue.COMPLEX_UNIT_DIP, 100f)
-    private val MENU_HEIGHT = applyUnit(TypedValue.COMPLEX_UNIT_DIP, 45f)
-    private val MENU_TEXT_SIZE = applyUnit(TypedValue.COMPLEX_UNIT_SP, 14f)
-
-    private val TEXT_COLOR_NORMAL = Color.parseColor("#666666")
-    private val TEXT_COLOR_SELECT = Color.parseColor("#DD3127")
-
-    private val BG_COLOR_NORMAL = Color.parseColor("#F7F8F9")
-    private val BG_COLOR_SELECT = Color.parseColor("#ffffff")
-
     private val MENU_ITEM_LAYOUT_RES_ID = R.layout.hi_slider_menu_item
     private val CONTENT_ITEM_LAYOUT_RES_ID = R.layout.hi_slider_content_item
 
     val menuView = RecyclerView(context)
     val contentView = RecyclerView(context)
 
+    private var menuItemAttr: AttrsParse.MenuItemAttr = AttrsParse.parseMenuItemAttr(context, attrs)
+
     init {
-        menuItemAttr = parseMenuItemAttr(attrs)
+
         orientation = HORIZONTAL
 
         menuView.layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT)
@@ -215,81 +205,5 @@ class HiSliderView @JvmOverloads constructor(
 
     }
 
-    private fun parseMenuItemAttr(attrs: AttributeSet?): MenuItemAttr {
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.HiSliderView)
-
-        val menuItemWidth =
-            typedArray.getDimensionPixelOffset(R.styleable.HiSliderView_menuItemWidth, MENU_WIDTH)
-
-        val menuItemHeight =
-            typedArray.getDimensionPixelOffset(R.styleable.HiSliderView_menuItemHeight, MENU_HEIGHT)
-
-        val menuItemTextSize = typedArray.getDimensionPixelOffset(
-            R.styleable.HiSliderView_menuItemTextSize,
-            MENU_TEXT_SIZE
-        )
-
-        val menuItemSelectTextSize = typedArray.getDimensionPixelOffset(
-            R.styleable.HiSliderView_menuItemSelectTextSize,
-            MENU_TEXT_SIZE
-        )
-        val menuItemTextColor =
-            typedArray.getColorStateList(R.styleable.HiSliderView_menuItemTextColor)
-                ?: generateColorStateList()
-
-        val menuItemIndicator = typedArray.getDrawable(R.styleable.HiSliderView_menuItemIndicator)
-            ?: ContextCompat.getDrawable(context, R.drawable.shape_hi_slider_indicator)
-
-        val menuItemBackgroundColor =
-            typedArray.getColor(R.styleable.HiSliderView_menuItemBackgroundColor, BG_COLOR_NORMAL)
-
-        val menuItemBackgroundSelectColor = typedArray.getColor(
-            R.styleable.HiSliderView_menuItemSelectBackgroundColor,
-            BG_COLOR_SELECT
-        )
-        typedArray.recycle()
-
-
-        return MenuItemAttr(
-            menuItemWidth,
-            menuItemHeight,
-            menuItemTextColor,
-            menuItemBackgroundSelectColor,
-            menuItemBackgroundColor,
-            menuItemTextSize,
-            menuItemSelectTextSize,
-            menuItemIndicator
-        )
-    }
-
-    data class MenuItemAttr(
-        val width: Int,
-        val height: Int,
-        val textColor: ColorStateList,
-        val selectBackgroundColor: Int,
-        val normalBackgroundColor: Int,
-        val textSize: Int,
-        val selectTextSize: Int,
-        val indicator: Drawable?
-    )
-
-    private fun generateColorStateList(): ColorStateList {
-        val states = Array(2) { IntArray(2) }
-        val colors = IntArray(2)
-
-        colors[0] = TEXT_COLOR_SELECT
-        colors[1] = TEXT_COLOR_NORMAL
-
-        states[0] = IntArray(1) { android.R.attr.state_selected }
-        states[1] = IntArray(1)
-
-
-        return ColorStateList(states, colors)
-    }
-
-    /*sp转px dp转px*/
-    private fun applyUnit(unit: Int, value: Float): Int {
-        return TypedValue.applyDimension(unit, value, context.resources.displayMetrics).toInt()
-    }
 
 }
