@@ -18,9 +18,9 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import com.alibaba.android.arouter.launcher.ARouter
+import com.hzp.common.ext.loadCircle
+import com.hzp.common.ext.loadCorner
 import com.hzp.common.ui.component.HiBaseFragment
-import com.hzp.common.ui.view.loadCircle
-import com.hzp.common.ui.view.loadCorner
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse
 import com.hzp.hi.library.util.HiDisplayUtil
@@ -91,10 +91,10 @@ class ProfileFragment : HiBaseFragment() {
 //            })
     }
 
-    private fun showToast(message: String?) {
-        if (message == null) return
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-    }
+//    private fun showToast(message: String?) {
+//        if (message == null) return
+//        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+//    }
 
     private fun updateUI(userProfile: UserProfile) {
         user_name.text =

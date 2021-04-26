@@ -9,10 +9,11 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
+import com.hzp.common.ext.loadUrl
 import com.hzp.common.ui.component.HiBaseFragment
-import com.hzp.common.ui.view.loadUrl
 import com.hzp.hi.library.restful.HiCallback
 import com.hzp.hi.library.restful.HiResponse
+import com.hzp.hi.ui.empty.EmptyView
 import com.hzp.hi.ui.item.HiViewHolder
 import com.hzp.hi.ui.tab.bottom.HiTabBottomLayout
 import com.hzp.hiapp.R

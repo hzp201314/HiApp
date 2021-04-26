@@ -5,7 +5,7 @@ package com.hzp.hi.library.restful.annotation
  */
 @Target(AnnotationTarget.FUNCTION, AnnotationTarget.VALUE_PARAMETER)
 @Retention(AnnotationRetention.RUNTIME)
-annotation class CacheStrategy(val cacheKey: String, val value: Int = NET_ONLY) {
+annotation class CacheStrategy( val value: Int = NET_ONLY) {
 
     companion object {
         //请求接口时先读取本地缓存，再读取接口，接口成功后更新缓存(页面初始化数据)

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.hzp.common.ui.view.loadUrl
+import com.hzp.common.ext.loadUrl
 import com.hzp.hi.library.util.HiDisplayUtil
 import com.hzp.hi.ui.banner.HiBanner
 import com.hzp.hi.ui.banner.core.HiBannerMo

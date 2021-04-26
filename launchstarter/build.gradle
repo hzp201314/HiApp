@@ -1,12 +1,16 @@
 apply plugin: 'com.android.library'
 
+apply from: '../dependency.gradle'
+
+def ext = rootProject.ext
+def dependency = rootProject.ext.dependencies
 android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.2"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion ext.minSdkVersion
+        targetSdkVersion ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 

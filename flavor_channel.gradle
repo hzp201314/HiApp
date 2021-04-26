@@ -1,7 +1,6 @@
 apply plugin: 'channel'
 channel {
     //指定渠道文件
-
     channelFile = file("../flavor_channel.txt")
     println("channelFile:" + channelFile.exists())
     //多渠道包的输出目录，默认为new File(project.buildDir,"channel")

@@ -1,5 +1,6 @@
 package com.hzp.plugin
 
+
 import com.android.build.api.transform.Format
 import com.android.build.api.transform.QualifiedContent
 import com.android.build.api.transform.Transform
@@ -14,9 +15,8 @@ import javassist.CtNewConstructor
 import javassist.Modifier
 import javassist.bytecode.ClassFile
 import org.apache.commons.codec.digest.DigestUtils
-import org.apache.commons.io.IOUtils
 import org.apache.commons.io.FileUtils
-
+import org.apache.commons.io.IOUtils
 import org.gradle.api.Project
 
 import java.util.jar.JarEntry
@@ -69,9 +69,9 @@ class TinyPngPTransform extends Transform {
 
         def outputProvider = transformInvocation.outputProvider
         transformInvocation.inputs.each { input ->
+
             input.directoryInputs.each { dirInput ->
                 println("dirInput abs file path:" + dirInput.file.absolutePath)
-
                 //遍历处理每一个文件夹下面的class文件
                 handleDirectory(dirInput.file)
 
@@ -81,10 +81,10 @@ class TinyPngPTransform extends Transform {
                 FileUtils.copyDirectory(dirInput.file, dest)
             }
 
+
             input.jarInputs.each { jarInputs ->
                 println("jarInputs abs file path :" + jarInputs.file.absolutePath)
-
-                //对jar 修改完之后，会返回一个新的jar文件
+                //对jar 修改完之后，会返回一个新的jar文件Q
                 def srcFile = handleJar(jarInputs.file)
 
                 //主要是为了防止重名
@@ -95,7 +95,7 @@ class TinyPngPTransform extends Transform {
                 }
                 //获取jar包的输出路径
                 def dest = outputProvider.getContentLocation(md5 + jarName, jarInputs.contentTypes, jarInputs.scopes, Format.JAR)
-                FileUtils.copyDirectory(srcFile, dest)
+                FileUtils.copyFile(srcFile, dest)
             }
         }
 
@@ -121,6 +121,7 @@ class TinyPngPTransform extends Transform {
                     //把修改后的数据写入到当前目录下
                     ctClass.writeFile(dir.name)
                     ctClass.detach()
+                    println("修改完成")
                 }
             }
         }
@@ -151,15 +152,17 @@ class TinyPngPTransform extends Transform {
             //com/leon/channel/helper/BuildConfig.class
             println("inputJarEntryName: " + inputJarEntryName)
 
-            def inputStream = inputJarFile.getInputStream(inputJarFile)
-            if (!shouldModifyClass2(inputJarEntryName)) {
+            def inputStream = inputJarFile.getInputStream(inputJarEntry)
+            if (!shouldModifyClass(inputJarEntryName)) {
+//            if (!shouldModifyClass2(inputJarEntryName)) {
                 //如果这个类不需要被修改，那也需要向output jar写入数据，否则class文件会丢失
                 jarOutputStream.write(IOUtils.toByteArray(inputStream))
                 inputStream.close()
                 continue
             }
 
-            def ctClass = modifyClass2(inputStream)
+            def ctClass = modifyClass(inputStream)
+//            def ctClass = modifyClass2(inputStream)
             def byteCode = ctClass.toBytecode()
             ctClass.detach()
             inputStream.close()
@@ -167,7 +170,6 @@ class TinyPngPTransform extends Transform {
             //向output jar写入数据
             jarOutputStream.write(byteCode)
             jarOutputStream.flush()
-
         }
         inputJarFile.close()
         jarOutputStream.closeEntry()
@@ -179,58 +181,57 @@ class TinyPngPTransform extends Transform {
     //这个方法是 往AppcompatImageView -setImageDrawable --插入不合理大图检测的代码段
     CtClass modifyClass2(InputStream is) {
         def classFile = new ClassFile(new DataInputStream(new BufferedInputStream(is)))
-        //com.hzp.hi.app.main.degrade.DegradeGlobalActivity
+        //com.hzp.hiapp.main.degrade.DegradeGlobalActivity
         println("modifyClass name：" + classFile.name)//全类名
         def ctClass = classPool.get(classFile.name)
         if (ctClass.isFrozen()) {
             ctClass.defrost()
         }
 
-        def drawable = classPool.get("android.graphics.drawable.Drawable")
-        CtClass[] params = Arrays.asList(drawable).toArray()
-        def setImageDrawableMethod = ctClass.getDeclaredMethod("setImageDrawable", params)
-
-        CtClass runnableImpl = classPool.makeClass("com.hzp.hi.app.debug.RunnableImpl")
-        if (runnableImpl.isFrozen()) {
-            runnableImpl.defrost()
-        }
-
-        CtField viewField = new CtField(classPool.get("androidx.appcompat.widget.AppCompatImageView"), "view", runnableImpl)
-        viewField.setModifiers(Modifier.PUBLIC)
-        runnableImpl.addField(viewField)
-
-        CtField drawableField = new CtField(classPool.get("android.graphics.drawable.Drawable"), drawable, runnableImpl)
-        drawableField.setModifiers(Modifier.PUBLIC)
-        runnableImpl.addField(drawableField)
-
-        runnableImpl.addConstructor(CtNewConstructor.make("public RunnableImpl(android.view.View view, android.graphics.drawable.Drawable drawable){\n" +
-                "            this.view = view;\n" +
-                "            this.drawable = drawable;\n" +
-                "        }", runnableImpl))
-
-        runnableImpl.addInterface(classPool.get("java.lang.Runnable"))
-
-        CtMethod runMethod = new CtMethod(CtClass.voidType, "run", null, runnableImpl)
-        runMethod.setModifiers(Modifier.PUBLIC)
-        runMethod.setBody("{int width = view.getWidth();\n" +
-                "            int height = view.getHeight();\n" +
-                "            int drawableWidth = drawable.getIntrinsicWidth();\n" +
-                "            int drawableHeight = drawable.getIntrinsicHeight();\n" +
-                "            if (width > 0 && height > 0) {\n" +
-                "                if (drawableWidth >= 2 * width && drawableHeight >= 2 * height) {\n" +
-                "                    android.util.Log.e(\"LargeBitmapChecker\", \"bitmap:[\" + drawableWidth + \",\" + drawableHeight + \"],view:[\" + width + \",\" + height + \"],className:\" + getContext().getClass().getSimpleName());\n" +
-                "                }\n" +
-                "            }\n" +
-                "            android.util.Log.e(\"LargeBitmapChecker\", \"bitmap:[\" + drawableWidth + \",\" + drawableHeight + \"],view:[\" + width + \",\" + height + \"],className:\" + getContext().getClass().getSimpleName());}")
-
-        runnableImpl.addMethod(runMethod)
-        runnableImpl.writeFile("hi_debugtool/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes")
-
-        runnableImpl.toClass()
-
-        classPool.insertClassPath("com.hzp.hi.app.debug.RunnableImpl")
-
-        setImageDrawableMethod.insertBefore("if(drawable=!=null){ post(new RunnableImpl(this, drawable));}")
+//        def drawable = classPool.get("android.graphics.drawable.Drawable")
+//        CtClass[] params = Arrays.asList(drawable).toArray()
+//        def setImageDrawableMethod = ctClass.getDeclaredMethod("setImageDrawable", params)
+//
+//        CtClass runnableImpl = classPool.makeClass("com.hzp.hiapp.debug.RunnableImpl")
+//        if (runnableImpl.isFrozen()) {
+//            runnableImpl.defrost()
+//        }
+//
+//        CtField viewField = new CtField(classPool.get("androidx.appcompat.widget.AppCompatImageView"), "view", runnableImpl)
+//        viewField.setModifiers(Modifier.PUBLIC)
+//        runnableImpl.addField(viewField)
+//
+//
+//        CtField drawableField = new CtField(classPool.get("android.graphics.drawable.Drawable"), "drawable", runnableImpl)
+//        drawableField.setModifiers(Modifier.PUBLIC)
+//        runnableImpl.addField(drawableField)
+//
+//        runnableImpl.addConstructor(CtNewConstructor.make("public RunnableImpl(android.view.View view, android.graphics.drawable.Drawable drawable) {\n" +
+//                "            this.view = view;\n" +
+//                "            this.drawable = drawable;\n" +
+//                "        }", runnableImpl))
+//
+//        runnableImpl.addInterface(classPool.get("java.lang.Runnable"))
+//
+//        CtMethod runMethod = new CtMethod(CtClass.voidType, "run", null, runnableImpl)
+//        runMethod.setModifiers(Modifier.PUBLIC)
+//        runMethod.setBody("{int width = view.getWidth();\n" +
+//                "            int height = view.getHeight();\n" +
+//                "            int drawableWidth = drawable.getIntrinsicWidth();\n" +
+//                "            int drawableHeight = drawable.getIntrinsicHeight();\n" +
+//                "            if (width > 0 && height > 0) {\n" +
+//                "                if (drawableWidth >= 2 * width && drawableHeight >= 2 * height) {\n" +
+//                "                    android.util.Log.e(\"LargeBitmapChecker\", \"bitmap:[\" + drawableWidth + \",\" + drawableHeight + \"],view:[\" + width + \",\" + height + \"],className:\" + view.getContext().getClass().getSimpleName());\n" +
+//                "                }\n" +
+//                "            }\n" +
+//                "            android.util.Log.e(\"LargeBitmapChecker\", \"bitmap:[\" + drawableWidth + \",\" + drawableHeight + \"],view:[\" + width + \",\" + height + \"],className:\" + view.getContext().getClass().getSimpleName());}")
+//        runnableImpl.addMethod(runMethod)
+//        runnableImpl.writeFile("hi_debugtool/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes")
+//        runnableImpl.toClass()
+//
+//        classPool.insertClassPath("com.hzp.hiapp.debug.RunnableImpl")
+//
+//        setImageDrawableMethod.insertBefore("if(drawable!=null){ post(new RunnableImpl(this, drawable));}")
         return ctClass
     }
 
@@ -240,7 +241,7 @@ class TinyPngPTransform extends Transform {
         //之所以使用InputStream，是为了兼顾jar包里面的class文件的处理场景
         //从jar包中获取的一个个文件，只能通过流的形式获取
         def classFile = new ClassFile(new DataInputStream(new BufferedInputStream(is)))
-        //org.devio.as.proj.main.degrade.DegradeGlobalActivity
+        //com.hzp.hiapp.main.degrade.DegradeGlobalActivity
         println("modifyClass name：" + classFile.name)//全类名
         def ctClass = classPool.get(classFile.name)
         //解冻，意思是指如果该class之前已经被别人加载并修改过了。默认不允许再次被编辑修改
@@ -257,7 +258,7 @@ class TinyPngPTransform extends Transform {
         def message = classFile.name
         //向方法最后一行插入Toast，message为当前类的全类名
         method.insertAfter("Toast.makeText(this," + "\"" + message + "\"" + ",Toast.LENGTH_SHORT).show();")
-
+        println("modifyClass success name：" + classFile.name+"===>Toast.makeText(this," + "\"" + message + "\"" + ",Toast.LENGTH_SHORT).show();")//全类名
         return ctClass
     }
 
@@ -268,7 +269,7 @@ class TinyPngPTransform extends Transform {
     //校验文件的路径以判断是否应该对它修改
     //不是我们包内的class，不是actvity.class都不修改
     boolean shouldModifyClass(String filePath) {
-        return (filePath.contains("com/hzp/hi/app")
+        return (filePath.contains("com\\hzp\\hiapp")
                 && filePath.endsWith("Activity.class")
                 && !filePath.contains("R.class")
                 && !filePath.contains('$')

@@ -4,14 +4,28 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.alibaba.arouter'
 
+////项目配置
+//apply from: '../project_config.gradle'
+//多渠道打包
+apply from: '../flavor_channel.gradle'
+////360加固
+//apply from: '../360protect.gradle'
+////jenkins 自动化构建脚本
+//apply from: '../jenkins_package.gradle'
+
+//依赖版本配置
+apply from: '../dependency.gradle'
+
+def ext = rootProject.ext
+def dependency = rootProject.ext.dependencies
 android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.2"
+    compileSdkVersion ext.compileSdkVersion
+    buildToolsVersion ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.hzp.hiapp"
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion ext.minSdkVersion
+        targetSdkVersion ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -101,3 +115,5 @@ dependencies {
     testImplementation "androidx.room:room-testing:$room_version"
 
 }
+
+apply plugin: 'tinypng'

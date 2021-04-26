@@ -7,8 +7,10 @@ import androidx.core.widget.ContentLoadingProgressBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hzp.common.R
+import com.hzp.hi.ui.empty.EmptyView
 import com.hzp.hi.ui.item.HiAdapter
 import com.hzp.hi.ui.item.HiDataItem
+import com.hzp.hi.ui.recyclerview.HiRecyclerView
 import com.hzp.hi.ui.refresh.HiOverView
 import com.hzp.hi.ui.refresh.HiRefresh
 import com.hzp.hi.ui.refresh.HiRefreshLayout
@@ -102,9 +104,9 @@ open class HiAbsListFragment : HiBaseFragment(), HiRefresh.HiRefreshListener {
         }, PREFETCH_SIZE)
     }
 
-    open fun disableLoadMore() {
-        recyclerView?.disableLoadMore()
-    }
+//    open fun disableLoadMore() {
+//        recyclerView?.disableLoadMore()
+//    }
 
     override fun enableRefresh(): Boolean {
         return true

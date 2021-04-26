@@ -8,7 +8,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.hzp.common.ui.view.loadUrl
+import com.hzp.common.ext.loadUrl
 import com.hzp.hi.library.util.HiDisplayUtil
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hi.ui.item.HiViewHolder

@@ -1,7 +1,7 @@
 package com.hzp.hi.library.crash
 
 import com.hzp.hi.library.util.AppGlobals
-import org.devio.`as`.proj.libbreakpad.NativeCrashHandler
+//import org.devio.`as`.proj.libbreakpad.NativeCrashHandler
 import java.io.File
 
 object CrashMgr {
@@ -14,7 +14,7 @@ object CrashMgr {
 
         CrashHandler.init(javaCrashDir.absolutePath)
         //TODO 后面需要自己打包成aar动态加载
-        NativeCrashHandler.init(nativeCrashDir.absolutePath)
+//        NativeCrashHandler.init(nativeCrashDir.absolutePath)
     }
 
     private fun getJavaCrashDir(): File {

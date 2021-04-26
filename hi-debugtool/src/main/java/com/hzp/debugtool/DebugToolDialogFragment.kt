@@ -81,7 +81,7 @@ class DebugToolDialogFragment : AppCompatDialogFragment() {
 
 
     inner class DebugToolAdapter(val list: List<DebugFunction>) :
-        RecyclerView.Adapter<RecyclerView.ViewHolder> {
+        RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
             val itemView = layoutInflater.inflate(R.layout.hi_debug_tool_item, parent, false)
             return object : RecyclerView.ViewHolder(itemView) {}

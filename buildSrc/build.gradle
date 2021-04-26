@@ -16,7 +16,7 @@ dependencies {
     implementation localGroovy()
 
     implementation 'org.javassist:javassist:3.27.0-GA'
-    implementation 'com.tinify:tinify:1.6.2'
+//    implementation 'com.tinify:tinify:1.6.2'
 }
 
 sourceCompatibility = "1.8"
@@ -26,9 +26,9 @@ buildscript {
     repositories {
         jcenter()
     }
-    dependencies {
-        classpath 'com.novoda:bintray-release:0.9'
-    }
+//    dependencies {
+//        classpath 'com.novoda:bintray-release:0.9'
+//    }
 }
 
 //def website = 'https://github.com/mrme2014/devio-plugin'      // 项目的主页

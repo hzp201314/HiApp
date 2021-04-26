@@ -17,8 +17,11 @@ buildscript {
         classpath "com.android.tools.build:gradle:3.4.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.alibaba:arouter-register:$arouter_register_version"
+        //多渠道打包
+        classpath 'com.leon.channel:plugin:2.0.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
     }
 }
 
