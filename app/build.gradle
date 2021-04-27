@@ -9,7 +9,7 @@ apply plugin: 'com.alibaba.arouter'
 //多渠道打包
 apply from: '../flavor_channel.gradle'
 ////360加固
-//apply from: '../360protect.gradle'
+apply from: '../360protect.gradle'
 ////jenkins 自动化构建脚本
 //apply from: '../jenkins_package.gradle'
 
@@ -19,6 +19,15 @@ apply from: '../dependency.gradle'
 def ext = rootProject.ext
 def dependency = rootProject.ext.dependencies
 android {
+    signingConfigs {
+        config {
+            storeFile file('../hiapp.jks')
+            storePassword 'a952646089'
+            keyAlias 'hiapp'
+            keyPassword 'a952646089'
+        }
+    }
+
     compileSdkVersion ext.compileSdkVersion
     buildToolsVersion ext.buildToolsVersion
 
@@ -47,11 +56,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
 
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
@@ -119,6 +130,10 @@ dependencies {
     // optional - Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
 
+    //测试自己的项目发布到jitpack
+//    implementation 'com.github.hzp201314:HiApp:v1.0.0'
+
 }
 
-apply plugin: 'tinypng'
+//自定义Acivity Toast插件和大图检测插件
+//apply plugin: 'tinypng'
