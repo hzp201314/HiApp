@@ -25,7 +25,7 @@ import java.util.jar.JarOutputStream
 
 class TinyPngPTransform extends Transform {
     private ClassPool classPool = ClassPool.getDefault()
-
+//    private HashMap<String, File> modifyMap = new HashMap<>();
     TinyPngPTransform(Project project) {
         //为了能够查找到android 相关的类，需要把android.jar包的路径添加到classPool  类搜索路径
         classPool.appendClassPath(project.android.bootClasspath[0].toString())
@@ -79,6 +79,17 @@ class TinyPngPTransform extends Transform {
                 //把input->dir->class-->dest目标目录下去。
                 def dest = outputProvider.getContentLocation(dirInput.name, dirInput.contentTypes, dirInput.scopes, Format.DIRECTORY)
                 FileUtils.copyDirectory(dirInput.file, dest)
+//                modifyMap.entrySet().each {
+//                    Map.Entry<String, File> en ->
+//                        File target = new File(dest.absolutePath + en.getKey());
+//                        Log.info(target.getAbsolutePath());
+//                        if (target.exists()) {
+//                            target.delete();
+//                        }
+//                        FileUtils.copyFile(en.getValue(), target);
+////                        saveModifiedJarForCheck(en.getValue());
+//                        en.getValue().delete();
+//                }
             }
 
 
@@ -109,6 +120,7 @@ class TinyPngPTransform extends Transform {
         classPool.appendClassPath(dir.absolutePath)
 
         if (dir.isDirectory()) {
+
             dir.eachFileRecurse { file ->
                 def filePath = file.absolutePath
                 //确保当前文件是class文件，并且不是系统自动生成的class文件
@@ -118,10 +130,11 @@ class TinyPngPTransform extends Transform {
                     def inputStream = new FileInputStream(file)
                     //修改class
                     def ctClass = modifyClass(inputStream)
+//                    //key为相对路径
+//                    modifyMap.put(filePath.replace(dir.absolutePath, ""), ctClass);
                     //把修改后的数据写入到当前目录下
                     ctClass.writeFile(dir.name)
                     ctClass.detach()
-                    println("修改完成")
                 }
             }
         }
@@ -271,6 +284,7 @@ class TinyPngPTransform extends Transform {
     boolean shouldModifyClass(String filePath) {
         return (filePath.contains("com\\hzp\\hiapp")
                 && filePath.endsWith("Activity.class")
+                && !filePath.contains("com.alibaba.arouter")
                 && !filePath.contains("R.class")
                 && !filePath.contains('$')
                 && !filePath.contains('R$')

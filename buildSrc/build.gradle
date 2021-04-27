@@ -1,4 +1,7 @@
 apply plugin: 'groovy'
+//this way we can find the android-maven in jcenter
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.hzp201314'
 
 repositories {
     google()
@@ -26,9 +29,10 @@ buildscript {
     repositories {
         jcenter()
     }
-//    dependencies {
+    dependencies {
 //        classpath 'com.novoda:bintray-release:0.9'
-//    }
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
 }
 
 //def website = 'https://github.com/mrme2014/devio-plugin'      // 项目的主页

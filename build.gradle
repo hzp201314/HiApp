@@ -19,6 +19,8 @@ buildscript {
         classpath "com.alibaba:arouter-register:$arouter_register_version"
         //多渠道打包
         classpath 'com.leon.channel:plugin:2.0.3'
+        //项目插件打包上传
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
 
