@@ -6,6 +6,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 /**
  * 1.将Fragment的操作内聚
@@ -49,5 +50,16 @@ public class HiFragmentTabView extends FrameLayout {
             currentPosition = position;
             mAdapter.instantiateItem(this, position);
         }
+    }
+
+    public int getCurrentItem() {
+        return currentPosition;
+    }
+
+    public Fragment getCurrentFragment() {
+        if (this.mAdapter == null) {
+            throw new IllegalArgumentException("please call setAdapter first.");
+        }
+        return mAdapter.getCurrentFragment();
     }
 }

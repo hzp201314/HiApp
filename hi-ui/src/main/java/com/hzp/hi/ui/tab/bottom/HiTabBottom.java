@@ -70,6 +70,10 @@ public class HiTabBottom extends RelativeLayout implements IHiTab<HiTabBottomInf
         inflateInfo(false, true);
     }
 
+    /**
+     * 动态改变某个tab的高度
+     * @param height
+     */
     @Override
     public void resetHeight(int height) {
         ViewGroup.LayoutParams layoutParams = getLayoutParams();

@@ -49,8 +49,8 @@ class HiTabBottomDemoActivity : AppCompatActivity() {
 //            "#ff656667",
 //            "#ffd44949"
 //        )
-        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.fire, null)
 
+        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.fire, null)
         val infoCategory = HiTabBottomInfo<String>(
             "分类",
             bitmap,
@@ -87,6 +87,8 @@ class HiTabBottomDemoActivity : AppCompatActivity() {
             Toast.makeText(this@HiTabBottomDemoActivity, nextInfo.name, Toast.LENGTH_SHORT).show()
         }
         hiTabBottomLayout.defaultSelected(homeInfo)
+
+        /*中间图片突出，隐藏名称*/
         //        改变某个tab的高度
         val tabBottom = hiTabBottomLayout.findTab(bottomInfoList[2])
         tabBottom?.apply { resetHeight(HiDisplayUtil.dp2px(66f, resources)) }

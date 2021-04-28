@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 
+import com.hzp.hi.library.log.HiLog;
 import com.hzp.hi.library.util.HiDisplayUtil;
 import com.hzp.hi.ui.tab.common.IHiTabLayout;
 
@@ -109,7 +110,7 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
         return rootView;
     }
 
-    private void onSelected(@NonNull HiTabTopInfo nextInfo) {
+    private void onSelected(@NonNull HiTabTopInfo<?> nextInfo) {
         for (OnTabSelectedListener<HiTabTopInfo<?>> listener : tabSelectedChangeListeners) {
             listener.onTabSelectedChange(infoList.indexOf(nextInfo), selectedInfo, nextInfo);
         }
@@ -124,7 +125,7 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
      *
      * @param nextInfo 点击tab的info
      */
-    private void autoScroll(HiTabTopInfo nextInfo) {
+    private void autoScroll(HiTabTopInfo<?> nextInfo) {
         HiTabTop tabTop = findTab(nextInfo);
         if (tabTop == null) return;
         //索引位置
@@ -140,10 +141,10 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
         }
         //判断点击了屏幕左侧还是右侧
         if ((loc[0] + tabWith / 2) > HiDisplayUtil.getDisplayWidthInPx(getContext()) / 2) {
-            //右侧 判断tab右侧2个tab是否完全展示，并返回需要滚动的距离
+            //点击了右侧 判断tab右侧2个tab是否完全展示，并返回需要滚动的距离
             scrollWidth = rangeScrollWidth(index, 2);
         } else {
-            //左侧 判断tab左侧2个tab是否完全展示，并返回需要滚动的距离
+            //点击了左侧 判断tab左侧2个tab是否完全展示，并返回需要滚动的距离
             scrollWidth = rangeScrollWidth(index, -2);
         }
         //x轴滚动
@@ -158,6 +159,7 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
      * @return 可滚动的范围，需要滚动的距离
      */
     private int rangeScrollWidth(int index, int range) {
+        //需要滚动的距离
         int scrollWidth = 0;
         for (int i = 0; i <= Math.abs(range); i++) {
             //下一个位置
@@ -177,6 +179,7 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
                     //计算向右滑动可滚动的距离
                     scrollWidth += scrollWidth(next, true);
                 }
+                HiLog.i("scrollWidth:"+scrollWidth);
             }
         }
         return scrollWidth;
@@ -196,6 +199,8 @@ public class HiTabTopLayout extends HorizontalScrollView implements IHiTabLayout
         Rect rect = new Rect();
         //判断视图是否可见
         target.getLocalVisibleRect(rect);
+        //TODO 不是很明白为什么这样计算可滚动距离
+        HiLog.i("tabWith:"+tabWith,"rect.left:"+rect.left,"rect.right:"+rect.right);
         if (toRight) {//点击屏幕右侧
             if (rect.right > tabWith) {//right坐标大于控件的宽度时，说明完全没有显示
                 return tabWith;

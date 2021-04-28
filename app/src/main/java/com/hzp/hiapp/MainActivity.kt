@@ -143,6 +143,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     )
                 )
             }
+            R.id.tv_main -> {
+                startActivity(
+                    Intent(
+                        this,
+                        HiMainActivity::class.java
+                    )
+                )
+            }
         }
     }
 

@@ -29,7 +29,7 @@ import java.util.List;
  * 1. 透明度和底部透出，列表可渲染高度问题
  * 2. 中间高度超过，凸起布局
  */
-public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTabBottom,HiTabBottomInfo<?>> {
+public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTabBottom, HiTabBottomInfo<?>> {
     //所有的TabBottom选中监听器
     private List<OnTabSelectedListener<HiTabBottomInfo<?>>> tabSelectedChangeListeners = new ArrayList<>();
     //当前被选中的TabBottomInfo
@@ -48,11 +48,11 @@ public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTab
     private static final String TAG_TAB_BOTTOM = "TAG_TAB_BOTTOM";
 
     public HiTabBottomLayout(@NonNull Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public HiTabBottomLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public HiTabBottomLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -113,18 +113,18 @@ public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTab
         int width = HiDisplayUtil.getDisplayWidthInPx(getContext()) / infoList.size();
         ll.setTag(TAG_TAB_BOTTOM);
         for (int i = 0; i < infoList.size(); i++) {
-            final HiTabBottomInfo<?> info =infoList.get(i);
+            final HiTabBottomInfo<?> info = infoList.get(i);
             //Tips：为何不用LinearLayout：当动态改变child大小后Gravity.BOTTOM会失效
             LayoutParams params = new LayoutParams(width, height);
-            params.gravity=Gravity.BOTTOM;
-            params.leftMargin=i*width;
+            params.gravity = Gravity.BOTTOM;
+            params.leftMargin = i * width;
 
             //每个tabBottom
             HiTabBottom tabBottom = new HiTabBottom(getContext());
             tabSelectedChangeListeners.add(tabBottom);
             tabBottom.setHiTabInfo(info);
             //将tabBottom添加tabBottomLayout中
-            ll.addView(tabBottom,params);
+            ll.addView(tabBottom, params);
             tabBottom.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -134,10 +134,10 @@ public class HiTabBottomLayout extends FrameLayout implements IHiTabLayout<HiTab
         }
 
         LayoutParams flParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-        flParams.gravity=Gravity.BOTTOM;
+        flParams.gravity = Gravity.BOTTOM;
         /*添加底部线*/
         addBottomLine();
-        addView(ll,flParams);
+        addView(ll, flParams);
 
         /*修复内容区域的底部Padding*/
         fixContentView();

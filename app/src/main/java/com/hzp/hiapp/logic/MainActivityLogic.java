@@ -65,12 +65,14 @@ public class MainActivityLogic {
     }
 
 
+    /*初始化底部tabBottom*/
     private void initTabBottom() {
         hiTabBottomLayout = activityProvider.findViewById(R.id.tab_bottom_layout);
         hiTabBottomLayout.setTabAlpha(0.85f);
         infoList = new ArrayList<>();
         int defaultColor = activityProvider.getResources().getColor(R.color.tabBottomDefaultColor);
         int tintColor = activityProvider.getResources().getColor(R.color.tabBottomTintColor);
+        //首页tab实体
         HiTabBottomInfo homeInfo = new HiTabBottomInfo<Integer>(
                 "首页",
                 "fonts/iconfont.ttf",
@@ -80,6 +82,7 @@ public class MainActivityLogic {
                 tintColor
         );
         homeInfo.fragment = HomePageFragment.class;
+
         HiTabBottomInfo infoFavorite = new HiTabBottomInfo<Integer>(
                 "收藏",
                 "fonts/iconfont.ttf",
@@ -89,6 +92,7 @@ public class MainActivityLogic {
                 tintColor
         );
         infoFavorite.fragment = FavoriteFragment.class;
+
         HiTabBottomInfo infoCategory = new HiTabBottomInfo<Integer>(
                 "分类",
                 "fonts/iconfont.ttf",
@@ -98,6 +102,7 @@ public class MainActivityLogic {
                 tintColor
         );
         infoCategory.fragment = CategoryFragment.class;
+
         HiTabBottomInfo infoRecommend = new HiTabBottomInfo<Integer>(
                 "推荐",
                 "fonts/iconfont.ttf",
@@ -107,6 +112,7 @@ public class MainActivityLogic {
                 tintColor
         );
         infoRecommend.fragment = RecommendFragment.class;
+
         HiTabBottomInfo infoProfile = new HiTabBottomInfo<Integer>(
                 "我的",
                 "fonts/iconfont.ttf",
@@ -116,6 +122,7 @@ public class MainActivityLogic {
                 tintColor
         );
         infoProfile.fragment = ProfileFragment.class;
+
         infoList.add(homeInfo);
         infoList.add(infoFavorite);
         infoList.add(infoCategory);
@@ -135,6 +142,7 @@ public class MainActivityLogic {
 
     }
 
+    /*初始化FragmentTabView*/
     private void initFragmentTabView() {
         HiTabViewAdapter tabViewAdapter = new HiTabViewAdapter(activityProvider.getSupportFragmentManager(), infoList);
         fragmentTabView = activityProvider.findViewById(R.id.fragment_tab_view);
