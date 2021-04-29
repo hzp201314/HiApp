@@ -25,6 +25,10 @@ import java.util.List;
  * 3. Banner需要展示网络图片，如何将网络图片库和Banner组件进行解耦？
  * 4. 指示器样式各异，如何实现指示器的高度定制？
  * 5. 如何设置ViewPager的滚动速度？
+ *
+ * TODO：二期
+ * 1.更多的轮播效果（卡片，堆叠）
+ * 2.更多的指示器
  */
 public class HiBanner extends FrameLayout implements IHiBanner {
     public HiBannerDelegate delegate;

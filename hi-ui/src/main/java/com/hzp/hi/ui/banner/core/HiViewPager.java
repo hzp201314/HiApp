@@ -198,8 +198,6 @@ public class HiViewPager extends ViewPager {
         }
         setCurrentItem(nextPosition, true);
         return nextPosition;
-
-
     }
 
 

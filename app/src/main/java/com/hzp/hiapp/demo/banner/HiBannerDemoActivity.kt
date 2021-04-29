@@ -66,6 +66,7 @@ class HiBannerDemoActivity : AppCompatActivity() {
         mHiBanner.setBannerData(R.layout.banner_item_layout, moList)
         mHiBanner.setBindAdapter { viewHolder, mo, position ->
             val imageView: ImageView = viewHolder.findViewById(R.id.iv_image)
+            //图片加载与框架解耦，可以换成适合自己的
             Glide.with(this@HiBannerDemoActivity).load(mo.url).into(imageView)
             val titleView: TextView = viewHolder.findViewById(R.id.tv_title)
             titleView.text = mo.url

@@ -12,6 +12,7 @@ public static void main(String[] args) {
     // 消息循环驱动器
     Looper.prepareMainLooper();
 
+    ActivityThread thread = new ActivityThread();
     thread.attach(false, startSeq);
 
     // 开启Looper的循环工作

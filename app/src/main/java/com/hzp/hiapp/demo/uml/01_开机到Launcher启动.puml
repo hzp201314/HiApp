@@ -6,8 +6,8 @@ autonumber
 Loader -> Kernel:
 note left
 关机，长按电源键开机，
-主板通电引导芯片执行烧录在存储器(Boot Room)里面的代码，
-加载引导程序到内存中。内存检查，硬件参数初始化功能。
+主板通电引导芯片执行烧录在存储器(Boot Room)里面的预设代码，
+加载引导程序到内存中。这里面主要做内存检查，硬件参数初始化功能。
 end note
 note right
 开机引导程序执行结束后，加载Linux Kernel核心代码，
@@ -22,13 +22,25 @@ Kernel -> CppFramework:
 note right
 硬件驱动加载完成后，会加载第一个用户进程init进程(进程pid=1)，
 会孵化adbd，logd进程（为什么可以断点调试和输出日志的原因，因为有这两个守护进程存在），
-还会孵化第一个java进程Zygote进程。
+init进程执行完之后还会孵化第一个java进程Zygote进程。
 Zygote进程承上启下连接java和native层的存在，
 Zygote进程创建成功会调用ZygoteInit.java类。
 ZygoteInit.java会创建SystemServer系统服务(SystemServer.java)进程.
 后续所有进程都是由Zygote进程孵化而来。
 App进程创建完成后会由Zygote进程 反射调用APP进程入口类ActivityThread.java类，
 从而使得APP得以启动。
+PS:Android调用c++通过JNI，那c++如何调用java
+1.从classpath路径下搜索ZygoteInit这个类，并返回该类的Class对象，进程创建完成后会固定加载这个类
+jClass clazz = (*env)->FindClass(env,"com/android/internal/os/ZygoteInit");
+2.获取类的默认构造方法ID
+jmethodID mid_construct = (*env)->GetMethodID(env,clazz,"<init>","V");
+3.创建该类的实例
+jobject jobj = (*env)->NewObject(env,clazz,mid_construct);
+4.查找实例方法的ID
+jmethodID mid_instance = (*env)->GetMethodID(env,clazz,"main","(Ljava/lang/String;I)V");
+5.调用对象的实例方法
+jstring str_arg = (*env)->NewStringUTF(env,"我是实例方法");
+(*env)->CallVoidMethod(env,jobj,mid_instance,str_arg,200);
 end note
 
 CppFramework -> AndroidFramework:

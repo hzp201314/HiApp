@@ -17,6 +17,7 @@ import com.hzp.hi.ui.refresh.HiOverView.HiRefreshState;
 
 /**
  * 下拉刷新View 刷新视图整个页面最外层视图容器
+ * TODO:bug：双指无空隙的下拉会造成下拉到一定位置后卡住不再回弹
  */
 public class HiRefreshLayout extends FrameLayout implements HiRefresh {
     private static final String TAG = HiRefreshLayout.class.getSimpleName();
@@ -112,7 +113,7 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
                 //如果列表发生了滚动则不处理
                 return false;
             }
-            //没有刷新或没有达到可以刷新的距离，且头部已经划出或下拉
+            //没有刷新或head没有达到可以刷新的距离，且头部已经划出或下拉
             if ((mState != HiRefreshState.STATE_REFRESH || head.getBottom() <= mHiOverView.mPullRefreshHeight)
                     && (head.getBottom() > 0 || distanceY <= 0.0F)) {
                 //还在滑动中
@@ -157,6 +158,7 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
         if (ev.getAction() == MotionEvent.ACTION_UP
                 || ev.getAction() == MotionEvent.ACTION_CANCEL
                 || ev.getAction() == MotionEvent.ACTION_POINTER_INDEX_MASK) {
+            //head已经被用户拉下来
             if (head.getBottom() > 0) {
                 //非正在刷新 恢复回弹或者触发刷新
                 if (mState != HiRefreshState.STATE_REFRESH) {
@@ -171,8 +173,8 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
         HiLog.i(TAG, "gesture consumed：" + consumed);
         // （手势已经消费 或者 不为初始态不为刷新态） 并且 head被拉下来
         if ((consumed || (mState != HiRefreshState.STATE_INIT && mState != HiRefreshState.STATE_REFRESH)) && head.getBottom() != 0) {
-            ev.setAction(MotionEvent.ACTION_CANCEL);
             //让父类接收不到真实的事件
+            ev.setAction(MotionEvent.ACTION_CANCEL);
             return super.dispatchTouchEvent(ev);
         }
         if (consumed) {
@@ -213,6 +215,7 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
     }
 
     /**
+     * 用户手动下拉造成的滚动
      * 根据偏移量移动header与child
      *
      * @param offsetY 偏移量
@@ -304,10 +307,10 @@ public class HiRefreshLayout extends FrameLayout implements HiRefresh {
         if (mHiRefreshListener != null && dis > mHiOverView.mPullRefreshHeight) {
             //滚动到指定位置的距离 也就是滚动到触发下拉刷新的位置
             mAutoScroller.recover(dis - mHiOverView.mPullRefreshHeight);
-            //松手状态
+            //更新为松手状态
             mState = HiRefreshState.STATE_OVER_RELEASE;
         } else {
-            //没有滚动到刷新位置，恢复原装
+            //没有滚动到刷新位置，恢复原状
             mAutoScroller.recover(dis);
         }
 

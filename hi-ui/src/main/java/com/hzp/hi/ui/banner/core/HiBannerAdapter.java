@@ -36,6 +36,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置数据
+     *
      * @param models
      */
     public void setBannerData(@NonNull List<? extends HiBannerMo> models) {
@@ -47,6 +48,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置banner点击监听器
+     *
      * @param onBannerClickListener
      */
     public void setOnBannerClickListener(IHiBanner.OnBannerClickListener onBannerClickListener) {
@@ -55,6 +57,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置Adapter
+     *
      * @param bindAdapter
      */
     public void setBindAdapter(IBindAdapter bindAdapter) {
@@ -63,6 +66,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置是否自动播放
+     *
      * @param autoPlay
      */
     public void setAutoPlay(boolean autoPlay) {
@@ -71,6 +75,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置无限循环
+     *
      * @param loop
      */
     public void setLoop(boolean loop) {
@@ -79,6 +84,7 @@ public class HiBannerAdapter extends PagerAdapter {
 
     /**
      * 设置资源布局
+     *
      * @param layoutResId
      */
     public void setLayoutResId(@LayoutRes int layoutResId) {
@@ -119,12 +125,12 @@ public class HiBannerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         int realPosition = position;
-        if(getRealCount()>0){
-            realPosition=position%getRealCount();
+        if (getRealCount() > 0) {
+            realPosition = position % getRealCount();
         }
         HiBannerViewHolder viewHolder = mCachedViews.get(realPosition);
         //viewHolder.rootView已经被添加进去，需移除
-        if(container.equals(viewHolder.rootView.getParent())){
+        if (container.equals(viewHolder.rootView.getParent())) {
             container.removeView(viewHolder.rootView);
         }
 
@@ -157,12 +163,12 @@ public class HiBannerAdapter extends PagerAdapter {
         viewHolder.rootView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mBannerClickListener!=null){
-                    mBannerClickListener.onBannerClick(viewHolder,bannerMo,position);
+                if (mBannerClickListener != null) {
+                    mBannerClickListener.onBannerClick(viewHolder, bannerMo, position);
                 }
             }
         });
-        if(mBindAdapter!=null){
+        if (mBindAdapter != null) {
             // 业务层数据绑定
             mBindAdapter.onBind(viewHolder, bannerMo, position);
         }
@@ -188,7 +194,6 @@ public class HiBannerAdapter extends PagerAdapter {
     }
 
 
-
     public static class HiBannerViewHolder {
         private SparseArray<View> viewHolderSparseArr;
         View rootView;
@@ -202,7 +207,7 @@ public class HiBannerAdapter extends PagerAdapter {
         }
 
         /*工具方法，通过id找到view进行数据数据绑定*/
-        public <V extends View>V findViewById(int id){
+        public <V extends View> V findViewById(int id) {
             if (!(rootView instanceof ViewGroup)) {
                 //单节点无子View直接返回
                 return (V) rootView;
