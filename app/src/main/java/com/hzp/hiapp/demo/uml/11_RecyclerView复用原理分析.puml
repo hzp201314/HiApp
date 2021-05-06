@@ -1,0 +1,204 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+'RecyclerView复用源码分析
+RecyclerView.java -> RecyclerView.java :tryGetViewHolderForPositionByDeadline()
+activate RecyclerView.java
+note right
+Recycler复用池 四级缓存
+public final class Recycler {
+    //#1 不需要重新bindViewHolder 一级缓存
+    //   屏幕上的ViewHolder
+    final ArrayList<ViewHolder> mAttachedScrap = new ArrayList<>();
+    ArrayList<ViewHolder> mChangedScrap = null;
+
+    //#2 可通过setItemCacheSize调整,默认大小为2  二级缓存
+    //   划出屏幕的ViewHolder
+    final ArrayList<ViewHolder> mCachedViews = new ArrayList<ViewHolder>();
+
+    //#3 自定义扩展View缓存  三级缓存
+    private ViewCacheExtension mViewCacheExtension;
+
+    //#4 根据ViewType存取ViewHolder  四级缓存
+    //   可通过setRecycledViewPool调整，每个类型容量默认为5
+    //   mCachedViews容量满了之后最老的oldest存储到RecyclerPool中
+    RecycledViewPool mRecyclerPool;
+}
+
+//RecyclerView复用源码分析
+//复用流程最终会调用tryGetViewHolderForPositionByDeadline()尝试性的获取ViewHolder
+ViewHolder tryGetViewHolderForPositionByDeadline(int position,
+        boolean dryRun, long deadlineNs) {
+    ViewHolder holder = null;
+    // 0) If there is a changed scrap, try to find from there
+    if (mState.isPreLayout()) {
+        //首先从一级缓存的ChangedScrap中查找
+        holder = getChangedScrapViewForPosition(position);
+    }
+    // 1) Find by position from scrap/hidden list/cache
+    if (holder == null) {
+        //然后从mAttachedScrap(一级缓存)、mHiddenViews(非缓存)、mCachedViews(二级缓存)三个集合中尝试查找holder
+        holder = getScrapOrHiddenOrCachedHolderForPosition(position, dryRun);
+        if (holder != null) {
+            //如果返回ViewHolder不为空，判断item的ViewType和前后id是否一致，只有都符合才能复用
+            if (!validateViewHolderForOffsetPosition(holder)) {
+                // recycle holder (and unscrap if relevant) since it can't be used
+                if (!dryRun) {
+                    recycleViewHolderInternal(holder);
+                }
+                holder = null;
+            }
+        }
+    }
+    if (holder == null) {
+        final int offsetPosition = mAdapterHelper.findPositionOffset(position);
+
+        final int type = mAdapter.getItemViewType(offsetPosition);
+        // 2) Find from scrap/cache via stable ids, if exists
+        if (holder == null && mViewCacheExtension != null) {
+            // We are NOT sending the offsetPosition because LayoutManager does not
+            // know it.
+            //从三级缓存自定义的mViewCacheExtension中查找，一般为空
+            final View view = mViewCacheExtension
+                    .getViewForPositionAndType(this, position, type);
+            if (view != null) {
+                holder = getChildViewHolder(view);
+            }
+        }
+        if (holder == null) { // fallback to pool
+            //从四级缓存RecycledViewPool中查找
+            holder = getRecycledViewPool().getRecycledView(type);
+            if (holder != null) {
+                holder.resetInternal();
+                if (FORCE_INVALIDATE_DISPLAY_LIST) {
+                    invalidateDisplayListInt(holder);
+                }
+            }
+        }
+        if (holder == null) {
+            //以上四级缓存都查找不到，就会调用createViewHolder()方法创建ViewHolder
+            holder = mAdapter.createViewHolder(RecyclerView.this, type);
+        }
+    }
+
+    return holder;
+}
+end note
+
+RecyclerView.java -> RecyclerView.java :getChangedScrapViewForPosition()
+activate RecyclerView.java
+note right
+//首先从一级缓存的ChangedScrap中查找
+ViewHolder getChangedScrapViewForPosition(int position) {
+    // If pre-layout, check the changed scrap for an exact match.
+    final int changedScrapSize;
+    //如果mChangedScrap为空直接返回null
+    if (mChangedScrap == null || (changedScrapSize = mChangedScrap.size()) == 0) {
+        return null;
+    }
+    // find by position
+    //循环查找mChangedScrap
+    for (int i = 0; i < changedScrapSize; i++) {
+        final ViewHolder holder = mChangedScrap.get(i);
+        //是否没有被复用过并且holder在列表上的位置和正在填充的位置一致，就返回holder
+        if (!holder.wasReturnedFromScrap() && holder.getLayoutPosition() == position) {
+            holder.addFlags(ViewHolder.FLAG_RETURNED_FROM_SCRAP);
+            return holder;
+        }
+    }
+    return null;
+}
+end note
+RecyclerView.java --> RecyclerView.java
+deactivate RecyclerView.java
+
+RecyclerView.java -> RecyclerView.java :getChangedScrapViewForPosition()
+activate RecyclerView.java
+note right
+//从mAttachedScrap、mHiddenViews、mCachedViews三个集合中尝试查找holder
+ViewHolder getScrapOrHiddenOrCachedHolderForPosition(int position, boolean dryRun) {
+    final int scrapCount = mAttachedScrap.size();
+
+    // Try first for an exact, non-invalid match from scrap.
+    for (int i = 0; i < scrapCount; i++) {
+        //从mAttachedScrap查找
+        final ViewHolder holder = mAttachedScrap.get(i);
+        //是否没有被复用过并且holder在列表上的位置和正在填充的位置一致，数据无效是否无效，是否被移除==
+        //条件都符合就返回holder
+        if (!holder.wasReturnedFromScrap() && holder.getLayoutPosition() == position
+                && !holder.isInvalid() && (mState.mInPreLayout || !holder.isRemoved())) {
+            holder.addFlags(ViewHolder.FLAG_RETURNED_FROM_SCRAP);
+            return holder;
+        }
+    }
+
+    //从正在做删除动画的集合中查找是否满足复用的view，条件符合返回holder
+    View view = mChildHelper.findHiddenNonRemovedView(position);
+
+    // Search in our first-level recycled view cache.
+    //从mCachedViews查找
+    final int cacheSize = mCachedViews.size();
+    for (int i = 0; i < cacheSize; i++) {
+        final ViewHolder holder = mCachedViews.get(i);
+        // invalid view holders may be in cache if adapter has stable ids as they can be
+        // retrieved via getScrapOrCachedViewForId
+        //校验数据是否无效，位置是否一致，条件符合返回holder
+        if (!holder.isInvalid() && holder.getLayoutPosition() == position
+                && !holder.isAttachedToTransitionOverlay()) {
+            return holder;
+        }
+    }
+    return null;
+}
+
+//从正在做删除动画的集合中查找是否满足复用的view
+View findHiddenNonRemovedView(int position) {
+  //mHiddenViews：需要做删除动画的item集合，不属于四级缓存
+  final int count = mHiddenViews.size();
+  for (int i = 0; i < count; i++) {
+      final View view = mHiddenViews.get(i);
+      RecyclerView.ViewHolder holder = mCallback.getChildViewHolder(view);
+      //判断前后位置的一致性
+      if (holder.getLayoutPosition() == position
+              && !holder.isInvalid()
+              && !holder.isRemoved()) {
+          return view;
+      }
+  }
+  return null;
+}
+end note
+RecyclerView.java --> RecyclerView.java
+deactivate RecyclerView.java
+
+RecyclerView.java -> RecyclerView.java :getChangedScrapViewForPosition()
+activate RecyclerView.java
+note right
+//首先从一级缓存的ChangedScrap中查找
+ViewHolder getChangedScrapViewForPosition(int position) {
+    // If pre-layout, check the changed scrap for an exact match.
+    final int changedScrapSize;
+    //如果mChangedScrap为空直接返回null
+    if (mChangedScrap == null || (changedScrapSize = mChangedScrap.size()) == 0) {
+        return null;
+    }
+    // find by position
+    //循环查找mChangedScrap
+    for (int i = 0; i < changedScrapSize; i++) {
+        final ViewHolder holder = mChangedScrap.get(i);
+        //是否没有被复用过并且holder在列表上的位置和正在填充的位置一致，就返回holder
+        if (!holder.wasReturnedFromScrap() && holder.getLayoutPosition() == position) {
+            holder.addFlags(ViewHolder.FLAG_RETURNED_FROM_SCRAP);
+            return holder;
+        }
+    }
+    return null;
+}
+
+end note
+RecyclerView.java --> RecyclerView.java
+deactivate RecyclerView.java
+RecyclerView.java --> RecyclerView.java
+deactivate RecyclerView.java
+@enduml

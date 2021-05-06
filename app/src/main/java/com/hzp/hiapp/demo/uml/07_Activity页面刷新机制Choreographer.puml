@@ -3,7 +3,7 @@
 
 autonumber
 
-'26 Activity之页面刷新机制  ViewRootImpl重绘
+'26 Activity之页面刷新机制Choreographer  ViewRootImpl重绘
 Choreographer.java -> Choreographer.java:Choreographer(Looper looper, int vsyncSource)
 activate Choreographer.java
 note left

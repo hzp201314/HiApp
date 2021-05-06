@@ -1,0 +1,522 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+'Fragment之Transaction事务执行流程分析
+MainActivity.kt -> MainActivity.kt: onCreate()
+activate MainActivity.kt
+note right
+MainActivity.kt
+override fun onCreate(saveInstanceState: Bundle?) {
+    super.onCreate((saveInstanceState)
+    setContentView(R.layout.activity_main)
+
+    val firstFragment = FirstFragment()
+    val secondFragment = SecondFragment()
+    val thirdFragment = ThirdFragment()
+
+    //getSupportFragmentManager()获取supportFragmentManager对象
+    supportFragmentManager
+        .beginTransaction()
+        .add(R.id.container,secondFragment)
+        .replace(R.id.container,thirdFragment)
+        .remove(thirdFragment)
+        .remove(secondFragment)
+        .add(R.id.container,firstFragment)
+        .addToBackStack(null)
+        .commit()
+}
+end note
+
+MainActivity.kt -> FragmentActivity.java :getSupportFragmentManager()
+activate FragmentActivity.java
+note right
+FragmentActivity.java
+
+//在FragmentActivity初始化的时候创建，在FragmentActivity的生命周期方法中调用FragmentController的dispatchXX()方法
+//但在FragmentActivity掉包引用中没有发现对Fragment包的引用，所以，FragmentActivity之所以能够对Fragment进行生命周期管理
+//是委托给FragmentController实现的。
+//设计FragmentController和HostCallbacks的原因：能够屏蔽宿主对Fragment的直接引用，拓展Fragment的应用场景，而不单单局限于Activity中
+final FragmentController mFragments = FragmentController.createController(new HostCallbacks());
+
+public FragmentManager getSupportFragmentManager() {
+   return mFragments.getSupportFragmentManager();
+}
+end note
+
+
+FragmentActivity.java -> FragmentController.java:getSupportFragmentManager()
+activate FragmentController.java
+note right
+FragmentController.java
+//在FragmentController里面也没有对Fragment生命周期管理的具体实现，而是转发给FragmentHostCallback,
+//FragmentHostCallback里面存在一个FragmentManager
+public FragmentManager getSupportFragmentManager() {
+    return mHost.mFragmentManager;
+}
+end note
+
+FragmentController.java -> FragmentHostCallback.java:
+activate FragmentHostCallback.java
+note right
+//Fragment可以被任何对象持有，最常见的是Activity，并不意味着Fragment只能在Activity中运行，
+//只要一个宿主实现FragmentHostCallback接口，提供一些Fragment运行时的能力，那就可以作为Fragment的宿主。
+//FragmentActivity就实现了FragmentHostCallback接口，所以FragmentActivity中Fragment能够正常运行下去
+FragmentHostCallback.java
+final FragmentManager mFragmentManager = new FragmentManagerImpl();
+end note
+
+
+MainActivity.kt -> FragmentManager.java: beginTransaction()
+activate FragmentManager.java
+note right
+FragmentManager.java
+//事务：操作要么全部成功，要么全部失败
+public FragmentTransaction beginTransaction() {
+    //Fragment回退栈元素
+    return new BackStackRecord(this);
+}
+end note
+
+FragmentManager.java -> BackStackRecord.java :new BackStackRecord(this)
+activate BackStackRecord.java
+note right
+BackStackRecord.java
+//BackStackRecord是Fragment回退栈中一个元素,每个元素是一个事务，因为继承FragmentTransaction
+//这样设计可以在操作回退栈的时候能够逆向操作事务，从而实现Fragment的出栈操作
+final class BackStackRecord extends FragmentTransaction{
+
+}
+end note
+
+FragmentManager.java -> FragmentTransaction.java : add()
+activate FragmentTransaction.java
+note right
+public FragmentTransaction add(@IdRes int containerViewId, @NonNull Fragment fragment) {
+    //OP_ADD：添加操作
+    doAddOp(containerViewId, fragment, null, OP_ADD);
+    return this;
+}
+
+void doAddOp(int containerViewId, Fragment fragment, @Nullable String tag, int opcmd) {
+    //将OP_ADD添加操作命令和fragment封装成一个Op对象
+    addOp(new Op(opcmd, fragment));
+}
+
+void addOp(Op op) {
+    //把传递进来的Op对象存储到mOps集合中，
+    //为什么要存储，因为一次事务里面可能有多次操作，等待事务执行的时候再统一执行
+    mOps.add(op);
+    op.mEnterAnim = mEnterAnim;
+    op.mExitAnim = mExitAnim;
+    op.mPopEnterAnim = mPopEnterAnim;
+    op.mPopExitAnim = mPopExitAnim;
+}
+end note
+
+FragmentManager.java -> FragmentTransaction.java : replace()
+activate FragmentTransaction.java
+note right
+public FragmentTransaction replace(@IdRes int containerViewId, @NonNull Fragment fragment) {
+    return replace(containerViewId, fragment, null);
+}
+public FragmentTransaction replace(@IdRes int containerViewId, @NonNull Fragment fragment,
+        @Nullable String tag)  {
+    //OP_REPLACE:替换操作
+    doAddOp(containerViewId, fragment, tag, OP_REPLACE);
+    return this;
+}
+
+
+void doAddOp(int containerViewId, Fragment fragment, @Nullable String tag, int opcmd) {
+    //将OP_REPLACE替换操作命令和fragment封装成一个Op对象
+    addOp(new Op(opcmd, fragment));
+}
+
+void addOp(Op op) {
+    //把传递进来的Op对象存储到mOps集合中，
+    //为什么要存储，因为一次事务里面可能有多次操作，等待事务执行的时候再统一执行
+    mOps.add(op);
+    op.mEnterAnim = mEnterAnim;
+    op.mExitAnim = mExitAnim;
+    op.mPopEnterAnim = mPopEnterAnim;
+    op.mPopExitAnim = mPopExitAnim;
+}
+end note
+
+FragmentManager.java -> FragmentTransaction.java : remove()
+activate FragmentTransaction.java
+note right
+public FragmentTransaction remove(@NonNull Fragment fragment) {
+    //将OP_REMOVE删除操作命令和fragment封装成一个Op对象
+    addOp(new Op(OP_REMOVE, fragment));
+    return this;
+}
+
+
+
+void doAddOp(int containerViewId, Fragment fragment, @Nullable String tag, int opcmd) {
+    //将OP_REPLACE替换操作命令和fragment封装成一个Op对象
+    addOp(new Op(opcmd, fragment));
+}
+
+void addOp(Op op) {
+    //把传递进来的Op对象存储到mOps集合中，
+    //为什么要存储，因为一次事务里面可能有多次操作，等待事务执行的时候再统一执行
+    mOps.add(op);
+    op.mEnterAnim = mEnterAnim;
+    op.mExitAnim = mExitAnim;
+    op.mPopEnterAnim = mPopEnterAnim;
+    op.mPopExitAnim = mPopExitAnim;
+}
+end note
+
+FragmentManager.java -> FragmentTransaction.java : commit()
+activate FragmentTransaction.java
+note right
+FragmentTransaction.java
+//抽象方法，实现是在Back
+public abstract int commit();
+
+end note
+
+FragmentTransaction.java -> BackStackRecord.java : commit()
+activate BackStackRecord.java
+note right
+BackStackRecord.java
+public int commit() {
+    return commitInternal(false);
+}
+int commitInternal(boolean allowStateLoss) {
+    //入栈操作
+    mManager.enqueueAction(this, allowStateLoss);
+    return mIndex;
+}
+end note
+
+BackStackRecord.java -> FragmentManager.java:enqueueAction()
+activate FragmentManager.java
+note right
+FragmentManager.java
+void enqueueAction(@NonNull OpGenerator action, boolean allowStateLoss) {
+    if (!allowStateLoss) {
+        //检查宿主状态，是否进入Stop状态，或者宿主因为内存不足等原因而销毁执行了onSaveInstanceState()方法
+        //此时如果执行commit()方法，就会抛出onSaveInstanceState异常
+        checkStateLoss();
+    }
+    synchronized (mPendingActions) {
+        //把本次提交的事务添加到等待队列当中去
+        mPendingActions.add(action);
+        //然后执行提交scheduleCommit()
+        scheduleCommit();
+    }
+}
+
+void scheduleCommit() {
+    synchronized (mPendingActions) {
+        boolean postponeReady =
+                mPostponedTransactions != null && !mPostponedTransactions.isEmpty();
+        boolean pendingReady = mPendingActions.size() == 1;
+        if (postponeReady || pendingReady) {
+            mHost.getHandler().removeCallbacks(mExecCommit);
+            //向主线程post一条消息，当主线程轮询到消息的时候才会执行事务
+            mHost.getHandler().post(mExecCommit);
+            updateOnBackPressedCallbackEnabled();
+        }
+    }
+}
+//当消息被轮询到的时候会执行Runnable.run()方法
+private Runnable mExecCommit = new Runnable() {
+    @Override
+    public void run() {
+        //执行等待队列当中的事务
+        execPendingActions(true);
+    }
+};
+
+boolean execPendingActions(boolean allowStateLoss) {
+    ensureExecReady(allowStateLoss);
+
+    boolean didSomething = false;
+    //generateOpsForPendingActions(mTmpRecords, mTmpIsPop):
+    //  1.将等待队列中的事务添加到mTmpRecords集合中
+    //  2.记录本次操作是入栈操作还是出栈操作，记录到mTmpIsPop集合中
+    while (generateOpsForPendingActions(mTmpRecords, mTmpIsPop)) {
+        mExecutingActions = true;
+        try {
+            //移除冗余操作并执行剩余操作
+            removeRedundantOperationsAndExecute(mTmpRecords, mTmpIsPop);
+        } finally {
+            cleanupExec();
+        }
+        didSomething = true;
+    }
+
+    updateOnBackPressedCallbackEnabled();
+    doPendingDeferredStart();
+    mFragmentStore.burpActive();
+
+    return didSomething;
+}
+
+//1.去掉每一事务当中冗余操作，如fragment添加之后又移除
+//2.执行事务当中剩余操作
+private void removeRedundantOperationsAndExecute(@NonNull ArrayList<BackStackRecord> records,
+        @NonNull ArrayList<Boolean> isRecordPop) {
+    if (records.isEmpty()) {
+        return;
+    }
+
+    if (records.size() != isRecordPop.size()) {
+        throw new IllegalStateException("Internal error with the back stack records");
+    }
+
+    // Force start of any postponed transactions that interact with scheduled transactions:
+    executePostponedTransaction(records, isRecordPop);
+
+    final int numRecords = records.size();
+    int startIndex = 0;
+    for (int recordNum = 0; recordNum < numRecords; recordNum++) {
+        final boolean canReorder = records.get(recordNum).mReorderingAllowed;
+        if (!canReorder) {
+            // execute all previous transactions
+            if (startIndex != recordNum) {
+                executeOpsTogether(records, isRecordPop, startIndex, recordNum);
+            }
+            // execute all pop operations that don't allow reordering together or
+            // one add operation
+            int reorderingEnd = recordNum + 1;
+            if (isRecordPop.get(recordNum)) {
+                while (reorderingEnd < numRecords
+                        && isRecordPop.get(reorderingEnd)
+                        && !records.get(reorderingEnd).mReorderingAllowed) {
+                    reorderingEnd++;
+                }
+            }
+            //一起执行事务操作
+            executeOpsTogether(records, isRecordPop, recordNum, reorderingEnd);
+            startIndex = reorderingEnd;
+            recordNum = reorderingEnd - 1;
+        }
+    }
+    if (startIndex != numRecords) {
+        executeOpsTogether(records, isRecordPop, startIndex, numRecords);
+    }
+}
+
+private void executeOpsTogether(@NonNull ArrayList<BackStackRecord> records,
+        @NonNull ArrayList<Boolean> isRecordPop, int startIndex, int endIndex) {
+    //是否优化冗余操作，默认false。如果设置为true会优化冗余操作，同时也可能不会执行冗余操作的生命周期。
+    final boolean allowReordering = records.get(startIndex).mReorderingAllowed;
+
+    //是否以过度动画方式启动Fragment
+    if (!allowReordering) {
+        FragmentTransition.startTransitions(this, records, isRecordPop, startIndex, endIndex,
+                false, mFragmentTransitionCallback);
+    }
+
+}
+end note
+
+FragmentManager.java -> FragmentTransaction.java:startTransitions()
+activate FragmentTransaction.java
+note right
+FragmentTransaction.java
+static void startTransitions(FragmentManager fragmentManager,
+        ArrayList<BackStackRecord> records, ArrayList<Boolean> isRecordPop,
+        int startIndex, int endIndex, boolean isReordered, Callback callback) {
+
+    //对事务集合遍历
+    for (int i = startIndex; i < endIndex; i++) {
+        final BackStackRecord record = records.get(i);
+        //取出本次操作是不是出栈操作
+        final boolean isPop = isRecordPop.get(i);
+        if (isPop) {
+            //出栈操作
+            calculatePopFragments(record, transitioningFragments, isReordered);
+        } else {
+            //入栈操作
+            calculateFragments(record, transitioningFragments, isReordered);
+        }
+    }
+
+}
+
+public static void calculateFragments(BackStackRecord transaction,
+        SparseArray<FragmentContainerTransition> transitioningFragments,
+        boolean isReordered) {
+    final int numOps = transaction.mOps.size();
+    //把事务中所有操作依次执行addToFirstInLastOut()方法
+    for (int opNum = 0; opNum < numOps; opNum++) {
+        final BackStackRecord.Op op = transaction.mOps.get(opNum);
+        addToFirstInLastOut(transaction, op, transitioningFragments, false, isReordered);
+    }
+}
+
+//1.计算事务当中操作对是添加删除还是显示隐藏，来决定Fragment在加载的过程中是否需要执行过度动画
+//2.对传递过来的操作逐一调用对应Fragment生命周期
+private static void addToFirstInLastOut(BackStackRecord transaction, BackStackRecord.Op op,
+        SparseArray<FragmentContainerTransition> transitioningFragments, boolean isPop,
+        boolean isReorderedTransaction) {
+    //1.
+    switch (command) {
+        case BackStackRecord.OP_SHOW:
+
+            break;
+        case BackStackRecord.OP_ADD:
+        case BackStackRecord.OP_ATTACH:
+
+            break;
+        case BackStackRecord.OP_HIDE:
+
+            break;
+        case BackStackRecord.OP_REMOVE:
+        case BackStackRecord.OP_DETACH:
+
+            break;
+    }
+    FragmentContainerTransition containerTransition = transitioningFragments.get(containerId);
+
+        FragmentManager manager = transaction.mManager;
+        if (fragment.mState < Fragment.CREATED && manager.mCurState >= Fragment.CREATED
+                && !transaction.mReorderingAllowed) {
+            manager.makeActive(fragment);
+            //2.
+            manager.moveToState(fragment, Fragment.CREATED);
+        }
+
+
+}
+end note
+
+FragmentTransaction.java -> FragmentManager.java :moveToState()
+activate FragmentManager.java
+note right
+FragmentManager.java
+//无论是因为事务的执行从而触发Fragment更改生命周期状态，还是因为Activity生命周期的变化而去更改生命周期状态
+//最后都会执行moveToState()方法变更Fragment生命周期状态
+void moveToState(@NonNull Fragment f, int newState) {
+    FragmentStateManager fragmentStateManager = mFragmentStore.getFragmentStateManager(f.mWho);
+
+    newState = Math.min(newState, fragmentStateManager.computeMaxState());
+    //fragment当前的生命周期状态是否到达期望的生命周期状态
+    //INITIALIZING->CREATED
+    if (f.mState <= newState) {
+        switch (f.mState) {
+            //Fragment创建的时候默认进入INITIALIZING
+            case Fragment.INITIALIZING:
+                //执行attach()方法
+                fragmentStateManager.attach(mHost, this, mParent);
+
+            //紧接着switch里面没有break,会执行下一个case。
+            case Fragment.ATTACHED:
+                //执行create()方法
+                fragmentStateManager.create();
+
+            case Fragment.CREATED:
+                if (newState > Fragment.INITIALIZING) {
+                    fragmentStateManager.ensureInflatedView();
+                }
+
+                if (newState > Fragment.CREATED) {
+                    fragmentStateManager.createView(mContainer);
+                    fragmentStateManager.activityCreated()
+                }
+
+            case Fragment.ACTIVITY_CREATED:
+                if (newState > Fragment.ACTIVITY_CREATED) {
+                    fragmentStateManager.start();
+                }
+
+            case Fragment.STARTED:
+                if (newState > Fragment.STARTED) {
+                    fragmentStateManager.resume();
+                }
+        }
+    } else if (f.mState > newState) {
+        switch (f.mState) {
+            case Fragment.RESUMED:
+                if (newState < Fragment.RESUMED) {
+                    fragmentStateManager.pause();
+                }
+            case Fragment.STARTED:
+                if (newState < Fragment.STARTED) {
+                    fragmentStateManager.stop();
+                }
+            case Fragment.ACTIVITY_CREATED:
+                ...
+            case Fragment.CREATED:
+                ...
+            case Fragment.ATTACHED:
+                if (newState < Fragment.ATTACHED) {
+                    fragmentStateManager.detach(mNonConfig);
+                }
+        }
+    }
+
+}
+end note
+
+FragmentManager.java -> FragmentStateManager.java: attach(mHost, this, mParent)
+activate FragmentStateManager.java
+note right
+FragmentStateManager.java
+void attach(@NonNull FragmentHostCallback<?> host, @NonNull FragmentManager fragmentManager,
+        @Nullable Fragment parentFragment) {
+    //调用Fragment.performAttach()方法
+    mFragment.performAttach();
+}
+
+void create() {
+    mFragment.performCreate(mFragment.mSavedFragmentState);
+}
+
+void createView(@NonNull FragmentContainer fragmentContainer) {
+
+    mFragment.performCreateView(mFragment.performGetLayoutInflater(
+            mFragment.mSavedFragmentState), container, mFragment.mSavedFragmentState);
+    mFragment.onViewCreated(mFragment.mView, mFragment.mSavedFragmentState);
+}
+
+end note
+
+FragmentStateManager.java -> Fragment.java: attach(mHost, this, mParent)
+activate Fragment.java
+note right
+Fragment.java
+void performAttach() {
+
+    mState = ATTACHED;
+    //进而调用Fragment的onAttach()方法
+    onAttach(mHost.getContext());
+
+}
+
+void performCreate(Bundle savedInstanceState) {
+    mState = CREATED;
+    onCreate(savedInstanceState);
+}
+
+void performCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+        @Nullable Bundle savedInstanceState) {
+    mView = onCreateView(inflater, container, savedInstanceState);
+}
+
+void performActivityCreated(Bundle savedInstanceState) {
+    mState = ACTIVITY_CREATED;
+    onActivityCreated(savedInstanceState);
+}
+
+void performStart() {
+    mState = STARTED;
+    onStart();
+}
+
+void performResume() {
+    mState = RESUMED;
+    onResume();
+}
+...
+end note
+
+@enduml

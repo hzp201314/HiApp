@@ -1,0 +1,391 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+MainActivity.java -> MainActivity.java:onCreate()
+activate MainActivity.java
+note right
+MainActivity.java
+
+override fun onCreate(saveInstanceState:Bundle?){
+    super.onCreate(saveInstanceState)
+    setContentView(R.layout.activity_main)
+    for(index in 1..20){
+        dataSet.add(index.toString())
+    }
+    recycler_view.adapter = MyAdapter()
+    //从setLayoutManager()开始分析
+    recycler_view.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+
+}
+
+inner class MyAdapter:RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
+    override fun onCreateView(parent:ViewGroup,viewType:Int):MyViewHolder{
+        val view = LayoutInflater.from(parent.context).inflate(android.R.layout.simple_list_item_1,parent,false)
+        return MyViewHolder(view)
+    }
+
+    override fun getItemCount():Int{
+        return dataSet.size
+    }
+
+    override fun onBindViewHolder(holder:MyViewHolder,position:Int){
+        var textView = holder.itemView as TextView
+        textView.text = dataSet.get(position)
+
+    }
+}
+end note
+
+MainActivity.java -> RecyclerView.java : setLayoutManager()
+activate RecyclerView.java
+note right
+RecyclerView.java
+public void setLayoutManager(LayoutManager layout) {
+
+    //首先判断之前是否已经关联过LayoutManager，如果是，清理掉之前的LayoutManager，并且解除关联操作
+    if (mLayout != null) {
+        if (mItemAnimator != null) {
+            //结束动画
+            mItemAnimator.endAnimations();
+        }
+        //移除列表上items
+        mLayout.removeAndRecycleAllViews(mRecycler);
+        mLayout.removeAndRecycleScrapInt(mRecycler);
+        //清理缓存池缓存
+        mRecycler.clear();
+
+    } else {
+        mRecycler.clear();
+    }
+    //把新的LayoutManager保存到mLayout
+    mLayout = layout;
+    if (layout != null) {
+        //新设置的layoutManager是否和RecyclerView关联，如果关联了，抛出异常
+        if (layout.mRecyclerView != null) {
+            throw new IllegalArgumentException("LayoutManager " + layout
+                    + " is already attached to a RecyclerView: " + layout.mRecyclerView);
+        }
+        //关联layoutManager和RecyclerView
+        mLayout.setRecyclerView(this);
+        if (mIsAttached) {
+            mLayout.dispatchAttachedToWindow(this);
+        }
+    }
+    mRecycler.updateViewCacheSize();
+    //进入测量布局绘制
+    requestLayout();
+}
+end note
+
+'测量
+RecyclerView.java -> RecyclerView.java: onMeasure()
+activate RecyclerView.java
+note right
+RecyclerView.java
+//测量
+protected void onMeasure(int widthSpec, int heightSpec) {
+    if (mLayout == null) {
+        //如果没有关联LayoutManager会调用defaultOnMeasure()方法给RecyclerView设置一个尽量合适的宽高值
+        defaultOnMeasure(widthSpec, heightSpec);
+        return;
+    }
+    //是否开启自动测量模式，保证RecyclerView宽高在不确定的情况下和列表宽高在不确定的情况下也能测出正确的值
+    if (mLayout.isAutoMeasureEnabled()) {
+        final int widthMode = MeasureSpec.getMode(widthSpec);
+        final int heightMode = MeasureSpec.getMode(heightSpec);
+
+        //内部继续调用defaultOnMeasure()方法，并没有开启对列表测量工作
+        mLayout.onMeasure(mRecycler, mState, widthSpec, heightSpec);
+
+        //确切的值
+        final boolean measureSpecModeIsExactly =
+                widthMode == MeasureSpec.EXACTLY && heightMode == MeasureSpec.EXACTLY;
+        if (measureSpecModeIsExactly || mAdapter == null) {
+            return;
+        }
+        //如果没有设置确切的值，就需要下面的代码来测量RecyclerView宽高
+
+        //mState保存当前RecyclerView滑动状态信息
+        //mLayoutStep布局阶段，分三段。
+        //STEP_START:预布局阶段,对应方法dispatchLayoutStep1(),收集需要做动画的View信息，和所做动画的类型;
+        //STEP_LAYOUT:真正布局的阶段,对应方法dispatchLayoutStep2();
+        //STEP_ANIMATIONS:动画阶段，开启动画执行;
+        if (mState.mLayoutStep == State.STEP_START) {
+            dispatchLayoutStep1();
+        }
+        // set dimensions in 2nd step. Pre-layout should happen with old dimensions for
+        // consistency
+        mLayout.setMeasureSpecs(widthSpec, heightSpec);
+        mState.mIsMeasuring = true;
+        //让layoutmanager开始测量并布局列表上面的item，从而期望能够计算出RecyclerView的宽高
+        dispatchLayoutStep2();
+
+        // now we can get the width and height from the children.
+        mLayout.setMeasuredDimensionFromChildren(widthSpec, heightSpec);
+
+        // if RecyclerView has non-exact width and height and if there is at least one child
+        // which also has non-exact width & height, we have to re-measure.
+        //再次测量
+        if (mLayout.shouldMeasureTwice()) {
+            mLayout.setMeasureSpecs(
+                    MeasureSpec.makeMeasureSpec(getMeasuredWidth(), MeasureSpec.EXACTLY),
+                    MeasureSpec.makeMeasureSpec(getMeasuredHeight(), MeasureSpec.EXACTLY));
+            mState.mIsMeasuring = true;
+            //真正布局的阶段。确定item和recyclerView的宽和高
+            dispatchLayoutStep2();
+            // now we can get the width and height from the children.
+            mLayout.setMeasuredDimensionFromChildren(widthSpec, heightSpec);
+        }
+    }
+}
+end note
+
+RecyclerView.java --> RecyclerView.java
+deactivate RecyclerView.java
+
+'布局
+RecyclerView.java -> RecyclerView.java: onLayout()
+activate RecyclerView.java
+note right
+RecyclerView.java
+//布局
+protected void onLayout(boolean changed, int l, int t, int r, int b) {
+    dispatchLayout();
+}
+
+void dispatchLayout() {
+    //判断状态，如果是开始状态执行step1()和step2()
+    if (mState.mLayoutStep == State.STEP_START) {
+        //预布局阶段,收集需要做动画的View信息，和所做动画的类型;
+        dispatchLayoutStep1();
+        //真正布局的阶段。确定item和recyclerView的宽和高
+        dispatchLayoutStep2();
+    } else if (mAdapterHelper.hasUpdates() || mLayout.getWidth() != getWidth()
+            || mLayout.getHeight() != getHeight()) {
+        ///真正布局的阶段。确定item和recyclerView的宽和高
+        dispatchLayoutStep2();
+    }
+    //动画阶段，开启动画执行;
+    dispatchLayoutStep3();
+}
+
+/开启布局
+private void dispatchLayoutStep2() {
+
+    // Step 2: Run layout
+    //layoutmanager复写此方法
+    mLayout.onLayoutChildren(mRecycler, mState);
+}
+end note
+
+'layoutmanager复写此方法
+RecyclerView.java -> LinearLayoutManager.java : mLayout.onLayoutChildren()
+activate LinearLayoutManager.java
+note right
+LinearLayoutManager.java
+@Override
+public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
+    // layout algorithm:
+    // 1) by checking children and other variables, find an anchor coordinate and an anchor
+    //  item position.
+    // 2) fill towards start, stacking from bottom
+    // 3) fill towards end, stacking from top
+    // 4) scroll to fulfill requirements like stack from bottom.
+    // create layout state
+
+    //不可见移除
+    if (mPendingSavedState != null || mPendingScrollPosition != RecyclerView.NO_POSITION) {
+        if (state.getItemCount() == 0) {
+            removeAndRecycleAllViews(recycler);
+            return;
+        }
+    }
+
+
+    //创建LayoutState对象
+    ensureLayoutState();
+
+    // resolve layout direction
+    //本次布局是否需要反转布局
+    resolveShouldLayoutReverse();
+
+    final View focused = getFocusedChild();
+    if (!mAnchorInfo.mValid || mPendingScrollPosition != RecyclerView.NO_POSITION
+            || mPendingSavedState != null) {
+        mAnchorInfo.reset();
+        //计算是否需要反转布局 mStackFromEnd：滚动到栈底列表最后一条
+        mAnchorInfo.mLayoutFromEnd = mShouldReverseLayout ^ mStackFromEnd;
+        // calculate anchor position and coordinate
+        //AnchorInfo:记录锚点View的position位置信息和锚点View在屏幕上面的坐标
+        //收集锚点View的position位置信息和锚点View在屏幕上面的坐标，并更新信息
+        updateAnchorInfoForLayout(recycler, state, mAnchorInfo);
+        mAnchorInfo.mValid = true;
+    }
+
+    //解决开始设置layoutManager时调用scrollingToPosition()方法，布局开始前计算开始位置的偏移量,
+    calculateExtraLayoutSpace(state, mReusableIntPair);
+
+    //回收
+    //在一个新的布局开始前需要对列表上已经存在的item对应的ViewHolder分门别类的暂时的回收到对应的缓存中
+    //目的是在接下来的布局开始之后能够从Recycler复用池中能够复用ViewHolder
+    detachAndScrapAttachedViews(recycler);
+    mLayoutState.mInfinite = resolveIsInfinite();
+    mLayoutState.mIsPreLayout = state.isPreLayout();
+    // noRecycleSpace not needed: recycling doesn't happen in below's fill
+    // invocations because mScrollingOffset is set to SCROLLING_OFFSET_NaN
+    mLayoutState.mNoRecycleSpace = 0;
+    //是否需要倒序布局
+    if (mAnchorInfo.mLayoutFromEnd) {
+      ...
+    } else {
+        // fill towards end
+        //先从锚点位置从上往下填充item
+        updateLayoutStateToFillEnd(mAnchorInfo);
+        fill(recycler, mLayoutState, state, false);
+
+        // fill towards start
+        //然后从锚点位置从下往上填充item
+        updateLayoutStateToFillStart(mAnchorInfo);
+        fill(recycler, mLayoutState, state, false);
+    }
+
+}
+end note
+
+LinearLayoutManager.java -> LinearLayoutManager.java :detachAndScrapAttachedViews()
+activate LinearLayoutManager.java
+note right
+LinearLayoutManager.java
+//回收
+public void detachAndScrapAttachedViews(@NonNull Recycler recycler) {
+    final int childCount = getChildCount();
+    for (int i = childCount - 1; i >= 0; i--) {
+        final View v = getChildAt(i);
+        // 逐一回收
+        scrapOrRecycleView(recycler, i, v);
+    }
+}
+//逐一回收
+private void scrapOrRecycleView(Recycler recycler, int index, View view) {
+    final ViewHolder viewHolder = getChildViewHolderInt(view);
+
+    //isInvalid:viewholder存储数据无效，
+    //isRemoved:viewholder被删除
+    //hasStableIds:item独一无二的id标识，默认false
+    //数据无效，没有被移除且没有id标识 调用notifyDataSetChanged()的时候，需要重新绑定数据
+    if (viewHolder.isInvalid() && !viewHolder.isRemoved()
+            && !mRecyclerView.mAdapter.hasStableIds()) {
+        removeViewAt(index);
+        recycler.recycleViewHolderInternal(viewHolder);
+    } else {
+        //如果不是由于notifyDataSetChanged()造成的缓存无效，进入此分支
+        detachViewAt(index);
+        recycler.scrapView(view);
+        mRecyclerView.mViewInfoStore.onViewDetached(viewHolder);
+    }
+}
+
+end note
+
+
+LinearLayoutManager.java -> RecyclerView.java :
+activate RecyclerView.java
+note left
+//回收ViewHolder
+void recycleViewHolderInternal(ViewHolder holder) {
+    //是否存储在mCachedViews中,抛出异常
+    if (DEBUG && mCachedViews.contains(holder)) {
+        throw new IllegalArgumentException("cached view received recycle internal? "
+                + holder + exceptionLabel());
+    }
+    if (forceRecycle || holder.isRecyclable()) {
+        //mCachedViews缓存数量mViewCacheMax是否溢出
+        if (mViewCacheMax > 0
+                && !holder.hasAnyOfTheFlags(ViewHolder.FLAG_INVALID
+                | ViewHolder.FLAG_REMOVED
+                | ViewHolder.FLAG_UPDATE
+                | ViewHolder.FLAG_ADAPTER_POSITION_UNKNOWN)) {
+            // Retire oldest cached view
+            //如果溢出会把mCachedViews中最先最老添加的item移除，并放入到RecyclerPool中
+            int cachedViewSize = mCachedViews.size();
+            if (cachedViewSize >= mViewCacheMax && cachedViewSize > 0) {
+                recycleCachedViewAt(0);
+            }
+            // 然后把本次需要缓存的ViewHolder缓存到mCachedViews中
+            mCachedViews.add(targetCacheIndex, holder);
+            cached = true;
+        }
+    }
+}
+end note
+RecyclerView.java --> LinearLayoutManager.java
+deactivate RecyclerView.java
+
+LinearLayoutManager.java -> RecyclerView.java :
+activate RecyclerView.java
+note left
+void scrapView(View view) {
+    final ViewHolder holder = getChildViewHolderInt(view);
+    //判断viewHolder有没有被移除，有没有无效，有没有被更新
+    //如果没有，RecyclerView会认为本次布局阶段，依旧会留在屏幕上，因此存储在mAttachedScrap中
+    if (holder.hasAnyOfTheFlags(ViewHolder.FLAG_REMOVED | ViewHolder.FLAG_INVALID)
+            || !holder.isUpdated() || canReuseUpdatedViewHolder(holder)) {
+        holder.setScrapContainer(this, false);
+        mAttachedScrap.add(holder);
+    } else {
+        //如果有，RecyclerView会认为item对应的ViewHolder被更新，调用了notifyItemChanged()方法触发重新布局
+        //此时把holder添加到mChangedScrap中
+        if (mChangedScrap == null) {
+            mChangedScrap = new ArrayList<ViewHolder>();
+        }
+        holder.setScrapContainer(this, true);
+        mChangedScrap.add(holder);
+    }
+}
+end note
+RecyclerView.java --> LinearLayoutManager.java
+deactivate RecyclerView.java
+LinearLayoutManager.java --> LinearLayoutManager.java
+deactivate LinearLayoutManager.java
+
+LinearLayoutManager.java -> LinearLayoutManager.java :
+activate LinearLayoutManager.java
+note right
+//填充item
+int fill(RecyclerView.Recycler recycler, LayoutState layoutState,
+        RecyclerView.State state, boolean stopOnFocusable) {
+    //当前方向上是否还有多余空间可用于填充item
+    int remainingSpace = layoutState.mAvailable + layoutState.mExtraFillSpace;
+    //循环
+    while ((layoutState.mInfinite || remainingSpace > 0) && layoutState.hasMore(state)) {
+
+        //一个个的把item填充到列表上
+        layoutChunk(recycler, state, layoutState, layoutChunkResult);
+    }
+    return start - layoutState.mAvailable;
+}
+
+//填充到列表上
+void layoutChunk(RecyclerView.Recycler recycler, RecyclerView.State state,
+        LayoutState layoutState, LayoutChunkResult result) {
+    //得到View对象
+    View view = layoutState.next(recycler);
+
+    //添加View到RecyclerView上
+    addView(view);
+
+    //测量child margin
+    measureChildWithMargins(view, 0, 0);
+
+    //把view摆放到列表上适当位置
+    layoutDecoratedWithMargins(view, left, top, right, bottom);
+
+}
+end note
+
+LinearLayoutManager.java --> LinearLayoutManager.java
+deactivate LinearLayoutManager.java
+
+@enduml

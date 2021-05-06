@@ -45,7 +45,7 @@ void enqueueInputEvent(InputEvent event,InputEventReceiver receiver, int flags, 
     mPendingInputEventCount += 1;
     //processImmediately=true
     if (processImmediately) {
-        //
+        //派发队列事件
         doProcessInputEvents();
     } else {
         scheduleProcessInputEvents();
