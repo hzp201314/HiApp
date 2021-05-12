@@ -88,8 +88,6 @@ public class NavProcessor extends AbstractProcessor {
 
                 fileOutputStream.close();
                 writer.close();
-
-
             } catch (IOException e) {
                 e.printStackTrace();
             }

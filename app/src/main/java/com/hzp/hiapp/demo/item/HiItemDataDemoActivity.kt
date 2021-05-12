@@ -8,6 +8,7 @@ import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 import kotlinx.android.synthetic.main.activity_hi_item_data_demo.*
 
+//TODO 并不完善
 class HiItemDataDemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +28,9 @@ class HiItemDataDemoActivity : AppCompatActivity() {
         dataSets.add(GridDataItem(ItemData()))
 
         //活动区域
-        dataSets.add(ActivityDatatItem(ItemData()))
+        dataSets.add(ActivityDataItem(ItemData()))
         //商品tab栏
-        dataSets.add(ItemTabDatatItem(ItemData()))
+        dataSets.add(ItemTabDataItem(ItemData()))
         for (i in 0..9){
             if(i%2==0){
                 //feeds流的视频类型

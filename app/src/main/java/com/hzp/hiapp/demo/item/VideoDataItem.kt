@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 
+/*feeds流的视频类型*/
 class VideoDataItem(spanCount: Int, data: ItemData) :
     HiDataItem<ItemData, VideoDataItem.MyHolder>(data) {
     private var spanCount:Int?=null

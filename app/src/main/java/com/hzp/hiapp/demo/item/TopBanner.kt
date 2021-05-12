@@ -1,12 +1,11 @@
 package com.hzp.hiapp.demo.item
 
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 
+/*顶部BannerItem*/
 class TopBanner(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHolder>(data) {
 
     override fun onBindData(holder: RecyclerView.ViewHolder, position: Int) {

@@ -1,0 +1,64 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+BaseProcessor.java -> BaseProcessor.java: init()
+activate BaseProcessor.java
+note right
+BaseProcessor.java
+@Override
+public synchronized void init(ProcessingEnvironment processingEnv) {
+    super.init(processingEnv);
+
+    //文件生成工具类
+    mFiler = processingEnv.getFiler();
+    //元素类类型校验types对象，计算某个元素具体是什么类型
+    types = processingEnv.getTypeUtils();
+    //指定一个全类名可获取元素类型，
+    //区分某个元素是Activity，ContentProvider...通过typeUtils与elementUtils工具类实现
+    elementUtils = processingEnv.getElementUtils();
+    typeUtils = new TypeUtils(types, elementUtils);
+    //编译时期日志输出工具类
+    logger = new Logger(processingEnv.getMessager());
+
+    // Attempt to get user configuration [moduleName]
+    //获取build.gradle文件arguments配置参数
+    Map<String, String> options = processingEnv.getOptions();
+    if (MapUtils.isNotEmpty(options)) {
+        moduleName = options.get(KEY_MODULE_NAME);
+        generateDoc = VALUE_ENABLE.equals(options.get(KEY_GENERATE_DOC_NAME));
+    }
+
+    //如果没有给模块build.gradle文件配置moduleName参数就抛出异常，终止本次编译
+    if (StringUtils.isNotEmpty(moduleName)) {
+        moduleName = moduleName.replaceAll("[^0-9a-zA-Z_]+", "");
+        logger.info("The user has configuration the module name, it was [" + moduleName + "]");
+    } else {
+        logger.error(NO_MODULE_NAME_TIPS);
+        throw new RuntimeException("ARouter::Compiler >>> No module name, for more information, look at gradle log.");
+    }
+}
+
+//复写getSupportedOptions()方法让处理器支持参数透传
+@Override
+public Set<String> getSupportedOptions() {
+    return new HashSet<String>() {{
+        this.add(KEY_MODULE_NAME);
+        this.add(KEY_GENERATE_DOC_NAME);
+    }};
+}
+
+end note
+
+
+InterceptorProcessor.java -> InterceptorProcessor.java
+activate InterceptorProcessor.java
+note right
+InterceptorProcessor.java
+//InterceptorProcessor注解处理器能够扫描当前模块下标记了@Interceptor注解的所有类
+//然后去把注解处理器信息写入到文件中。类似AutowiredProcessor注解处理器
+
+end note
+
+@enduml

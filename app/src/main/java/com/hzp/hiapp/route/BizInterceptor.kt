@@ -32,6 +32,7 @@ open class BizInterceptor : IInterceptor {
     override fun process(postcard: Postcard?, callback: InterceptorCallback?) {
         val flag: Int = postcard!!.extra
 
+        //是否指定登录拦截
         if ((flag and (RouteFlag.FLAG_LOGIN)) != 0) {
             //login
             callback!!.onInterrupt(RuntimeException("need login"))

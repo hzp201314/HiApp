@@ -1,0 +1,182 @@
+@startuml
+'初始化流程
+ArouterApplication.java -> ArouterApplication.java: onCreate()
+activate ArouterApplication.java
+note right
+ArouterApplication.java
+public class ArouterApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        if (BuildConfig.DEBUG) {
+            ARouter.openLog();
+            ARouter.openDebug();
+        }
+        //ARouter初始化
+        ARouter.init(this);
+    }
+}
+end note
+
+ArouterApplication.java -> ARouter.java :init()
+activate ARouter.java
+note right
+public static void init(Application application) {
+    if (!hasInit) {
+        logger = _ARouter.logger;
+        _ARouter.logger.info(Consts.TAG, "ARouter init start.");
+        //委托给_ARouter完成初始化,实际上ARouter所有方法都被委托给_ARouter操作，
+        //目的是让ARouter足够简洁,让开发者只关心ARouter提供的能力而不关心其实现
+        hasInit = _ARouter.init(application);
+
+        if (hasInit) {
+            _ARouter.afterInit();
+        }
+
+        _ARouter.logger.info(Consts.TAG, "ARouter init over.");
+    }
+}
+end note
+ARouter.java -> _ARouter.java :init()
+activate _ARouter.java
+note right
+_ARouter.java
+protected static synchronized boolean init(Application application) {
+    mContext = application;
+    //初始化中心
+    //\n1.扫描所有dex文件com.alibaba.android.arouter.routes目录
+    //\n2.加载所有模块下管理路由组Root文件
+    //\n3.加载所有模块下管理服务的providers文件
+    //\n4.加载所有模块下管理拦截器的interceptors文件
+    //开始dex文件的扫描，以及加载路由组Root文件、服务providers文件、拦截器interceptors文件
+    LogisticsCenter.init(mContext, executor);
+    logger.info(Consts.TAG, "ARouter init success!");
+    hasInit = true;
+    mHandler = new Handler(Looper.getMainLooper());
+
+    return true;
+}
+end note
+
+
+_ARouter.java -> LogisticsCenter.java : init()
+activate LogisticsCenter.java
+note right
+LogisticsCenter.java
+public synchronized static void init(Context context, ThreadPoolExecutor tpe) throws HandlerException {
+    Set<String> routerMap;
+
+    //扫描所有dex文件中的class文件，校验class文件包名是否符合传入的ROUTE_ROOT_PAKCAGE
+    //符合：说明这个class文件是ARouter在编译时生成的文件，把文件加入到routerMap中
+    //
+    routerMap = ClassUtils.getFileNameByPackageName(mContext, ROUTE_ROOT_PAKCAGE);
+
+    //开启for循环遍历刚得到的Class文件
+    for (String className : routerMap) {
+        //如果class文件是路由组Root文件，就反射构造Root文件实例化对象，执行它的loadInto()方法，
+        //loadInto()方法传递Map集合参数是Warehouse.groupsIndex
+        //这样当前模块下所有的路由组信息都填充到Warehouse.groupsIndex
+        //  public class ARouter$$Root$$app implements IRouteRoot {
+        //    @Override
+        //    public void loadInto(Map<String, Class<? extends IRouteGroup>> routes) {
+        //      routes.put("activity", ARouter$$Group$$activity.class);
+        //      routes.put("fragment", ARouter$$Group$$fragment.class);
+        //      routes.put("pathReplace", ARouter$$Group$$pathReplace.class);
+        //      routes.put("service", ARouter$$Group$$service.class);
+        //    }
+        //  }
+        // 这里只是把路由组信息加载到内存中，但路由组实例化对象并没有被创建，在需要的时候才会被创建
+        if (className.startsWith(ROUTE_ROOT_PAKCAGE + DOT + SDK_NAME + SEPARATOR + SUFFIX_ROOT)) {
+            // This one of root elements, load root.
+            ((IRouteRoot) (Class.forName(className).getConstructor().newInstance())).loadInto(Warehouse.groupsIndex);
+        }
+
+        //如果class文件是拦截器Interceptor文件，就反射构造Interceptor文件实例化对象，执行它的loadInto()方法，
+        //loadInto()方法传递Map集合参数是Warehouse.interceptorsIndex
+        //这样当前模块下所有的拦截器信息都填充到Warehouse.interceptorsIndex，装载到内存中
+        //public class ARouter$$Interceptors$$app implements IInterceptorGroup {
+        //    @Override
+        //    public void loadInto(Map<Integer, Class<? extends IInterceptor>> interceptors) {
+        //      interceptors.put(1, LoginInterceptor.class);
+        //    }
+        //  }
+        else if (className.startsWith(ROUTE_ROOT_PAKCAGE + DOT + SDK_NAME + SEPARATOR + SUFFIX_INTERCEPTORS)) {
+            // Load interceptorMeta
+            ((IInterceptorGroup) (Class.forName(className).getConstructor().newInstance())).loadInto(Warehouse.interceptorsIndex);
+        }
+
+        //如果class文件是管理服务的Provider文件，就反射构造Provider文件实例化对象，执行它的loadInto()方法，
+        //loadInto()方法传递Map集合参数是Warehouse.providersIndex
+        //这样当前模块下所有的管理服务的RouteMeta信息都填充到Warehouse.providersIndex，装载到内存中
+        //public class ARouter$$Providers$$app implements IProviderGroup {
+        //    @Override
+        //    public void loadInto(Map<String, RouteMeta> providers) {
+        //      providers.put("org.devio.as.hi.hi_arouter.ILoginService", RouteMeta.build(RouteType.PROVIDER, LoginServiceImpl.class, "/service/login", "service", null, -1, -2147483648));
+        //      providers.put("com.alibaba.android.arouter.facade.service.PathReplaceService", RouteMeta.build(RouteType.PROVIDER, PathReplaceServiceImpl.class, "/pathReplace/service", "pathReplace", null, -1, -2147483648));
+        //    }
+        //  }
+        //这里只是把服务的RouteMeta原始信息装载到内存，但服务的实例化对象并没有被创建
+        else if (className.startsWith(ROUTE_ROOT_PAKCAGE + DOT + SDK_NAME + SEPARATOR + SUFFIX_PROVIDERS)) {
+            // Load providerIndex
+            ((IProviderGroup) (Class.forName(className).getConstructor().newInstance())).loadInto(Warehouse.providersIndex);
+        }
+        //此时ARouter初始化流程就已经介绍玩了
+    }
+
+}
+
+end note
+
+LogisticsCenter.java -> ClassUtils.java : getFileNameByPackageName()
+activate ClassUtils.java
+note right
+ClassUtils.java
+//扫描所有dex文件中的class文件
+public static Set<String> getFileNameByPackageName(Context context, final String packageName) throws PackageManager.NameNotFoundException, IOException, InterruptedException {
+    final Set<String> classNames = new HashSet<>();
+
+    //根据传递进来的context对象得到当前应用的所有dex文件路径集合
+    List<String> paths = getSourcePaths(context);
+    //同步锁：如果ARouter初始化未完成，路由执行就会处于等待状态，一旦初始化完成就会唤醒路由继续执行
+    final CountDownLatch parserCtl = new CountDownLatch(paths.size());
+
+    //遍历dex文件路径
+    for (final String path : paths) {
+        //开启线程执行扫描操作
+        DefaultPoolExecutor.getInstance().execute(new Runnable() {
+            @Override
+            public void run() {
+                DexFile dexfile = null;
+
+                try {
+                    //通过new DexFile(path)得到dexfile对象
+                    dexfile = new DexFile(path);
+
+                    Enumeration<S tring> dexEntries = dexfile.entries();
+                    //开启while循环，一个dex文件包含多个class文件
+                    //如果class文件符合传递进来的packageName说当前扫描到的文件是ARouter注解处理器编译生成的
+                    //就添加到classNames集合中
+                    while (dexEntries.hasMoreElements()) {
+                        String className = dexEntries.nextElement();
+                        if (className.startsWith(packageName)) {
+                            classNames.add(className);
+                        }
+                    }
+                } catch (Throwable ignore) {
+                } finally {
+                    parserCtl.countDown();
+                }
+            }
+        });
+    }
+    parserCtl.await();
+    return classNames;
+}
+end note
+
+ClassUtils.java --> LogisticsCenter.java
+deactivate ClassUtils.java
+
+
+@enduml

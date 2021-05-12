@@ -22,8 +22,6 @@ class NavigationDemoActivity : AppCompatActivity() {
         //寻找出路由控制器对象，它是我们路由跳转的唯一入口
         val navController = findNavController(R.id.nav_host_fragment)
 
-
-
         //使用系统默认FragmentNavigator构建NavGraph,该方式会重启Fragment生命周期
 //        NavUtil.builderNavGraph(this,navController,R.id.nav_host_fragment)
         //使用自定义的HiFragmentNavigator构建NavGraph，不会重启Fragment生命周期

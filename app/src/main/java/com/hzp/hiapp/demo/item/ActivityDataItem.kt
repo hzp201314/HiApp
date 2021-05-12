@@ -5,7 +5,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 
-class ActivityDatatItem(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHolder>(data) {
+/*活动Item*/
+class ActivityDataItem(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHolder>(data) {
 
     override fun onBindData(holder: RecyclerView.ViewHolder, position: Int) {
         val imageView:ImageView = holder.itemView.findViewById<ImageView>(R.id.item_image)

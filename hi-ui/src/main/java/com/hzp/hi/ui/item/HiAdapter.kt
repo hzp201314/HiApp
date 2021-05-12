@@ -23,6 +23,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
     private val recyclerViewRef: WeakReference<RecyclerView>? = null
     private var mContext: Context = context
 
+    /*布局加载器*/
     private var mInflater = LayoutInflater.from(context)
 
     /*item数据集合*/
@@ -31,6 +32,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
     /*item类型集合*/
     private var typeArrays = SparseArray<HiDataItem<*, out ViewHolder>>()
 
+    /*头和底*/
     private var headers = SparseArray<View>()
     private var footers = SparseArray<View>()
 
@@ -54,7 +56,7 @@ class HiAdapter(context: Context) : Adapter<ViewHolder>() {
     }
 
     fun addFooterView(view: View) {
-        //说明这个fgooterview 没有添加过
+        //说明这个footerview 没有添加过
         if (footers.indexOfValue(view) < 0) {
             footers.put(BASE_ITEM_TYPE_FOOTER++, view)
             notifyItemInserted(itemCount)

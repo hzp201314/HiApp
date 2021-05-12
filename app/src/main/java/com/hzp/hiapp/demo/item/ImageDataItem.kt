@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 
+/*feeds流的图片类型*/
 class ImageDataItem(spanCount: Int, data: ItemData) :
     HiDataItem<ItemData, ImageDataItem.MyHolder>(data) {
     private var spanCount: Int? = null

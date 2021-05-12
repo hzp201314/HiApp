@@ -1,17 +1,15 @@
 package com.hzp.hiapp.demo.item;
 
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 
+import android.widget.ImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.hzp.hi.ui.item.HiDataItem;
 import com.hzp.hiapp.R;
 
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
+/*顶部TabItem*/
 public class TopTabDataItem extends HiDataItem<ItemData, RecyclerView.ViewHolder> {
 
     public TopTabDataItem(ItemData itemData) {

@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hzp.hi.ui.item.HiDataItem
 import com.hzp.hiapp.R
 
-class ItemTabDatatItem(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHolder>(data) {
+/*商品tab栏*/
+class ItemTabDataItem(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHolder>(data) {
 
     override fun onBindData(holder: RecyclerView.ViewHolder, position: Int) {
         val imageView:ImageView = holder.itemView.findViewById<ImageView>(R.id.item_image)
@@ -16,6 +17,10 @@ class ItemTabDatatItem(data: ItemData): HiDataItem<ItemData, RecyclerView.ViewHo
 
     override fun getItemLayoutRes(): Int {
         return R.layout.layout_list_item_banner
+    }
+
+    override fun getItemView(parent: ViewGroup): View? {
+        return super.getItemView(parent)
     }
 
 }

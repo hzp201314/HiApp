@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+
+InterceptorProcessor.java -> InterceptorProcessor.java
+activate InterceptorProcessor.java
+note right
+InterceptorProcessor.java
+//InterceptorProcessor注解处理器能够扫描当前模块下标记了@Interceptor注解的所有类
+//然后去把注解处理器信息写入到文件中。类似AutowiredProcessor注解处理器
+
+end note
+
+@enduml

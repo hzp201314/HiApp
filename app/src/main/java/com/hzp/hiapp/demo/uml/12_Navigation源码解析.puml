@@ -43,7 +43,7 @@ public void onCreate(@Nullable Bundle savedInstanceState) {
     //OnBackPressedDispatcher作用：当点击手机返回键之后将事件分发给注册进来的callback
     mNavController.setOnBackPressedDispatcher(requireActivity().getOnBackPressedDispatcher());
 
-    //
+    //创建NavController
     onCreateNavController(mNavController);
 
     if (mGraphId != 0) {
@@ -65,7 +65,7 @@ public void onCreate(@Nullable Bundle savedInstanceState) {
 end note
 
 '3
-NavHostFragment.java -> NavController.java: NavController()
+NavHostFragment.java -> NavController.java: new NavController()
 activate NavController.java
 note right
 NavController.java
