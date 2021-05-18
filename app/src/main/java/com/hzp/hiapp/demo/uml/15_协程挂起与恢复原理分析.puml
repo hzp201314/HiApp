@@ -1,0 +1,119 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+CoroutineScene.kt -> CoroutineScene.kt: request()
+activate CoroutineScene.kt
+note right
+CoroutineScene.kt
+object CoroutineScene {
+    private val TAG: String = "CoroutineScene"
+    //挂起函数：被suspend关键字修饰
+    suspend fun request(): String {
+        delay(2 * 1000)
+        Log.e(TAG, "request completed")
+        return "result from request"
+    }
+}
+end note
+
+CoroutineScene.kt -> CoroutineScene.java:<color blue>字节码反编译
+deactivate CoroutineScene.kt
+activate CoroutineScene.java
+note right
+CoroutineScene.java
+public final class CoroutineScene {
+   private static final String TAG = "CoroutineScene";
+   public static final CoroutineScene INSTANCE;
+
+   //Continuation实际上是一个callback
+   //编译器会一个方法一旦被加上suspend关键字会认为有可能导致协程暂停，会给方法传递一个Continuation callback
+   //等函数执行完成之后通过callback来回调回去，从而让协程恢复
+   //原本需要让自己实现的callback，现在编译器帮我们实现，
+   //编译器如何判断哪些方法需要callback，就是通过suspend关键字来区分
+   //但是并不是一个方法被suspend关键字修饰就一定会导致协程挂起，必须看方法具体的实现，
+   //需要看方法返回值是否有COROUTINE_SUSPENDED关键字,有就会被挂起。
+   @Nullable
+   public final Object request(@NotNull Continuation $completion) {
+      Object $continuation;
+      label20: {
+         if ($completion instanceof <undefinedtype>) {
+            $continuation = (<undefinedtype>)$completion;
+            if ((((<undefinedtype>)$continuation).label & Integer.MIN_VALUE) != 0) {
+               ((<undefinedtype>)$continuation).label -= Integer.MIN_VALUE;
+               break label20;
+            }
+         }
+
+         //创建ContinuationImpl把入参给包裹一下
+         $continuation = new ContinuationImpl($completion) {
+            // $FF: synthetic field
+            Object result;
+            int label;
+            Object L$0;
+
+            //复写invokeSuspend()方法
+            @Nullable
+            public final Object invokeSuspend(@NotNull Object $result) {
+               this.result = $result;
+               this.label |= Integer.MIN_VALUE;
+               //在这个方法里面又调用了request()方法
+               return CoroutineScene.this.request(this);
+            }
+         };
+      }
+
+      Object $result = ((<undefinedtype>)$continuation).result;
+      //
+      Object var4 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+      //接着调用switch case,当continuation.label值为0时进入case 0分支
+      switch(((<undefinedtype>)$continuation).label) {
+      case 0:
+         ResultKt.throwOnFailure($result);
+         ((<undefinedtype>)$continuation).L$0 = this;
+         //将$continuation.label 的值置为 1
+         ((<undefinedtype>)$continuation).label = 1;
+         //在case0分支里，把delay()方法改为DelayKt.delay(),传递2000s的延时，同时给delay()方法传递了callback回调
+         //因为delay()方法同样被suspend关键字修饰了，所以delay()方法经过编译后同样会有一个object返回值和一个$continuation入参
+         //拿到返回值以后判断返回值结果是不是COROUTINE_SUSPENDED，如果是就return返回COROUTINE_SUSPENDED，
+         //下面的日志输出就不会执行了,意味着方法被暂停了,意味着协程被暂停了，协程挂起。
+         //协程挂起实际上是方法的挂起，所以挂起理解为return
+         //协程挂起2s之后通过$continuation回调，回调到invokeSuspend()方法
+         //一旦invokeSuspend()方法被调用，会再一次调用request()方法
+         //会再次走到switch case 方法，由于第一次在case0的时候把continuation.label的值设置为1，所以此次走case1分支
+         //之后就会打印日志，并把方法的真实返回值给返回回去，这个返回值会作为invokeSuspend()方法的返回值，
+         //就为在ContinuationImpl类里根据invokeSuspend()方法的返回值来判断request()方法是否恢复之后已经执行完了
+         //进而通过传递进来的continuation回调给上一层方法，request()方法肯定会被别人调用，此时request()方法恢复完之后
+         //调用他的方法也能够跟着恢复。所以协程的恢复本质上是函数的恢复，恢复本质也是callback回调
+         if (DelayKt.delay(2000L, (Continuation)$continuation) == var4) {
+            return var4;
+         }
+         break;
+      case 1:
+         CoroutineScene var5 = (CoroutineScene)((<undefinedtype>)$continuation).L$0;
+         ResultKt.throwOnFailure($result);
+         break;
+      default:
+         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+      }
+
+      Log.e(TAG, "request completed");
+      return "result from request";
+   }
+
+   private CoroutineScene() {
+   }
+
+   static {
+      CoroutineScene var0 = new CoroutineScene();
+      INSTANCE = var0;
+      TAG = "CoroutineScene";
+   }
+}
+
+end note
+
+
+
+@enduml

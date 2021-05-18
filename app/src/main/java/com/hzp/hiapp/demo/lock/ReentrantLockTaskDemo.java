@@ -188,7 +188,6 @@ public class ReentrantLockTaskDemo {
         public ReentrantLockTask4() {
             worker1Condition = lock.newCondition();
             worker2Condition = lock.newCondition();
-
         }
 
         //工人1搬砖
