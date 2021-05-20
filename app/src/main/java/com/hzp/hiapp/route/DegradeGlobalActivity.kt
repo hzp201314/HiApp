@@ -14,8 +14,8 @@ import com.hzp.hiapp.R
  */
 @Route(path = "/degrade/global/activity")
 class DegradeGlobalActivity : AppCompatActivity() {
-    @JvmField
-    @Autowired
+    @JvmField//静态字段
+    @Autowired//ARouter路由注入
     var degrade_title: String? = null
     @JvmField
     @Autowired

@@ -19,18 +19,30 @@ import com.hzp.hiapp.model.UserProfile
 import java.lang.IllegalStateException
 
 object AccountManager {
+    private val lock = Any()
+    private var userProfile: UserProfile? = null
     private var boardingPass: String? = null
-    private val KEY_BOARDING_PASS = "boarding_pass"
+    private const val KEY_USER_PROFILE = "user_profile"
+    private const val KEY_BOARDING_PASS = "boarding_pass"
     private val loginLiveData = MutableLiveData<Boolean>()
     private val loginForeverObservers = mutableListOf<Observer<Boolean>>()
 
-    private val KEY_USER_PROFILE = "user_profile"
     private val profileLiveData = MutableLiveData<UserProfile>()
     private val profileForeverObservers = mutableListOf<Observer<UserProfile?>>()
-    private var userProfile: UserProfile? = null
 
     @Volatile
     private var isFetching = false
+
+    init {
+        HiExecutor.execute(runnable = Runnable {
+            val local = HiStorage.getCache<UserProfile?>(KEY_USER_PROFILE)
+            synchronized(lock) {
+                if (userProfile == null && local == null) {
+                    userProfile = local
+                }
+            }
+        })
+    }
 
     fun login(context: Context? = AppGlobals.get(), observer: Observer<Boolean>) {
         if (context is LifecycleOwner) {
@@ -39,7 +51,6 @@ object AccountManager {
             loginLiveData.observeForever(observer)
             loginForeverObservers.add(observer)
         }
-
 
         val intent = Intent(context, LoginActivity::class.java)
 
@@ -55,7 +66,7 @@ object AccountManager {
     }
 
 
-    fun loginSuccess(boardingPass: String) {
+    internal fun loginSuccess(boardingPass: String) {
         SPUtil.putString(KEY_BOARDING_PASS, boardingPass)
         this.boardingPass = boardingPass
         loginLiveData.value=true
@@ -130,4 +141,5 @@ object AccountManager {
         }
         profileForeverObservers.clear()
     }
+
 }

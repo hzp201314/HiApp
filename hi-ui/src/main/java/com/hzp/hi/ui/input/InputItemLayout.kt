@@ -10,8 +10,7 @@ import android.text.InputFilter
 import android.text.InputType
 import android.util.AttributeSet
 import android.util.TypedValue
-import android.view.Gravity.CENTER
-import android.view.Gravity.LEFT
+import android.view.Gravity.*
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -74,6 +73,7 @@ class InputItemLayout : LinearLayout {
         array.recycle()
     }
 
+    /*解析下划线*/
     @SuppressLint("CustomViewStyleable")
     private fun parseLineStyle(resId: Int): Line {
         val line = Line()
@@ -138,7 +138,7 @@ class InputItemLayout : LinearLayout {
         editText.hint = hint
         editText.setTextColor(inputColor)
         editText.setHintTextColor(hintColor)
-        editText.gravity = LEFT or (CENTER)
+        editText.gravity = START or (CENTER)
         editText.setBackgroundColor(Color.TRANSPARENT)
         editText.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize.toFloat())
 
@@ -147,13 +147,17 @@ class InputItemLayout : LinearLayout {
          * <enum name="password" value="1"></enum>
          * <enum name="number" value="2"></enum>
          */
-        if (inputType == 0) {
-            editText.inputType = InputType.TYPE_CLASS_TEXT
-        } else if (inputType == 1) {
-            editText.inputType =
-                InputType.TYPE_TEXT_VARIATION_PASSWORD or (InputType.TYPE_CLASS_TEXT)
-        } else if (inputType == 2) {
-            editText.inputType = InputType.TYPE_CLASS_NUMBER
+        when (inputType) {
+            0 -> {
+                editText.inputType = InputType.TYPE_CLASS_TEXT
+            }
+            1 -> {
+                editText.inputType =
+                    InputType.TYPE_TEXT_VARIATION_PASSWORD or (InputType.TYPE_CLASS_TEXT)
+            }
+            2 -> {
+                editText.inputType = InputType.TYPE_CLASS_NUMBER
+            }
         }
 
         addView(editText)
@@ -181,7 +185,7 @@ class InputItemLayout : LinearLayout {
         titleView.setTextColor(titleColor)
         titleView.layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT)
         titleView.minWidth = minWidth
-        titleView.gravity = LEFT or (CENTER)
+        titleView.gravity = START or (CENTER)
         titleView.text = title
 
 

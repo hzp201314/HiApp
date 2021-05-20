@@ -156,6 +156,7 @@
            app:topLineAppearance="@style/lineAppearance"
            app:bottomLineAppearance="@style/full_width_lineAppearance"
        >-->
+    <!--自定义属性-->
     <declare-styleable name="InputItemLayout">
         <attr name="hint" format="string" />
         <attr name="title" format="string" />

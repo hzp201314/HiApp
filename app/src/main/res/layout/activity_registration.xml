@@ -18,7 +18,7 @@
             android:id="@+id/action_back"
             android:layout_width="@dimen/dp_45"
             android:layout_height="@dimen/dp_45"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:gravity="center"
             android:text="@string/if_back"
@@ -47,7 +47,7 @@
         android:layout_height="@dimen/dp_48"
         android:layout_marginTop="@dimen/dp_10"
         android:background="@color/color_white"
-        android:paddingLeft="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
         app:bottomLineAppearance="@style/leftMargin_lineAppearance"
         app:hint="@string/input_item_hint_order_id"
         app:inputTextAppearance="@style/inputTextAppearance"
@@ -55,20 +55,22 @@
         app:maxInputLength="4"
         app:title="@string/input_item_title_course_order_id"
         app:titleTextAppearance="@style/titleTextAppearance"
-        app:topLineAppearance="@style/lineAppearance" />
+        app:topLineAppearance="@style/lineAppearance"
+        tools:ignore="RtlSymmetry" />
 
     <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_moocId"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
         android:background="@color/color_white"
-        android:paddingLeft="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
         app:bottomLineAppearance="@style/leftMargin_lineAppearance"
         app:hint="@string/input_item_hint_moocid"
         app:inputTextAppearance="@style/inputTextAppearance"
         app:inputType="number"
         app:title="@string/input_item_title_moocid"
-        app:titleTextAppearance="@style/titleTextAppearance" />
+        app:titleTextAppearance="@style/titleTextAppearance"
+        tools:ignore="RtlSymmetry" />
 
 
     <com.hzp.hi.ui.input.InputItemLayout
@@ -76,26 +78,28 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
         android:background="@color/color_white"
-        android:paddingLeft="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
         app:bottomLineAppearance="@style/leftMargin_lineAppearance"
         app:hint="@string/input_item_hint_user_name"
         app:inputTextAppearance="@style/inputTextAppearance"
         app:inputType="text"
         app:title="@string/input_item_title_user_name"
-        app:titleTextAppearance="@style/titleTextAppearance" />
+        app:titleTextAppearance="@style/titleTextAppearance"
+        tools:ignore="RtlSymmetry" />
 
     <com.hzp.hi.ui.input.InputItemLayout
         android:id="@+id/input_item_pwd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
         android:background="@color/color_white"
-        android:paddingLeft="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
         app:bottomLineAppearance="@style/leftMargin_lineAppearance"
         app:hint="@string/input_item_hint_pwd"
         app:inputTextAppearance="@style/inputTextAppearance"
         app:inputType="password"
         app:title="@string/input_item_title_pwd"
-        app:titleTextAppearance="@style/titleTextAppearance" />
+        app:titleTextAppearance="@style/titleTextAppearance"
+        tools:ignore="RtlSymmetry" />
 
 
     <com.hzp.hi.ui.input.InputItemLayout
@@ -103,13 +107,14 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_48"
         android:background="@color/color_white"
-        android:paddingLeft="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
         app:bottomLineAppearance="@style/lineAppearance"
         app:hint="@string/input_item_hint_pwd2"
         app:inputTextAppearance="@style/inputTextAppearance"
         app:inputType="password"
         app:title="@string/input_item_title_pwd2"
-        app:titleTextAppearance="@style/titleTextAppearance" />
+        app:titleTextAppearance="@style/titleTextAppearance"
+        tools:ignore="RtlSymmetry" />
 
 
     <com.google.android.material.button.MaterialButton

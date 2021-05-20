@@ -12,3 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+libs/
+src/main/java/com/hzp/hiapp/demo/lifecycle/
+src/main/java/com/hzp/hiapp/demo/livedata/
+src/main/java/com/hzp/hiapp/demo/viewmodel/

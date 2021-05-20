@@ -50,7 +50,7 @@ class RegistrationActivity : HiBaseActivity() {
                 override fun onSuccess(response: HiResponse<String>) {
                     if (response.code == HiResponse.SUCCESS) {
                         //注册成功
-                        var intent = Intent()
+                        val intent = Intent()
                         intent.putExtra("username", username)
                         setResult(Activity.RESULT_OK, intent)
                         finish()
