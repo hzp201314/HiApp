@@ -10,16 +10,23 @@
     <!--    <attr name="hintColor" format="color"></attr>
            <attr name="inputColor" format="color"></attr>
            <attr name="textSize" format="dimension"></attr>-->
+    <!--输入框文本属性-->
     <style name="inputTextAppearance">
+        <!--提示颜色-->
         <item name="hintColor">@color/color_C1B</item>
+        <!--输入文本颜色-->
         <item name="inputColor">@color/color_565</item>
+        <!--文字大小-->
         <item name="textSize">15sp</item>
     </style>
 
 
+    <!--描述文本属性-->
     <style name="titleTextAppearance">
+        <!--文字颜色-->
         <item name="titleColor">@color/color_565</item>
         <item name="titleSize">15sp</item>
+        <!--最小宽度-->
         <item name="minWidth">100dp</item>
     </style>
 
@@ -28,12 +35,17 @@
             <attr name="leftMargin" format="dimension"></attr>
             <attr name="rightMargin" format="dimension"></attr>
             <attr name="enable" format="boolean"></attr>-->
-
+    <!--下划线属性-->
     <style name="lineAppearance">
+        <!--颜色-->
         <item name="color">@color/color_C1B</item>
+        <!--高度-->
         <item name="height">0.5dp</item>
+        <!--左margin-->
         <item name="leftMargin">0dp</item>
+        <!--右margin-->
         <item name="rightMargin">0dp</item>
+        <!--是否允许显示-->
         <item name="enable">true</item>
     </style>
 

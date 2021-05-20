@@ -9,7 +9,6 @@ import java.net.URLEncoder
 
 open class HiRequest {
 
-
     private var cacheStrategyKey: String = ""
     var cacheStrategy: Int = CacheStrategy.NET_ONLY
 
@@ -22,7 +21,7 @@ open class HiRequest {
     var returnType: Type? = null
     var formPost: Boolean = true
 
-    @IntDef(value = [METHOD.GET, METHOD.POST])
+    @IntDef(value = [METHOD.GET, METHOD.POST, METHOD.PUT, METHOD.DELETE])
     annotation class METHOD {
         companion object {
             const val GET = 0

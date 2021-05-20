@@ -10,11 +10,7 @@ import org.json.JSONObject
 import java.lang.reflect.Type
 
 class GsonConvert : HiConvert {
-    private var gson: Gson
-
-    init {
-        gson = Gson()
-    }
+    private var gson: Gson = Gson()
 
     override fun <T> convert(rawData: String, dataType: Type): HiResponse<T> {
         var response: HiResponse<T> = HiResponse<T>()

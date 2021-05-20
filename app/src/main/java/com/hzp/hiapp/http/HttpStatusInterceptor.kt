@@ -6,6 +6,9 @@ import com.hzp.hi.library.restful.HiInterceptor
 import com.hzp.hi.library.restful.HiResponse
 import com.hzp.hiapp.route.HiRoute
 
+/**
+ * 根据response 的 code 自动路由到相关页面
+ */
 class HttpStatusInterceptor:HiInterceptor {
     override fun intercept(chain: HiInterceptor.Chain): Boolean {
         val response = chain.response()
@@ -22,7 +25,7 @@ class HttpStatusInterceptor:HiInterceptor {
                 HiResponse.RC_AUTH_TOKEN_EXPIRED, HiResponse.RC_AUTH_TOKEN_INVALID, HiResponse.RC_USER_FORBID -> {
                     var helpUrl: String? = null
                     if (response.errorData != null) {
-                        helpUrl = response.errorData!!.get("helpUrl")
+                        helpUrl = response.errorData!!["helpUrl"]
                     }
 
                     val bundle = Bundle()

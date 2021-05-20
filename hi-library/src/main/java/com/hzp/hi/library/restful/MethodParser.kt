@@ -127,6 +127,13 @@ class MethodParser(private val baseUrl: String, method: Method) {
                 relativeUrl = annotation.value
                 httpMethod = HiRequest.METHOD.POST
                 formPost = annotation.formPost
+            } else if (annotation is PUT) {
+                formPost = annotation.formPost
+                httpMethod = HiRequest.METHOD.PUT
+                relativeUrl = annotation.value
+            } else if (annotation is DELETE) {
+                httpMethod = HiRequest.METHOD.DELETE
+                relativeUrl = annotation.value
             } else if (annotation is Headers) {
                 val headersArray = annotation.value
                 //@Headers("auth-token:token", "accountId:123456")
@@ -151,8 +158,9 @@ class MethodParser(private val baseUrl: String, method: Method) {
             }
         }
 
-        require((httpMethod == HiRequest.METHOD.GET) || (httpMethod == HiRequest.METHOD.POST)) {
-            String.format("method %s must has one of GET,POST ", method.name)
+        require((httpMethod == HiRequest.METHOD.GET) || (httpMethod == HiRequest.METHOD.POST)
+                || (httpMethod == HiRequest.METHOD.PUT)|| (httpMethod == HiRequest.METHOD.DELETE)) {
+            String.format("method %s must has one of GET,POST,PUT,DELETE ", method.name)
         }
 
         if (domainUrl == null) {

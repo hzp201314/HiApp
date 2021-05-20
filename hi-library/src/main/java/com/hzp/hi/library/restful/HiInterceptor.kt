@@ -1,8 +1,8 @@
 package com.hzp.hi.library.restful
 
 interface HiInterceptor {
-    fun intercept(chain:Chain):Boolean
 
+    fun intercept(chain:Chain):Boolean
 
     /**
      * Chain 对象会在我们派发拦截器的时候 创建

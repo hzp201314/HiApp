@@ -71,39 +71,52 @@ class RetrofitCallFactory(baseUrl: String) : HiCall.Factory {
         }
 
         private fun createRealCall(request: HiRequest): Call<ResponseBody> {
-            if (request.httpMethod == HiRequest.METHOD.GET) {
-                return apiService.get(request.headers, request.endPointUrl(), request.parameters)
-            } else if (request.httpMethod == HiRequest.METHOD.POST) {
-                val parameters: MutableMap<String, String>? = request.parameters
-                var builder = FormBody.Builder()
-                var requestBody: RequestBody
-                var jsonObject = JSONObject()
-
-                if (parameters != null) {
-                    for ((key, value) in parameters) {
-                        if (request.formPost) {
-                            builder.add(key, value)
-                        } else {
-                            jsonObject.put(key, value)
-                        }
-                    }
+            when (request.httpMethod) {
+                HiRequest.METHOD.GET -> {
+                    return apiService.get(request.headers, request.endPointUrl(), request.parameters)
                 }
-
-                if (request.formPost) {
-                    requestBody = builder.build()
-                } else {
-                    requestBody = RequestBody.create(
-                        MediaType.parse("application/json;utf-8"),
-                        jsonObject.toString()
-                    )
+                HiRequest.METHOD.POST -> {
+                    val requestBody: RequestBody = buildRequestBody(request)
+                    return apiService.post(request.headers, request.endPointUrl(), requestBody)
                 }
-                return apiService.post(request.headers, request.endPointUrl(), requestBody)
-            } else {
-                throw IllegalStateException("hiRestful only support GET POST for now ,url=" + request.endPointUrl())
+                HiRequest.METHOD.PUT -> {
+                    val requestBody: RequestBody = buildRequestBody(request)
+                    return apiService.put(request.headers, request.endPointUrl(), requestBody)
+                }
+                HiRequest.METHOD.DELETE -> {
+                    return apiService.delete(request.headers, request.endPointUrl())
+                }
+                else -> {
+                    throw IllegalStateException("hiRestful only support GET POST PUT DELETE for now ,url=" + request.endPointUrl())
+                }
             }
         }
 
-
+        private fun buildRequestBody(request: HiRequest): RequestBody {
+            val parameters: MutableMap<String, String>? = request.parameters
+            val builder = FormBody.Builder()
+            val requestBody: RequestBody
+            val jsonObject = JSONObject()
+            if (parameters != null) {
+                for ((key, value) in parameters) {
+                    if (request.formPost) {
+                        builder.add(key, value)
+                    } else {
+                        jsonObject.put(key, value)
+                    }
+                }
+            }
+            requestBody = if (request.formPost) {
+                builder.build()
+            } else {
+                //bugfix: reuqest-header   content-type="application/json; charset=utf-8"
+                RequestBody.create(
+                    MediaType.parse("application/json;charset=utf-8"),
+                    jsonObject.toString()
+                )
+            }
+            return requestBody
+        }
     }
 
     interface ApiService {
@@ -119,6 +132,19 @@ class RetrofitCallFactory(baseUrl: String) : HiCall.Factory {
             @HeaderMap headers: MutableMap<String, String>?,
             @Url url: String,
             @Body body: RequestBody?
+        ): Call<ResponseBody>
+
+        @PUT
+        fun put(
+            @HeaderMap headers: MutableMap<String, String>?,
+            @Url url: String,
+            @Body body: RequestBody?
+        ): Call<ResponseBody>
+
+        @DELETE//不可以携带requestbody
+        fun delete(
+            @HeaderMap headers: MutableMap<String, String>?,
+            @Url url: String
         ): Call<ResponseBody>
     }
 }
