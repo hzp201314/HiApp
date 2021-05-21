@@ -108,6 +108,7 @@ class CategoryFragment : HiBaseFragment() {
 
     }
 
+    /**/
     private fun onQueryCategoryListSuccess(data: List<TabCategory>) {
         if (!isAlive) return
         emptyView?.visibility = View.GONE
@@ -156,6 +157,7 @@ class CategoryFragment : HiBaseFragment() {
             })
     }
 
+    /**/
     private fun onQuerySubcategoryListSuccess(data: List<Subcategory>) {
         if (!isAlive) return
         decoration.clear()

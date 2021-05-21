@@ -16,6 +16,9 @@ import com.hzp.hi.library.util.HiDisplayUtil
 import kotlinx.android.synthetic.main.hi_debug_tool.*
 import java.lang.reflect.Method
 
+/**
+ * DebugTool:Debug调试工具
+ */
 class DebugToolDialogFragment : AppCompatDialogFragment() {
     private val debugTools = arrayOf(DebugTools::class.java)
 
@@ -52,8 +55,8 @@ class DebugToolDialogFragment : AppCompatDialogFragment() {
         for (index in 0 until size) {
             val clazz = debugTools[index]
             val target = clazz.getConstructor().newInstance()
-            val declarMethods = target.javaClass.declaredMethods
-            for (method in declarMethods) {
+            val declareMethods = target.javaClass.declaredMethods
+            for (method in declareMethods) {
                 var title = ""
                 var desc = ""
                 var enable = false
@@ -113,11 +116,11 @@ class DebugToolDialogFragment : AppCompatDialogFragment() {
 
 
     data class DebugFunction(
-        val name: String,
-        val desc: String,
-        val method: Method,
-        val enable: Boolean,
-        val target: Any
+        val name: String,//方法名称
+        val desc: String,//方法描述
+        val method: Method,//方法实体
+        val enable: Boolean,//是否能够点击
+        val target: Any//方法所在类的对象
     ) {
         fun invoke() {
             method.invoke(target)

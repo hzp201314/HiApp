@@ -1,6 +1,7 @@
 package com.hzp.debugtool
 
 import android.content.Intent
+import android.os.Build
 import android.os.Process
 import com.hzp.common.utils.SPUtil
 import com.hzp.hi.library.util.AppGlobals
@@ -19,6 +20,11 @@ class DebugTools {
     fun buildEnvironment(): String {
         // 测试环境,正式环境
         return "构建环境: " + BuildConfig.DEBUG
+    }
+
+    fun buildDevice(): String {
+        // 构建版本 ： 品牌-sdk-abi
+        return "设备信息:" + Build.BRAND + "-" + Build.VERSION.SDK_INT + "-" + Build.CPU_ABI
     }
 
     @HiDebug(name = "一键开启Https降级", desc = "降级成Http,可以使用抓包工具明文抓包")
